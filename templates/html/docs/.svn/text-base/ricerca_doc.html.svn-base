@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Ricerca</title>
+</head>
+
+<body>
+<h1>Ricerca</h1>
+<p>
+Questo template è sostanzialmente un form contenente un tag <code>&lt;div id="ricerca"&gt;</code> cui sono applicate alcune dichiarazioni <a href="../css/ricerca.css">CSS</a> specifiche per il colore di background e il titolo della ricerca.
+</p>
+<p>
+L'unica altra dichiarazione riguarda il tag <code>&lt;div class="campo"&gt;</code>, nel quale sono inseriti i campi di input.<br/>
+Diversamente dai campi del form "normale", inseriti in tag di tipo <code>&lt;div class="col_xx"&gt;</code> (dove xx è la lunghezza percentuale della colonna, vedi <a href="form_doc.html">form</a>), questo <code>div</code> non ha una larghezza dichiarata.<br/>
+Consente quindi di inserire inserire campi sfruttando al massimo lo spazio a disposizione, non essendoci il problema dell'allineamento in colonna con il resto dei campi del form, visto che tutti i campi sono tutti sulla stessa riga e visivamente separati dal resto della videata.
+</p>
+
+
+</body>
+</html>

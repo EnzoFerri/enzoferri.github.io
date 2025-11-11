@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Menu Orizzontale</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Menù orizzontale</h1>
+<p>
+Il menù orizzontale è realizzato con un tag <code>nav</code> con la classe <code>menu_orizzontale</code>.<br/>
+Il tag <code>nav</code> è meglio che sia a sua volta contenuto in un tag <code>div</code> di classe <code>row</code>.
+</p>
+<p>
+Il menù orizzontale è responsivo nel senso che, mano a mano che lo schermo diventa piccolo, le voci vengono a disporsi su più righe in modo da essere sempre tutte visibili e cliccabili.<br/>
+Non è stata prevista la possibilità di "impilare" le voci e di farle apparire/scomparire con un apposito bottone, come invece accade per i link contenuti nella <em>barra istituzionale</em>.
+</p>
+<h2>Accessibilità</h2>
+<pre>
+&lt;ul class="nav nav-tabs" <strong>role="menubar" aria-label="Azioni"</strong>&gt;
+   &lt;li&gt;&lt;a href="#" <strong>role="menuitem"</strong>&gt;&lt;span class="glyphicon glyphicon-plus" <strong>role="presentation"</strong>&gt;&lt;/span&gt; Aggiungi&lt;/a&gt;&lt;/li&gt;
+   . . . 
+   &lt;li class="dropdown"&gt;
+      &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" <strong>role="menuitem" aria-haspopup="true"</strong>&gt;
+         &lt;span class="glyphicon glyphicon-list" <strong>role="presentation"</strong>&gt;&lt;/span&gt; Altre azioni &lt;span class="caret"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;ul class="dropdown-menu" <strong>role="menu"</strong>&gt;
+         &lt;li&gt;&lt;a href="#" <strong>role="menuitem"</strong>&gt;Action&lt;/a&gt;&lt;/li&gt;
+         . . .
+         &lt;li <strong>role="separator"</strong> class="divider"&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="#" <strong>role="menuitem"</strong>&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<ul>
+<li>Il menù orizzontale qui proposto contiene link che sono azioni vere e proprie, inoltre è probabile che contenga anche menù a comparsa di secondo livello, quindi gli è stato attribuito il ruolo di  <code>menubar</code>.</li>
+<li><code>aria-label="Azioni"</code> fa in modo che gli screen-reader leggano la parola "Azioni", che non compare a video, aiutando a capire che tipo di voci sono contenute nel menù.</li>
+<li><code>role="menuitem"</code> sulle voci che contengono azioni eseguibili.</li>
+<li><code>role="presentation"</code> fa in modo che le tecnologie assistive ignorino queste "icone" di puro effetto visivo.</li>
+<li><code>aria-haspopup="true"</code> indica che questa voce di menù ha un sottomenù espandibile.</li>
+<li><code>role="menu"</code> indica che l'elenco che segue è un menù che si presuppone verticale.</li>
+<li><code>role="separator"</code> segnala alle tecnologie assistive che questa voce di menù è solo un separatore grafico.</li>
+</ul>
+</body>
+</html>

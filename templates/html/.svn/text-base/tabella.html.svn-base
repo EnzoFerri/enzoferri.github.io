@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>Tabella</title>
+</head>
+
+<body>
+<table>
+   <tr>
+      <th class="centrato">Scelta</th>
+      <th>Partita IVA</th>
+      <th>Tipologia Ente</th>
+      <th>Importo</th>
+      <th>Nome Utente <a href="#"><img src="images/tagli_html/menu_freccia_on.gif" alt="cambia ordinamento"/></a></th>
+      <th>Indirizzo Email</th>
+      <th class="centrato">Allegato</th>
+      <th>Azioni</th>
+   </tr>
+   <tr>
+      <td class="centrato"><input id="scelta_01" type="checkbox"/><label class="non_visibile" for="scelta_01">scelta</label></td>
+      <td>82844557859</td>
+      <td>sanitario</td>
+      <td class="numero">123,00</td>
+      <td>ENTE369792SINTEL</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+      <td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr class="riga_alternata">
+      <td class="centrato"><input id="scelta_02" type="checkbox"/><label class="non_visibile" for="scelta_02">scelta</label></td>
+      <td>82844557858</td>
+      <td>Abilitato</td>
+      <td class="numero">72,50</td>
+      <td>asl vigevanese</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+		<td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr>
+      <td class="centrato"><input id="scelta_03" type="checkbox"/><label class="non_visibile" for="scelta_03">scelta</label></td>
+      <td>82844557859</td>
+      <td>sanitario</td>
+      <td class="numero">123,00</td>
+      <td>ENTE369792SINTEL</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+      <td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr class="riga_alternata">
+      <td class="centrato"><input id="scelta_04" type="checkbox"/><label class="non_visibile" for="scelta_04">scelta</label></td>
+      <td>82844557858</td>
+      <td>Abilitato</td>
+      <td class="numero">72,50</td>
+      <td>asl vigevanese</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+		<td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr>
+      <td class="centrato"><input id="scelta_05" type="checkbox"/><label class="non_visibile" for="scelta_05">scelta</label></td>
+      <td>82844557859</td>
+      <td>sanitario</td>
+      <td class="numero">123,00</td>
+      <td>ENTE369792SINTEL</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+      <td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr class="riga_alternata">
+      <td class="centrato"><input id="scelta_06" type="checkbox"/><label class="non_visibile" for="scelta_06">scelta</label></td>
+      <td>82844557858</td>
+      <td>Abilitato</td>
+      <td class="numero">72,50</td>
+      <td>asl vigevanese</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+		<td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr>
+      <td class="centrato"><input id="scelta_07" type="checkbox"/><label class="non_visibile" for="scelta_07">scelta</label></td>
+      <td>82844557859</td>
+      <td>sanitario</td>
+      <td class="numero">123,00</td>
+      <td>ENTE369792SINTEL</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+      <td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+   <tr class="riga_alternata">
+      <td class="centrato"><input id="scelta_08" type="checkbox"/><label class="non_visibile" for="scelta_08">scelta</label></td>
+      <td>82844557858</td>
+      <td>Abilitato</td>
+      <td class="numero">72,50</td>
+      <td>asl vigevanese</td>
+      <td><a href="#">nome.cognome@indirizzo.it</a></td>
+      <td class="centrato"><a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo"/></a></td>
+		<td>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="cambio identità"/>Crea indirizzi</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="crea"/>Crea impiegati</a>
+         </span>
+			<span>
+            <a href="#"><img src="images/icone/18/ico_sottoassegnazione_18.gif" alt="assegna"/>Gestione categorie</a>
+         </span>
+		</td>
+   </tr>
+</table>
+<div class="toolbar_tabella">
+	<ul class="tool_utility">
+         <li>
+            <a href="#"><img src="images/icone/18/ico_salvaExcel_18.gif" alt="ingrandisci carattere"/>Salva xls</a>
+         </li>
+         <li>
+            <a href="#"><img src="images/icone/18/ico_salvaPdf_18.gif" alt="ingrandisci carattere"/>Salva pdf</a>
+         </li>
+         <li>
+            <a href="#"><img src="images/icone/18/ico_salvaCsv_18.gif" alt="ingrandisci carattere"/>Salva csv</a>
+         </li>
+         <li>
+            <a href="#"><img src="images/icone/18/ico_stampaDoc_18.gif" alt="ingrandisci carattere"/>Stampa</a>
+         </li>
+	</ul>
+   <ul class="pager">
+       <li class="inizio"><a href="#">&lt;&lt;</a></li>
+       <li class="indietro"><a href="#">&lt;</a></li>
+       <li><a href="#">1</a></li>
+       <li><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#">4</a></li>
+       <li><a href="#">5</a></li>
+       <li><a href="#">6</a></li>
+       <li><a href="#">7</a></li>
+       <li><a href="#">8</a></li>
+       <li class="avanti"><a href="#">&gt;</a></li>
+       <li class="fine"><a href="#">&gt;&gt;</a></li>
+   </ul>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Barra istituzionale</title>
+</head>
+
+<body>
+<h1>Barra istituzionale</h1>
+<p>
+Questo template può essere utilizzato con un numero di modifiche minimo.<br/>
+Devono essere impostati:
+</p>
+<ol>
+<li>testo del titolo</li>
+<li>sottotitolo</li>
+<li>numero verde</li>
+<li>voci di navigazione.</li> 
+</ol>
+<p>
+Il sottotitolo è facoltativo. Per le regole di composizione del titolo si veda il paragrafo delle linee guida: "Costruzione del nome
+dell'applicativo".
+</p>
+<p>
+Secondo le linee guida, per voci di navigazione di servizio si intendono per esempio la logout, il ritorno alla home page d’origine, il
+canale di assistenza.
+</p>
+<p>
+A tutte queste diciture è applicato dai CSS un <code>text-transform: uppercase</code> che rende i caratteri maiuscoli.
+</p>
+
+<p>
+Il layout è fluido, quindi si adatta alla larghezza del video.<br/>
+La testata presentata nell'esempio può essere ridotta fino alla larghezza di circa 700 pixel senza che le scritte vadano a capo,
+anche se la cosa dipende da:
+</p>
+<ul>
+<li>i font installati nel sistema operativo del client</li>
+<li>le dimensioni dei font scelte dall'utente all'interno del browser</li>
+<li>la lunghezza del titolo.</li>
+</ul>
+<p>
+Le linee guida (vedi al paragrafo: "risoluzione") consigliano di mantenere una larghezza effettiva non superiore ai 980 pixel per evitare
+la comparsa della scroll bar orizzontale sulla risoluzione minima considerata: 1024x792.
+</p>
+<p>
+Il link <code>&lt;a href="#titolo_pagina" class="non_visibile"&gt;salta al contenuto&lt;/a&gt;</code> che precede tutti gli altri tag, è un accorgimento utile agli utenti non vedenti.<br/>
+Dà la possibilità, navigando la pagina con uno screeen reader, di evitare la rilettura di tutte le parti dell'intestazione e dell'eventuale menù verticale, passando al contenuto più specifico della pagina.</br>
+Presuppone l'esistenza dell'<code>id="titolo pagina"</code> come previsto dal componente <a href="../titolo_pagina.html">titolo_pagina</a> <a href="titolo_pagina_doc.html">illustrato</a> più avanti.<br/>
+La <code>class="non_visibile"</code> fa si che non venga visualizzato, così da non modificare l'aspetto grafico della testata.
+</p>
+
+
+</body>
+</html>

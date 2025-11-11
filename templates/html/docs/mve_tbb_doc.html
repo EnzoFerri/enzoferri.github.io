@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+
+<title>mve_tbb</title>
+</head>
+
+<body>
+<h1>Menù verticale, tabber con testo</h1>
+
+<a name="struttura_comune"/>
+<h3>Struttura comune delle pagine</h3>
+<p>
+I template composti hanno una struttura che è prevista essere comune per tutte le pagine degli applicativi.<br/>
+Sono sempre presenti i seguenti componenti:
+</p>
+<ul>
+<li><a href="../barra_istituzionale.html">barra istituzionale</a></li>
+<li><a href="../area_utente.html">area utente</a></li>
+<li><a href="../titolo_pagina.html">titolo pagina</a></li>
+<li><a href="../area_contenuti.html">area contenuti</a></li>
+<li><a href="../footer.html">footer</a></li>
+</ul>
+<p>
+Al primo livello all'interno del <code>&lt;body&gt;</code>, sono presenti:
+</p>
+<ol>
+	<li><em>barra_istituzionale</em></li>
+	<li><em>sottotitolo_applicativo</em><br/>
+	facoltativo
+	</li>
+	<li><em>content_separator</em><br/>
+	usato solo per staccare la barra istituzionale dal resto della pagina
+	</li>
+	<li><em>area_utente</em></li>
+	<li><em>layout</em><br/>
+	nel quale sono nidificati i componenti la parte centrale della pagina</li>
+	<li><em>footer</em>.</li>
+</ol>
+<p>
+Tra gli lementi di secondo livello di <em>layout</em>
+</p>
+<ul>
+<li>nella <em>colonna_menu_sx</em>
+<dl><dd>è nidificato il <a href="../menu_verticale.html">menu verticale</a></dd></dl>
+</li>
+<li>in <em>area_contenuti</em>
+<dl>
+<dd>sono contenuti il <em>titolo_pagina</em> e ciò che caratterizza ogni template rispetto agli altri.<br/>
+In questo template si tratta di un <a href="../tabber.html">tabber</a> contenente del semplice testo.</dd>
+</dl>
+</li>
+Il <code>&lt;div id="layout"&gt;</code> serve ad applicare le proprietà che determinano la dimensione della colonna di sinistra contenente il menù verticale.<br/>
+Il layout di default è il 190. Per ottenere l'allargamento della colonna del menù espandibile a 240 pixel basta applicare, decommentandolo, il foglio di stile <em>"layout_240_left.css"</em>.
+</ul>
+
+<h3>Elementi grafici comuni</h3>
+<p>
+Nel <code>&lt;div class="area_testo"&gt;</code> sono contenuti tra l'altro un link testuale:
+</p>
+<pre>
+&lt;a href="#"&gt;accusantium&lt;/a&gt;
+</pre>
+e un elenco puntato:
+<pre>
+&lt;ul>
+  &lt;li&gt;At vero eos et accusamus et iusto odio dignissimos ducimus&lt;/li&gt;
+  &lt;li&gt;qui blanditiis praesentium voluptatum deleniti atque corrupti&lt;/li&gt;
+  &lt;li&gt;quos dolores et quas molestias excepturi sint&lt;/li&gt;
+  &lt;li&gt;obcaecati cupiditate non provident, similique sunt in culpa&lt;/li&gt;
+  &lt;li&gt;qui officia deserunt mollitia animi&lt;/li&gt;
+  &lt;li&gt;id est laborum et dolorum fuga.&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+conformi graficamente a quanto specificato nelle linee guida (si vedano i paragrafi "Link testuali" e "Punti elenco").
+<p>
+Si noti che sui tag non sono specificate classi.<br/>
+Alcune dichiarazioni comuni, presenti in nel <a href="../css/style_lombardia.css">style_lombardia.css</a>, nella sezione iniziale "Body", sono applicate ai tag <code>&lt;a&gt;</code>, <code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code> generici.
+</p>
+
+</body>
+</html>

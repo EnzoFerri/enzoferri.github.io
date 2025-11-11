@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Tabber</title>
+</head>
+
+<body>
+<h1>Tabber</h1>
+<p>
+Il tabber qui realizzato è molto semplice: si tratta di un elenco di link presentati graficamente come linguette affiancate, di cui una è in stato attivo.<br/>
+E' pensato per essere inserito nell'<a href="area_contenuti_doc.html">area contenuti</a>.<br/>
+Il contenuto cui la linguetta attiva del tabber si riferisce, va inserito in un <code>&lt;div class="tab_area_contenuti"&gt;</code> che nel template HTML appare come commento.<br/>
+A questo <code>&lt;div&gt;</code> il <a href="../css/area_contenuti.css">CSS dell'area contenuti</a> applica un bordo che si collega visivamente al tabber, e del padding in modo da far apparire il contentuto inquadrato nella "scheda aperta" del tabber.   
+</p>
+<p>
+Questo tabber è stato progettato per poter contenere non solo testo, ma anche oggetti HTML di vario tipo, come tabelle o form, come è possibile vedere tra gli <a href="../mor_mve_ric_tbb_tbl.html">esempi</a> dei template composti.<br/>
+Quindi al click su una linguetta, il controllo deve essere passato al server che dovrà restituire la nuova pagina corrispondente con la linguetta premuta, in stato "attivo" così come si vede nell'esempio:
+</p>
+<pre>
+&lt;li class="tab" id="active"&gt;&lt;a href="#"&gt;Enti&lt;/a&gt;&lt;/li&gt;
+</pre>
+<p>
+Nel caso si voglia inserire del semplice testo, come in questo <a href="../mve_tbb.html">esempio</a> è stato predisposto il <code>&lt;div class="area_testo"&gt;</code>, che nel <a href="tabber_html.txt">template HTML</a> appare anch'esso commentato, cui è applicato dell'ulteriore padding per una migliore resa grafica.
+</p>
+
+</body>
+</html>

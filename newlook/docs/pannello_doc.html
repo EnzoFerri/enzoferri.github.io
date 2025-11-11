@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Pannello</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Pannello</h1>
+<p>
+Il pannello è realizzato utilizzando le normali classi di bootstrap.</br>
+Le uniche personalizzazioni, legate alla classe <code>panel-lispa</code>, riguardano il colore di sfondo e dei caratteri e, per l'eventuale titolo del pannello, le dimensioni del font e la maiuscolizzazione del testo.
+</p>
+
+<h2>Accessibilità</h2>
+<p>
+Non ci sono particolari attributi di "<em>ruolo</em>" da specificare per questo componente.</br>
+L'unico accorgimento <strong>può</strong> essere quello di prevedere un link nascosto per il salto della lettura del pannello in caso di ricaricamento della pagina.
+</p>
+<pre>
+&lt;a href="<strong>#salta_ric-azienda" class="sr-only sr-only-focusable</strong>"&gt;Salta pannello ricerca&lt;/a&gt;
+&lt;form class="form" role="form"&gt;
+   &lt;div class="panel <strong>panel-lispa</strong>"&gt;
+   . . .
+   . . .
+   &lt;/div&gt;
+&lt;/form&gt;
+&lt;span <strong>id="salta_ric-azienda"</strong>&gt; . . . &lt;/span&gt;
+</pre>
+
+<p>
+Un altro accorgimento, sul titolo del pannello, può essere quello di usare un attributo <code>tabindex="0"</code>, in modo che spostandosi con il tasto <kdb>tab</kbd> il titolo venga evidenzialto e quindi riletto dallo screen-reader. 
+</p>
+<pre>
+&lt;div class="panel-heading"&gt;
+   &lt;div class="panel-title" <strong>tabindex="0"</strong>&gt;Ricerca Azienda&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+</body>
+</html>

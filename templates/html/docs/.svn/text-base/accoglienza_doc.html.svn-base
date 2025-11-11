@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>accoglienza</title>
+</head>
+
+<body>
+<h1>Pagina di accoglienza</h1>
+<p>
+Al primo livello del <code>&lt;body&gt;</code> si trova il <code>&lt;div class="area_utente"&gt;</code>, presente anche se  non contiene dati, e si è utilizzato il <code>&lt;div id="layout_190_left"&gt;</code> per lasciare a sinistra lo spazio per l'immagine, personalizzata per l'applicativo. Questa è all'interno di un <code>&lt;div id="area_foto"&gt;</code>, che la allinea a sinistra.<br/>
+La larghezza dell'immagine è di 190 pixel, e quindi congruente con il <em>layout_190_left</em>. L'uso di un'immagine è facoltativa, può esservi invece un menù o il layout può essere di tipo "full".
+</p>
+<p>
+Nel <code>&lt;div id="area_contenuti"&gt;</code> di trova il <code>&lt;div id="accoglienza"&gt;</code> cui sono applicati delle dichiarazioni <a href="../css/accoglienza.css">CSS</a> apposite.
+</p>
+<p>
+All'interno del <code>&lt;div id="accoglienza"&gt;</code> sono presenti:
+</p>
+<ol>
+<li><code>&lt;div id="titolo_pagina"&gt;</code></li>
+<li>Il <code>&lt;div id="cards_accoglienza"&gt;</code><br/>
+  che a sua volta contiene i &lt;div&gt;:
+  <ul>
+	 <li><code>box_1</code> e <code>box_2</code> con testo esplicativo</li>
+	 <li>il <code>box_3</code> con il form per il login all'applicazione.</li>
+  </ul>
+</li>
+</ol>
+<p>
+L'altezza dei box è calcolata da <code>equalHeight.js</code> che trova quale dei tre box risulta il più grande, dato il suo contenuto,  e rende gli altri due della stessa dimensione.<br/>
+Ill richiamo dello script è posto in fondo al body:
+</p>
+<pre>
+&lt;script&gt;
+  var boxIds = new Array();
+  boxIds[0] = 'box_1';
+  boxIds[1] = 'box_2';
+  boxIds[2] = 'box_3';
+&lt;/script&gt;
+&lt;script src="js/equalHeight.js" type="text/javascript">&lt;/script&gt;
+</pre>
+<p>
+Nell'array <code>boxIds</code> vanno impostati gli id dei box cui si vuole che lo script dia altezza identica.  
+</p>
+<p>
+Subito sopra il footer si trova l'<a href="area_partners_doc.html">area partners</a>, la cui presenza è facoltativa.
+</p>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="js/calendar.js"></script>
+<script type="text/javascript" src="js/calendar-it.js"></script>
+<script type="text/javascript" src="js/calendar-setup.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css"/>
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>Form doppio su due colonne</title>
+</head>
+<body>
+<a href="#titolo_pagina" class="non_visibile">salta al contenuto</a>
+<div id="barra_istituzionale">
+   <div class="spalla_sx">
+      <a href="http://www.regione.lombardia.it">
+         <img class="logo" src="images/tagli_html/top_logoregione.gif" alt="Regione Lombardia"/>
+      </a>
+
+      <div class="fascia_sup"></div>
+      <div class="fascia_inf"></div>
+   </div>
+   <div class="spalla_dx">
+      <div class="fascia_sup"></div>
+      <div class="fascia_inf"></div>
+   </div>
+   <div class="fascia_sup">
+      <ul class="voci_navigazione">
+
+         <li><a href="http://www.tributi.regione.lombardia.it" title="PORTALE DEI TRIBUTI">PORTALE DEI TRIBUTI</a></li>
+         <li class="last"><a href="/calcolabollo/logoff.jsp" title="Chiudi l'applicazione">LOGOFF</a></li>
+      </ul>
+   </div>
+   <div class="fascia_inf">
+      <div class="sormontante_titolo"></div>
+      <div class="area_titolo">
+         <div class="spalla_sx"></div>
+
+         <div class="spalla_dx"></div>
+         
+         <div class="titolo">TRIBUTI </div>
+         <div class="nome_gamma_servizi">calcolabollo</div>
+      </div>
+   </div>
+</div>
+
+<div class="content_separator">&nbsp;</div>
+
+   <div id="area_utente">      
+      <span class="dati_utente">
+         <span class="ico_utente"></span>
+         Utente:  Mario Rossi
+      </span>
+   </div>
+   
+	<ul id="menu_orizzontale">
+		<li>
+			<a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo preventivo"/>Nuovo preventivo</a>
+		</li>
+		<li>
+			<a href="#"><img src="images/icone/18/ico_salvaPdf_18.gif" alt="tariffario in formato pdf"/>Tariffario</a>
+		</li>
+	</ul>
+
+	<div id="titolo_pagina">
+		Calcola il bollo auto
+   	</div>
+   	
+	<div id="area_contenuti">
+
+<div class="colonna_sx">
+<div class="box" id="box_1">
+<form id="calcolaBolloTramiteTargaForm" action="#" method="get">
+
+	<div class="titolo">CALCOLO TRAMITE LA TARGA DEL VEICOLO</div>
+	<hr/>
+
+	<div class="riga_35">
+		<div class="col_50">
+			<div class="campo">
+				<label for="tipoVeicolo">TIPO VEICOLO</label>
+			</div>
+		</div>
+		<div class="col_50">
+			<div class="campo">
+				<select id="tipoVeicolo" name="tipoVeicolo" size="1">
+					<option value="A">Autoveicolo</option>
+					<option value="M">Motoveicolo</option>
+					<option value="R">Rimorchio</option>
+					<option value="C">Ciclomotore</option>
+					<option value="Q">Quadriciclo leggero</option>
+				</select>
+				<input id="tipoVeicoloValue" value="AUTOVEICOLO" type="hidden"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="riga_35">
+		<div class="col_50">
+			<label for="targa">TARGA</label>
+		</div>
+		<div class="col_50">
+			<div class="campo">
+				<input id="targa" name="targa" value="" size="20" type="text"/>
+				<label class="normal_error"></label>
+			</div>
+		</div>
+	</div>
+
+	<div class="riga_35">
+		<div class="col_50">
+			<div class="campo">
+				<label for="massaComplessiva" >MASSA COMPLESSIVA</label>
+			</div>
+		</div>
+		<div class="col_50">
+			<div class="col_33">
+				<div class="campo">
+					<select id="massaComplessiva" name="massaComplessiva" disabled="disabled" size="1">
+						<option value="S">Sì</option>
+						<option value="N">No</option>
+					</select>
+				</div>
+			</div>
+			<div class="col_66">
+				<div class="campo">
+					SI = massa &lt; 3,5 t<br/>
+					NO = massa &gt; 3,5 t
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="riga_35">
+		<div class="col_50">
+			<div class="campo">
+				<label for="targaProva">TARGA PROVA</label>
+			</div>
+		</div>
+		<div class="col_50">
+			<div class="campo">
+				<select id="targaProva" name="targaProva" size="1">
+					<option value="N">No</option>
+					<option value="S">Sì</option>
+					<option value="X">Prima emissione</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="riga_35">
+		<div class="col_50">
+			<label for="potenza">POTENZA in KW senza decimali</label>
+		</div>
+		<div class="col_50">
+			<div class="campo">
+				<input id="potenza" name="potenza" disabled="disabled" value="" size="20" type="text"/>
+				<label id="lblPotenzaErr" class="normal_error"></label>
+			</div>
+		</div>
+	</div>
+	
+	<div class="riga_35">
+		<div class="col_50">
+			<div class="campo">
+				<label for="alimentazione">ALIMENTAZIONE</label>
+			</div>
+		</div>
+		<div class="col_50">
+			<div class="campo">
+				<select id="alimentazione" name="alimentazione" disabled="disabled" size="1">
+					<option value="B">Benzina</option>
+					<option value="G">Gasolio</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="riga">
+		<div class="area_rispetto">
+			<input class="pulsante" value="ESEGUI" name="calcolaTramiteTarga" type="submit"/>
+		</div>
+	</div>
+
+</form>
+</div>
+<!-- fine div sinistra -->
+</div>
+
+
+<!-- div destra -->
+<div class="colonna_dx">
+<div class="box" id="box_2">
+<form id="calcolaBolloForm" action="#" method="get">
+
+	<div class="titolo">CALCOLO TRAMITE I DATI TECNICI DEL VEICOLO</div>
+	<hr/>
+	
+		<div class="riga_35">
+			<div class="col_20">
+				<div class="campo">
+					<label for="categoria">CATEGORIA</label>
+				</div>
+			</div>
+			<div class="col_80">
+				<div class="campo">
+					<select id="categoria" name="categoria" size="1">
+						<option value="--">--Seleziona categoria--</option>
+	                    <option value="BUSS">Autobus</option>
+	                    <option value="CARA">Autocaravan</option>
+	                    <option value="ATC0">Autocarro con peso complessivo inf. a 12 t</option>
+	                    <option value="ATC%">Autocarro con peso complessivo pari o sup. a 12 t</option>
+	                    <option value="AUTO">Autoveicolo</option>
+	                    <option value="MTC%">Motocarro - Motofurgone</option>
+	                    <option value="MOTO3">Ciclomotore</option>
+	                    <option value="MOTO1">Motociclo fino a 11 Kw (o 15 cv)</option>
+	                    <option value="MOTO2">Motociclo superiore a 11 Kw (o 15 cv)</option>
+	                    <option value="QUAD">Quadriciclo leggero alimentato a benzina</option>
+	                    <option value="QUAD1">Quadriciclo leggero alimentato a gasolio</option>
+	                    <option value="RIM1">Rimorchio e rimorchio spec. con massa inf. a 3,5 t</option>
+	                    <option value="RIMS">Rimorchio spec. con massa uguale o sup. a 3,5 t</option>
+					</select>
+					<label class="normal_error"></label>
+				</div>
+			</div>
+		</div>
+
+	<div class="riga">
+		<div class="area_rispetto">
+			<input class="pulsante" value="ESEGUI" name="calcolaTramiteDT" type="submit"/>
+		</div>
+	</div>
+
+</form>
+</div>
+</div>
+	
+<div class="content_separator"></div>
+<hr/>
+<div class="sottotitolo">INFORMAZIONI</div>
+
+<div>
+Il servizio di calcolo e pagamento della tassa automobilistica recepisce le modifiche introdotte dalla Legge Finanziaria 2007 in materia di Tassa Automobilistica di Proprietà.<br/>
+Il servizio è attivo nelle seguenti fasce orarie: <br/> 
+- Giorni feriali 6.00 - 22.00 <br/>
+- Sabato 6.00 - 24.00 <br/>
+- Giorni festivi 0.00 - 24.00 <br/>
+Per la segnalazione di problemi tecnici è disponibile il servizio 
+CONTATTACI.
+</div>
+<div class="content_closer">&nbsp;</div>
+</div>	
+
+
+<div id="footer">
+	<div class="titolo_e_copyright">
+	   <span class="titolo">portale dei tributi </span>
+	   <span class="nome_gamma_servizi">calcolabollo </span>
+	   <span class="copyright">© Copyright Regione Lombardia - tutti i diritti riservati</span>
+	</div>
+</div>
+
+<script>
+  var boxIds = new Array();
+  boxIds[0] = 'box_1';
+  boxIds[1] = 'box_2';
+</script>
+<script src="js/equalHeight.js" type="text/javascript"></script>
+
+</body>
+</html>

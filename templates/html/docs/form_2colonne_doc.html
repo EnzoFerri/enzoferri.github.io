@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Form_2colonne</title>
+</head>
+
+<body>
+<h1>Form su sue colonne</h1>
+<p>
+Per ottenere un layout a due colonne, in style_lombardia.css, nella sezione <em>"Area contenuti"</em>, sono state predisposte due dichiarazioni:
+</p>
+<pre>
+div#area_contenuti div.colonna_sx {
+	width: 49%;
+	float:left;
+}
+div#area_contenuti div.colonna_dx {
+	width: 49%;
+	float:right;
+}
+</pre>
+<p>
+Questi due <code>&lt;div&gt;</code> suddividono l'area contenuti in 2 parti uguali, con un piccolo spazio di separazione in mezzo.
+</p>
+<p>
+Il template è stato ricavato da un caso reale, in cui in ognuna delle due colonne è presente un form, con un proprio tasto "esegui" di tipo <code>submit</code>.<br/>
+Per evidenziare i due form, ognuno di essi è stato inserito all'interno di un <code>&lt;div class="box"&gt;</code>, la cui dichiarazione, anch'essa inclusa in style_lombardia.css, è la seguente:
+</p>
+<pre>
+div#area_contenuti div.box {
+	background-color:#D3E7D2;
+	margin: 5px;
+	padding: 5px;
+}
+</pre>
+<p>
+Applica quindi un colore di sfondo, coerente con la declinazione cromatica, ed un margine e un rientro in modo da creare un effetto riquadro.
+</p>
+<p>
+Del testo informativo è poi presente nella <em>"colonna_dx"</em> all'interno di un <code>&lt;div class="area_testo"&gt;</code> per applicargli un padding adeguato.
+</p>
+<p>
+Nota: con questo tipo di layout (2 colonne e menù verticale a sinistra) è bene che le due colonne nell'area contenuti la occupino sino in fondo, cioè fino a toccare il <em>"footer"</em>.<br/>
+La soluzione adottata nel template <a href="../full_form_2colonne.html">full_form_2colonne.html</a>, cioè con il testo informativo posizionato orizzontalmente, al di fuori delle due colonne, è da utilizzarsi solo con un layout <em>"full"</em>.<br/>
+Questo per evitare che, espandendo le voci del menù a sinistra, quando questo arriva all'altezza dell'area orizzontale sotto le colonne, sposti in basso questa, insieme al piede, lasciando dello spazio vuoto tra i box delle due colonne e il testo informativo stesso.
+</p>
+
+</body>
+</html>

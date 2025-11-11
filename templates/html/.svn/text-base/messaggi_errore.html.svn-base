@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>Messaggi di errore</title>
+</head>
+<body>
+
+<div class="content_separator">&nbsp;</div>
+
+<form action="#" method="get">
+	<div class="alert_box">
+		<img src="images/icone/18/ico_warning_18.gif" alt="Attenzione: errore!"/>
+		<label>Attenzione! Correggere gli errori sottostanti prima di procedere.</label>
+	</div>
+	<div class="riga">
+		<label for="campo_01" class="orizz_sx">Etichetta</label>
+    <label class="campi_obbligatori">*</label>
+		<input class="fatal_error" id="campo_01" name="dato_01" size="25" maxlength="25" type="text"/>
+		<label class="fatal_error">testo di spiegazione dell'errore del campo</label>
+	</div>
+	<div class="riga">
+		<label for="campo_02" class="orizz_sx">Etichetta</label>
+		<input class="normal_error" id="campo_02" name="dato_02" size="25" maxlength="25" type="text"/>
+		<label class="normal_error">testo di spiegazione dell'errore del campo</label>
+	</div>
+	<div class="riga">
+		<label for="campo_03" class="orizz_sx">Etichetta</label>
+		<input id="campo_03" name="dato_03" size="25" maxlength="25" type="text"/>
+		<label class="info_message">testo informativo per il campo</label>
+	</div>
+	<div class="riga">
+		<label for="campo_04" class="orizz_sx">Etichetta</label>
+		<input id="campo_04" name="dato_04" size="25" maxlength="25" type="text"/>
+		<label class="confirm_message">testo di richiesta di conferma del campo</label>
+	</div>
+</form>
+
+</body>
+</html>

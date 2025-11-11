@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Autocompletamento</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Autocompletamento</h1>
+<p>
+E' realizzato tramite la JavaScript library <a href="https://github.com/twitter/typeahead.js/blob/master/README.md">typeahead.js</a>.<br/>
+Sui primi due campi, <strong>Cognome</strong> e <strong>Nazione Ue</strong>, l'autocompletamento è stato implementato derivandolo dall'esempio <a href="http://twitter.github.io/typeahead.js/examples/#basic">basic</a> in cui i dati sono passati con array a costante inserito all'interno della pagina stessa.<br/>
+Il terzo campo, <strong>Extra UE</strong>, derivato dal <a href="http://twitter.github.io/typeahead.js/examples/#bloodhound">secondo esempio</a> della documentazione, legge i dati da un file esterno, <a href="../data/nazioni.json">nazioni.json</a>, e utilizza il motore di suggerimenti <a href="https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md">bloodhound</a> incluso in <em>typeahead.js</em>.<br/>
+Altre modalità sono possibili come mostrato negli <a href="http://twitter.github.io/typeahead.js/examples">esempi</a>.
+</p>
+
+<pre>
+&lt;script src="js/typeahead.bundle.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/template.js"&gt;&lt;/script&gt;
+</pre>
+<p>
+E' necessario includere nella pagina sia lo script minimizzato <code>typeahead.bundle</code> che <code>template.js</code> in cui sono comprese le due funzioni: <code>substringMatcher</code> e <code>stringBeginner</code> utilizzate per selezionare le stringhe da presentare a video.
+</p>
+
+<h2>Cognome</h2>
+<pre>
+&lt;div <strong>id="autoc_cognome"</strong>&gt;
+  &lt;input id="cognome" <strong>class="typeahead</strong> form-control" type="text" aria-autocomplete="list"/&gt;
+&lt;/div&gt;
+</pre>
+<p>
+Un campo di input su cui si vuole attivare l'autocompletamento deve essere incluso in un <code>div</code> il cui <code>id</code> sarà utilizzato per assegnare la funzione. Inoltre sul campo va specificata la classe <code>typeahead</code>. 
+</p>
+<p>
+Per selezionare i cognomi da proporre, viene utilizzata la funzione <code>substringMatcher</code>, compresa in <strong>template.js</strong>, che estrae tutte le voci contenenti, in una qualunque posizione, le lettere digitate. Ad esempio, digitando "angeli" verranno proposti: Angeli, De Angelis, Bernardinangeli. 
+</p>
+
+<pre>
+&lt;script&gt;
+  var cognomi = ['Rossi', 'Rossini', 'De Rossi', 'Monterosso', 'Ferri', 'Ferrari',
+  'Ferretti', 'Tagliaferri', 'Angeli', 'De Angelis', 'Bernardinangeli'].sort();
+  <strong>$('#autoc_cognome .typeahead')</strong>.typeahead(<strong>{highlight: true}</strong>,{source: <strong>substringMatcher</strong>(cognomi)});
+&lt;/script&gt;
+</pre>
+<p>
+In fondo alla pagina, vanno inseriti i valori possibili del campo in un array che va passato com parametro alla funzione di selezione, in questo caso <code>substringMatcher</code>.<br/>
+L'opzione <code>highlight: true</code>, passata al metodo <code>typeahead</code> fa sì che siano mostrati in neretto le lettere, trovate nei cognomi proposti, corrispondenti a quelle digitate.<br/>
+Per le <a href="https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md#options">altre opzioni</a> disponibili si consulti la documentazione di <a href="https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md">typeahead.js</a>.
+</p>
+
+<h2>Nazione UE</h2>
+<pre>
+&lt;div <strong>id="autoc_nazione_Ue"</strong>&gt;
+  &lt;input id="nazione_Ue" <strong>class="typeahead</strong> form-control" type="text" placeholder="Stato dell'Unione Europea" aria-autocomplete="list"&gt;
+&lt;/div&gt;
+</pre>
+<p>
+Per suggerire le nazioni, viene utilizzata la funzione <code>stringBeginner</code>, contenuta in <strong>template.js</strong>, che propone automaticamente le voci che iniziano con le lettere digitate dall'utente.<br/>
+Si noti però che nazioni con nome composto (es: Repubblica Ceca) vengono proposte sia digitando "R" che "C".
+</p>
+
+<pre>
+&lt;script&gt;
+  var statiUe = ['Austria', 'Belgio', 'Bulgaria', 'Cipro', 'Croazia', 'Repubblica Ceca',
+  'Danimarca', 'Estonia', 'Finlandia', 'Francia', 'Germania', 'Grecia', 'Ungheria',
+  'Irlanda', 'Italia', 'Lettonia', 'Lituania', 'Lussemburgo', 'Malta', 'Paesi Bassi',
+  'Polonia', 'Portogallo', 'Romania', 'Slovacchia', 'Slovenia', 'Spagna', 'Svezia', 'Regno Unito'];
+  <strong>$('#autoc_nazione_Ue .typeahead')</strong>.typeahead(<strong>{}</strong>,{source: <strong>stringBeginner</strong>(statiUe)});
+&lt;/script&gt;
+</pre>
+
+<p>
+Al metodo <code>typeahead</code> non viene passata alcuna opzione, il comportamento sarà quello di default.
+</p>
+
+<h2>Extra UE</h2>
+<pre>
+&lt;div <strong>id="autoc_nazione_extra"</strong>&gt;
+  &lt;input class="<strong>typeahead</strong> form-control" type="text" id="nazione_extra" placeholder="Nazione extra UE" aria-autocomplete="list"&gt;
+&lt;/div&gt;
+</pre>
+<p>
+Nessuna differenza per quanto riguarda il campo di input su cui si attiva l'autocompletamento. 
+</p>
+<pre>
+&lt;script&gt;
+var countries = <strong>new Bloodhound</strong>({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  prefetch: <strong>'data/nazioni.json'</strong>
+});
+$('#autoc_nazione_extra .typeahead').typeahead(null, {
+  name: 'countries', <strong>source: countries</strong>
+});
+&lt;/script&gt;
+</pre>
+<p>
+Nella variabile contenente i valori selezionabili viene assegnato un oggetto di tipo <strong>Bloodhound</strong>, nel cui costruttore è passato il path di un <a href="../data/nazioni.json">file <strong>json</strong></a>.
+</p>
+
+<h2>Accessibilità</h2>
+<pre>
+&lt;input id="cognome" class="typeahead form-control" type="text" <strong>aria-autocomplete="list"</strong>/&gt;
+</pre>
+<p>
+Unico attributo specifico per l'accessibilità dei campi ad autocompletamento è: <code>aria-autocomplete="list"</code>.<br/>
+La navigazione sulle voci proposte avviene attraverso le frecce in su e giù.
+</p>
+
+</body>
+</html>

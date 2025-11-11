@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>mve_tbb</title>
+</head>
+
+<body>
+<h1>Layout full, form su due colonne</h1>
+
+
+Rispetto all'<a href="../form_2colonne.html">analogo template</a> con il layout 190/240 pixel left, sono stati tolti:
+<ul>
+	<li><code>&lt;div id="layout"&gt;</code><br/>
+		come contenitore
+	</li>
+	<li><code>&lt;div id="colonna_menu_sx"&gt;</code><br/>
+		con tutto il suo contenuto, compreso quindi il <code>&lt;div id="menu_verticale"&gt;</code>.
+	</li>
+	<li><code>&lt;script type="text/Javascript" src="js/menu_verticale.js"&gt;&lt;/script&gt;</code><br/>
+	l'inclusione dello script per la gestione del menù verticale: superflua e che, se presente, dà un errore "warning" su Internet Explorer 6 e 7.
+	</li>
+</ul>
+<p>
+Inoltre è stato spostato:
+<ul>
+<li><code>&lt;div id="titolo_pagina"&gt;</code> ed il suo contenuto</li>
+</ul>
+al di sopra dell'<code>&lt;div id="area_contenuti"&gt;</code>, in modo da fargli occupare tutta la larghezza della finestra video.
+</p>
+<p>
+Il testo informativo, a differenza del template da cui questo deriva, è al di fuori delle colonne.<br/>
+Ciò non comporta i problemi evidenziati nella <a href="form_2colonne_doc.html">documentazione del template relativo</a> in quanto non qui è presente il menù verticale.
+</p>
+<p>
+Sono poi state rese ugali le dimensioni dei due "box" utilizzando <code>equalHeight.js</code> come per la <a href="accoglienza_doc.html">pagina di accoglienza</a>.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Footer</title>
+</head>
+
+<body>
+<h1>Footer</h1>
+<p>
+Template molto semplice, necessita solo di alcune impostazioni:
+</p>
+<ol>
+<li>testo del titolo</li>
+<li>voci di navigazione.</li> 
+</ol>
+<p>
+Il testo del titolo deve essere identico a quello utilizzato per la barra istituzionale.
+</p>
+<p>
+Secondo le linee guida, nelle voci di navigazione del footer possono essere messe: note legali, privacy, credits o altro.
+</p>
+<p>
+A tutte queste diciture è applicato dai CSS un <code>text-transform: uppercase</code> che rende i caratteri maiuscoli.
+</p>
+<p>
+Può essere impostato anche il copyright qualora dovesse essere aggiunto qualcosa alla Regione Lombardia. 
+</p>
+
+</body>
+</html>

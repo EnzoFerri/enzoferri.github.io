@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Accordion</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Accordion</h1>
+<p>
+E' basato <a href="http://getbootstrap.com/javascript/#collapse-example-accordion">sull'esempio fornito da boostrap</a>.<br/>
+Si tratta d una serie di componenti <em>panel</em> di boostrap, legati tra loro e animati attraverso il plugin <code>collapse</code>.
+</p>
+
+
+<h2>Struttura</h2>
+<pre>
+&lt;div <strong>class="panel-group" id="accordion"</strong> role="tablist"&gt;
+   &lt;div <strong>class="panel</strong> panel-default"&gt;
+      &lt;a <strong>data-toggle="collapse" data-parent="#accordion" href="#chi"</strong> tabindex="0" aria-controls="chi"&gt;
+         &lt;div <strong>class="panel-heading"</strong> role="tab"&gt;
+            . . .
+         &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;div <strong>id="chi" class="panel-collapse collapse"</strong> role="tabpanel"&gt;
+         &lt;div <strong>class="panel-body"</strong> tabindex="0"&gt;
+           . . . 
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+. . .
+</pre>
+<p>
+<strong>L'insieme dei pannelli dell'accordion</strong>
+<ul>
+<li>è contenuto in un <code>div</code> di classe <code>panel-group</code></li>
+<li>ogni pannello è un <code>div</code> di classe <code>panel</code>.</li>
+</ul>
+</p>
+<p>
+<strong>L'intestazione di ogni pannello</strong>
+<ul>
+<li>è contenuta in un <em>tag</em> <code>&lt;a&gt;</code> con attributi:
+<ol>
+<li><code>data-toggle="collapse"</code> per collegare il <em>plugin</em> javascript di apertura/chiusura</li>
+<li><code>data-parent</code> con <em>id</em> del <em>panel-group</em></li>
+<li><code>href</code> dell'<em>id</em> del <em>div</em> da aprire e chiudere</li>
+</ol>
+</li>
+<li>il testo è contenuto in un <code>div</code> di classe <code>panel-heading</code></li>
+</ul>
+</p>
+<p>
+<strong>Il corpo del pannello</strong>
+<ul>
+<li>è contenuto in un <em>div</em> con attributi:
+<ol>
+<li><code>id</code> corrispondente all'attributo <code>href</code> del tag <code>&lt;a&gt;</code> dell'intestazione</li>
+<li>classi <code>panel-collapse</code> e facoltativamente <code>collapse</code> se, al primo caricamento della pagina, il pannello deve apparire "chiuso"</li>
+</ol>
+</li>
+<li>il corpo è un <code>div</code> di classe <code>panel-body</code>, che può contenere sia del semplice testo, che tabelle o altro.</li>
+</ul>
+</p>
+
+<h2>Aspetto grafico</h2>
+I due esempi presentati sono pressochè identici per struttura e funzionamento.
+<p>
+La differenza grafica risiede nel <em>div</em> <code>panel-heading</code>:
+<ul>
+<li>nel primo esempio è presente il <strong>segno più</strong> che cambia automaticamente in meno quando il pannello viene espanso:
+<pre>&lt;span class="glyphicon glyphicon-plus pull-right"&gt;&lt;/span&gt;</pre>
+</li>
+<li>
+nel secondo è la classe <code>panel-heading-dark</code>, che cambia i colori delle barre cliccabili.
+</li>
+</ul>
+</p>
+
+<h2>Accessibilità</h2>
+<p>
+L'apertura/chiusura dei pannelli è attivabile anche via tastiera, usando il tasto <em>tab</em> per posizionarsi sulla testata del pannello e premendo invio per aprirlo/chiuderlo.
+</p>
+<pre>
+&lt;div class="panel-group" id="accordion" <strong>role="tablist"</strong>&gt;
+   &lt;div class="panel panel-default"&gt;
+      &lt;a data-toggle="collapse" data-parent="#accordion" href="#chi" <strong>tabindex="0" aria-controls="chi"</strong>&gt;
+         &lt;div class="panel-heading" <strong>role="tab"</strong>&gt;
+            . . .
+         &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;div <strong>id="chi"</strong> class="panel-collapse collapse" <strong>role="tabpanel"</strong>&gt;
+         &lt;div class="panel-body" <strong>tabindex="0"</strong>&gt;
+           . . . 
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+. . .
+</pre>
+Attributi utilizzati:
+<ul>
+<li><code>role="tablist"</code> sul <em>div</em> principale contenitore di tutti i pannelli</li>
+<li><code>tabindex="0"</code> sia sul <em>tag &lt;a&gt;</em> che contiene il <em>panel-heading</em> che sul <em>div</em> del <em>panel-body</em>, per rendere selezionabili via tastiera i pannelli</li>
+<li><code>aria-controls="id_del_pannello_sottostante"</code> sul <em>tag &lt;a&gt;</em></li>
+<li><code>role="tab"</code> sul <em>div</em> del <em>panel-heading</em></li>
+<li><code>role="tabpanel"</code> sul <em>div</em> del <em>panel-collapse</em></li>
+</ul>
+</body>
+</html>

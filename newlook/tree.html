@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Tree</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+&nbsp;
+  <div class="container">
+
+		<h2>Libero nel div container</h2>
+		<ul id="tree1" class="tree root-level" role="tree">
+			<li class="tree-parent" role="treeitem" tabindex="0" aria-expanded="false"><span>Frutta</span>
+				<ul role="group">
+					<li role="treeitem" tabindex="-1">Arance</li>
+					<li role="treeitem" tabindex="-1">Ananas</li>
+					<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Mele</span>
+						<ul role="group">
+							<li role="treeitem" tabindex="-1">Macintosh</li>
+							<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Golden</span>
+								<ul role="group">
+									<li role="treeitem" tabindex="-1">Val di Non</li>
+									<li role="treeitem" tabindex="-1">Melinda</li>
+									<li role="treeitem" tabindex="-1">MelaVì</li>
+								</ul>
+							</li>
+							<li role="treeitem" tabindex="-1">Fuji</li>
+						</ul>
+					</li>
+					<li role="treeitem" tabindex="-1">Banane</li>    
+					<li role="treeitem" tabindex="-1">Pere</li>    
+				</ul>
+			</li>
+			<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="true"><span>Verdura</span>
+				<ul role="group">
+					<li role="treeitem" tabindex="-1"><a href="http://www.google.it" tabindex="-1">Broccoli</a></li>
+					<li role="treeitem" tabindex="-1">Carote</li>
+					<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Lattuga</span>
+						<ul role="group">
+							<li role="treeitem" tabindex="-1">Romana</li>
+							<li role="treeitem" tabindex="-1">Iceberg</li>
+							<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>tree parent</span>
+								<ul role="group">
+									<li role="treeitem" tabindex="-1">treeitem 1 quarto livello</li>
+									<li role="treeitem" tabindex="-1">treeitem 2 quarto livello</li>
+								</ul>
+							</li>
+							<li role="treeitem" tabindex="-1">Cappuccio</li>
+						</ul>
+					</li>
+					<li role="treeitem" tabindex="-1">Spinaci</li>    
+				</ul>
+			</li>
+			<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Frullati</span>
+				<ul role="group">
+					<li role="treeitem" tabindex="-1">Pera e mela.</li>
+					<li role="treeitem" tabindex="-1">Pompelmo, cetriolo e menta.</li>
+					<li role="treeitem" tabindex="-1">Ananas, mele e sedano.</li>
+					<li role="treeitem" tabindex="-1">Kiwi, sedano e limone.</li>
+					<li role="treeitem" tabindex="-1">Fragole, pesca e anguria.</li>
+					<li role="treeitem" tabindex="-1">Carote, mango e arance.</li>
+					<li role="treeitem" tabindex="-1">Pompelmo, mela e papaya.</li>
+					<li role="treeitem" tabindex="-1">Avocado, sedano e lime.</li>
+					<li role="treeitem" tabindex="-1">Prugne, lamponi e mirtilli.</li>
+				</ul>
+			</li>
+		</ul>
+
+<hr/>
+		<h2>Inserito in colonna di sinistra</h2>
+
+    <div class="row">
+
+<!-- area verticale di navigazione -->
+			<div class="col-xs-12 col-sm-4 col-md-3">
+
+<!-- colonna sinistra ad altezza uguale ad area contenuto -->
+			<div id="col-sx">
+
+		<ul id="tree2" class="tree root-level" role="tree">
+			<li class="tree-parent" role="treeitem" tabindex="0" aria-expanded="false"><span>Frutta</span>
+				<ul role="group">
+					<li role="treeitem" tabindex="-1">Arance</li>
+					<li role="treeitem" tabindex="-1">Ananas</li>
+					<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Mele</span>
+						<ul role="group">
+							<li role="treeitem" tabindex="-1">Macintosh</li>
+							<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Golden</span>
+								<ul role="group">
+									<li role="treeitem" tabindex="-1">Val di Non</li>
+									<li role="treeitem" tabindex="-1">Melinda</li>
+									<li role="treeitem" tabindex="-1">MelaVì</li>
+								</ul>
+							</li>
+							<li role="treeitem" tabindex="-1">Fuji</li>
+						</ul>
+					</li>
+					<li role="treeitem" tabindex="-1">Banane</li>    
+					<li role="treeitem" tabindex="-1">Pere</li>    
+				</ul>
+			</li>
+			<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="true"><span>Verdura</span>
+				<ul role="group">
+					<li role="treeitem" tabindex="-1"><a href="http://www.google.it" tabindex="-1">Broccoli</a></li>
+					<li role="treeitem" tabindex="-1">Carote</li>
+					<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Lattuga</span>
+						<ul role="group">
+							<li role="treeitem" tabindex="-1">Romana</li>
+							<li role="treeitem" tabindex="-1">Iceberg</li>
+							<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>tree parent</span>
+								<ul role="group">
+									<li role="treeitem" tabindex="-1">treeitem 1 quarto livello</li>
+									<li role="treeitem" tabindex="-1">treeitem 2 quarto livello</li>
+								</ul>
+							</li>
+							<li role="treeitem" tabindex="-1">Cappuccio</li>
+						</ul>
+					</li>
+					<li role="treeitem" tabindex="-1">Spinaci</li>    
+				</ul>
+			</li>
+			<li class="tree-parent" role="treeitem" tabindex="-1" aria-expanded="false"><span>Frullati</span>
+				<ul role="group">
+					<li role="treeitem" tabindex="-1">Pera e mela.</li>
+					<li role="treeitem" tabindex="-1">Pompelmo, cetriolo e menta.</li>
+					<li role="treeitem" tabindex="-1">Ananas, mele e sedano.</li>
+					<li role="treeitem" tabindex="-1">Kiwi, sedano e limone.</li>
+					<li role="treeitem" tabindex="-1">Fragole, pesca e anguria.</li>
+					<li role="treeitem" tabindex="-1">Carote, mango e arance.</li>
+					<li role="treeitem" tabindex="-1">Pompelmo, mela e papaya.</li>
+					<li role="treeitem" tabindex="-1">Avocado, sedano e lime.</li>
+					<li role="treeitem" tabindex="-1">Prugne, lamponi e mirtilli.</li>
+				</ul>
+			</li>
+		</ul>
+
+			</div>
+<!-- colonna sinistra ad altezza uguale ad area contenuto / fine -->
+
+			</div>
+<!-- area verticale di navigazione / fine -->
+
+		</div> <!-- /.row -->
+
+
+
+
+	</div> <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/template.js"></script>
+		<script type="text/Javascript">treeviewApp = new treeview('tree1');</script>
+		<script type="text/Javascript">treeviewApp2 = new treeview('tree2');</script>
+
+  </body>
+</html>

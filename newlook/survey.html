@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Survey</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- barra istituzionale -->
+		<a name="top"/>
+		<a href="#content" class="sr-only sr-only-focusable">Vai al contenuto principale</a>
+    <div id="barra_istituzionale" class="clearfix">
+			<div class="logo hidden-xs">
+				<a href="http://www.regione.lombardia.it">
+					<img src="images/logo_regione.png" alt="Regione Lombardia"/>
+				</a>
+			</div>
+
+			<div class="numero_verde text-center hidden-xs">Numero verde 800.116.738</div>
+
+			<div class="text-center">
+				<div class="area_titolo">
+					<div class="sigla" tabindex="0">Muta</div>
+					<span class="separatore_titolo"> | </span> 
+					<div class="titolo_esteso" tabindex="0">Modello Unico Trasmissione Atti</div>
+				</div>
+			</div>
+    </div>
+
+		<div class="barra_voci_cerca">
+			<ul class="voci_navigazione" role="navigation">
+				<li><a href="#">CRA</a></li>
+				<li><a href="#">Guida</a></li>
+				<li><a href="#">Portale</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+			<div class="pull-right cerca">
+				<form role="search">
+					<input title="cerca" type="text" class="cerca_lispa" placeholder="Cerca nel sito">
+					<button type="submit" class="btn btn-default btn_cerca" aria-label="Cerca"><span class="glyphicon glyphicon-play"></span></button>
+				</form>
+			</div>
+		</div>
+<!-- barra istituzionale / fine -->
+
+  <div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li class="active">Dai un voto al sito web di Regione Lombardia</li>
+		</ol>
+
+
+		<h1>Dai un voto al sito web di Regione Lombardia</h1>
+
+		<p class="bold-lispa">
+			* Campi obbligatori
+		</p>
+		<form role="form" action="#" method="get">
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>1. Con che frequenza visita il sito? *</legend>
+						<div>
+							<label for="giorno" class="thin-lispa">
+							<input name="frequenza" id="giorno" type="radio" value="1" />
+								Ogni giorno
+							</label>
+						</div>
+						<div>
+							<label for="settimana" class="thin-lispa">
+							<input name="frequenza" id="settimana" type="radio" value="7" />
+								Ogni settimana
+							</label>
+						</div>
+						<div>
+							<label for="mese" class="thin-lispa">
+							<input name="frequenza" id="mese" type="radio" value="30" />
+								Ogni mese
+							</label>
+						</div>
+						<div>
+							<label for="occasionalmente" class="thin-lispa">
+							<input name="frequenza" id="occasionalmente" type="radio" value="99" />
+								Occasionalmente
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="altro" class="thin-lispa">
+							<input name="frequenza" id="altro" type="radio" value="100" />
+								Altro
+							</label>
+							<input title="specificare altro" id="frequenza_altro_text" class="form-control" type="text"/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>2. Quali argomenti cerchi maggiormente? *</legend>
+						<div>
+							<label for="inf_servizi" class="thin-lispa">
+							<input id="inf_servizi" type="checkbox" value="true" />
+								Informazioni sui servizi
+							</label>
+						</div>
+						<div>
+							<label for="modulistica" class="thin-lispa">
+							<input id="modulistica" type="checkbox" value="true" />
+								Modulistica
+							</label>
+						</div>
+						<div>
+							<label for="uffici" class="thin-lispa">
+							<input id="uffici" type="checkbox" value="true" />
+								Uffici, nominativi, numeri di telefono, email
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="argomenti_altro" class="thin-lispa">
+							<input id="argomenti_altro" type="checkbox" value="true" />
+								Altro
+							</label>
+							<input title="specificare altro" id="argomenti_altro_text" class="form-control" type="text"/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>3. Quanto è soddisfatto dei contenuti per quanto riguarda: *</legend>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th><span class="sr-only">Riguardo<span></th>
+							<th class="text-center">Per niente soddisfatto</th>
+							<th class="text-center">Poco soddisfatto</th>
+							<th class="text-center">Indifferente</th>
+							<th class="text-center">Abbastanza soddisfatto</th>
+							<th class="text-center">Molto soddisfatto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="bold-lispa">Chiarezza</td>
+							<td class="text-center"><input title="chiarezza" type="radio" name="chiarezza" value="1"></td>
+							<td class="text-center"><input title="chiarezza" type="radio" name="chiarezza" value="2"></td>
+							<td class="text-center"><input title="chiarezza" type="radio" name="chiarezza" value="3"></td>
+							<td class="text-center"><input title="chiarezza" type="radio" name="chiarezza" value="4"></td>
+							<td class="text-center"><input title="chiarezza" type="radio" name="chiarezza" value="5"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">Completezza</td>
+							<td class="text-center"><input title="completezza" type="radio" name="completezza" value="1"></td>
+							<td class="text-center"><input title="completezza" type="radio" name="completezza" value="2"></td>
+							<td class="text-center"><input title="completezza" type="radio" name="completezza" value="3"></td>
+							<td class="text-center"><input title="completezza" type="radio" name="completezza" value="4"></td>
+							<td class="text-center"><input title="completezza" type="radio" name="completezza" value="5"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">Aggiornamento</td>
+							<td class="text-center"><input title="aggiornamento" type="radio" name="aggiornamento" value="1"></td>
+							<td class="text-center"><input title="aggiornamento" type="radio" name="aggiornamento" value="2"></td>
+							<td class="text-center"><input title="aggiornamento" type="radio" name="aggiornamento" value="3"></td>
+							<td class="text-center"><input title="aggiornamento" type="radio" name="aggiornamento" value="4"></td>
+							<td class="text-center"><input title="aggiornamento" type="radio" name="aggiornamento" value="5"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">Facilità nel reperire le informazioni</td>
+							<td class="text-center"><input title="facilità reperire informazioni" type="radio" name="reperire" value="1"></td>
+							<td class="text-center"><input title="facilità reperire informazioni" type="radio" name="reperire" value="2"></td>
+							<td class="text-center"><input title="facilità reperire informazioni" type="radio" name="reperire" value="3"></td>
+							<td class="text-center"><input title="facilità reperire informazioni" type="radio" name="reperire" value="4"></td>
+							<td class="text-center"><input title="facilità reperire informazioni" type="radio" name="reperire" value="5"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>4. Quanto è soddisfatto della grafica del sito per quanto riguarda: *</legend>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th><span class="sr-only">Riguardo<span></th>
+							<th class="text-center">Per niente soddisfatto</th>
+							<th class="text-center">Poco soddisfatto</th>
+							<th class="text-center">Indifferente</th>
+							<th class="text-center">Abbastanza soddisfatto</th>
+							<th class="text-center">Molto soddisfatto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="bold-lispa">Efficacia</td>
+							<td class="text-center"><input title="efficacia" type="radio" name="efficacia" value="1"></td>
+							<td class="text-center"><input title="efficacia" type="radio" name="efficacia" value="2"></td>
+							<td class="text-center"><input title="efficacia" type="radio" name="efficacia" value="3"></td>
+							<td class="text-center"><input title="efficacia" type="radio" name="efficacia" value="4"></td>
+							<td class="text-center"><input title="efficacia" type="radio" name="efficacia" value="5"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">Gradevolezza</td>
+							<td class="text-center"><input title="gradevolezza" type="radio" name="gradevolezza" value="1"></td>
+							<td class="text-center"><input title="gradevolezza" type="radio" name="gradevolezza" value="2"></td>
+							<td class="text-center"><input title="gradevolezza" type="radio" name="gradevolezza" value="3"></td>
+							<td class="text-center"><input title="gradevolezza" type="radio" name="gradevolezza" value="4"></td>
+							<td class="text-center"><input title="gradevolezza" type="radio" name="gradevolezza" value="5"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>5. Quanto è soddisfatto della navigazione del sito per quanto riguarda: *</legend>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th><span class="sr-only">Riguardo<span></th>
+							<th class="text-center">Per niente soddisfatto</th>
+							<th class="text-center">Poco soddisfatto</th>
+							<th class="text-center">Indifferente</th>
+							<th class="text-center">Abbastanza soddisfatto</th>
+							<th class="text-center">Molto soddisfatto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="bold-lispa">Visibilità link</td>
+							<td class="text-center"><input title="visibilità" type="radio" name="visibilita" value="1"></td>
+							<td class="text-center"><input title="visibilità" type="radio" name="visibilita" value="2"></td>
+							<td class="text-center"><input title="visibilità" type="radio" name="visibilita" value="3"></td>
+							<td class="text-center"><input title="visibilità" type="radio" name="visibilita" value="4"></td>
+							<td class="text-center"><input title="visibilità" type="radio" name="visibilita" value="5"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">Facilità di localizzare le informazioni desiderate con pochi click</td>
+							<td class="text-center"><input title="pochi click" type="radio" name="pochi_click" value="1"></td>
+							<td class="text-center"><input title="pochi click" type="radio" name="pochi_click" value="2"></td>
+							<td class="text-center"><input title="pochi click" type="radio" name="pochi_click" value="3"></td>
+							<td class="text-center"><input title="pochi click" type="radio" name="pochi_click" value="4"></td>
+							<td class="text-center"><input title="pochi click" type="radio" name="pochi_click" value="5"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>6. Quanto è soddisfatto complessivamente del sito: *</legend>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th><span class="sr-only">Riguardo<span></th>
+							<th class="text-center">Per niente soddisfatto</th>
+							<th class="text-center">Poco soddisfatto</th>
+							<th class="text-center">Indifferente</th>
+							<th class="text-center">Abbastanza soddisfatto</th>
+							<th class="text-center">Molto soddisfatto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="bold-lispa">Soddisfazione complessiva</td>
+							<td class="text-center"><input title="complessivamente" type="radio" name="complessiva" value="1"></td>
+							<td class="text-center"><input title="complessivamente" type="radio" name="complessiva" value="2"></td>
+							<td class="text-center"><input title="complessivamente" type="radio" name="complessiva" value="3"></td>
+							<td class="text-center"><input title="complessivamente" type="radio" name="complessiva" value="4"></td>
+							<td class="text-center"><input title="complessivamente" type="radio" name="complessiva" value="5"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>7. Complessivamente il sito migliora l'immagine di Regione Lombardia? *</legend>
+						<div>
+							<label for="immagine_si" class="thin-lispa">
+							<input name="immagine" id="immagine_si" type="radio" value="1" />
+								Si
+							</label>
+						</div>
+						<div>
+							<label for="immagine_no" class="thin-lispa">
+							<input name="immagine" id="immagine_no" type="radio" value="2" />
+								No
+							</label>
+						</div>
+						<div>
+							<label for="immagine_nonso" class="thin-lispa">
+							<input name="immagine" id="immagine_nonso" type="radio" value="0" />
+								Non so
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>7b. Se desidera può aggiungere un commento alla sua risposta:</legend>
+						<textarea title="commento" class="form-control" rows="3" id="commento"></textarea>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>8. Conosce la sezione del sito Amministrazione Trasparente? *</legend>
+						<div>
+							<label for="trasparente_si" class="thin-lispa">
+							<input name="trasparente" id="trasparente_si" type="radio" value="1" />
+								Si
+							</label>
+						</div>
+						<div>
+							<label for="trasparente_no" class="thin-lispa">
+							<input name="trasparente" id="trasparente_no" type="radio" value="2" />
+								No
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>8b. Se ha utilizzato la sezione del sito Amministrazione Trasparente, ha trovato quello che cercava? *</legend>
+						<div>
+							<label for="trasparente_trovato_si" class="thin-lispa">
+							<input name="trasparente_trovato" id="trasparente_trovato_si" type="radio" value="1" />
+								Si
+							</label>
+						</div>
+						<div>
+							<label for="trasparente_trovato_no" class="thin-lispa">
+							<input name="trasparente_trovato" id="trasparente_trovato_no" type="radio" value="2" />
+								No
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>9. Per migliorare la trasparenza della Pubblica Amministrazione, quali altri dati o informazioni ritiene che la Regione Lombardia debba pubblicare sul proprio sito?</legend>
+						<textarea title="idee per migliorare trasparenza" class="form-control" rows="3" id="migliorare_trasparenza"></textarea>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>10. Regione Lombardia é presente anche sui Social Network: quale di questi profili conosce? *</legend>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Social network</th>
+							<th class="text-center">Non lo conosco</th>
+							<th class="text-center">Lo conosco ma non sono iscritto/fan/follower</th>
+							<th class="text-center">Sono iscritto/fan/follower</th>
+						</tr>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="bold-lispa">Facebook</td>
+							<td class="text-center"><input title="facebook" type="radio" name="fb"></td>
+							<td class="text-center"><input title="facebook" type="radio" name="fb"></td>
+							<td class="text-center"><input title="facebook" type="radio" name="fb"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">Twitter</td>
+							<td class="text-center"><input title="twitter" type="radio" name="tw"></td>
+							<td class="text-center"><input title="twitter" type="radio" name="tw"></td>
+							<td class="text-center"><input title="twitter" type="radio" name="tw"></td>
+						</tr>
+						<tr>
+							<td class="bold-lispa">YouTube</td>
+							<td class="text-center"><input title="youtube" type="radio" name="yt"></td>
+							<td class="text-center"><input title="youtube" type="radio" name="yt"></td>
+							<td class="text-center"><input title="youtube" type="radio" name="yt"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend class="control-label" for="nome">11. Dove e come ritiene si possa migliorare la qualòità della presenza sul Web della Regione Lombardia?</legend>
+						<textarea title="idee per migliorare presenza" class="form-control" rows="3" id="migliorare_presenza"></textarea>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="h3 bold-lispa">
+				QUALCHE INFORMAZIONE SU DI LEI:
+			</div>
+			<fieldset>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<legend>Città *</legend>
+							<select title="selezionare città" class="form-control" id="citta">
+								<option value="001">Milano</option>
+								<option value="002">Sesto San Giovanni</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>Nazionalità *</legend>
+						<div>
+							<label for="italiana" class="thin-lispa">
+							<input name="nazionalita" id="italiana" type="radio" value="true" />
+								Italiana
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="nazionalita_altro" class="thin-lispa">
+							<input name="nazionalita" id="nazionalita_altro" type="radio" value="true" />
+								Altro
+							</label>
+							<input title="specificare altro" id="nazionalita_altro_text" class="form-control" type="text"/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>Genere *</legend>
+						<div>
+							<label for="maschio" class="thin-lispa">
+							<input name="genere" id="maschio" type="radio" value="m" />
+								Maschio
+							</label>
+						</div>
+						<div>
+							<label for="femmina" class="thin-lispa">
+							<input name="genere" id="femmina" type="radio" value="f" />
+								Femmina
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend>Età *</legend>
+						<div>
+							<label for="10anni" class="thin-lispa">
+							<input name="eta" id="10anni" type="radio" value="10" />
+								Meno di 21 anni
+							</label>
+						</div>
+						<div>
+							<label for="20anni" class="thin-lispa">
+							<input name="eta" id="20anni" type="radio" value="20" />
+								21-30 anni
+							</label>
+						</div>
+						<div>
+							<label for="30anni" class="thin-lispa">
+							<input name="eta" id="30anni" type="radio" value="30" />
+								31-40 anni
+							</label>
+						</div>
+						<div>
+							<label for="40anni" class="thin-lispa">
+							<input name="eta" id="40anni" type="radio" value="40" />
+								41-50 anni
+							</label>
+						</div>
+						<div>
+							<label for="50anni" class="thin-lispa">
+							<input name="eta" id="50anni" type="radio" value="50" />
+								51-60 anni
+							</label>
+						</div>
+						<div>
+							<label for="60anni" class="thin-lispa">
+							<input name="eta" id="60anni" type="radio" value="60" />
+								61-70 anni
+							</label>
+						</div>
+						<div>
+							<label for="70anni" class="thin-lispa">
+							<input name="eta" id="70anni" type="radio" value="70" />
+								Più di 70 anni
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-12">
+						<legend class="control-label" for="professione">Professione *</legend>
+						<div>
+							<label for="studente" class="thin-lispa">
+							<input name="professione" id="studente" type="radio" value="1" />
+								Studente
+							</label>
+						</div>
+						<div>
+							<label for="dipendente" class="thin-lispa">
+							<input name="professione" id="dipendente" type="radio" value="2" />
+								Lavoratore dipendente
+							</label>
+						</div>
+						<div>
+							<label for="professionista" class="thin-lispa">
+							<input name="professione" id="professionista" type="radio" value="3" />
+								Libero professionista
+							</label>
+						</div>
+						<div>
+							<label for="disoccupato" class="thin-lispa">
+							<input name="professione" id="disoccupato" type="radio" value="4" />
+								In attesa di occupazione
+							</label>
+						</div>
+						<div>
+							<label for="pensionato" class="thin-lispa">
+							<input name="professione" id="pensionato" type="radio" value="5" />
+								Pensionato
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="professione_altro" class="thin-lispa">
+							<input name="professione" id="professione_altro" type="radio" value="9" />
+								Altro
+							</label>
+							<input title="specificare altro" id="professione_altro_text" class="form-control" type="text"/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="well well-sm well-lispa-white">
+				<button class="btn btn-primary btn-lg">Invia</button>
+			</div>
+
+		</form>
+
+<!-- torna_su -->
+		<a id="torna_su" class="btn btn-xs btn-default affix" data-spy="affix" data-offset-top="200" data-offset-bottom="20" href="#top" role="button"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> <br/>Torna su</a>
+<!-- torna_su / fine -->
+
+	</div> <!-- /.container -->
+
+<!-- footer -->
+	<div id="footer" class="text-center">
+		<span>&copy; Copyright Regione Lombardia</span><span class="hidden-xs"> - tutti i diritti riservati</span>
+		<nav class="voci_navigazione" role="navigation">
+			<a href="#">Voce 01</a>
+			<a href="#">Voce 02</a>
+			<a href="#">Voce 03</a>
+		</nav>
+	</div>
+<!-- footer / fine -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/template.js"></script>
+  </body>
+
+
+</html>

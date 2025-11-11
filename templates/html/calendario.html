@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="css/lombardia-theme/jquery-ui-1.10.3.custom.min.css" />  
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<script type="text/Javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/Javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/Javascript" src="js/i18n/jquery-ui-i18n.js"></script>
+
+<script type="text/Javascript">
+$(function() {
+ $.datepicker.setDefaults({showOn: "button", buttonImageOnly: true,
+  buttonText: "Puoi inserire la data manualmente o sceglierla da un calendario cliccando su questa immagine",
+  buttonImage: "images/icone/18/ico_calendario_18.gif" });
+ $.datepicker.setDefaults( $.datepicker.regional[ "it" ] );
+});
+</script>
+
+
+<title>Calendario</title>
+</head>
+
+<body>
+<div id="area_contenuti">
+
+<form action="aggiorna" method="get">
+  <div class="riga">
+    <div class="col_33">
+        <label for="nascita" class="verticale">Data di nascita </label>
+        <label class="info_message">formato gg/mm/aaaa</label>
+        <input id="nascita" name="data_nascita" size="10" maxlength="10" type="text"/>
+      <script type="text/Javascript">$(function() {	$( "#nascita" ).datepicker({});}); </script>
+    </div>	
+  </div>	
+
+  <div class="riga">
+    <div class="col_33">
+        <label for="assunzione" class="verticale">Data di assunzione </label>
+        <label class="info_message">formato gg/mm/aaaa</label>
+        <input id="assunzione" name="data_assunzione" size="10" maxlength="10" type="text"/>
+      <script type="text/Javascript">$(function() { $( "#assunzione" ).datepicker({changeMonth: true, changeYear: true, showButtonPanel: true});}); </script>
+    </div>  
+  </div>
+</form>
+
+</div>
+
+</body>
+</html>

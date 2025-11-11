@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Tabella ridotta</title>
+</head>
+
+<body>
+<h1>Tabella ridotta</h1>
+<p>
+E' sostanzialmente identica alla <a href="tabella_doc.html">tabella "normale"</a> se non per l'attributo <code>width: auto;</code> applicato al tag <code>&lt;table&gt;</code>.<br/>
+Ciò ovviamente comporta che la tabella si allarga, a partire da sinistra, solo quanto basta a contenere le colonne.
+</p>
+Nell'HTML questo tag deve avere come classe "tabella_ridotta":
+<pre>
+&lt;table class="tabella_ridotta"&gt;
+</pre>
+<p>
+L'unica altra particolarità del <a href="tabella_ridotta_html.txt">template HTML</a> è che il <em>pager</em> è stato inserito come ultima riga della tabella:
+</p>
+<pre>
+&lt;table class="tabella_ridotta"&gt;
+&lt;tr class="pager"&gt;
+	&lt;td colspan="3"&gt;
+		&lt;ul class="pager"&gt;
+		....
+</pre>
+Ciò è solo un artificio per tenere visivamente collegato il <em>pager</em> alla tabella, ma non è una scelta obbligata.
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Pannello</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+&nbsp;
+    <div class="container">
+
+			<a href="#salta_ric-azienda" class="sr-only sr-only-focusable">Salta pannello ricerca</a>
+			<form class="form" role="form">
+				<div class="panel panel-lispa">
+					<div class="panel-heading">
+						<div class="panel-title" tabindex="0">Ricerca Azienda</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="cuaa">CUAA</label>
+									<input type="text" class="form-control" id="cuaa">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="ragione_sociale">Ragione sociale impresa</label>
+									<input type="text" class="form-control" id="ragione_sociale">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="partita_iva">Partita IVA</label>
+									<input type="text" class="form-control" id="partita_iva">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="provincia">Provincia</label>
+									<select class="form-control" id="provincia">
+										<option value""></option>
+										<option value"MI">Milano</option>
+										<option value"MB">Monza Brianza</option>
+										<option value"Co">Como</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label for="comune">Comune</label>
+								<select class="form-control" id="comune">
+									<option value""></option>
+									<option value"Monza">Monza</option>
+									<option value"Villasanta">Villasanta</option>
+									<option value"Vimercate">Vimercate</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label for="ultima_lavorazione">Ultima lavorazione</label>
+								<input type="text" class="form-control" id="ultima_lavorazione">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<button type="submit" class="btn btn-default btn-lg pull-right">Cerca Azienda</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<span id="salta_ric-azienda"> . . . </span>
+
+		</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+
+</html>

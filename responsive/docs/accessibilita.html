@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Accessibilità</title>
+</head>
+
+<body>
+<h1>Accessibilità</h1>
+
+<p>
+Il layout è stato validato con <a href="http://atutor.ca/achecker/">AChecker</a>, un Web accessibility evaluation tool open source.<br/>
+Il tipo di validazione effettuata è la conformità alle guidelines WCAG 2.0 Level AA, dalle quali sono ricopiati i: <em>"requisiti tecnici previsti nell'Allegato A del Decreto Ministeriale 8 luglio 2005 e successive modifiche"</em>, per l'accessibilità ai siti web delle pubbliche amministrazioni italiane.
+</p>
+<p>
+Per tutte le pagine presentate il numero di errori definiti come <strong><em>conosciuti</em></strong> e <strong><em>probabili</em></strong> riscontrati dal validatore è uguale a zero.<br/>
+Il validatore segnala un alto numero di errori <strong><em>potenziali</em></strong> ma, secondo la documentazione dello strumento, sono da intendersi come:<br/>
+<cite>
+“problemi che il checker non è in grado di identificare, e che richiedono la valutazione da parte di un essere umano. Può darsi che, per risolvere tali problemi, si debba modificare la pagina web ma, in molti casi, sarà sufficiente confermare che il problema descritto non è presente.”
+</cite>
+</p>
+<p>
+E' stata inoltre verificata la navigabilità dei templates e delle pagine di esempio con gli screen-reader VoiceOver per OS X, ChromeVox su sistema operativo Linux, e su Jaws per Windows.<br/>
+Un paragrafo relativo all'accessibilità è stato scritto sulla documentazione relativa per quasi tutti template.</br>
+Conviene quindi consultare di volta in volta la documentazione del singolo componente che si intende utilizzare.
+</p>
+
+<h2>Nota bene</h2>
+<p><strong>Se si tiene davvero all'accessibilità delle pagine web create, si raccomanda di <span class="very_strong">non fermarsi alla sola validazione da parte del checker</span>.<br/>
+Superata questa, è importantissimo provare a leggere le pagine con uno screen-reader, in modo da rendersi conto personalmente di cosa questo effettivamente legge.<br/>
+Passato anche questo esame, è bene sottoporre le pagine ad un utente non vedente che non le conosce, per valutarne la effettiva comprensibilità e accessibilità delle stesse.
+</strong></p>
+
+
+<h2>Accorgimenti</h2>
+<p>
+Le prime e <strong>più ricorrenti segnalazioni che il validatore emette</strong>, e che quindi è meglio cercare di evitare sin da subito, sono le seguenti:
+</p>
+<ul>
+<li>Nell'header deve essere specificato, nel tag <code>&lt;html&gt;</code>, l'attributo<code>lang="it-IT"</code></li>
+<li>Tutti i tag <code>&lt;input&gt;</code> dei form devono avere un tag <code>&lt;label&gt;</code> per con attributo <code>for="id_campo_di_input_relativo"</code></li>
+<li>Per tutte le immagini deve essere specificato un attributo <code>alt="testo_esplicativo"</code></li>
+</ul>
+<p>
+Quelli che seguono sono alcuni accorgimenti da utilizzare per l'accessibilità, <strong>per evitare problemi che i validatori automatici non sono in grado di segnalare</strong>:
+</p>
+<ul>
+<li>I tooltip normalmente non vengono letti dagli screen-reader. Il testo esplicativo in essi contenuto va ripetuto nell'attributo <code>alt</code> legato all'icona di informazioni che è bene preceda il campo di input (si veda come esempio il campo "Numero documento" in <a href="../form.html">form.html</a>).</li>
+<li>Prima della barra istituzionale, o di un menù, o dei passi di un wizard, o di qualunque altra cosa che si ripeta su molte videate, è opportuno predisporre un link nascosto che consenta a chi naviga la pagina con uno screen-reader, di saltare tale parte e passare direttamente al contenuto specifico della pagina.<br/>
+E' tediosissimo sentire ripetere dallo speaker sempre le stesse 10 o più voci di menù ogni volta che si ricarica una pagina.</li>
+<li>I tag <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> e <code>&lt;td&gt;</code> devono essere utilizzati per formattare delle reali tabelle, e non per strutturare il layout della pagina, altrimenti gli screen-reader confonderebbero gli utenti cercando di leggere l'intera pagina come fosse una tabella.
+</li>
+<li>Le date in input devono poter essere compilate anche manualmente, il calendario mostrato via javascript cliccando sull'icona dopo il campo, non è accessibile agli screen-reader.
+</li>
+<li>Sui menù espandibili viene inserito, via javascript, del testo nascosto che segnala lo stato di aperto/chiuso del menu.<br/>
+Tale testo viene cambiato, sempre via javascript, contemporaneamente agli attributi che, legati ai css, provocano la visualizzazione/scomparsa delle voci di livello inferiore (si veda il paragrafo <a href="menu_verticale_doc.html#accessibilita">Accessibilità</a> della documentazione del <a href="../menu_verticale.html">menu verticale</a>).<br/>
+Ogni volta che si utilizza javascript per modificare parti della pagina, è necessario utilizzare tecniche analoghe, per dar modo agli screen-reader di segnalare all'utente quello che succede.
+</li>
+<li>Tutte le funzionalità attivabili con il click del mouse devono poter essere attivate anche utilizzando solo la tastiera.</li>
+<li>Evitare di veicolare un'informazione, per esempio la obbligatorietà di un campo, solo attraverso il colore. Gli screen-reader non leggono il colore.</li>
+</ul>
+
+
+<h2>Riferimenti</h2>
+<ul>
+<li><a href="http://accessibile.diodati.org/agc/index.html">Accessibilità Guida completa</a><br/>
+Libro completo in italiano, consultabile integralmente e liberamente on-line.  
+</li>
+<li><a href="http://www.w3.org/Translations/WCAG20-it/">WCAG 2.0 - Italiano</a><br/>
+Le Web Content Accessibility Guidelines, W3C Recommendation, tradotte in italiano.
+</li>
+<li><a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a><br/>
+Specifiche pensate, tra l'altro, per migliorare l'accessibilità ai contenuti dinamici generati da script.
+</li>
+<li><a href="http://achecker.ca/checker/index.php">AChecker - Web Accessibility Checker</a><br/>
+Validatore on-line dell'accessibilità di pagine Web, e <a href="http://atutor.ca/achecker/">relative istruzioni d'uso</a>.
+</li>
+</ul>
+
+
+</body>
+</html>

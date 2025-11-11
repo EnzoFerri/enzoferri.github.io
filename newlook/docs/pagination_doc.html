@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Paginatore</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Paginatore</h1>
+<p>
+Nessuna personalizzazione è stata fatta per il paginatore, utilizzato così com'è in bootsrap.<br/>
+Il colore di sfondo blu per la pagina attiva dipende dalla personalizzazione del <code>@brand-primary</code> impostato con il customizzatore di bootstrap.
+</p>
+
+<h2>Accessibilità</h2>
+<pre>
+&lt;nav&gt;
+  &lt;ul class="pagination pull-right" <strong>aria-label="Paginatore"</strong>&gt;
+    &lt;li&gt;&lt;a href="#" <strong>aria-label="Pagina precedente"&gt;</strong>&laquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;2<strong>&lt;span class="sr-only"&gt;(attuale)&lt;/span&gt;</strong>&lt;/a&gt;&lt;/li&gt;
+    . . .
+    &lt;li&gt;&lt;a href="#" <strong>aria-label="Pagina successiva"</strong>&gt;&raquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+In grassetto sono qui evidenziati attributi e tag necessari:
+<ul>
+<li>L'attributo <code>aria-label</code> fa si che gli screen-reader pronuncino le parole: "Paginatore", "Pagina precedente/successiva" anche se non compaiono a video.</li>
+<li>Il tag <em>span</em> con la classe <code>sr-only</code>, specifica di <em>bootstrap</em>, è da inserire per segnalare il numero di pagina corrente.</li>
+</ul>
+
+</body>
+</html>

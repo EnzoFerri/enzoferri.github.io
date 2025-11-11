@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Tabber</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Tabber</h1>
+<p>
+Si utilizza il componente <code>Tabs</code> di bootstrap e il plugin javascript <code>Togglable tabs</code>, per il cui funzionamento si guardi la relativa documentazione di bootsrap.
+</p>
+<pre>
+&lt;ul class="nav <strong>nav-tabs nav-tabs-lispa</strong>" role="tablist"&gt;
+  &lt;li&gt;&lt;a href="#dati_generali" aria_controls="dati_generali" role="tab" <strong>data-toggle="tab"</strong> tabindex="0"&gt;Dati generali&lt;/a&gt;&lt;/li&gt;
+  . . .
+</pre>
+<pre>
+&lt;div <strong>class="tab-content"</strong>&gt;
+  &lt;div role="tabpanel" <strong>class="tab-pane"</strong> id="dati_generali" tabindex="0"&gt;
+  . . .
+</pre>
+<p>
+La classe <code>nav-tabs-lispa</code> applica regole che specificano colori, sfondo</strong>, bordi.
+</p>
+<p>
+Per il momento non sono state specificate regole per i <code>Pills</code>, che in bootstrap sono un'alternativa ai <code>Tabs</code>.
+</p>
+
+<h2>Accessibilità</h2>
+
+<pre>
+&lt;ul class="nav nav-tabs nav-tabs-lispa" <strong>role="tablist"</strong>&gt;
+  &lt;li&gt;&lt;a href="#dati_generali" <strong>aria_controls=</strong>"dati_generali" <strong>role="tab"</strong> data-toggle="tab" <strong>tabindex="0"</strong>&gt;Dati generali&lt;/a&gt;&lt;/li&gt;
+  . . .
+</pre>
+<pre>
+&lt;div class="tab-content"&gt;
+  &lt;div <strong>role="tabpanel"</strong> class="tab-pane" id="dati_generali" <strong>tabindex="0"</strong>&gt;
+  . . .
+</pre>
+<p>
+Sia sui <em>tab</em> che sui pannelli relativi, oltre alla specifica dei rispettivi <code>role</code> e all'attributo <code>aria_controls</code> è presente l'attributo <code>tabindex</code> per renderli raggiungibili via tastiera.
+</p>
+<p>
+Inoltre, nel file <code>js/template.js</code>, una volta che si è scelto un particolare <em>tab</em>, una funzione forza il focus sul relativo pannello visualizzato. 
+</p>
+<pre>
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  $('.tab-pane.active').focus();
+})
+</pre>
+
+</body>
+</html>

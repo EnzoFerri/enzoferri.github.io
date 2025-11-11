@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menù verticale</title>
+		<link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Menù verticale</h1>
+<p>
+E' pensato per essere inserito in una "<em>area verticale di navigazione</em>" a sinistra della pagina.</br>
+Tale area deve avere larghezza complementare alla larghezza dell'<a href="area_contenuti_doc.html">area contenuti</a>.
+</p>
+<pre>
+&lt;div class="col-xs-12 col-sm-3 col-md-2"&gt;
+</pre>
+Nell'esempio proposto, l'area verticale di navigazione:
+<ol>
+<li>su smartphone occupa tutta la larghezza disponibile e il menù appare inizialmente collassato e con il bottone a destra per l'espansione</li>
+<li>su tablet occupa tre colonne e il menù appare aperto</li>
+<li>su portatili e desktop occupa due colonne ed il menù è ovviamente aperto.</li>
+</ol>
+<p>
+Nella stessa pagina possono essere presenti <strong>più menù verticali</strong>, inseriti nella <strong>stessa area verticale</strong> di navigazione.
+</p>
+<p>
+La classe <code>menu_verticale</code> applicata al tag <code>nav</code> contenitore modifica solo le caratteristiche estetiche del componente <code>navbar-default</code> di <em>bootstrap</em>, le modalità di collassamento/espansione rimangono identiche.</br>
+Sostanzialmente invariata rimane anche la struttura html del componente.
+</p>
+
+<h2>Accessibilità</h2>
+
+<h3>Bottone: "Apri/chiudi menu navigazione"</h3>
+<pre>
+&lt;nav class="navbar navbar-default menu_verticale"&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_verticale-1" <strong>aria-haspopup="true"</strong>&gt;
+      <strong>&lt;span class="sr-only"&gt;Apri/chiudi menu navigazione&lt;/span&gt;</strong>
+    . . .
+</pre>
+<p>
+Si veda quanto detto per la <a href="barra_istituzionale_doc.html#bottone_aprichiudi">barra_istituzionale</a>.
+</p>
+
+<h3>Struttura del menù</h3>
+<p>
+A differenza dalla </em>barra_istituzionale</em>, il tag <code>&lt;ul&gt;</code> che contiene tutte le voci di primo livello ed eventuali sottomenù, ha l'attributo <code>role="menu"</code> anzichè "<em>navigation</em>".</br>
+Ciò rispecchia anche la dicitura "<em>menù di navigazione</em>" per il pulsante di apertura, termine ibrido in quanto è difficile stabilire a priori di che tipo saranno le voci presenti in quest'area: solo link di navigazione oppure azioni.
+</p>
+<pre>
+  &lt;div class="collapse navbar-collapse" id="menu_verticale-1"&gt;
+    &lt;ul class="nav navbar-nav" <strong>role="menu"</strong>&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+      . . .
+      &lt;li class="dropdown"&gt;
+        &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#" <strong>role="menuitem" aria-haspopup="true"</strong>&gt;
+          Altre azioni &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="dropdown-menu" <strong>role="menu"</strong>&gt;
+          &lt;li&gt;&lt;a <strong>role="menuitem"</strong> href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+          . . .
+          &lt;li <strong>role="separator"</strong> class="divider"&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a <strong>role="menuitem"</strong> href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+</pre>
+<p>
+Per il resto i consueti ruoli di <code>menu</code>, <code>menuitem</code> e <code>separator</code> già visti in altri componenti.
+</p>
+</body>
+</html>

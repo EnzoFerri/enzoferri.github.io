@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>mve_ricmul_tbb_tbl</title>
+</head>
+
+<body>
+<h1>Menù orizzontale, menù verticale, ricerca e tabber con tabella</h1>
+<p>
+Oltre alla <a href="mve_tbb_doc.html#struttura_comune">struttura comune</a> il template è composto da:
+</p>
+<ul>
+<li><a href="../menu_orizzontale.html">menu orizzontale</a></li>
+<li><a href="../ricerca.html">ricerca</a></li>
+<li><a href="../tabber.html">tabber</a></li>
+<li><a href="../tabella.html">tabella</a></li>
+</ul>
+
+<p>
+Questo template è del tutto analogo a <a href="mve_ric_tbb_tbl_doc.html">Menù verticale, ricerca e tabber con tabella</a>.<br/>
+L'unica differenza è che al primo livello del <code>&lt;body&gt;</code> subito dopo il <code>&lt;div class="area_utente"&gt;</code>, è inserito un <a href="menu_orizzontale_doc.html">menu orizzontale</a>.
+</p>
+</body>
+</html>

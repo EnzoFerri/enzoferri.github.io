@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.2.1" />
+
+<title>Wizard · Bootstrap Lombardia</title>
+
+
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202511031614" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202511031614" rel="stylesheet" />
+
+<!-- Favicons -->
+<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Wizard" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/it25/inserimento/wizard/" />
+<meta property="og:title" content="Wizard" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  // Disabilita tracciamento se il cookie cookies_consent non esiste
+  if (document.cookie.indexOf('cookies_consent=true') === -1) {
+    window['ga-disable-UA-114758441-1'] = true
+  }
+</script>
+<script>
+  ;(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r
+    ;(i[r] =
+      i[r] ||
+      function () {
+        ;(i[r].q = i[r].q || []).push(arguments)
+      }),
+      (i[r].l = 1 * new Date())
+    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+    a.async = 1
+    a.src = g
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+
+  ga('create', 'UA-114758441-1', 'auto')
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview')
+</script>
+<!-- End Google Analytics -->
+
+
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
+  <!--div class="container"-->
+  <div class="container-fluid">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+      <div class="d-flex flex-row">
+        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column pl-3 pl-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
+          <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
+        </div>
+      </div>
+    </a>
+
+    
+
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+      <li class="nav-item pr-2">
+        <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.4.1/bootstrap-lombardia.zip" aria-label="Download">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
+        </a>
+      </li>
+      <li class="nav-item pr-2">
+        <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+      <h3 class="no_toc">Linee guida</h3>
+
+      <div class="sidebar-linklist-wrapper">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li>
+              <a class="list-item " href="/bootstrap-lombardia/docs/it25/introduzione">
+                <span>Introduzione</span>
+              </a>
+            </li><li>
+                <a class="list-item large medium right-icon " href="#collapse-guida-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-1">
+                  <span>Componenti Principali</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse " id="collapse-guida-1"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/logo/">
+                        <span>logo</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/header/">
+                        <span>header</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">
+                        <span>menu orizzontale</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/barra-utente/">
+                        <span>barra utente</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">
+                        <span>sidebar</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/footer/">
+                        <span>footer</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li><li>
+                <a class="list-item large medium right-icon " href="#collapse-guida-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-2">
+                  <span>Navigazione</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse " id="collapse-guida-2"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/megamenu/">
+                        <span>megamenu</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/paginatore/">
+                        <span>paginatore</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/link-list/">
+                        <span>link list</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/breadcrumbs/">
+                        <span>breadcrumbs</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li><li>
+                <a class="list-item large medium right-icon " href="#collapse-guida-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-3">
+                  <span>Utilità</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse " id="collapse-guida-3"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/colori/">
+                        <span>colori</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/tipografia/">
+                        <span>tipografia</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/icone/">
+                        <span>icone</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/ombre-angoli/">
+                        <span>ombre e angoli</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li><li>
+                <a class="list-item large medium right-icon " href="#collapse-guida-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-4">
+                  <span>Call to action</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse " id="collapse-guida-4"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/bottoni/">
+                        <span>bottoni</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/tab-bar/">
+                        <span>tab bar</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li><li>
+                <a class="list-item large medium right-icon " href="#collapse-guida-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-5">
+                  <span>Informazioni</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse " id="collapse-guida-5"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/accordion/">
+                        <span>accordion</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/overlay/">
+                        <span>overlay</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/calendario/">
+                        <span>calendario</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/tabella/">
+                        <span>tabella</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/card/">
+                        <span>card</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/cookiebar/">
+                        <span>cookie bar</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel/">
+                        <span>carousel</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel-legacy/">
+                        <span>carousel-legacy</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li><li>
+                <a class="list-item large medium right-icon active" href="#collapse-guida-6" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-guida-6">
+                  <span>Inserimento</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse show" id="collapse-guida-6"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/">
+                        <span>input fields</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/">
+                        <span>radio buttons</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/check-box/">
+                        <span>check box</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/toggle/">
+                        <span>toggle</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item  active" href="/bootstrap-lombardia/docs/it25/inserimento/wizard/">
+                        <span>wizard</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/popover/">
+                        <span>popover</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">
+                        <span>tooltip</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/progress-bar/">
+                        <span>progress bar</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li><li>
+                <a class="list-item large medium right-icon " href="#collapse-guida-7" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-7">
+                  <span>Esempi</span>
+                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </a>
+                <ul class="link-sublist collapse " id="collapse-guida-7"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_tabella/">
+                        <span>Tabella complessa</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_form/">
+                        <span>Form</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_wizard/">
+                        <span>Wizard</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">
+                        <span>Sidebar</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_profilo_utente/">
+                        <span>Profilo utente</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_cookiebar/">
+                        <span>Cookiebar</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/introduzione/">
+                        <span>Il codice</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li></ul>
+              </li></ul>
+        </div>
+      </div>
+
+      <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+        <span><a href="/bootstrap-lombardia/docs/informazioni">Documentazione</a></span>
+        <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-external-link"></use></svg>
+      </button>
+
+    </div>
+
+</nav>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+  <div class="sidebar-wrapper">
+    <h3>Wizard</h3>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#struttura">Struttura</a></li>
+<li class="toc-entry toc-h3"><a href="#header-standard">Header Standard</a></li>
+<li class="toc-entry toc-h3"><a href="#header-grafico">Header grafico</a></li>
+<li class="toc-entry toc-h3"><a href="#steppers-nav">Steppers-nav</a></li>
+</ul>
+  </div>
+</div>
+
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
+          <h1 class="bd-title" id="content">Wizard</h1>
+          <p class="bd-lead"></p>
+          <p>E’ utile per guidare l’utente in una <strong>procedura di inserimento dati complessa</strong> infatti, suddividendola in più passi:</p>
+<ul>
+  <li><strong>semplifica le schermate</strong> riducendo la quantità di campi di input presenti contemporaneamente a video</li>
+  <li>focalizza l’attenzione permettendo di <strong>compilare pochi dati alla volta</strong></li>
+  <li><strong>riduce il numero di errori</strong> che è possibile commettere</li>
+  <li><strong>semplifica i controlli</strong> eseguendone pochi ed evitando quelli prematuri.</li>
+</ul>
+
+<p>Si facilita ancora di più l’utente se gli si dà la possibilità di sospendere il processo e <strong>salvare il passo cui è arrivato</strong> ed i dati già inseriti, per poterlo riprendere successivamente.</p>
+
+<p>Un semplice <strong>stepper</strong> è invece efficace per <strong>mostrare lo stato di avanzamento</strong> di un processo fatto partire dall’utente e che poi procede per stati di approvazione/avanzamento eseguiti da altri e dilazionati nel tempo.<br />
+In questo caso deve essere segnalato se l’avanzamento si è fermato per qualche errore.</p>
+
+<h3 id="struttura">Struttura</h3>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"steppers-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+    . . .
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"steppers-index"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>2/4<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers-content"</span> <span class="na">aria-live=</span><span class="s">"polite"</span><span class="nt">&gt;</span>
+   . . .
+  <span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"steppers-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-sm steppers-btn-prev"</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"steppers-dots it25"</span><span class="nt">&gt;</span>
+     . . .
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-sm steppers-btn-next/save/confirm"</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Tutto il <em>wizard</em> va inserito all’interno di un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">steppers</code>.
+All’interno di questo si distinguono tre parti principali:</p>
+<ol>
+  <li><em>Header</em><br />
+<strong>Facoltativo</strong> e costituito da un elenco non ordinato (tag <code class="language-plaintext highlighter-rouge">ul</code> e una serie di <code class="language-plaintext highlighter-rouge">li</code>)<br />
+Sono previsti due tipi principali di header: <strong>standard</strong> e <strong>grafico</strong> spiegati più sotto in dettaglio.</li>
+  <li><em>Content</em><br />
+Un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">steppers-content</code> e con l’attributo <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> destinato a contenere il <strong>corpo specifico di ogni singolo passo</strong> del wizard, dove l’utente compie scelte o inserisce dati.</li>
+  <li><em>Nav</em><br />
+Un tag <em>nav</em> di classe <code class="language-plaintext highlighter-rouge">steppers-nav</code> contenente i <strong>bottoni</strong> di <em>avanti/indietro</em> e/o <em>salva/conferma</em> per procedere od annullare i passi del wizard stesso ed <strong>eventualmente</strong> una <strong>barra o puntini di progressione</strong> che mostrano lo stato di avanzamento complessivo.</li>
+</ol>
+
+<h3 id="header-standard">Header Standard</h3>
+
+<p>Questo tag <em>ul</em> di classe <code class="language-plaintext highlighter-rouge">steppers-header</code> è la versione <strong><a href="/bootstrap-lombardia/docs/componenti/steppers/#varianti-intestazione">testo e icone</a></strong> standard di <em>Bootstrap Italia</em>.<br />
+Icone e testo sono inizialmente grigi e si colorano passo dopo passo.</p>
+
+<p>E’ responsivo e sui dispositivi mobili visualizza solo il passo attivo e lo <code class="language-plaintext highlighter-rouge">steppers-index</code> (esempio <em>2/4</em>) [per vederlo occorre restingere le dimensioni della finestra].<br />
+Tuttavia <strong>non gestisce automaticamente un alto numero di passi</strong>: su desktop, se i passi sono troppi per essere contenuti orizzontalmente nello schermo, l’elenco si estende oltre il bordo destro della finestra, facendo comparire la barra di scorrimento orizzontale.<br />
+Diventa quindi necessario <strong>gestire da programma la visualizzazione di solo pochi passi</strong> <em>intorno</em> a quello attivo.</p>
+
+<div class="bd-example">
+<div class="steppers">
+  <ul class="steppers-header">
+    <li class="confirmed"><svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-calendar"></use></svg>Periodo
+      <svg class="icon steppers-success"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-check"></use></svg>
+      <span class="sr-only">Confermato</span>
+    </li>
+    <li class="active"><svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-plus-circle"></use></svg>Tipologia
+      <span class="sr-only">Attivo</span>
+    </li>
+    <li class="error"><svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-settings"></use></svg>Optionals
+      <svg class="icon steppers-error"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+      <span class="sr-only">Errore</span>
+    </li>
+    <li><svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-card"></use></svg>Pagamento</li>
+    <span class="steppers-index" aria-hidden="true">2/4</span>
+  </ul>
+</div>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"steppers-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"confirmed"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Periodo
+      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon steppers-success"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-plus-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Tipologia
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"error"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-settings"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Optionals
+      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon steppers-error"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-card"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Pagamento<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"steppers-index"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>2/4<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h4 id="stati">Stati</h4>
+<p>Sui tag <em>li</em> di ognuno dei passi va associata la <strong>classe</strong> che indica lo <strong>stato di avanzamento</strong> e che determina la colorazione di ogni <em>punto</em>: <code class="language-plaintext highlighter-rouge">confirmed</code>, <code class="language-plaintext highlighter-rouge">active</code>, <code class="language-plaintext highlighter-rouge">error</code>.<br />
+L’<strong>assenza di stato</strong> dà il <strong>colore grigio</strong> di default per i passi ancora da eseguire.<br />
+Nota: lo stato <code class="language-plaintext highlighter-rouge">error</code> è una personalizzazione specifica di Bootstrap Regione Lombardia.</p>
+
+<h4 id="steppers-index">Steppers index</h4>
+<p>A differenza della versione contenuta all’interno della Documentazione di Bootstrap Italia, lo <code class="language-plaintext highlighter-rouge">steppers-index</code> è stato inserito in un <strong>tag span</strong> anziché <code class="language-plaintext highlighter-rouge">li</code>; in questo modo uno screen reader non segnalerà un numero di voci maggiore di quello reale dei passi mostrati nello <code class="language-plaintext highlighter-rouge">steppers-header</code>.</p>
+
+<h3 id="header-grafico">Header grafico</h3>
+
+<p>E’ uno <em>stepper header</em> specifico di <em>Bootstrap Regione Lombardia</em>.<br />
+E’ caratterizzato da icone all’interno di grossi punti, inizialmente grigi, che si colorano passo dopo passo.<br />
+Benché responsivo è comunque adatto ad un numero limitato di passi.</p>
+
+<p>E’ composto da un <em>div</em> principale di classe <code class="language-plaintext highlighter-rouge">it25-wizard</code> e da una serie di <em>tag</em> <code class="language-plaintext highlighter-rouge">li</code> di classe <code class="language-plaintext highlighter-rouge">it-pin-wrapper</code>.<br />
+Anche in questo caso, associando la classe che indica lo stato di avanzamento si determina la colorazione di ogni <em>punto</em>.</p>
+
+<p>E’ <strong>fortemente consigliato</strong> aggiungere un <strong><a href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">tooltip</a></strong> per aiutare la comprensione.<br />
+Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire una descrizione</strong> in uno span di classe <code class="language-plaintext highlighter-rouge">sr-only</code> o con un testo alternativo.</p>
+
+<p>Se si utilizzano, <strong>i tooltip vanno attivati</strong> come di consueto.</p>
+
+<div class="bd-example">
+<div class="steppers">
+<div class="it25-wizard">
+  <ul>
+    <li class="it-pin-wrapper confirmed">
+      <span class="sr-only">Scelta periodo</span>
+      <span class="sr-only">Confermato</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Periodo">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
+      </span>
+    </li>
+    <li class="it-pin-wrapper active">
+      <span class="sr-only">Tipologia alloggio</span>
+      <span class="sr-only">Attivo</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Tipologia">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-calendar"></use></svg>
+      </span>
+    </li>
+    <li class="it-pin-wrapper error">
+      <span class="sr-only">Optionals</span>
+      <span class="sr-only">Errore</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Optionals">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-list"></use></svg>
+      </span>
+    </li>
+    <li class="it-pin-wrapper">
+      <span class="sr-only">Pagamento</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Pagamento">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-card"></use></svg>
+      </span>
+    </li>
+  </ul>
+</div>
+
+</div> <!-- end div class="steppers" -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  })    
+</script>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-wizard"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper confirmed"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Scelta periodo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Periodo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Tipologia alloggio<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tipologia"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper error"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Optionals<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Optionals"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-list"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagamento<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-card"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- end div class="steppers" --&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">[data-toggle="tooltip"]</span><span class="dl">'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">()</span>
+    <span class="p">});</span>
+  <span class="p">})</span>    
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<h3 id="steppers-nav">Steppers-nav</h3>
+<div class="bd-example">
+<div class="steppers">
+<nav class="steppers-nav">
+  <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-prev">
+    <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-chevron-left"></use></svg>Indietro
+  </button>
+  <ul class="steppers-dots it25">
+    <li class="done"><span class="sr-only">Step 1 di 6 - Confermato</span></li>
+    <li class="done"><span class="sr-only">Step 2 di 6 - Confermato</span></li>
+    <li class="done"><span class="sr-only">Step 3 di 6 - Confermato</span></li>
+    <li><span class="sr-only">Step 4 di 6</span></li>
+    <li><span class="sr-only">Step 5 di 6</span></li>
+    <li><span class="sr-only">Step 6 di 6</span></li>
+  </ul>
+  <button type="button" class="btn btn-primary btn-sm steppers-btn-save">Conferma</button>
+</nav>
+
+</div> <!-- end div class="steppers" -->
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"steppers-nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-sm steppers-btn-prev"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Indietro
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"steppers-dots it25"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"done"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Step 1 di 6 - Confermato<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"done"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Step 2 di 6 - Confermato<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"done"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Step 3 di 6 - Confermato<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Step 4 di 6<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Step 5 di 6<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Step 6 di 6<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm steppers-btn-save"</span><span class="nt">&gt;</span>Conferma<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- end div class="steppers" --&gt;</span></code></pre></figure>
+
+<h4 id="buttons">Buttons</h4>
+<p><em>Bootstrap Italia</em> prevede 4 classi specifiche per i bottoni dello <code class="language-plaintext highlighter-rouge">steppers-nav</code>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">steppers-btn-prev</code> e <code class="language-plaintext highlighter-rouge">steppers-btn-next</code> per i bottoni di indietro e avanti <strong>senza convalida</strong> dei dati</li>
+  <li><code class="language-plaintext highlighter-rouge">steppers-btn-save</code> e <code class="language-plaintext highlighter-rouge">steppers-btn-confirm</code> per l’<strong>avanzamento con convalida</strong>.</li>
+</ul>
+
+<p>Per quanto riguarda gli ultimi due, la loro unica differenza è l’applicazione di un <code class="language-plaintext highlighter-rouge">margin-left: auto</code> per <code class="language-plaintext highlighter-rouge">steppers-btn-confirm</code>, che lo sposta <strong>forzatamente verso il lato destro</strong> del <em>nav</em>.<br />
+Ciò non avviene per <code class="language-plaintext highlighter-rouge">steppers-btn-save</code>, che <strong>si posiziona quindi a seconda</strong> delle regole applicate al suo contenitore.</p>
+
+<h4 id="dots-o-progess-bar">Dots o Progess bar</h4>
+<p>Quando la procedura prevede un numero di passi maggiore di 4, è consigliabile aggiungere degli indicatori di avanzamento allo <code class="language-plaintext highlighter-rouge">steppers-nav</code>.<br />
+<em>Bootstrap Italia</em> però visualizza i <em>pallini</em> o la <em>progress bar</em> <strong>solo su smartphone</strong>.<br />
+Per visualizzarli anche su <strong>desktop</strong>, è stata predisposta la classe <code class="language-plaintext highlighter-rouge">it25</code> da <strong>aggiungere</strong> a <code class="language-plaintext highlighter-rouge">steppers-dot</code> o <code class="language-plaintext highlighter-rouge">steppers-progress</code>.<br />
+Per l’accessibilità è <strong>necessario</strong> che i tag <em>li</em> contengano uno <em>span</em> con classe <code class="language-plaintext highlighter-rouge">sr-only</code>, utilizzato dagli screen reader, con un testo indicante il numero di step e lo stato.</p>
+
+<div class="bd-callout bd-callout-danger">
+<h4 id="-versione-su-sfondo-scuro"><svg class="icon icon-danger icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-circle"></use></svg> Versione su sfondo scuro</h4>
+<p>La <strong><a href="/bootstrap-lombardia/docs/componenti/steppers/#versione-su-sfondo-scuro">Versione su sfondo scuro</a></strong> delle varie parti degli <em>steppers</em> <strong>NON DEVE MAI ESSERE UTILIZZATA</strong>.</p>
+</div>
+
+<div class="bd-callout bd-callout-info">
+<h4 id="-riferimenti"><svg class="icon icon-info icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti</h4>
+<p>Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione di Bootstrap Italia:</p>
+<ul>
+  <li><strong><a href="/bootstrap-lombardia/docs/componenti/steppers/">Steppers</a></strong></li>
+</ul>
+
+<p>Una pagina con un esempio completo di <em>wizard</em> è visualizzabile al link:</p>
+<ul>
+  <li><strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_wizard/">Esempi-Wizard</a></strong></li>
+</ul>
+</div>
+
+
+        </main>
+      </div>
+    </div>
+
+    <div class="cookiebar">
+  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
+  <div class="cookiebar-buttons">
+      <a href="https://designers.italia.it/privacy-policy/" class="cookiebar-btn">Privacy policy</a>
+      <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="sr-only"> i cookies</span></button>
+  </div>
+</div>
+
+    
+
+<script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
+
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202511031614"></script>
+  
+  </body>
+</html>

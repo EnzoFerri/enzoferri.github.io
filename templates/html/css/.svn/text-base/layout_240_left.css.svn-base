@@ -1,0 +1,23 @@
+/**********************/
+/*** Area contenuti ***/
+/**********************/
+div#layout div#area_contenuti {
+	background: url(../images/tagli_html/sfondo_menu_grigio_240.png) repeat-y;
+	padding: 0px 0px 0px 240px;
+}
+
+
+/**********************/
+/*** Menu verticale ***/
+/**********************/
+div#colonna_menu_sx {
+	width:240px;
+}
+
+div#menu_verticale{
+	width:240px;
+}
+
+div.filetto {
+	width:240px;
+}

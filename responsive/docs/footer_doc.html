@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Footer</title>
+		<link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Footer</h1>
+<p>
+Queste regole nel <code>lomb_xxx.css</code> fanno sì che il footer sia sempre posizionato in fondo allo schermo, anche quando la pagina ha poco contenuto, ed abbia un'altezza minima di 40 pixel.
+<pre>
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 35px;
+}
+</pre>
+</p>
+<p>
+La dicitura riguardante il copyright viene accrociata per gli smartphone.<br/>
+Nei casi in cui non sia sufficiente, per la presenza di molti link sul footer, si può aggiungere la classe bootstrap <code>hidden-xs</code> anche allo <kbd>&lt;span&gt;&amp;copy; Copyright Regione Lombardia&lt;/span&gt;</kbd>.
+</p>
+
+<h2>Accessibilità</h2>
+<p>
+Il tag <code>nav</code> contenente le voci di navigazione ha il proprio attributo <code>role="navigation"</code>.
+</p>
+<pre>
+&lt;nav class="voci_navigazione" <strong>role="navigation"</strong>&gt;
+   &lt;a href="#"&gt;Voce 01&lt;/a&gt;
+   . . . 
+</pre>
+
+</body>
+</html>

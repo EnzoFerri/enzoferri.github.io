@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Area contenuti</title>
+</head>
+
+<body>
+<h1>Area contenuti</h1>
+<p>
+Questo template, dal punto di vista HTML è assolutamente banale: è costituito semplicemente da un tag <code>&lt;div&gt;</code> con un
+<code>id</code> specifico e contenente del testo.<br/>
+La sua funzione è quella di fornire un contenitore specifico cui i CSS applicano dei padding per distanziare il contenuto e un colore di
+sfondo a seconda della declinazione cromatica.
+</p>
+<a name="layout"/>
+<h3>&lt;div id="layout"&gt;</h3>
+<p>
+Da notare è la seguente dichiarazione nel <a href="../css/area_contenuti.css">foglio CSS</a>:
+</p>
+<pre>
+div#layout div#area_contenuti {
+   background: url(../images/tagli_html/sfondo_menu_grigio.png) repeat-y;
+   padding: 0px 0px 0px 190px;
+}
+</pre>
+<p>
+Il <code>&lt;div id="area_contenuti"&gt;</code> può essere inserito in un <code>&lt;div id="layout"&gt;</code> per ottenere uno due layout elencati nelle linee guida (vedi paragrafo "Layout" delle stesse), che contengono il menù verticale; precisamente il "190 pixel left" o il "240 pixel left", a una o a due colonne.<br/>
+Per realizzare tale layout in modo fluido e supportando anche Internet Explorer 6, per ottenere che la colonna di sinistra grigia occupi sempre tutta la fascia sinistra della pagina, fino al footer, indipendentemente dalla lunghezza del contenuto sia della pagina che del menù verticale, si è dovuto:
+</p>
+<ol>
+<li>applicare un'immagine di sfondo grigia larga 190/240 pixel e alta 1 pixel, ripetuta verticalmente</li>
+<li>specificare un padding sinistro di 190/240 pixel per spostare il contenuto dell'area e lasciare spazio al menù verticale</li>
+</ol>
+<p>
+L'area contenuti quindi, diversamente da quanto graficamente appare nelle linee guida (vedi paragrafo "Dimensioni area contenuti), occupa sempre tutta la larghezza della pagina e contiene il menù verticale.
+</p>
+<p>
+Si tenga presente che:
+<ol>
+<li>Il layout di default, presente nel foglio di stile style_lombardia.css è il <em>"190 pixel left"</em>.</li>
+<li>Per ottenere i layout di tipo <em>"240 pixel left"</em> è necessario aggiungere il foglio di stile <a href="../css/layout_240_left.css">layout_240_left.css</a>, presente commentato in tutte le pagine composte di esempio.</li>
+<li>Per ottenere un layout <em>"full"</em> è sufficiente specificare solo il <code>&lt;div id="area_contenuti"&gt;</code> omettendo il <code>&lt;div id="layout"&gt;</code>. In questo modo l'area contenuti occuperà tutto lo spazio disponibile.</li>
+<li>Al momento non è stato implementato un template per il <em>"layout ridimensionabile da utente"</em> (vedi pag.10 delle linee guida).</li>
+</li>
+</ol>
+</p>
+
+<h3>Area contenuti in 2 colonne</h3>
+<p>
+Sempre nel foglio <a href="../css/area_contenuti.css">area_contenuti.css</a> sono presenti altre due dichiarazioni:
+</p>
+<pre>
+div#area_contenuti div.colonna_sx {
+	width: 49%;
+	float:left;
+}
+div#area_contenuti div.colonna_dx {
+	width: 49%;
+	float:right;
+}
+</pre>
+<p>
+I due <code>&lt;div&gt;</code> <em>"colonna_sx"</em> e <em>"colonna_dx"</em>, possono essere utilizzati suddividere l'area contenuti in due parti come previsto dalle linee guida.
+</p>
+
+<h3>Altri &lt;div&gt;</h3>
+<p>
+Nel <a href="area_contenuti_html.txt">template HTML</a> compaiono, come commenti: <code>&lt;div class="tab_area_contenuti"&gt;</code>, <code>&lt;div#class="area_testo"&gt;</code> e <code>&lt;div#class="content_closer"&gt;</code>, cui corrispondono delle dichiarazioni nel <a href="../css/area_contenuti.css">foglio CSS</a>.<br/>
+Il loro scopo risulta più chiaro nel template composto: <a href="../mve_tbb.html">mve_tbb.html</a> <a href="mve_tbb_doc.html">Menù verticale, tabber e testo semplice</a>:
+</p>
+<ul>
+<li>A "tab_area_contenuti" è applicato un bordo e dei margini, ad "area testo" è applicato del padding.<br/>
+Servono quando si inserisce nell'area contenuti un <a href="tabber_doc.html">tabber</a>, per ottenere una bordatura congruente con le etichette del tabber e per distanziare dalla bordatura il contenuto all'interno del tabber.
+</li>
+<li>Il "content_closer" è un tag <code>&lt;div&gt;</code> destinato a essere sempre vuoto. Serve come elemento di comodo per in fondo ad "area_contenuti", per estendere, quando il menù verticale è più lungo del contenuto nella parte destra della pagina, il colore di sfondo della parte destra fino al footer.
+</li>
+</ul>
+
+
+</body>
+</html>

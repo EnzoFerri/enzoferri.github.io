@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Menù verticale</title>
+</head>
+
+<body>
+<h1>Menù verticale</h1>
+<p>
+E' composto da uno o più pannelli espandibili.<br/>
+All'interno di ogni pannello possono essere presenti singole voci o menù espandibili fino al terzo livello.<br/>
+Delle piccole icone a freccia indicano se una voce è un menù espandibile e se è aperto (la freccia punta in basso) o chiuso (la freccia punta verso destra). Le voci non espandibili non hanno freccia.<br/>
+Dei filetti punteggiati possono essere inseriti facoltativamente per separare concettualmente gruppi di menù all'interno di un pannello.
+</p>
+<h2>Struttura</h2>
+Il <a href="menu_verticale_html.txt">template HTML</a> è composto da una serie di tag <code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code>
+nidificati.<br/>
+<p>
+Il tag <code>&lt;ul id="ul_menu_verticale"&gt;</code> contiene tutti i pannelli espandibili, che sono dei tag così concepiti:
+</p>
+<h3>Pannello</h3>
+<pre>
+&lt;li&gt;&lt;div class="pannello"&gt;&lt;span class="aperto"&gt;&lt;/span&gt;&lt;span&gt;Pannello 1&lt;/span&gt;&lt;/div&gt;
+</pre>
+<dl>
+<dt>&lt;li&gt;</dt>
+<dd>elemento di primo livello del menù verticale.<br/>
+Contiene il pannello e tutti i suoi elementi.</dd>
+<dt>&lt;div class="pannello"&gt;</dt>
+<dd>Questo <code>div</code> contiene i due <code>span</code> con il testo e la freccia, ed ad esso è applicato lo sfondo che lo distingue visivamente dalle altre voci.</dd>
+<dt>&lt;span class="aperto"&gt;&lt;/span&gt;</dt>
+<dd>E' lo <code>span</code> che contiene la freccia. La classe "aperto" o "chiuso" determina il verso della freccia che è applicata come sfondo.<br/>
+<strong>La pagina deve essere creata dall'applicazione con impostata la classe "aperto"</strong>, per poter apparire, in caso di javascript disabilitato, con le freccia diretta verso il basso.</dd>
+<dt>&lt;span&gt;Pannello 1&lt;/span&gt;</dt>
+<dd>Questo <code>span</code> contiene il testo che appare come titolo del pannello.</dd>
+</dl>
+
+All'interno del tag <code>&lt;li&gt;</code> del pannello è contenuto un tag <code>&lt;ul&gt;</code> di secondo livello, nel quale possono
+essere contenuti tag <code>&lt;li&gt;</code> di tre tipi:
+<h3>Voce singola</h3>
+<pre>
+&lt;li&gt;&lt;a href="#"&gt;Voce liv1&lt;/a&gt;&lt;/li&gt;
+</pre>
+Che contiene il link ad una pagina web dell'applicazione. E' una voce singola non espandibile.
+<h3>Menù</h3>
+<pre>
+&lt;li&gt;&lt;div class="menu"&gt;&lt;span class="aperto"&gt;&lt;/span&gt;&lt;span&gt;Menu liv1&lt;/span&gt;&lt;/div&gt;
+</pre>
+Con una struttura uguale a quella del pannello con l'eccezione del nome della classe (menu anzichè pannello) attribuita al tag &lt;div&gt;.<br/>
+Ciò comporta l'attribuzione di caratteristiche grafiche differenti (sfondo, freccia a sinistra del testo anzichè a destra, ecc.).<br/>
+Il menù ha quindi un comportamento analogo al pannello e può contenere menù di livello inferiore e voci non espandibili.
+<h3>Filetto</h3>
+<pre>
+&lt;li&gt;&lt;div class="filetto"&gt;&lt;/div&gt;&lt;/li&gt;
+</pre>
+E' un tag &lt;li&gt; che ha l'unica funzione di contenere un oggetto grafico con la funzione di separatore. 
+
+<h2>Funzionamento</h2>
+<p>
+L'apertura e chiusura dei pannelli e dei menù è gestita tramite javascript.<br/>
+Nel caso javascript sia disabilitato, il menù verticale compare con tutti i pannelli e i menù aperti e con le frecce orientate di conseguenza.
+</p>
+<p>
+Ad ogni voce singola non espandibile deve corrispondere un link ad una pagina.<br/>
+Il click su una voce di questo tipo provoca il ricaricamento della pagina e, di conseguenza, anche del menù.<br/>
+Il menù dovrà però ricomparire aperto nella sezione dove è presente la voce scelta e questa deve apparire in grassetto.<br/>
+In grassetto dovranno anche apparire i menù di livello superiore che contengono la voce selezionata.<br/>
+Per ottenere ciò è sufficiente assegnare la classe "<strong>on</strong>" al tag <code>&lt;li&gt;</code> contenente la voce
+selezionata.<br/>
+Ad esempio:
+</p>
+<pre>
+&lt;li class="on"&gt;&lt;a href="#"&gt;Voce liv3&lt;/a&gt;&lt;/li&gt;
+</pre>
+<p>
+Se a nessuna voce è stata assegnata la classe "on", tutti i pannelli compaiono chiusi (se javascript è abilitato).<br/>
+Nel caso si desideri, alla prima chiamata di una pagina che contiene un menù verticale, fare apparire un pannello o un menù aperto, per evitare click all'utente quando, per esempio, il pannello è uno solo. basta impostare la classe "<strong>on</strong>" sul tag <code>&lt;li&gt;</code> del pannello o del menù che deve presentarsi aperto:
+</p>
+<pre>
+&lt;li class="on"&gt;&lt;div class="pannello"&gt;&lt;span class="aperto"&gt;&lt;/span&gt;&lt;span&gt;Pannello 1&lt;/span&gt;&lt;/div&gt;
+</pre>
+
+<a name="accessibilita"/>
+<h2>Accessibilità</h2>
+<p>Per dar modo agli utenti che utilizzano uno screen-reader, di rendersi conto che hanno a disposizione un menù espandibile/contraibile, e se i singoli sottomenù sono espansi o contratti, viene inserito automaticamente via javascript, per ogni pannello/sottomenù espandibile, un tag <code>span</code> come il seguente:
+<pre>
+&lt;span class="non_visibile" aria-live="polite"&gt;menu espandibile aperto&lt;/span&gt;
+</pre>
+<p>
+L'attributo <code>class="non_visibile"</code> fa si che il testo non venga visualizzato, ma lo screen reader lo legge.
+</p>
+<p>
+L'attributo <code>aria-live="polite"</code> fa si che, quando l'utente "clicca" sulla voce (utilizzando la combinazione di tasti che il suo programma di ausilio identifica come "click") ed espande o contrae il menù, lo screen reader rilegge il testo: "menù espandibile aperto/chiuso". Il testo viene cambiato via javascript contemporaneamente agli attributi legati ai css che fanno apparire il menù aperto o chiuso.<br/>
+In questo modo l'utente non vedente può rendersi conto dell'avvenuta espansione/contrazione del menù. 
+</p>
+
+</body>
+</html>

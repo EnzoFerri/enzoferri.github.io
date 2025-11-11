@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Thumb slider</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Thumb slider</h1>
+<p>
+E' basato sul componente <em>carousel</em> di bootstrap, modificato seguendo le indicazioni del <a href="http://www.w3.org/WAI/tutorials/carousels/">tutorial della WAI</a> per l'accessibilità.
+</p>
+
+<p>
+L'esempio 1 mostra uno slider per il quale lo scorrimento automatico delle immagini parte solo se l'utente preme il tasto di start, nell'esempio 2 invece lo scorrimento è già attivo al caricamento della pagina.
+</p>
+Il primo caso è preferibile per l'accessibilità, in quanto il cambio dell'immagine provoca la lettura, da parte dello screen-reader, della descrizione dell'immagine. Ciò può risultare fastidioso se non è terminata la lettura dell'eventuale testo che, nella pagina, precede lo <em>slider</em>.
+
+
+<h2>Struttura</h2>
+
+<p>
+Ogni slider è costituito da un elenco di immagini, ognuna con la propria descrizione ed un eventuale testo più lungo associato, e da un secondo elenco di <em>miniature</em> che consentono di scegliere l'immagine che si vuole ingrandire.
+</p>
+
+<pre>
+&lt;div id='carousel_01' <strong>class='carousel slide carousel-outer' data-ride='carousel'</strong> data-interval="0" . . .
+</pre>
+<p>
+Lo slider è contenuto in un <code>div</code> con classi <code class="value">carousel slide carousel-outer</code> e l'attributo <code>data-ride</code>.
+</p>
+
+<h3>Contenitore immagini grandi e testo</h3>
+<pre>
+&lt;!-- Wrapper for slides --&gt;
+&lt;ul <strong>class='carousel-inner'</strong>&gt;
+</pre>
+<p>
+E' il contenitore delle immagini principali e dei testi ad esse associati.<br/>
+E' costituito da un tag <code>&lt;ul&gt;</code> con una classe specifica per determinarne dimensioni e aspetto grafico.
+</p>
+
+<p>
+<strong>Nota sulla dimensione delle immagini:</strong><br/>
+Il contenitore delle immagini è flessibile e si adatta alle dimensioni delle immagini; tuttavia è meglio che queste abbiano tutte la stessa altezza, altrimenti l'altezza del contenitore cambia ogni volta che si passa ad una immagine più alta o più bassa della precedente (proprio come accade volutamente nell'esempio 2, per evidenziare l'effetto da evitare).
+</p>
+
+<pre>
+&lt;li <strong>class='item'</strong>&gt;
+   &lt;<strong>img</strong> class="img-responsive" src="images/pallomb02.jpg" <strong>alt</strong>='descrizione_02' /&gt;
+   &lt;div <strong>class='carousel-caption'</strong>&gt;
+      &lt;h4&gt;La copertura&lt;/h4&gt;
+      &lt;p&gt;
+         Costruzione della copertura di Piazza Lombardia.
+      &lt;/p&gt;
+   &lt;/div&gt;
+&lt;/li&gt;
+</pre>
+<p>
+Ogni elemento dell'elenco, di classe <code class="value">item</code> <strong>deve</strong> contenere una immagine con la sua relativa descrizione breve nell'attributo <code>alt</code> (questo per poter passare i controlli dei verificatori automatici di accessibilità).<br/>
+Il <code>div</code> con classe <code>carousel-caption</code> è <strong>facoltativo</strong>, ed è pensato per contenere testi più lunghi della semplice didascalia dell'immagine. 
+</p>
+
+<pre>
+&lt;!-- Controls --&gt;
+&lt;a <strong>class='left carousel-control' href='#carousel_01'</strong> data-slide='prev'
+   aria-label="immagine precedente" tabindex="-1" role="button"&gt;
+   &lt;span class='glyphicon glyphicon-chevron-left'&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a <strong>class='right carousel-control' href='#carousel_01'</strong> data-slide='next'
+   aria-label="immagine successiva" tabindex="-1" role="button"&gt;
+   &lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+<p>
+In coda all'elenco delle immagini sono posti i link che fungono da pulsanti per avanzare/indietreggiare di una "slide".<br/>
+Sono due tag <code>&lt;a&gt;</code> con classe <code>carousel-control</code> e <code>href</code> corrispondente all'<code class="value">id</code> del <code>div</code> principale del componente.
+</p>
+
+<h3>Miniature e tasto start/stop</h3>
+<pre>
+&lt;!-- Indicators --&gt;
+&lt;div <strong>class="carousel-thumbs"</strong>&gt;
+   &lt;<strong>button</strong> class="pull-left btn btn-default btn-lg" <strong>data-target='#carousel_01'</strong>
+      data-action='play' role="button" aria-label="avvia scorrimento automatico "
+      onclick="switchAnimation(this)"&gt;
+      &lt;span class='glyphicon glyphicon-play'&gt;&lt;/span&gt;
+   &lt;/button&gt;
+   <strong>&lt;ol class='carousel-indicators'&gt;</strong>
+      &lt;li <strong>data-target='#carousel_01'</strong> <strong>data-slide-to='0'</strong> role="button" <strong>class='active'</strong>&gt;
+         &lt;img src='images/pallomb01_thu.jpg' alt='descrizione_01'/&gt;&lt;/li&gt;
+      &lt;li data-target='#carousel_01' <strong>data-slide-to='1'</strong> role="button"&gt;
+         &lt;img src='images/pallomb02_thu.jpg' alt='descrizione_02'/&gt;&lt;/li&gt;
+      . . .
+</pre>
+<p>
+Il <code>div</code> con classe <code>carousel-thumbs</code> contiene il pulsante di start/stop dell'avanzamento automatico e l'elenco delle miniature. 
+</p>
+<p>
+Sia per il bottone che per le miniature va specificato nell'attributo <code>data-target</code> l'<code class="value">id</code> del <strong>div</strong> principale che contiene il <em>carousel</em>.
+</p>
+<p>
+Per le miniature va specificato l'attributo <code>data-slide-to</code>, che lega la miniatura all'immagine da visualizzare. Questo fa sì che cliccando sulla miniatura venga presentata l'immagine scelta anche se non è in sequenza con quella precedente.
+</p>
+<p>
+E' fondamentale che, tra le miniature, uno, e uno solo, dei tag <code>&lt;li&gt;</code> abbia come classe <code class="value">active</code>, poichè questa determina quale immagine viene visualizzata al caricamento della pagina.<br/>
+La classe viene poi "spostata" automaticamente via javascript, man mano che cambiano le immagini.
+</p>
+
+<h2>Funzionamento</h2>
+
+<h3>Scorrimento automatico</h3>
+<pre>
+&lt;div <strong>id='carousel_01'</strong> class='carousel slide carousel-outer' data-ride='carousel' <strong>data-interval="0"</strong> ...
+</pre>
+
+<pre>
+&lt;div <strong>id='carousel_02'</strong> class='carousel slide carousel-outer' data-ride='carousel' <strong>data-interval="2000"</strong> ...
+</pre>
+<p>
+La partenza dello scorrimento automatico delle immagini al caricamento della pagina è determinata dall'attributo <code>data-interval</code> sul <strong>div</strong> principale che contiene il <em>carousel</em>.<br/>
+Il valore va espresso in millisecondi e determina il tempo di attesa tra un cambio immagine e l'altro. Con <code>0</code> lo scorrimento è fermo.
+</p>
+
+<pre>
+&lt;!-- Indicators --&gt;
+&lt;div class="carousel-thumbs"&gt;
+   &lt;button class="pull-left btn btn-default btn-lg" <strong>data-target='#carousel_01'</strong> <strong>data-action='play'</strong>
+   role="button" aria-label="<strong>avvia</strong> scorrimento automatico" <strong>onclick="switchAnimation(this)"</strong>&gt;
+      &lt;span class='glyphicon <strong>glyphicon-play</strong>'&gt;&lt;/span&gt;
+   &lt;/button&gt;
+</pre>
+<pre>
+&lt;!-- Indicators --&gt;
+&lt;div class="carousel-thumbs"&gt;
+   &lt;button class="pull-left btn btn-default btn-lg" <strong>data-target='#carousel_02'</strong> <strong>data-action='pause'</strong>
+   role="button" aria-label="<strong>ferma</strong> scorrimento automatico" <strong>onclick="switchAnimation(this, 2000)"</strong>&gt;
+      &lt;span class='glyphicon <strong>glyphicon-pause</strong>'&gt;&lt;/span&gt;
+   &lt;/button&gt;
+</pre>
+In conseguenza della scelta effettuata vanno poi impostati sul pulsante di <em>start/stop</em>:
+<ol>
+<li><code>data-action</code> = <code class="value">play</code> se lo scorrimento automatico <strong>non</strong> è attivo al caricamento della pagina (quindi il tasto è predisposto per farlo partire) o <code class="value">pause</code> nel caso contrario (già attivo al caricamento pagina quindi il tasto serve a fermarlo).</li>
+<li><code>aria-label</code> = questa dicitura serve per l'accessibilità, è ciò che lo screen-reader pronuncia per descrivere la funzionalità del bottone, quindi va impostato <code class="value">avvia</code> o <code class="value">ferma</code> concordemente al valore dell'attributo <strong>data-action</strong>.</li>
+<li><code>glyphicon-</code> = l'icona che compare sul pulsante, <code class="value">play</code> o <code class="value">pause</code> a seconda della funzionalità.</li>
+<li><code>onclick</code> = <code class="value">switchAnimation(this, 2000)</code> è il metodo in <em>template.js</em> che avvia o ferma lo scorrimento automatico.<br/>
+Il secondo parametro ha la stessa funzione dell'attributo <code>data-interval</code> visto più sopra. Nel caso lo scorrimento automatico non sia avviato al caricamento della pagina, per cui si è specificato <strong>data-interval="0"</strong> sul <strong>div</strong> principale del <em>carousel</em>, l'intervallo può essere specificato qui; se non lo si fa, viene assunto il valore di 5000 millisecondi.</li>
+</ol>
+
+<p>
+<code>switchAnimation()</code><br/>
+Ogni volta che viene richiamato, il metodo <strong>inverte i valori</strong> di <code>data-action</code>, <code>aria-label</code> e <code>glyphicon-</code> cambiando così la funzionalità del pulsante stesso. 
+</p>
+
+
+<h3>Avanzamento manuale</h3>
+<pre>
+&lt;!-- Controls --&gt;
+&lt;a class='left carousel-control' <strong>href='#carousel_01' data-slide='prev'</strong>
+   aria-label="immagine precedente" tabindex="-1" role="button"&gt;
+   &lt;span class='glyphicon glyphicon-chevron-left'&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class='right carousel-control' <strong>href='#carousel_01' data-slide='next'</strong>
+   aria-label="immagine successiva" tabindex="-1" role="button"&gt;
+   &lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+I due link che fungono da pulsanti per avanzare/indietreggiare di una "slide" devono avere gli attributi:
+<ol>
+<li><code>href</code> = <code class="value">id</code> del <strong>div</strong> principale che contiene il <em>carousel</em></li>
+<li><code>data-slide</code> = <code class="value">prev</code> o <code class="value">next</code>.</li>
+</ol>
+
+<h2>Accessibilità</h2>
+
+<pre>
+&lt;div id='carousel_01' class='carousel slide carousel-outer' data-ride='carousel' data-interval="0"
+<strong>aria-label="Serie di immagini a scorrimento automatico.
+Per avviare o fermare scorrimento automatico premere tasto apposito.
+Per passare a immagine successiva o precedente utilizzare tasti freccia destra o sinistra."</strong>&gt;
+</pre>
+<p>
+Sul <code>div</code> principale dello slider è presente un attributo <code>aria-label</code> con le istruzioni per interagire con il componente via tastiera.</br>
+In questo un utente non vedente viene informato dallo screen-reader su cosa si trova in quel punto della pagina e come può utilizzarlo: sebbene non possa vedere le immagini può ascoltarne le descrizioni e l'eventuale testo associato.</br>
+Proprio per dar tempo allo screen-reader di leggere le istruzioni e all'utente di rendersi conto di come può operare, è preferibile che al caricamento della pagina lo scorrimento automatico non sia attivo.
+</p>
+
+<pre>
+<strong>&lt;h3&gt;Album foto di Palazzo Lombardia&lt;/h3&gt;</strong>
+</pre>
+<p>
+Dare un titolo alla sequenza di immagini presentare aiuta un non vedente a capire il contenuto dello slider.
+</p>
+
+<pre>
+&lt;!-- Controls --&gt;
+&lt;a class='left carousel-control' href='#carousel_01' data-slide='prev'
+   <strong>aria-label="immagine precedente" tabindex="-1" role="button"</strong>&gt;
+   &lt;span class='glyphicon glyphicon-chevron-left'&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class='right carousel-control' href='#carousel_01' data-slide='next'
+   <strong>aria-label="immagine successiva" tabindex="-1" role="button"</strong>&gt;
+   &lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+Per l'accessibilità nei controlli di avanzamento manuale sono stai utilizzati i seguenti attributi:
+<ol>
+<li><code>tabindex</code> = <code class="value">-1</code> evita che il focus si sposti su questi link premendo il tasto di tabulazione</li>
+<li><code>aria-label</code> = la dicitura che lo screen reader legge quando il <em>focus</em> si sposta su  questo link</li>
+<li><code>role='button'</code> fa il modo che lo screen reader avvisi che il link ha un realtà la funzione di "pulsante"</li>
+</ol>
+Si vuole cioè fare in modo che, dopo che lo screen-reader ha letto le istruzioni poste sul <strong>div</strong> principale del <em>carousel</em>, premendo il tasto tab il focus si sposti sul pulsante di <em>start/stop</em> dell'avanzamento automatico. Per l'avanzamento manuale delle immagini un non vedente dovrebbe usare i tasti freccia della tastiera.<br/>
+I tasti di controllo speciale degli screen reader però consentono di forzare lo spostamento del focus su un di link nonostante il <code>tabindex</code> a <code class="value">-1</code>; in tal caso i due attributi <code>aria-label</code> e <code>role="button"</code> danno informazioni sul tipo di oggetto su cui ci si trova.
+</ol>
+
+
+<pre>
+&lt;!-- Indicators --&gt;
+&lt;div class="carousel-thumbs"&gt;
+   &lt;button class="pull-left btn btn-default btn-lg" data-target='#carousel_01' data-action='play'
+   role="button" <strong>aria-label="avvia scorrimento automatico"</strong> onclick="switchAnimation(this)"&gt;
+      &lt;span class='glyphicon glyphicon-play'&gt;&lt;/span&gt;
+   &lt;/button&gt;
+</pre>
+
+<pre>
+   &lt;ol class='carousel-indicators'&gt;
+      &lt;li data-target='#carousel_01' data-slide-to='0' <strong>role="button"</strong> class='active'&gt;
+         &lt;img src='images/pallomb01_thu.jpg' <strong>alt='descrizione_01'</strong>/&gt;&lt;/li&gt;
+      . . .
+</pre>
+Sulle miniature non serve specificare <code>tabindex</code> in quanto lo spostamento è gestito con i tasti freccia.
+
+</body>
+</html>

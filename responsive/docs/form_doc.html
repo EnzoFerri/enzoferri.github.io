@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Form</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Form</h1>
+<p>
+Poche le personalizzazioni fatte per i form.<br/>
+Le uniche regole specifiche inserite nel file <code>lomb_ver.css</code> riguardano le classi <code>radio</code> e <code>checkbox</code>, per disporre le relative <code>label</code> coerentemente con le linee guida della Regione Lombardia.
+</p>
+<pre>
+.radio label,
+.checkbox label {
+  display: block;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: none;
+  margin-left: 0;
+}
+</pre>
+E' stata personalizzata la resa grafica del tag <code>&lt;hr&gt;</code> per renderlo visibile rispetto allo sfondo.
+<pre>
+hr {
+  border-style: inset;
+}
+</pre>
+<p>
+La strutturazione della videata va quindi eseguita utilizzando il <code>Grid system</code> di bootstrap, che permette di ottenere un layout <em>responsivo</em>.
+</p>
+<h3>Campi data</h3>
+<p>
+Al momento il <code>type="date"</code> per i campi di input non è correttamente supportato da tutti i browser.</br>
+Chrome, tra i più diffusi, dà la possibilità sia di digitare direttamente la data in una maschera del tipo <em>gg/mm/aaaa</em> o di cliccare sul campo ed ottenere un calendario con cui interagire e scegliere una data.</br>
+Al momento può essere più opportuno non specificare tale tipo dati e utilizzare javascript per il controllo della data e l'emissione eventuale di un calendario.
+</p>
+
+<h2>Accessibilità</h2>
+In questi <em>template</em> per i <em>form</em> non sono stati inseriti attributi o tag specifici per l'accessibilità.</br>
+<strong>Indispensabile</strong> è legare la giusta <em>label</em> ad ogni campo di input, tramite l'attributo <code>for</code> per il tag <code>&lt;label&gt;</code> ed il corrispondente attributo <code>id</code> dal tag <code>&lt;input&gt;</code>.
+<pre>
+&lt;label class="control-label" <strong>for="cognome"</strong>&gt;Cognome&lt;/label&gt;
+&lt;input <strong>id="cognome"</strong> class="form-control" type="text"/&gt;
+</pre>
+<p>
+Leggendo la pagina con alcuni screen-reader non si sono riscontrate particolari difficoltà ad eccezione dei campi con attributo <code>type="date"</code>, di cui sopra.</br>
+Per questi l'importante è che sia <strong>possibile digitare la data direttamente da tastiera</strong>, ed ottenere un eventuale messaggio di errore se errata.</br>
+<strong>Non</strong> deve avvenire <strong>automaticamente</strong> la comparsa di un <strong>calendario</strong>.
+</p>
+<p>
+L'accessibilità effettiva della pagina dipende molto anche dalla disposizione dei campi a video.</br>
+E' quindi <strong>necessario</strong>, dopo aver passato l'analisi con il <a href="http://achecker.ca/checker/">Web Accessibility Checker</a>, <strong>eseguire un test con uno screen reader</strong> sulla pagina creata. 
+</p>
+</body>
+</html>

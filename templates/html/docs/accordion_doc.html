@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>accordion</title>
+</head>
+
+<body>
+<h1>Accordion</h1>
+<p>
+Il template è basato sul <em>widget</em>  <a href="http://jqueryui.com/demos/accordion/">omonimo</a> di <a href="http://jqueryui.com">jQuery UI</a>, con le opportune impostazioni per aderire alle convenzioni grafiche delle linee guida.
+</p>
+<p>
+Il widget prevede una struttura html composta da un tag <code>&lt;div&gt;</code> con <code>id="accordion"</code> (quindi ci può essere un solo accordion per videata), contenente <strong>almeno due</strong> header con rispettivo <code>&lt;div&gt;</code> contenitore.
+</p>
+<pre>
+&lt;div id="accordion"&gt;
+  &lt;h3&gt;First header&lt;/h3&gt;
+  &lt;div&gt;First content panel&lt;/div&gt;
+  &lt;h3&gt;Second header&lt;/h3&gt;
+  &lt;div&gt;Second content panel&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>
+All'interno del <code>&lt;div&gt;</code> contenitore è possibile mettere sia semplice testo che un form con relativi campi di input (come nel pannello "Ricerca enti" del template).
+</p>
+
+<p>
+Le opzioni di configurazione del widget sono impostate nell'<code>head</code> della pagina html.<br>
+Per lo più sono state lasciate quelle di default, tranne:
+<ol>
+<li><code>heightStyle: "content"</code> che fa si che la dimensionare del pannello aperto non sia fissa ma proporzionale al contenuto</li>
+<li><code>collapsible: true, active: "0"</code> che consente di chiudere tutti i pannelli (anzichè averne sempre uno aperto) e fa apparire l'accordion con tutti i pannelli chiusi.</li>
+<li><code>sortable ...</code> che permette all'utente di cambiare l'ordine dei pannelli.</li>
+</ol>
+</p>
+
+<pre>
+  &lt;script&gt;
+  $(function() {
+    $( "#accordion" )
+      .accordion({ header: "&gt; div &gt; h3", <strong>heightStyle:</strong> "content", <strong>collapsible</strong>: true, active: "0" })
+      .<strong>sortable</strong>({ axis: "y", handle: "h3", stop: function( event, ui ) {
+          ui.item.children( "h3" ).triggerHandler( "focusout" );
+        }
+      });
+  });
+  &lt;/script&gt;
+</pre>
+
+<p>
+La documentazione delle altre possibilità del widget, è reperibile all'indirizzo: <a href="http://api.jqueryui.com/accordion/">api.jqueryui.com/accordion</a><br/>
+E' possibile averne una panoramica consultando la pagina di demo del widget <a href="http://jqueryui.com/demos/accordion/">Accordion</a>
+</p>
+
+<p>
+Le caratteristiche grafiche del widget sono specificate in un file css separato, che è stato personalizzato conformemente ai colori delle linee guida della regione Lombardia.<br/>
+Il css è stato generato utilizzando il wizard messo a disposizione da jQuery UI che crea una directory contenente anche le immagini utilizzate dal "tema grafico".</br>
+E' quindi necessario aggiungere il link al css del "tema".
+</p>
+<pre>
+&lt;link rel="stylesheet" type="text/css" href="css/lombardia-theme/jquery-ui-1.10.3.custom.min.css" /&gt;  
+</pre>
+<p>
+Per funzionare lo script ha bisogno di 2 file javascript:
+</p>
+<ol>
+<li>lo script base di jQuery</li>
+<li>lo script contenente jQuery Ui</li>
+</ol>
+<pre>
+&lt;script type="text/Javascript" src="js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/Javascript" src="js/jquery-ui-1.10.3.custom.min.js"&gt;&lt;/script&gt;
+</pre>
+
+
+</body>
+</html>

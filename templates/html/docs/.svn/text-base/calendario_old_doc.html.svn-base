@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Calendario</title>
+</head>
+
+<body>
+<h1>Attenzione: OBSOLETO!</h1>
+<p>
+Il javascript <em>calendar.js</em>, che realizza la funzionalità, è una vecchia versione non più manutenuta dall'autore, che ne ha rilasciato una nuova, ma non più a licenza libera.
+</p>
+<p>
+Lo script originale ha il seguente bug: Internet Explorer (almeno nelle versioni 7 e 8, non si escludono le altre) fa apparire il calendario grafico in posizione sbagliata quando la videata, in cui è inserito il campo di imputazione, è "lunga" e appare la barra di scorrimento verticale sullo schermo.<br/>
+Se la videata è particolarmente "lunga", il calendario appare così in alto rispetto alla posizione del campo di inputazione, da non risultare visibile se non agendo sulla barra di scorrimento verticale e portandosi all'inizio della pagina.
+</p>
+<p>
+Per ovviare all'inconveniente, il componente è stato sostituito.
+</p>
+<p>
+Successivamente, Fabian Barile di Reply S.p.A, ha corretto il bug e messo a disposizione il sorgente per l'integrazione nei templates.<br/>
+Non è quindi necessario sostituire il vecchio componente con il nuovo nelle applicazioni in cui è stato utilizzato, basta sostituire i tre file javascript: <em>calendar.js</em>, <em>calendar-it.js</em> e <em>calendar-setup.js</em> con l'ultima versione presente nei templates.
+</p>
+<div class="evidenziato">
+<p>
+Per le nuove applicazioni, però, è meglio utilizzare il nuovo <a href="calendario_doc.html">calendario</a>, in quanto:
+</p>
+<ul>
+<li>più moderno</li>
+<li>in manutenzione dagli autori</li>
+<li>a licenza completamente libera</li>
+<li>configurabile a seconda delle proprie esigenze.</li>
+</ul>
+<p>
+La documentazione e i sorgenti del vecchio, vengono lasciati a disposizione solo per non costringere alla sostituzione retroattiva nelle applicazioni già sviluppate che lo hanno utilizzato.
+</p>
+</div>
+<h1>Calendario</h1>
+<p>
+Il template mostra il modo per richiamare un calendario grafico cliccando sul link iconico, come richiesto dalle linee guida (vedi il paragrafo "Calendario").<br/>
+Viene richiamato uno script javascript open source, con le opportune impostazioni e modifiche al <a href="../css/calendar.css">CSS</a>  per aderire alle convenzioni grafiche delle linee guida.<br/>
+Se javascript non è abilitato l'utente ha comunque la possibilità di inserire manualmente la data.
+</p>
+<p>
+Il campo di input ha la normale struttura spiegata nel template <a href="form_doc.html">form</a>
+</p>
+<pre>
+&lt;input id="nascita" name="data_nascita" size="10" maxlength="10" type="text"/&gt;
+</pre>
+con in più:
+<ol>
+<li>un'immagine con un tooltip (il testo dell'attributo <code>title</code>)
+<pre>
+&lt;img id="cal" src="images/icone/18/ico_calendario_18.gif" alt="calendario"
+   title="Puoi inserire la data manualmente o sceglierla da un calendario cliccando su questa immagine"/&gt;
+</pre>
+</li>
+<li>
+Un tag <code>&lt;script&gt;</code>
+<pre>
+&lt;script type="text/javascript"&gt;Calendar.setup({inputField:"nascita",button:"cal" });&lt;/script&gt;
+</pre>
+nel quale vanno impostati i valori dei parametri:
+	<ul>
+	<li><code>imputField</code> con lo stesso valore dell'attributo <code>id</code> assegnato al tag <code>&lt;input&gt;</code> del campo (nell'esempio: "nascita")</li>
+	<li><code>button</code> con l'<code>id</code> assegnato al tag <code>&lt;img&gt;</code> dell'icona del calendario (nell'esempio: "cal").<br/>
+	<strong>Se sono presenti più campi data, ad ogni icona calendario deve quindi essere assegnato un <code>id</code> diverso</strong>.
+	</li>
+	</ul>
+</li>
+</ol>
+
+</body>
+</html>

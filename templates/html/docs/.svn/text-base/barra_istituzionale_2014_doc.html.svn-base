@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Barra istituzionale 2014</title>
+</head>
+
+<body>
+<h1>Barra istituzionale 2014</h1>
+<p>
+Nuova versione grafica della barra istituzionale.<br/>
+Devono essere impostati:
+</p>
+<ol>
+<li>sigla</li>
+<li>titolo esteso</li>
+</ol>
+
+<p>
+Sono facoltativi:
+</p>
+<ol>
+<li>voci di navigazione.</li> 
+<li>campo ricerca</li>
+</ol>
+
+<p>
+Rispetto alla precedente sono stati eliminati:
+</p>
+<ol>
+<li>sottotitolo applicativo</li>
+<li>numero verde</li>
+</ol>
+<p>
+Non è più applicato il <code>text-transform: uppercase</code> a nessuna delle diciture.
+</p>
+<p>
+Il template HTML va sostituito in blocco a quello precedente, all'interno delle pagine html.<br/>
+Un esempio di uso lo si trova in <a href="../mve_form.html">mve_form.html</a>
+</p>
+
+<p>
+<strong>Nota:</strong> questa versione della barra istituzionale <strong>NON è pienamente compatibile con Internet Explorer 6 e 7</strong>.
+</p>
+
+</body>
+</html>

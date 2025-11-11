@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>steps bar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+<h2>Esempio con due passi completati e terzo passo in corso</h2>
+
+			<div class="jumbotron">
+
+<!-- steps_bar -->
+				<div class="row li-wizard">
+					<div class="col-xs-2 step complete">
+						<div class="heading">Passo 1</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-save"></span></a></div>
+						<div class="words"><span>Scarica</span></div>
+					</div>
+					<div class="col-xs-2 step complete">
+						<div class="heading">Passo 2</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-print"></span></a></div>
+						<div class="words"><span>Stampa il documento</span></div>
+					</div>
+					<div class="col-xs-2 step active">
+						<div class="heading">Passo 3</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-pencil"></span></a><span class="sr-only">attuale</span></div>
+						<div class="words"><span>Compila e firma digitalmente</span></div>
+					</div>
+					<div class="col-xs-2 step disabled">
+						<div class="heading">Passo 4</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-compressed"></span></a></div>
+						<div class="words"><span>Comprimi il documento firmato</span></div>
+					</div>
+					<div class="col-xs-2 step disabled">
+						<div class="heading">Passo 5</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></div>
+						<div class="words"><span>Invialo</span></div>
+					</div>
+					<div class="col-xs-2 step disabled">
+						<div class="heading">Passo 6</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span></a></div>
+						<div class="words"><span>Approvazione ottenuta</span></div>
+					</div>
+				</div>
+<!-- steps_bar / fine -->
+
+			</div>
+<!-- jumbotron / fine -->
+
+			<hr/>
+
+<h2>Esempio con passo in errore</h2>
+			<div class="jumbotron">
+
+<!-- steps_bar -->
+				<div class="row li-wizard">
+					<div class="col-xs-2 step complete">
+						<div class="heading">Passo 1</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-save"></span></a></div>
+						<div class="words"><span>Scarica</span></div>
+					</div>
+					<div class="col-xs-2 step complete">
+						<div class="heading">Passo 2</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-print"></span></a></div>
+						<div class="words"><span>Stampa il documento</span></div>
+					</div>
+					<div class="col-xs-2 step error">
+						<div class="heading">Passo 3</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-pencil"></span></a><span class="sr-only">attuale</span></div>
+						<div class="words"><span>Compila e firma digitalmente</span></div>
+					</div>
+					<div class="col-xs-2 step disabled">
+						<div class="heading">Passo 4</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-compressed"></span></a></div>
+						<div class="words"><span>Comprimi il documento firmato</span></div>
+					</div>
+					<div class="col-xs-2 step disabled">
+						<div class="heading">Passo 5</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></div>
+						<div class="words"><span>Invialo</span></div>
+					</div>
+					<div class="col-xs-2 step disabled">
+						<div class="heading">Passo 6</div>
+						<div class="lapse"><div class="bar"></div></div>
+						<div class="bubble"><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span></a></div>
+						<div class="words"><span>Approvazione ottenuta</span></div>
+					</div>
+				</div>
+<!-- steps_bar / fine -->
+
+			</div>
+<!-- jumbotron / fine -->
+
+
+		</div>
+<!-- container / fine -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+
+</html>

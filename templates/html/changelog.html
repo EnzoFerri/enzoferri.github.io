@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<h1>ChangeLog</h1>
+
+<hr/>
+<h2>versione 1.3.2 patch_01 (12/11/2014)</h2>
+<h3>footer_2014</h3>
+<ul>
+<li>Corretto css <code>style_lombardia</code> aggiungendo <code>clear:both;</code> per evitare sovrapposizione con elementi float eventualmente presenti in fondo alla pagina</li>
+</ul>
+
+<hr/>
+<h2>versione 1.3.2 (20/10/2014)</h2>
+<h3>Nuovi barra_istituzionale e footer</h3>
+<ul>
+<h3>Aggiunte barra_istituzionale_2014.html e footer_2014.html</h3>
+<li>Aggiunto nuovo logo Regione Lombardia + Expo</li>
+<li>Modificati css <code>style_lombardia</code> per barra_istituzionale e footer, mantenendo compatibilità barra e footer precedenti</li>
+<li>Modificato mve_form.html con nuovi barra_istituzionale e footer</li>
+</ul>
+
+<hr/>
+<h2>versione 1.3.1 (04/06/2013)</h2>
+<h3>Aggiunta Accordion</h3>
+<ul>
+<li>Aggiunto nuovo template "accordion"</li>
+<li>Modificati css <code>style_lombardia</code> e declinazioni cromatiche per accordion</li>
+<li>Aggiornato versioni di jQuery e jQuery Ui</li>
+<li>Aggiornato template "calendario" per nuova versione jQuery e jQuery Ui</li>
+<li>Sostituito contenuto directory <code>css/lombardia-theme/</code> per nuova versione jQuery e jQuery Ui</li>
+<li>Aggiunto esempio di form a 2 colonne contenente accordion</li>
+<li>Sostituiti tag H1 con div in "barra istituzionale", per facilitare validazione WCAG 2.0</li>
+</ul>
+
+<hr/>
+<h2>versione 1.3.0 (15/05/2013)</h2>
+<h3>Adeguamenti per accessibilità - validazione WCAG 2.0 (Level AAA)</h3>
+<ul>
+<li>Specificato <code>lang="it-IT"</code> per tutti gli esempi</li>
+<li>Aggiunto link nascosto "salta al contenuto" su barra istituzionale e negli esempi che la contengono</li>
+<li>Aggiunto attributo "for" su tutti i tag &lt;label&gt; relativi a campi di input nei form</li>
+<li>Spostata posizione asterisco di campo obbligatorio prima del campo di input su tutti i form</li>
+<li>Aggiunto testo nascosto "menu espandibile aperto/chiuso" su menu_verticale.js per lettura con screen-reader</li>
+<li>Eliminato uso non semantico tag &lt;h3&gt;, &lt;h4&gt; per validazione WCAG 2.0
+<li>style_lombardia.css
+<ul>
+  <li>aggiunto attributo <code>.non_visibile</code> per link e testi nascosti per screen-reader</li>
+  <li>modificato &nbsp; <code>div#ricerca h4.titolo</code> &nbsp; in &nbsp; <code>div#ricerca div.titolo</code>
+  </li>
+  <li>aggiunto <code>div.box div.titolo, div#area_contenuti div.sottotitolo</code><br/>
+      per eliminazione uso non semantico tag &lt;h3&gt;, &lt;h4&gt;
+  </li>
+</ul>
+</ul>
+<ul>
+<li>Aggiunto capitolo su accessibilità su documentazione</li>
+<li>Aggiunte icone
+<ul>
+<li>images/icone/18/ico_info_18.png</li>
+<li>images/icone/24/ico_info_24.png</li>
+<li>images/icone/32/ico_info_32.png</li>
+</ul>
+</li>
+</ul>
+
+
+<hr/>
+<h2>versione 1.2.0 (20/03/2013)</h2>
+<ul>
+<li>Eliminato il supporto alle versioni 6 e 7 di Internet Explorer</li>
+<li>La doctype di tutti gli esempi è stata portata a strict.</li>
+
+<li>Eliminati css dei componenti singoli</li>
+
+<li>Eliminati copie txt dei sorgenti delle pagine html</li>
+
+<li>Ristrutturata pagina index</li>
+
+<li>form.html
+<ul>
+	<li>Campi di input con "Etichette orizzontali a sinistra" anzichè "verticali" (linee guida pag 84)
+	<li>Esempi di radiobutton e checkbox (con legenda per accessibilità)
+	<li>Esempio campo con label lunga
+	<li>Lunghezza campi (linee guida pag 85)
+</ul>
+</li>
+<li>style_lombardia.css
+<ul>
+  <li>aggiunti</li>
+  <ul>
+    <li>formattazione legend e fieldset</li>
+    <li>form div.riga_75</li>
+    <li>form div.col_15</li>
+    <li>form div.col_90 </li>
+    <li>div.popup h1</li>
+    <li>div.popup form</li>
+    <li>div.popup div.area_testo</li>
+    <li>div.info_box</li>
+  </ul>
+  <li>modificati</li>
+  <ul>
+    <li>titolo pagina</li>
+    <li>formattazione "box", area_login e area_foto</li>
+    <li>form hr</li>
+  </ul>
+</ul>
+</li>
+  <li>accoglienza.html
+  <ul>
+    <li>calcolo automatico altezza dei "box"</li>
+    <li>ristrutturato pagina</li>
+  </ul>
+  </li>
+  <li>equalHeight.js</li>
+</ul>
+</body>
+</html>  

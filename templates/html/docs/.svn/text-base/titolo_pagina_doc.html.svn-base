@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Titolo pagina</title>
+</head>
+
+<body>
+<h1>Titolo pagina</h1>
+<p>
+Template semplicissimo, è composto da due parti:
+</p>
+<ol>
+<li>testo del titolo.</li> 
+<li>tool di utility</li>
+</ol>
+<p>
+I tool di utility sono una serie di link a icone che lanciano funzioni quali ingrandimento/rimpicciolimento dei caratteri, stampa,
+visualizzazione a schermo intero, ecc.<br/>
+La loro presenza è facoltativa.
+</p>
+<p>
+Il titolo è invece obbligatorio.
+</p>
+<p>
+Nel caso ci sia solo il testo del titolo specificare il <code>&lt;div&gt;</code> apposito non è necessario, si può semplicemente scrivere:
+</p>
+<pre>
+  &lt;div id="titolo_pagina"&gt;
+    Titolo pagina
+  &lt;/div&gt;
+</pre>
+<p>
+Quando invece è presente il <code>&lt;ul class="tool_utility"&gt;</code>, è necessario racchiudere il testo nel <code>&lt;div class="testo_titolo"&gt;</code> e aggiungere, dopo il tag <code>&lt;/ul&gt;</code>, il carattere <code>&amp;nbsp;</code>.<br/>
+Questo per posizionare titolo a sinistra e link immagine a destra lasciando però il titolo scritto, nell'HTML, prima degli elementi della lista. Tale ordine è importante per l'accessibilità, in quanto con questo ordine uno screen reader leggerà correttamente prima il titolo e poi i link immagine. 
+</p>
+
+</body>
+</html>

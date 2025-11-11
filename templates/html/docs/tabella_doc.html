@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Tabella</title>
+</head>
+
+<body>
+<h1>Tabella</h1>
+<p>
+Il template è costituito da due elementi distinti: la tabella vera e propria, inserita in un normale tag <code>&lt;table&gt;</code> e il &lt;div class="toolbar_tabella"&gt; che a sua volta contiene il "pager" con l'elenco delle pagine e le icone per la paginazione, un elenco di link iconici che possono essere di qualunque tipo.
+</p>
+<p>
+La struttura della tabella è classica standard HTML, basata quindi sui tag <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> per l'intestazione e <code>&lt;td&gt;</code> per le righe, cui sono applicate le dichiarazioni CSS per la resa grafica.<br/>
+</p>
+Poche le classi particolari:
+<ul>
+  <li><code>&lt;tr class="riga_alternata"&gt;</code> serve a rendere più scuro lo sfondo della riga e a dare l'effetto "lettura facilitata" alla tabella stessa.</li>
+  <li><code>&lt;td class="numero"&gt;</code> allinea a destra il contenuto della tabella. E' pensata per i campi numerici.</li>
+  <li><code>&lt;td class="centrato"&gt;</code> allinea al centro. E' pensata per colonne contenenti icone o la checkbox di scelta della riga.</li>
+</ul>
+<p>
+All'interno delle colonne è stato inserito un po' di tutto: checkbox, testo alfabetico, campi numerici, link iconici, link testuali, ed anche una colonna in cui sono presenti tre link iconici-testuali per ogni casella.<br/>
+E' stato fatto a puro titolo di esempio per dare l'idea delle possibilità a disposizione; in realtà il possibile scopo di alcune colonne è in contraddizione con quello di altre (per esempio le checkbox con i link della colonna azioni).
+</p>
+<p>
+Sulla intestazione della colonna "Nome utente" è presente una piccola freccia. Idealmente è un link ad una funzione di riordinamento della tabella in base al contenuto della colonna.
+</p>
+<p>
+Il <a href="../css/tabella.css">CSS</a> applica al tag <code>&lt;table&gt;</code> una <code>width: 100%;</code> quindi la tabella occuperà sempre tutta la larghezza disponibile sulla pagina.<br/>
+Nel caso le colonne siano poche, per evitare un eccessivo allargamento delle colonne è possibile usare la <a href="tabella_ridotta_doc.html">tabella ridotta</a>.
+</p>
+
+
+<h3>Tabella a scelta multipla</h3>
+<p>
+Utilizzando una checkbox in prima colonna è possibile creare tabelle a scelta multipla. In tal caso nella toolbar si inserirà un pulsante di "invio" e, probabilmente, si eliminierà il pager.<br/>
+La gestione di una tabella a scelta multipla è semplice se la tabella è caricata completamente, tutti i checkbox selezionati vengono infatti passati all'applicazione che li elabora premendo un pulsante di tipo <code>submit</code>.<br/>
+Se non è possibile caricare la tabella completamente, l'applicazione dovrà farsi carico di memorizzare le checkbox selezionate ad ogni cambio pagina. In tal caso penso sia meglio però non utilizzare un pager come quello mostrato ma due pulsanti, di tipo <em>input</em>, per spostarsi di una pagina alla volta.
+</p>
+<p>
+Nel caso si voglia avere la possibilità di applicare alle righe scelte una tra più azioni simili a quelle nella toolbar (Salva pdf, Stampa, ecc.) tali azioni andrebbero messe in una <code>&lt;select&gt;</code>, in modo che l'utente scelga righe su cui agire, azione da eseguire e poi, con un pulsante <code>submit</code> invii i dati all'applicazione.
+</p>
+</body>
+</html>

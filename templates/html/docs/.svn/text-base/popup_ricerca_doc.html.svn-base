@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Pupup ricerca</title>
+</head>
+
+<body>
+<h1>Popup ricerca</h1>
+<p>
+Il template è composto da due file html:
+</p>
+<ol>
+<li><a href="../popup.html">popup.html</a></li>
+<li><a href="../popup_ricerca.html">popup_ricerca.html</a>
+</li>
+</ol>
+<p>
+<a href="popup_html.txt">Popup.html</a> è semplicemente una form con un campo di input ed un link iconico per il richiamo della ricerca.<br/>
+L'apertura della finestra di popup avviene tramite javascript attraverso l'attributo <code>onclick</code>, usando come link di apertura del popup quanto contenuto nell'attributo <code>href</code> e facendo un <code>return false</code> per imperdire all'<code>href</code> di richiamare anch'esso la pagina.
+</p>
+<pre>
+&lt;a href="popup_ricerca.html" target="_blank" class="ricerca" onclick="window.open(this.href, ...
+</pre>
+Se javascript è disabilitato, l'<code>onclick</code> non viene eseguito, ma funziona il link sul tag <code>&lt;a&gt;</code>, quindi la finestra di popup viene caricata nella finestra attiva del browser.
+<p>
+Le parametrizzazioni passate: dimensioni, quali elementi rendere visibili, eccetera, sono personalizzabili a seconda delle esigenze.
+</p>
+<pre>
+width=680, height=500, location=no, menubar=no, scrollbars=no, status=no, toolbar=no, fullscreen=no, dependent=no
+</pre>
+<p>
+<a href="popup_ricerca_html.txt">Popup_ricerca.html</a> è una <em>form</em> all'interno di una finestra dalle dimensioni ridotte, secondo le linee guida (vedi paragrafo "Popup").<br/>
+Due <a href="../css/popup_ricerca.css">dichiarazioni CSS</a> specificano le caratteristiche dell'intestazione della finestra e il padding. 
+</p>
+<p>
+In realtà la finestra di popup può avere un contenuto qualsiasi. In questo template si è relizzata la ricerca presente nelle linee guida, che si presuppone sia uno dei casi più frequenti di utilizzo del popup.
+</p>
+</body>
+</html>

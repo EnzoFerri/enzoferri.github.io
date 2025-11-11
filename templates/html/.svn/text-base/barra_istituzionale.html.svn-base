@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+
+<title>Barra istituzionale</title>
+</head>
+
+<body>
+<a href="#titolo_pagina" class="non_visibile">salta al contenuto</a>
+<div id="barra_istituzionale">
+	<div class="spalla_sx">
+		<a href="http://www.regione.lombardia.it">
+			<img class="logo" src="images/tagli_html/top_logoregione.gif" alt="Regione Lombardia"/>
+		</a>
+		<div class="fascia_sup"></div>
+		<div class="fascia_inf"></div>
+	</div>
+	<div class="spalla_dx">
+		<div class="fascia_sup"></div>
+		<div class="fascia_inf"></div>
+	</div>
+	<div class="fascia_sup">
+		<ul class="voci_navigazione">
+			<li><a href="#">voce01</a></li>
+			<li><a href="#">voce02</a></li>
+			<li><a href="#">voce03</a></li>
+			<li class="last"><a href="#">voce04</a></li>
+		</ul>
+	</div>
+	<div class="fascia_inf">
+		<div class="sormontante_titolo"></div>
+		<div class="area_titolo">
+			<div class="spalla_sx"></div>
+			<div class="spalla_dx"></div>
+			<span class="numero_verde">Numero verde 800.116.738</span>
+			<div class="titolo">sintel </div>
+			<div class="nome_gamma_servizi">e-procurement </div>
+		</div>
+	</div>
+</div>
+<h2 class="sottotitolo_applicativo">Sistema Intermediazione Telematica</h2>
+<div class="content_separator">&nbsp;</div>
+
+
+</body>
+</html>

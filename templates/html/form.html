@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/Javascript" src="js/menu_verticale.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.9.0.custom.min.js"></script>
+  <script type="text/javascript" src="js/i18n/jquery-ui-i18n.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $.datepicker.setDefaults({showOn: "button", buttonImageOnly: true,
+    buttonText: "Puoi inserire la data manualmente o sceglierla da un calendario cliccando su questa immagine",
+    buttonImage: "images/icone/18/ico_calendario_18.gif" });
+  $.datepicker.setDefaults( $.datepicker.regional[ "it" ] );
+  });
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="css/lombardia-theme/jquery-ui-1.9.0.custom.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/style_lombardia.css" /> 
+
+  <!-- Declinazioni cromatiche
+  <link rel="stylesheet" type="text/css" href="css/ocra.css" />
+  <link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+  <link rel="stylesheet" type="text/css" href="css/viola.css" />
+  <link rel="stylesheet" type="text/css" href="css/grigio.css" />
+  -->
+
+  <title>Form</title>
+</head>
+
+<body>
+  <div id="area_contenuti">
+
+    <form action="#" method="get">
+
+      <div class="info_box">
+        <img src="images/icone/18/ico_info_18.gif" alt="Attenzione: errore!"/>
+        <label>In questa sezione puoi modificare il tuo indirizzo e i tuoi recapiti email e telefonici.</label>
+      </div>
+
+      <div class="alert_box">
+        <img src="images/icone/18/ico_warning_18.gif" alt="Attenzione: errore!"/>
+        <label>Attenzione! Correggere gli errori sottostanti prima di procedere.</label>
+      </div>
+
+      <div class="riga_25">
+        <strong><label class="campi_obbligatori">I campi obbligatori sono contrassegnati con l'asterisco</label></strong>
+      </div>
+
+      <div class="riga_25">
+        <strong>Etichette verticali</strong>
+      </div>
+
+      <div class="riga_75">
+        <div class="col_33">
+          <label for="nome">Nome</label>
+          <label class="campi_obbligatori">*</label><br/>
+          <input class="fatal_error" id="nome" name="nome" size="25" maxlength="25" type="text"/>
+          <label class="fatal_error">immettere nome</label>
+        </div>
+        <div class="col_33">
+          <label for="cognome">Cognome</label>
+          <label class="campi_obbligatori">*</label><br/>
+          <input id="cognome" size="25" maxlength="25" type="text"/>
+        </div>
+        <div class="col_33">
+          <fieldset>
+            <legend>Sesso <label class="campi_obbligatori">*</label></legend><br/>
+            <input id="sesso_m" type="radio" value="M" />
+            <label for="sesso_m">Maschio</label><br/>
+            <input id="sesso_f" type="radio" value="F" />
+            <label for="sesso_f">Femmina</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="riga">
+        <div class="col_33">
+          <label class="verticale" for="tipo_doc_identita">Tipo documento</label>
+          <select id="tipo_doc_identita">
+            <option value="CI">Carta d'indentità</option>
+            <option value="PA">Passaporto</option>
+          </select>
+        </div>
+        <div class="col_33">
+          <label class="verticale" for="num_doc_identita">Numero documento</label>
+            <img src="images/icone/18/ico_info_18.png" alt="E' possibile scrivere le lettere anche in caratteri minuscoli." title="E' possibile scrivere le lettere anche in caratteri minuscoli"/>
+          <input id="num_doc_identita" size="25" maxlength="25" type="text"/>
+        </div>
+        <div class="col_33">
+          <div class="col_50">
+            <label for="scaduto">Scaduto</label><br/>
+            <input id="scaduto" type="checkbox" value="true" />
+          </div>
+          <div class="col_50">
+            <label for="impronte">Impronte digitali</label><br/>
+            <input id="impronte" type="checkbox" value="true" />
+          </div>
+        </div>
+      </div>
+
+      <div class="riga_75">
+        <div class="col_33">
+          <label class="verticale" for="data_rilascio">Data di rilascio (formato gg/mm/aaaa)</label>
+          <input id="data_rilascio" size="10" maxlength="10" type="text"/>
+          <script type="text/javascript">$(function() { $( "#data_rilascio" ).datepicker({});}); </script>
+        </div>
+        <div class="col_66">
+          <label class="verticale" for="comune_rilascio">Comune di rilascio</label>
+          <input id="comune_rilascio" size="50" maxlength="50" type="text"/>
+          <a href="popup_ricerca.html" class="ricerca" onclick="window.open(this.href, 'popupwindow', ' width=680, height=500, location=no, menubar=no, scrollbars=no,status=no, toolbar=no,fullscreen=no, dependent=no'); return false;">
+            <img src="images/icone/18/ico_ricerca_18.gif" alt="Clicca qui per effettuare una ricerca." title="Clicca qui per effettuare una ricerca."/>
+          </a>
+        </div>
+      </div>
+
+      <div class="riga_110">
+        <div class="col_100">
+          <label class="verticale" for="note">Note ed eventuali altre comunicazioni</label>
+          <textarea cols="100" id="note" rows="3"></textarea>
+        </div>
+      </div>
+
+    </form>
+
+      <hr/>
+
+    <form action="#" method="get">
+
+      <div class="alert_box">
+        <img src="images/icone/18/ico_warning_18.gif" alt="Attenzione: errore!"/>
+        <label>Attenzione! Correggere gli errori sottostanti prima di procedere.</label><br/>
+        <label class="fatal_error">immettere nome</label>
+      </div>
+
+      <div class="riga_25">
+        <strong><label class="campi_obbligatori">I campi obbligatori sono contrassegnati con l'asterisco</label></strong>
+      </div>
+      <div class="riga_25">
+        <strong>Etichette orizzontali a sinistra</strong>
+      </div>
+
+      <div class="riga_25">
+        <div class="col_10">
+          <label for="nome2">Nome</label>
+          <label class="campi_obbligatori">*</label>
+        </div>
+        <div class="col_25">
+          <input class="fatal_error" id="nome2" name="nome2" size="25" maxlength="25" type="text"/>
+        </div>
+        <div class="col_10">
+          <label for="cognome2">Cognome</label>
+          <label class="campi_obbligatori">*</label>
+        </div>
+        <div class="col_30">
+          <input id="cognome2" size="25" maxlength="25" type="text"/>
+        </div>
+        <div class="col_25">
+          <fieldset>
+            <legend>Sesso <label class="campi_obbligatori">*</label></legend>
+            <input id="sesso_m2" type="radio" value="M" />
+            <label for="sesso_m2">Maschio</label>
+            <input id="sesso_f2" type="radio" value="F" />
+            <label for="sesso_f2">Femmina</label>
+          </fieldset>
+        </div>
+      </div>
+  
+      <div class="riga_25">
+        <div class="col_10">
+          <label for="tipo_doc_identita2">Tipo docum.</label>
+        </div>
+        <div class="col_25">
+          <select id="tipo_doc_identita2">
+            <option value="CI">Carta d'indentità</option>
+            <option value="PA">Passaporto</option>
+          </select>
+        </div>
+        <div class="col_10">
+          <label for="num_doc_identita2">N. documento</label>
+        </div>
+        <div class="col_30">
+          <img src="images/icone/18/ico_info_18.png" alt="E' possibile scrivere le lettere anche in caratteri minuscoli." title="E' possibile scrivere le lettere anche in caratteri minuscoli"/>
+          <input id="num_doc_identita2" size="25" maxlength="25" type="text"/>
+        </div>
+        <div class="col_25">
+          <div class="col_50">
+            <label for="scaduto2">Scaduto</label>
+            <input id="scaduto2" type="checkbox" value="true" />
+          </div>
+          <div class="col_50">
+            <label for="impronte2">Impronte digitali</label>
+            <input id="impronte2" type="checkbox" value="true" />
+          </div>
+        </div>
+      </div>
+
+      <div class="riga_25">
+        <div class="col_10">
+          <label for="data_rilascio2">Data rilascio</label>
+        </div>
+        <div class="col_25">
+          <input id="data_rilascio2" size="10" maxlength="10" type="text"/>
+          <script type="text/javascript">$(function() { $( "#data_rilascio2" ).datepicker({});}); </script>
+        </div>
+        <div class="col_10">
+          <label for="comune_rilascio2">Comune</label>
+        </div>
+        <div class="col_50">
+          <input id="comune_rilascio2" size="50" maxlength="50" type="text"/>
+          <a href="popup_ricerca.html" class="ricerca" onclick="window.open(this.href, 'popupwindow', ' width=680, height=500, location=no, menubar=no, scrollbars=no,status=no, toolbar=no,fullscreen=no, dependent=no'); return false;">
+            <img src="images/icone/18/ico_ricerca_18.gif" alt="Clicca qui per effettuare una ricerca." title="Clicca qui per effettuare una ricerca."/>
+          </a>
+        </div>
+      </div>
+
+      <div class="riga_75">
+        <div class="col_10">
+          <label for="note2">Note ed eventuali altre comunicazioni</label>
+        </div>
+        <div class="col_90">
+          <textarea cols="100" id="note2" rows="3"></textarea>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="riga">
+        <div class="area_rispetto">
+          <a href="#" class="pulsante">Annulla</a>
+          <input name="invio" value="conferma" class="pulsante" type="submit"/>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

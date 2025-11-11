@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Pulsanti</title>
+</head>
+
+<body>
+<h1>Pulsanti</h1>
+<p>
+Questo template mostra tre pulsanti di esempio, di tipologia diversa, ed un campo di input.<br/>
+Sono inseriti all'interno di un form che ha un <code>method</code> <code>get</code> che rimanda alla pagina stessa, in
+modo da poter vedere cosa verrebbe inviato all'applicazione premendo i pulsanti stessi.
+</p>
+<p>
+Il	primo pulsante, con la dicitura "Pulisci", a fianco del campo di input, è di tipo <em>reset</em>, quindi non invia
+dati all'applicazione, ma si limita a pulire il contenuto di ogni campo di input presente nel form.<br/>
+Gli altri due: "Annulla" e "Conferma" sono di invece tipo <em>submit</em>, ed inviano, oltre al contenuto del campo di
+input, il proprio attributo <em>name</em>.<br/>
+In questo modo, anche quando javascript è disabilitato, l'applicazione sul server è in grado di sapere quale tasto è
+stato premuto ("Conferma" o "Annulla") e agire di conseguenza.
+</p>
+<p>
+I due tasti di tipo <em>submit</em>, sono inoltre inseriti in un <code>&lt;div&gt;</code> alla cui classe
+"area_rispetto" è applicato del padding e un <code>float:right</code>, in accordo con quanto specificato nelle linee
+guida (vedi "Pulsanti: posizionamento") . 
+</p>
+<p>
+E' possibile applicare un <code>&lt;div&gt;</code> ad un pulsante anche senza inserirlo in una <em>area_rispetto</em> specificando <u>anche</u> la classe <code>pulsante_dx</code>:
+</p>
+<pre>
+&lt;input name="invio" value="Ricerca" class="pulsante pulsante_dx" type="submit"/&gt;
+</pre>
+<p>
+Il passaggio del cursore del mouse provoca un leggero cambiamento di aspetto nei pulsanti, ottenuto sostituendo l'immagine di sfondo dei pulsanti stessi.<br/>
+Tale effetto però non è presente in Internet Explorer 6 in quanto questo browser non gestisce l'<code>hover</code> sugli elementi <code>&lt;input&gt;</code>.
+</p>
+
+</body>
+</html>

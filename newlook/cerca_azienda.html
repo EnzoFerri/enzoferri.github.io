@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Cerca azienda</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+<!--    <link href="css/cerca_azienda.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- barra istituzionale -->
+		<a href="#content" class="sr-only sr-only-focusable">Vai al contenuto principale</a>
+    <div id="barra_istituzionale" class="clearfix">
+			<div class="logo hidden-xs">
+				<a href="http://www.regione.lombardia.it">
+					<img src="images/logo_regione.png" alt="Regione Lombardia"/>
+				</a>
+			</div>
+
+			<div class="numero_verde text-center hidden-xs">Numero verde 800.116.738</div>
+
+			<div class="text-center">
+				<div class="area_titolo">
+					<div class="sigla" tabindex="0">Muta</div>
+					<span class="separatore_titolo"> | </span> 
+					<div class="titolo_esteso" tabindex="0">Modello Unico Trasmissione Atti</div>
+				</div>
+			</div>
+    </div>
+
+		<div class="barra_voci_cerca">
+			<ul class="voci_navigazione" role="navigation">
+				<li><a href="#">CRA</a></li>
+				<li><a href="#">Guida</a></li>
+				<li><a href="#">Portale</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+			<div class="pull-right cerca">
+				<form role="search">
+					<input title="cerca" type="text" class="cerca_lispa" placeholder="Cerca nel sito">
+					<button type="submit" class="btn btn-default btn_cerca" aria-label="Cerca"><span class="glyphicon glyphicon-play"></span></button>
+				</form>
+			</div>
+		</div>
+<!-- barra istituzionale / fine -->
+
+<!-- area utente -->
+		<div class="area_utente">
+			<div class="container">
+				<span class="nome_utente">
+					<span class="glyphicon glyphicon-user white" role="presentation"></span>
+					Nome Utente Lungo Lungo Lungo 
+				</span>
+				<a class="pull-right" href="#" role="button"><span class="glyphicon glyphicon-off white" role="presentation"></span> Logout</a>
+				<nav class="tools_utente hidden-xs pull-right" role="menu">
+					<a href="#" role="menuitem"><span class="glyphicon glyphicon-cog white" role="presentation"></span> Modifica profilo</a>
+					<a href="#" role="menuitem"><span class="glyphicon glyphicon-envelope white" role="presentation"></span> Comunicazioni</a>
+				</nav>
+			</div>
+    </div>
+<!-- area utente / fine -->
+
+<!-- menu orizzontale -->
+		<nav class="menu_orizzontale">
+			<div class="container">
+				<ul class="nav nav-tabs" role="menubar" aria-label="Azioni">
+					<li><a href="#" role="menuitem"><span class="glyphicon glyphicon-user" role="presentation"></span> Il mio profilo</a></li>
+					<li><a href="#" role="menuitem"><span class="glyphicon glyphicon-star" role="presentation"></span> Preferiti</a></li>
+					<li class="active"><a href="#" role="menuitem"><span class="glyphicon glyphicon-search" role="presentation"></span> Cerca</a></li>
+					<li><a href="#" role="menuitem"><span class="glyphicon glyphicon-send" role="presentation"></span> Applicazioni</a></li>
+				</ul>
+			</div>
+		</nav>
+<!-- menu orizzontale / fine -->
+
+
+    <div class="container">
+
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Cerca Azienda</h2>
+				</div>
+			</div>
+
+<!-- pannello -->
+			<div class="panel panel-lispa">
+				<div class="panel-body">
+					<form class="form" role="form">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="cuaa">CUAA</label>
+									<input type="text" class="form-control" id="cuaa">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="ragione_sociale">Ragione sociale impresa</label>
+									<input type="text" class="form-control" id="ragione_sociale">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="partita_iva">Partita IVA</label>
+									<input type="text" class="form-control" id="partita_iva">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="provincia">Provincia</label>
+									<select class="form-control" id="provincia">
+										<option value""></option>
+										<option value"MI">Milano</option>
+										<option value"MB">Monza Brianza</option>
+										<option value"Co">Como</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label for="comune">Comune</label>
+								<select class="form-control" id="comune">
+									<option value""></option>
+									<option value"Monza">Monza</option>
+									<option value"Villasanta">Villasanta</option>
+									<option value"Vimercate">Vimercate</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label for="ultima_lavorazione">Ultima lavorazione</label>
+								<input type="text" class="form-control" id="ultima_lavorazione">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<button type="submit" class="btn btn-default btn-lg pull-right">Cerca Azienda</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+<!-- pannello / fine -->
+
+			<div class="jumbotron">
+				<div class="row card_azienda">
+					<div class="col-sm-1 glifo hidden-xs">
+						<span class="glyphicon glyphicon-map-marker" role="presentation"></span>
+					</div>
+					<div class="col-sm-8">
+						<div class="row denominazione h3">
+							Bellinzona Agostino - Torricella Verzate - PV
+						</div>
+						<div class="row">
+							BLZGST42F29I754C
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<button class="btn btn-primary pull-right">Visualizza</button>
+					</div>
+				</div>
+				<hr/>
+				<div class="row card_azienda">
+					<div class="col-sm-1 glifo hidden-xs">
+						<span class="glyphicon glyphicon-map-marker" role="presentation"></span>
+					</div>
+					<div class="col-sm-8">
+						<div class="row denominazione">
+							Bellinzona Agostino - Torricella Verzate - PV
+						</div>
+						<div class="row">
+							BLZGST42F29I754C
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<button class="btn btn-primary pull-right">Visualizza</button>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+<!-- footer -->
+	<div id="footer" class="text-center">
+		<span>&copy; Copyright Regione Lombardia</span><span class="hidden-xs"> - tutti i diritti riservati</span>
+		<nav class="voci_navigazione" role="navigation">
+			<a href="#">Voce 01</a>
+			<a href="#">Voce 02</a>
+			<a href="#">Voce 03</a>
+		</nav>
+	</div>
+<!-- footer / fine -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+
+</html>

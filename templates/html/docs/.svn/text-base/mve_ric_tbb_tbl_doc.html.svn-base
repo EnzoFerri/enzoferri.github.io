@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>mve_ric_tbb_tbl</title>
+</head>
+
+<body>
+<h1>Menù verticale, ricerca e tabber con tabella</h1>
+<p>
+Oltre alla <a href="mve_tbb_doc.html#struttura_comune">struttura comune</a> il template è composto da:
+</p>
+<ul>
+<li><a href="../ricerca.html">ricerca</a></li>
+<li><a href="../tabber.html">tabber</a></li>
+<li><a href="../tabella.html">tabella</a></li>
+</ul>
+
+<p>
+Al primo livello dell'area contenuti, oltre al <a href="../titolo_pagina.html">titolo pagina</a>, si trovano <a href="../ricerca.html">ricerca</a> e <a href="../tabber.html">tabber</a>.<br/>
+Allo stesso livello si trova <code>&lt;div class="tab_area_contenuti"&gt;</code> che contiene la <a href="../tabella.html">tabella</a>.<br/>
+E' al div tab_area_contenuti che che i <a href="../css/area_contenuti.css">CSS</a> applicano la bordatura che racchiude <code>&lt;table&gt;</code> e <code>&lt;div class="toolbar_tabella"&gt;</code>, contenente a sua volta il <code>&lt;ul class="pager"&gt;</code>.
+</p>
+<p>
+Ultimo div di primo livello nell'area contenuti è un <code>&lt;div class="content_closer"&gt;</code>.<br/>
+Serve ad estendere, quando il menù verticale è più lungo del contenuto nella parte destra della pagina, il colore di sfondo della parte destra fino al footer.
+</p>
+</body>
+</html>

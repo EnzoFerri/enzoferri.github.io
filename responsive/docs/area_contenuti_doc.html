@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Form</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+
+<h1>Area contenuti</h1>
+<p>
+L'area contenuti è sostanzialmente solo un <code>div</code> che specifica la dimensione dell'area a seconda del tipo di dispositivo su cui viene visualizzata la pagina.
+</p>
+<pre>
+    &lt;div class="col-xs-12 col-sm-9 col-md-10" <strong>id="content"</strong>&gt;
+     . . .
+    &lt;/div&gt;
+</pre>
+<p>
+L'esempio qui riportato prevede che essa occupi:
+<ol>
+<li>tutta la larghezza disponibile nel caso di un smartphone (<code>col-xs-12</code>)</li>
+<li>3/4 della larghezza nel caso di un tablet (<code>col-sm-9</code>)</li>
+<li>5/6 della larghezza nel caso di un portatile o di un desktop con display grande (<code>col-md-10</code>)</li>
+</ol>
+</p>
+<p>
+Una simile scelta prevede che la parte di larghezza non occupata dall'area contenuti sia utilizzata da un <a href="menu_verticale_doc.html" >menù verticale</a> o altro tipo di <em>widget</em>.</br>
+Di conseguenza la larghezza dell'area contenuti deve essere complementare alla larghezza della "<em>area verticale di navigazione</em>" in cui è contenuto il menù verticale.
+</p>
+
+<h2>Accessibilità</h2>
+<p>
+E' <strong>indispensabile</strong> specificare un <code>id</code> (nell'esempio <code>content</code>) che deve corrispondere al <code>href</code> del link nascosto presente come primo <em>tag</em> della <em>barra_istituzionale</em>
+<pre>
+   &lt;a <strong>href="#content"</strong> class="sr-only sr-only-focusable"&gt;Vai al contenuto principale&lt;/a&gt;
+</pre>
+il cui scopo è quello di consentire il salto diretto al contenuto della pagina agli <em>screen reader</em> per non vedenti, per evitare il riascolto della lettura di intestazioni e menù di navigazione.
+</p>
+</body>
+</html>

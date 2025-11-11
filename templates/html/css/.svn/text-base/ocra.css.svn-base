@@ -1,0 +1,85 @@
+/*** Area Utente ***/
+div#area_utente {
+	background-color: #dada45;
+}
+
+/*** Area contenuti **/
+div#area_contenuti {
+	background-color: #ffffff !important;
+}
+div#area_contenuti div.box {
+	background-color:#ededa4;
+	margin: 5px;
+	padding: 5px;
+}
+
+/*** Titolo Pagina ***/
+div#titolo_pagina {
+	background-color: #e5e57f;
+}
+div#titolo_pagina div.testo_titolo{
+  background-color: #e5e57f;
+}
+
+/*** Tabber ***/
+ul.tabber {
+	background-color: #ffffff;
+	background: url(../images/tagli_html/sfondo_tabber_bianco.gif) repeat-x;
+}
+ul.tabber li.tab {
+	background: url(../images/tagli_html/sfondo_tab_bianco.gif) repeat-x;
+}
+ul.tabber li.tab#active {
+	background: url(../images/tagli_html/pixel_bianco.gif) repeat;
+}
+
+/*** Tabella ***/
+table {
+	background-color: #ffffff;
+}
+th {
+	background-color: #e5e57f;
+}
+tr:hover {
+	background-color: #e5e57f;
+}
+div.toolbar_tabella {
+	background-color: #ffffff;
+}
+
+/*** Ricerca ***/
+div#ricerca, 
+div.ricerca {
+	background-color: #ededa4;
+}
+
+/*** Accoglienza ***/
+div#accoglienza {
+	background-color: #ffffff;
+}
+div#accoglienza div#area_contenuti div#cards_accoglienza div#box_sx {
+	background-color: #ededa4;
+}
+div#accoglienza div#area_contenuti div#cards_accoglienza div#box_dx {
+	background-color: #e5e57f;
+}
+div#accoglienza div#area_login {
+	background-color: #dada45;
+}
+div#accoglienza div#cards_accoglienza div#box_1 {
+  background-color: #ededa4;
+}
+div#accoglienza div#cards_accoglienza div#box_2 {
+  background-color: #e5e57f;
+}
+div#accoglienza div#cards_accoglienza div#box_3 {
+  background-color: #dada45;
+}
+
+/*** Accordion ***/
+.ui-accordion-header-active {
+  background-color: #ededa4;
+}
+.ui-accordion .ui-accordion-content {
+  background-color: #ffffff; 
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Sidebar</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Sidebar</h1>
+<p>
+E' solo una fascia laterale in cui inserire del contenuto separandolo dal corpo centrale della pagina.<br/>
+</p>
+<pre>
+&lt;div class="<strong>row</strong>"&gt;
+
+   &lt;div class="<strong>col-md-10</strong>"&gt;
+   &lt;/div&gt;
+
+&lt;!-- sidebar --&gt;
+   &lt;div class="<strong>col-md-2 col-bord-sx-lispa</strong>"&gt;
+      &lt;<strong>aside</strong> class="<strong>dx-column-lispa</strong>"&gt;
+...
+</pre>
+<ul>
+<li>Il posizionamento è realizzato sfruttando le colonne della griglia di <em>bootstrap</em>.</li>
+<li>La classe <code>col-bord-sx-lispa</code> aggiunge il bordo grigio a sinistra della colonna</li>
+<li><code>dx-column-lispa</code> modifica l'aspetto grafico associato ai tag <code>ul</code> e <code>li</code> che delimitano i vari link.</li>
+<li>Il tag <code>aside</code> identifica semanticamente questa area separata del corpo della pagina.</li>
+</ul>
+<p>
+Non ci sono particlari accorgimenti per quanto riguarda l'accessibilità.
+</p>
+
+
+</body>
+</html>

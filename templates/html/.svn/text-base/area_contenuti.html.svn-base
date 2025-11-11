@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>Area Contenuti</title>
+</head>
+
+<body>
+<!--<div id="layout">-->
+   <div id="area_contenuti">
+<!--	 <div class="tab_area_contenuti"> -->
+<!--		<div class="area_testo"> -->
+       	Layout a due colonne con float
+        	<p>Il layout a due colonne con i float presenta un indubbio vantaggio rispetto ad un layout a due colonne con
+        	posizionamenti assoluti: non impone vincoli sulla lunghezza relativa delle colonne. D' altra parte obbliga, nella
+        	maggiorparte dei casi, ad avere la navigazione <em>prima</em> dei contenuti, cosa che può avere influenze negative
+			</p>
+        	<p>Il layout a due colonne con i float presenta un indubbio vantaggio rispetto ad un layout a due colonne con
+        	posizionamenti assoluti: non impone vincoli sulla lunghezza relativa delle colonne. D' altra parte obbliga, nella
+        	maggiorparte dei casi, ad avere la navigazione <em>prima</em> dei contenuti, cosa che può avere influenze negative
+			</p>
+        	<p>Il layout a due colonne con i float presenta un indubbio vantaggio rispetto ad un layout a due colonne con
+        	posizionamenti assoluti: non impone vincoli sulla lunghezza relativa delle colonne. D' altra parte obbliga, nella
+        	maggiorparte dei casi, ad avere la navigazione <em>prima</em> dei contenuti, cosa che può avere influenze negative
+			</p>
+        	<p>Il layout a due colonne con i float presenta un indubbio vantaggio rispetto ad un layout a due colonne con
+        	posizionamenti assoluti: non impone vincoli sulla lunghezza relativa delle colonne. D' altra parte obbliga, nella
+        	maggiorparte dei casi, ad avere la navigazione <em>prima</em> dei contenuti, cosa che può avere influenze negative
+			</p>
+        	<p>Il layout a due colonne con i float presenta un indubbio vantaggio rispetto ad un layout a due colonne con
+        	posizionamenti assoluti: non impone vincoli sulla lunghezza relativa delle colonne. D' altra parte obbliga, nella
+        	maggiorparte dei casi, ad avere la navigazione <em>prima</em> dei contenuti, cosa che può avere influenze negative
+			</p>
+<!--		</div> -->
+<!--	</div> -->
+<!--		<div class="content_closer">&nbsp;</div> -->
+	</div>
+<!--</div>-->
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Form</title>
+</head>
+
+<body>
+<h1>Menù verticale e form</h1>
+<p>
+La pagina ha la <a href="mve_tbb_doc.html#struttura_comune">struttura comune</a> degli altri template.
+</p>
+<p>
+Nell'<code>area_contenuti</code> è inserito un tag <code>&lt;form&gt;</code> contenente vari campi di input.
+</p>
+<p>
+Per dettagli su come costruire il layout dio un form utilizzando i template si veda la documentazione del template <a href="form_doc.html">form</a>.
+</p>
+<p>
+<strong>Nota:</strong> a differenza delle altre pagine composte qui sono state utilizzate <em>barra istituzionale</em> e <em>footer</em> del 2014.
+</p>
+</body>
+</html>

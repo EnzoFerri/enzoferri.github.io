@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<title>wizard</title>
+
+</head>
+<body>
+
+<div class="content_separator">&nbsp;</div>
+
+<div class="wizard">
+<a href="#fine_passi" class="non_visibile">salta elenco passi</a>
+  <ul class="wizard">
+    <li class="past">
+        <span class="non_visibile">passo eseguito</span> 
+        <div class="numero">1</div>
+        <a href="nome.html">nome</a>
+    </li>
+    <li class="past">
+        <span class="non_visibile">passo eseguito</span> 
+        <div class="numero">2</div>
+        <a href="categoria_merceologica.html">categoria<br/>merceologica</a>
+    </li>
+    <li class="past">
+        <span class="non_visibile">passo eseguito</span> 
+        <div class="numero">3</div>
+        <a href="tipologia.html">tipologia</a>
+    </li>
+    <li class="past">
+        <span class="non_visibile">passo eseguito</span> 
+        <div class="numero">4</div>
+        <a href="criteri_aggiudicazione.html">criteri<br/>aggiudicazione</a>
+    </li>
+    <li class="on">
+        <span class="non_visibile">passo attuale</span> 
+        <div class="numero">5</div>
+        <a href="configurazione_prodotti.html">configurazione<br/>prodotti</a>
+    </li>
+    <li>
+        <div class="numero">6</div>
+        <a href="presentazione_offerte.html">presentazione<br/>offerte</a>
+    </li>
+    <li>
+        <div class="numero">7</div>
+        <a href="visibilità_informazioni.html">visibilità<br/>informazioni</a>
+    </li>
+    <li>
+        <div class="numero">8</div>
+        <a href="riepilogo.html">riepilogo</a>
+    </li>
+  </ul>
+</div>
+<hr/>
+  <divid="fine_passi">&nbsp;</div>
+</body>
+
+</html>
+

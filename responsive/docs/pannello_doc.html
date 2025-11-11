@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Pannello</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Pannello</h1>
+<p>
+I precedenti template <code>ricerca.html</code> e <code>ricerca_multirighe.html</code> sono stati sostituiti dal più generico <code>panello.html</code><br/>
+Si tratta di un componente personalizzato identificato dalla classe <code>panel-lispa</code> creato sulla base del componente boostrap <code>panel</code>.
+</p>
+
+<h2>Accessibilità</h2>
+<p>
+Non ci sono particolari attributi di "<em>ruolo</em>" da specificare per questo componente.</br>
+L'unico accorgimento <strong>può</strong> essere quello di prevedere un link nascosto per il salto della lettura del pannello in caso di ricaricamento della pagina.
+</p>
+<pre>
+&lt;a href="<strong>#salta_pannello" class="sr-only sr-only-focusable</strong>"&gt;Salta pannello&lt;/a&gt;
+&lt;div class="panel panel-lispa"&gt;
+. . .
+. . .
+&lt;/div&gt;
+&lt;span <strong>id="salta_pannello"</strong>&gt;dati&lt;/span&gt;
+</pre>
+</body>
+</html>

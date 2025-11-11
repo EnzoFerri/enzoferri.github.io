@@ -1,0 +1,374 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+<!--  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap_ver.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+<script src="../..//jquery/jquery-1.8.2.js"></script>
+<script src="../..//jquery/jquery-ui-1.9.1.custom.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+
+<!-- <script src="../../jquery/jquery.dateFormat-1.0.js"></script>
+<script src="../../jquery/jsrender.js"></script>
+
+<script src="../../jqwidgets/jqx-all.js"></script> -->
+
+<!--  
+<script src="../../base-js/base-js.js"></script>
+<script src="../../base-js/logging.js"></script>
+<script src="../../dwr/engine.js"></script>
+<script src="../../dwr/util.js"></script>
+<script src="../../js/util.js"></script>
+
+<script src="../../base-js/li_widget.js"></script>
+
+-->
+
+<script src="../../base-js/base-js.js"></script>
+<script src="../../jquery/jsrender.js"></script>
+<script src="../../base-js/logging.js"></script>
+<script src="../../dwr/engine.js"></script>
+<script src="../../dwr/util.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../dwr/interface/GestioneCruscottoUtente.js"></script>
+<script src="../../base-js/li_widget.js"></script>
+<script src="../../base-js/base-js-all.js"></script>
+<script src="../../jqwidgets/jqx-all.js"></script>
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="../../css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="../../css/viola.css" />
+<link rel="stylesheet" type="text/css" href="../../css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="../../css/grigio.css" />
+
+-->
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="../../css/ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="../../css/ie7.css" />
+<![endif]-->
+
+<title>Cruscotto</title>
+</head>
+<body>
+<div class="container">
+ 
+<script type="text/javascript">
+function homeTributi(){
+	window.location.href="http://www.tributi.regione.lombardia.it";
+}
+</script>
+ <div class="row">
+    <div id="barra_istituzionale" class="navbar navbar-default navbar-static-top" role="navigation">
+      <div>
+        <div class="navbar-header">
+			<a class="navbar-brand" href="http://www.regione.lombardia.it">
+				<img class="visible-xs" src="../../bootstrap/images/logoregione_small.png" alt="Regione Lombardia"/>
+				<img class="hidden-xs" src="../../bootstrap/images/logoregione.gif" alt="Regione Lombardia"/>
+			</a>
+          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header_menu">
+            	<span class="sr-only">Toggle navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          	</button>
+        </div>
+        <div id="header_menu" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+	         <li><a href="#" onclick="homeTributi();">PORTALE DEI TRIBUTI</a></li>
+    	    
+       	 	
+       	  	<li><a href="../../public/contattaci.do">ASSISTENZA</a></li>
+         	<li class="last"><a href="../../private/j_logout">LOGOUT</a></li>
+         	
+          </ul>
+        </div>
+				<div class="area_titolo">
+					<span class="titolo">Area Personale</span>
+					<span class="nome_gamma_servizi hidden-xs"></span>
+					<span class="numero_verde visible-md visible-lg pull-right">24/06/2014</span>
+				</div>
+      </div>
+    </div>
+		<div class="sottotitolo_applicativo hidden-xs">Sezione riservata del portale dei tributi</div>
+</div>
+
+
+ 
+
+<div class="content_separator_header">&nbsp;</div>
+<div class="area_utente row">
+	<span class="nome_utente">
+		<span class="glyphicon glyphicon-user white"></span>
+		Claudio D'angelo | CITTADINO 
+	</span>
+	<a class="pull-right" href="#"><span class="glyphicon glyphicon-cog white"></span>Modifica profilo</a>
+</div>
+   
+
+ 
+<div class="row middle_content">
+	<div class="col-sm-2 col-xs-12 colonna_menu" >
+		<div id="colonna_menu_sx">
+	<div class="navbar">
+		<div class="navbar-inner">
+	<button type="button" class="navbar-toggle menu-toggle" data-toggle="collapse" data-target="#menu_left" >
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar menu-icon-bar" ></span>
+		<span class="icon-bar menu-icon-bar" style="border-color: black;"></span>
+		<span class="icon-bar menu-icon-bar" style="border-color: black;"></span>
+	</button>
+			<div id="menu_left"
+				class="navbar-collapse navbar-responsive-collapse collapse menu_verticale"
+				style="height: 0px;">
+				<div class="menu_label">Menu</div>
+				<div class="menu_sublabel">Tassa Automobilistica</div>
+				<ul role="menubar" class="menu_bar">
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item">
+						<a class="menu_item_link" href="text.do">Paga ora</a>
+					</li>
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item"><a
+						class="menu_item_link">Bolli pagati</a></li>
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item"><a
+						class="menu_item_link">Bolli da pagare</a></li>
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item"><a
+						class="menu_item_link">Archivio targhe</a></li>
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item"><a
+						class="menu_item_link">Ricerca</a></li>
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item"><a
+						class="menu_item_link">Modulistica</a></li>
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item"><a
+						class="menu_item_link">Contattaci</a></li>
+					<div class="menu_filetto"></div>
+				</ul>
+				<div class="menu_sublabel">SIPIUI</div>
+				<ul role="menubar" class="menu_bar">
+					<div class="menu_filetto"></div>
+					<li role="menuitem" class="menu_item">
+						<a class="menu_item_link" href="text.do">Domanda pulizia Idraulica</a>
+					</li>
+					<div class="menu_filetto"></div>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--
+
+<div id="colonna_menu_sx">
+    <div class="navbar">
+        <div class="navbar-inner">
+					<button type="button" class="navbar-toggle menu-toggle" data-toggle="collapse" data-target="#menu_left" >
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar menu-icon-bar" ></span>
+							<span class="icon-bar menu-icon-bar" style="border-color: black;"></span>
+							<span class="icon-bar menu-icon-bar" style="border-color: black;"></span>
+					</button>
+            <div id="menu_left" class="navbar-collapse navbar-responsive-collapse collapse menu_verticale" style="height: 0px;">
+                <div class="menu_label">Menu</div>
+                <ul role="menubar" class="menu_bar">
+                    <li role="menuitem" class="menu_item"><a
+                        class="menu_item_link" href="text.do">Text</a></li>
+                    <li role="menuitem" class="menu_item"><a
+                        class="menu_item_link">Bolli da pagare</a></li>
+                    <li role="menuitem" class="menu_item"><a
+                        class="menu_item_link">Bolli pagati</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+-->
+
+	</div>
+	<div class="col-sm-10 col-xs-12 colonna_content">
+ 		<div id="layout">
+ 			<div id="area_contenuti">
+       			<div id="titolo_pagina">
+       				Cruscotto
+   				</div>
+ 				
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$( ".portlet" ).addClass( "ui-widget ui-widget-content ui-helper-clearfix" )
+	.find( ".portlet-content" );
+
+$( ".portlet-header .ui-icon" ).click(function() {
+	$( this ).toggleClass( "ui-icon-minusthick" ).toggleClass( "ui-icon-plusthick" );
+	$( this ).parents( ".portlet:first" ).find( ".portlet-content" ).toggle();
+});
+$( ".column" ).disableSelection();
+
+} );
+
+function definePreferences(y) {
+	var x = "#" + y;
+	//alert (x);
+	$(x).addClass("myClass yourClass");
+}
+
+function linkEsterno() {
+	window.parent.location = "//BolloAuto//public/cb/simulaBolloLibero.do";
+}
+</script>
+<!--  
+<center><div class="col_100" id="errorDiv"><font color="red" size="4"><span id="errorSpan"></span></font></div></center>
+-->
+
+<div class="row area_cruscotto">
+		<!-- events="[{events : 'change', callback : function(e, data){console.debug('++++'+data.value)}}]" -->
+				
+					<div class="col-md-6 portlet col_47" id="widget_BOLLI PAGATI"  >
+						<div class="portlet_header">
+							<div class="portlet_header_descr">BOLLI PAGATI</div>
+						</div>
+						<div class="hidden-xs portlet_content">
+							<object  width="100%" height="100%" type="text/html" data="/Portale/public/contattaci.do" ></object>
+						</div>
+						
+					</div>
+					
+				 
+					<div class="col-md-6 portlet col_47" id="widget_ARCHIVIO TARGHE"  >
+						<div class="portlet_header">
+							<div class="portlet_header_descr">ARCHIVIO TARGHE</div>
+						</div>
+						<div class="hidden-xs portlet_content">
+							<object  width="100%" height="100%" type="text/html" data="/Portale/public/contattaci.do" ></object>
+						</div>
+						
+					</div>
+					
+				 
+					<div class="col-md-6 portlet col_47" id="widget_MODULISTICA"  >
+						<div class="portlet_header">
+							<div class="portlet_header_descr">MODULISTICA</div>
+						</div>
+						<div class="hidden-xs portlet_content">
+							<object  width="100%" height="100%" type="text/html" data="/Portale/public/contattaci.do" ></object>
+						</div>
+						
+					</div>
+					
+				 
+					<div class="col-md-6 portlet col_47" id="widget_RICERCA"  >
+						<div class="portlet_header">
+							<div class="portlet_header_descr">RICERCA</div>
+						</div>
+						<div class="hidden-xs portlet_content">
+							<object  width="100%" height="100%" type="text/html" data="/Portale/public/contattaci.do" ></object>
+						</div>
+						
+					</div>
+					
+				 
+					<div class="col-md-6 portlet col_47" id="widget_BOLLI DA PAGARE"  >
+						<div class="portlet_header">
+							<div class="portlet_header_descr">BOLLI DA PAGARE</div>
+						</div>
+						<div class="hidden-xs portlet_content">
+							<object  width="100%" height="100%" type="text/html" data="/Portale/public/contattaci.do" ></object>
+						</div>
+						
+					</div>
+					
+				 
+<div class="content_closer_cruscotto"></div>
+</div>
+
+<div class="row area_cruscotto">
+<!--  
+		<div id="area_contenuti_widget">
+		-->
+		<div class="col-md-6 hidden-xs">
+			<div class="banner-content">
+				<center><a class="link_mano" onclick="linkEsterno()"><img src="../../images/banner_quanto_pagheresti.jpg" /></a></center>
+				<div class="content_closer_thin"></div>
+			</div>
+			<div class="content_closer_thin"></div>
+		
+		</div>
+		<div class="visible-xs">
+			<a class="link_mano" onclick="linkEsterno()">Scopri quanto pagheresti</a> 
+		</div>
+		
+</div>
+
+<div class="content_closer_thin"></div>
+
+<div class="area_pie_cruscotto">
+<div class="pie_cruscotto">
+<div class="pie_cruscotto_contenuto">
+NOTA BENE: I dati contenuti non sono validi ai fini certificativi. 
+</div>
+</div>	
+ 			 
+</div>
+
+<div class="content_closer_thin"></div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+ <div id="footer">
+			<div >
+				<span class="pull-left">
+			        <span class="titolo">AREA PERSONALE DEL PORTALE DEI TRIBUTI</span>
+					<span class="nome_gamma_servizi"></span>
+					<span class="hidden-xs hidden-sm">&copy; Copyright Regione Lombardia - tutti i diritti riservati</span>
+				</span>
+				<!-- 
+				<nav class="hidden-xs pull-right voci_navigazione">
+					<a href="#">Voce 01</a>
+					<a href="#">Voce 02</a>
+					<a href="#">Voce 03</a>
+				</nav>
+				 -->
+			</div>
+		</div>
+
+
+ </div>
+ </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+</body>
+</html>

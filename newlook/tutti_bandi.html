@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Tutti_bandi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- barra istituzionale -->
+		<a name="top"/>
+		<a href="#content" class="sr-only sr-only-focusable">Vai al contenuto principale</a>
+    <div id="barra_istituzionale" class="clearfix">
+			<div class="logo hidden-xs">
+				<a href="http://www.regione.lombardia.it">
+					<img src="images/logo_regione.png" alt="Regione Lombardia"/>
+				</a>
+			</div>
+
+			<div class="numero_verde text-center hidden-xs">Numero verde 800.116.738</div>
+
+			<div class="text-center">
+				<div class="area_titolo">
+					<div class="sigla" tabindex="0">Muta</div>
+					<span class="separatore_titolo"> | </span> 
+					<div class="titolo_esteso" tabindex="0">Modello Unico Trasmissione Atti</div>
+				</div>
+			</div>
+    </div>
+
+		<div class="barra_voci_cerca">
+			<ul class="voci_navigazione" role="navigation">
+				<li><a href="#">CRA</a></li>
+				<li><a href="#">Guida</a></li>
+				<li><a href="#">Portale</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+			<div class="pull-right cerca">
+				<form role="search">
+					<input title="cerca" type="text" class="cerca_lispa" placeholder="Cerca nel sito">
+					<button type="submit" class="btn btn-default btn_cerca" aria-label="Cerca"><span class="glyphicon glyphicon-play"></span></button>
+				</form>
+			</div>
+		</div>
+<!-- barra istituzionale / fine -->
+
+  <div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li class="active">Tutti i bandi</li>
+		</ol>
+
+
+		<h1>Tutti i bandi</h1>
+
+    <div class="row" id="content_row">
+
+<!-- colonna menu verticali -->
+			<div class="col-xs-12 col-sm-4 col-md-3">
+
+				<div id="col-sx">
+
+<!-- menu verticale fisso-->
+		<form class="form-horizontal">
+			<div class="menu_verticale" id="MainMenu3" role="menu">
+				<div class="panel-heading panel-heading-dark" role="menuitem" tabindex="0" href="#filtro_target">
+					<strong>Filtra per target</strong>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled" id="filtro_target">
+						<li>
+							<div class="checkbox">
+								<label for="cittadini">
+								<input id="cittadini" type="checkbox" value="true" />
+									Cittadini
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="imprese">
+								<input id="imprese" type="checkbox" value="true" />
+									Imprese
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="operatori">
+								<input id="operatori" type="checkbox" value="true" />
+									Operatori
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel-heading panel-heading-dark" role="menuitem" tabindex="0" href="#filtro_tipologia">
+					<strong>Filtra per tipologia</strong>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled" id="filtro_tipologia">
+						<li>
+							<div class="checkbox">
+								<label for="agevolazioni">
+								<input id="agevolazioni" type="checkbox" value="true" />
+									Agevolazioni
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="interesse">
+								<input id="interesse" type="checkbox" value="true" />
+									Manifestazioni di interesse
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="concorsi">
+									<input id="concorsi" type="checkbox" value="true" />
+									Concorsi pubblici e avvisi sul personale
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="premi">
+								<input id="premi" type="checkbox" value="true" />
+									Premi
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="gare">
+								<input id="gare" type="checkbox" value="true" />
+									Gare, beni e servizi
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="checkbox">
+								<label for="altri">
+								<input id="altri" type="checkbox" value="true" />
+									Altri
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel-heading panel-heading-dark" role="menuitem" tabindex="0" href="#filtro_data">
+					<strong>Filtro per data scadenza</strong>
+				</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<div class="col-sm-2">
+							<label class="control-label" for="scadenza_dal">Dal</label>
+						</div>
+						<div class="col-sm-10">
+							<input class="form-control" id="scadenza_dal" type="text"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-2">
+							<label class="control-label" for="scadenza_al">al</label>
+						</div>
+						<div class="col-sm-10">
+							<input class="form-control" id="scadenza_al" type="text"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+<!-- menu verticale fisso / fine -->
+
+				</div>
+<!-- div id="col-sx" / fine -->
+
+			</div>
+<!-- colonna menu verticali / fine -->
+
+<!-- area contenuti -->
+			<div class="col-xs-12 col-sm-8 col-md-9" id="content">
+
+				<ul class="nav nav-tabs nav-justified nav-tabs-lispa" role="tablist">
+					<li><a href="#">Aperti</a></li>
+					<li class="active"><a href="#">Chiusi</a></li>
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Misura 121 PSR: nuove disposizione per la presentazione delle domande
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Selezione pubblica n.2 borse di studio area tecnica/ambientale
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso in istruttoria</div>
+						Procedura ristretta per l'esecuzione dei lavori di ampliamento dell'edificio di Lombardia Informatica S.p.A di via Don Minzoni, 24
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Laboratori Sociali di Quartiere: Bando 2014
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Misura 121 PSR: nuove disposizione per la presentazione delle domande
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Bando Misura 2.2 "Pesca nelle acque interne" - pubblicazione BURL 18 aprile 2014
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Dote Scuola 2014/2015
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Contributi alle scuole d'infanzia non statali e non comunali 2013/2014
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Laboratori Sociali di Quartiere: Bando 2014
+					</li>
+					<li class="list-group-item">
+						<div class="bold-lispa">Chiuso e aggiudicato</div>
+						Bando Misura 2.2 "Pesca nelle acque interne" - pubblicazione BURL 18 aprile 2014
+					</li>
+				</ul>
+			</div>
+<!-- area contenuti / fine  -->
+
+		</div>
+<!-- row / fine -->
+
+	</div> <!-- /.container -->
+
+<!-- footer -->
+	<div id="footer" class="text-center">
+		<span>&copy; Copyright Regione Lombardia</span><span class="hidden-xs"> - tutti i diritti riservati</span>
+		<nav class="voci_navigazione" role="navigation">
+			<a href="#">Voce 01</a>
+			<a href="#">Voce 02</a>
+			<a href="#">Voce 03</a>
+		</nav>
+	</div>
+<!-- footer / fine -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/template.js"></script>    <script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/locales/bootstrap-datepicker.it.min.js"></script>
+		<script src="js/template.js"></script>
+
+    <script>
+    $("#scadenza_dal").datepicker({
+			format: "dd/mm/yyyy", weekStart: 1, language: "it",
+			todayHighlight: true, autoclose: true
+    });
+    $("#scadenza_al").datepicker({
+			format: "dd/mm/yyyy", weekStart: 1, language: "it",
+			todayHighlight: true, autoclose: true
+    });
+		</script>
+  </body>
+
+
+</html>

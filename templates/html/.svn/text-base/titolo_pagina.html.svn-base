@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>Titolo pagina</title>
+</head>
+
+<body>
+   <div id="titolo_pagina">
+    <div class="testo_titolo">Titolo pagina</div>
+		<ul class="tool_utility">
+			<li>
+				<a href="#"><img src="images/icone/18/ico_ridimensionaCarattere_18.gif" alt="ingrandisci carattere" title="ingrandisci carattere"/></a>
+			</li>
+			<li>
+				<a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="dati utente" title="dati utente"/></a>
+			</li>
+			<li>
+				<a href="#"><img src="images/icone/18/ico_stampaDoc_18.gif" alt="stampa" title="stampa"/></a>
+			</li>
+			<li>
+				<a href="#"><img src="images/icone/18/ico_massimizza_18.gif" alt="visualizza a schermo intero" title="visualizza a schermo intero"/></a>
+			</li>
+			<li>
+				<a href="#"><img src="images/icone/18/ico_ricercaAvanzata_18.gif" alt="ricerca avanzata" title="ricerca avanzata"/></a>
+			</li>
+		</ul>
+    &nbsp;
+   </div>
+</body>
+</html>

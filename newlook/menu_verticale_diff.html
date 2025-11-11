@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Menu verticale</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+&nbsp;
+  <div class="container-fluid">
+
+<!-- menu verticale -->
+		<div class="menu_verticale" id="MainMenu">
+			<div class="list-group panel">
+				<li class="list-group-item" href="#frutta" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Frutta</li>
+				<ul class="collapse list-group-submenu" id="frutta">
+					<li class="list-group-item" href="#fresca" data-toggle="collapse">Fresca</li>
+					<ul class="collapse list-group-submenu" id="fresca">
+						<li class="list-group-item"><a href="#">pere</a></li>
+						<li class="list-group-item"><a href="#">mele</a></li>
+						<li class="list-group-item"><a href="#">arance</a></li>
+					</ul>
+					<li class="list-group-item" href="#secca" data-toggle="collapse">Secca</li>
+					<ul class="collapse list-group-submenu" id="secca">
+						<li class="list-group-item"><a href="#">noci</a></li>
+						<li class="list-group-item"><a href="#">arachidi</a></li>
+						<li class="list-group-item"><a href="#">nocciole</a></li>
+					</ul>
+				</ul>
+				<li class="list-group-item" href="#verdura" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Verdura</li>
+				<ul class="collapse list-group-submenu" id="verdura">
+					<li class="list-group-item"><a href="#">patate</a></li>
+					<li class="list-group-item"><a href="#">carote</a></li>
+					<li class="list-group-item"><a href="#">lattuga</a></li>
+				</ul>
+				<li class="list-group-item" href="#carne" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Carne</li>
+				<ul class="collapse list-group-submenu" id="carne">
+					<li class="list-group-item" href="#bianca" data-toggle="collapse">Bianca</li>
+					<ul class="collapse list-group-submenu" id="bianca">
+						<li class="list-group-item"><a href="#">Pollo</a></li>
+						<li class="list-group-item"><a href="#">Tacchino</a></li>
+					</ul>
+					<li class="list-group-item" href="#rossa" data-toggle="collapse">Rossa</li>
+					<ul class="collapse list-group-submenu" id="rossa">
+						<li class="list-group-item"><a href="#">Manzo</a></li>
+						<li class="list-group-item"><a href="#">Vitello</a></li>
+					</ul>
+				</ul>
+				<li class="list-group-item" href="#pesce" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Pesce</li>
+				<ul class="collapse list-group-submenu" id="pesce">
+					<li class="list-group-item" href="#marino" data-toggle="collapse">Marino</li>
+					<ul class="collapse list-group-submenu" id="marino">
+						<li class="list-group-item"><a href="#">Spada</a></li>
+						<li class="list-group-item"><a href="#">Dentice</a></li>
+						<li class="list-group-item" href="#molluschi" data-toggle="collapse">Molluschi</li>
+						<ul class="collapse list-group-submenu" id="molluschi">
+							<li class="list-group-item"><a href="#">seppie</a></li>
+							<li class="list-group-item"><a href="#">calamari</a></li>
+							<li class="list-group-item"><a href="#">cozze</a></li>
+						</ul>
+						<li class="list-group-item" href="#crostacei" data-toggle="collapse">Crostacei</li>
+						<ul class="collapse list-group-submenu" id="crostacei">
+							<li class="list-group-item"><a href="#">aragoste</a></li>
+							<li class="list-group-item"><a href="#">gamberi</a></li>
+							<li class="list-group-item"><a href="#">granchi</a></li>
+						</ul>
+					</ul>
+					<li class="list-group-item" href="#acqua_dolce" data-toggle="collapse">Acqua dolce</li>
+					<ul class="collapse list-group-submenu" id="acqua_dolce">
+						<li class="list-group-item"><a href="#">Trote</a></li>
+						<li class="list-group-item"><a href="#">Salmoni</a></li>
+						</ul>
+					</ul>
+				</ul>
+			</div>
+		</div>
+<!-- menu verticale / fine -->
+
+	</div> <!-- /.container fluid -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/menu_verticale.js"></script>
+		<script type="text/Javascript">showAncestors(document.getElementById('SubSubMenu21'));</script>
+  </body>
+</html>

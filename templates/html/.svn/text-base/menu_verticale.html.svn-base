@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+<!--<link rel="stylesheet" type="text/css" href="css/layout_240_left.css" />-->
+<script type="text/Javascript" src="js/menu_verticale.js"></script> 
+
+<title>Menu verticale espandibile</title>
+</head>
+<body>
+<div id="menu_verticale">
+<ul id="ul_menu_verticale">
+	<li><div class="pannello"><span class="aperto"></span><span>Menu</span></div>
+		<ul>
+			<li><a href="#">Voce liv1</a></li>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li class="on"><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Voce liv1</a></li>
+			<li><div class="filetto"></div></li>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3 lunga lunga lunga lunga lunga lunga lunga lunga</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+			<li><div class="filetto"></div></li>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><div class="pannello"><span class="aperto"></span><span>Pannello 1</span></div>
+		<ul>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+			<li><div class="filetto"></div></li>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><div class="pannello"><span class="aperto"></span><span>Pannello 2</span></div>
+		<ul>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+			<li><div class="filetto"></div></li>
+			<li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+				<ul>
+					<li><a href="#">Voce liv2</a></li>
+					<li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+						<ul>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+							<li><a href="#">Voce liv3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Voce liv2</a></li>
+					<li><a href="#">Voce liv2</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+</div>
+</body>
+</html> 

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="js/calendar.js"></script>
+<script type="text/javascript" src="js/calendar-it.js"></script>
+<script type="text/javascript" src="js/calendar-setup.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+-->
+
+<title>Tabelle su 2 colonne</title>
+</head>
+
+<body>
+<a href="#titolo_pagina" class="non_visibile">salta al contenuto</a>
+<div id="barra_istituzionale">
+   <div class="spalla_sx">
+      <a href="http://www.regione.lombardia.it">
+         <img class="logo" src="images/tagli_html/top_logoregione.gif" alt="Regione Lombardia"/>
+      </a>
+
+      <div class="fascia_sup"></div>
+      <div class="fascia_inf"></div>
+   </div>
+   <div class="spalla_dx">
+      <div class="fascia_sup"></div>
+      <div class="fascia_inf"></div>
+   </div>
+   <div class="fascia_sup">
+      <ul class="voci_navigazione">
+
+         <li><a href="http://www.tributi.regione.lombardia.it" title="PORTALE DEI TRIBUTI">PORTALE DEI TRIBUTI</a></li>
+         <li class="last"><a href="/calcolabollo/logoff.jsp" title="Chiudi l'applicazione">LOGOFF</a></li>
+      </ul>
+   </div>
+   <div class="fascia_inf">
+      <div class="sormontante_titolo"></div>
+      <div class="area_titolo">
+         <div class="spalla_sx"></div>
+
+         <div class="spalla_dx"></div>
+         
+         <div class="titolo">TRIBUTI </div>
+         <div class="nome_gamma_servizi">calcolabollo</div>
+      </div>
+   </div>
+</div>
+
+<div class="content_separator">&nbsp;</div>
+
+   <div id="area_utente">      
+      <span class="dati_utente">
+         <span class="ico_utente"></span>
+         Utente:  Mario Rossi
+      </span>
+   </div>
+   
+	<ul id="menu_orizzontale">
+		<li>
+			<a href="#"><img src="images/icone/18/ico_nuovo_18.gif" alt="nuovo preventivo"/>Nuovo preventivo</a>
+		</li>
+		<li>
+			<a href="#"><img src="images/icone/18/ico_salvaPdf_18.gif" alt="tariffario in formato pdf"/>Tariffario</a>
+		</li>
+	</ul>
+
+	<div id="titolo_pagina">
+		Calcola il bollo auto
+   	</div>
+	<div id="area_contenuti">
+
+<div class="colonna_sx">
+<!-- div sinistra -->
+	
+	<table class="tabella_dettaglio">
+		<tr>
+			<th colspan="2">DATI DEL VEICOLO</th>
+		</tr>
+		<tr>
+			<td>TIPO VEICOLO</td><td>AUTOVEICOLO</td>
+		</tr>
+		<tr class="riga_alternata">
+			<td>TARGA</td><td>AA111AA</td>
+		</tr>		
+		<tr>
+			<td>DATA DI IMMATRICOLAZIONE</td><td>08/03/2010</td>
+		</tr>	
+		<tr class="riga_alternata">
+			<td>ALIMENTAZIONE</td><td>BENZINA </td>
+		</tr>		
+		<tr>
+			<td>PESO COMPLESSIVO</td><td>1510 KG</td>
+		</tr>	
+		<tr class="riga_alternata">
+			<td>PORTATA</td><td>400 KG</td>
+		</tr>	
+		<tr>
+			<td>USO</td><td>PROPRIO</td>
+		</tr>
+		<tr class="riga_alternata">
+			<td>POTENZA (KW)</td><td>55,00</td>
+		</tr>
+		<tr>
+			<td>DIRETTIVE CEE EMISSIONI INQUINANTI</td><td>EURO4</td>
+		</tr>	
+		</table>
+</div>
+<!-- fine div sinistra -->
+
+
+<div class="colonna_dx">
+<!-- div destra -->
+	<table class="tabella_dettaglio">
+		<tr>
+			<th colspan="2">DETTAGLIO TASSA AUTO</th>
+		</tr>
+		<tr>
+			<td>MESE DI DECORRENZA</td><td>MARZO</td>
+		</tr>
+		<tr class="riga_alternata">
+			<td>MESE SCADENZA</td><td>FEBBRAIO</td>
+		</tr>
+		<tr>
+			<td>IMPORTO ANNUO CALCOLATO SULLA TIPOLOGIA DEL VEICOLO</td><td>141,90 €</td>
+		</tr>		
+		<tr class="riga_alternata">
+			<td>SANZIONI</td><td>4,26 €</td>
+		</tr>
+		<tr>
+			<td>INTERESSI</td><td>0,70 €</td>
+		</tr>		
+		<tr class="riga_alternata">
+			<td>TOTALE IMPORTO</td><td>146,86 €</td>
+		</tr>		
+		<tr>
+			<td>MESI DI VALIDITA'</td><td>12</td>
+		</tr>				
+		<tr class="riga_alternata">
+			<td>DATA TERMINE DI PAGAMENTO</td><td>30-04-2010</td>
+		</tr>
+	</table>
+
+</div>
+<!-- fine div destra -->
+
+<form action="#" method="get">
+<div class="riga">
+	<div class="area_rispetto">
+		<input name="nuovo_preventivo" type="submit" class="pulsante" value="nuovo preventivo"/>
+		<input name="paga_online" type="submit" class="pulsante" value="paga online"/>
+	</div>
+</div>
+</form>
+
+<div class="content_closer_thin"></div>
+<div class="area_testo">
+
+<div class="sottotitolo">INFORMAZIONI</div>
+<hr/>
+<div>
+Il servizio di calcolo e pagamento della tassa automobilistica recepisce le modifiche introdotte dalla Legge Finanziaria 2007 in materia di Tassa Automobilistica di Proprietà.<br/>
+Il servizio é attivo nelle seguenti fasce orarie: <br/> 
+
+- Giorni feriali 6.00 - 22.00 <br/>
+- Sabato 6.00 - 24.00 <br/>
+- Giorni festivi 0.00 - 24.00 <br/>
+
+Per la segnalazione di problemi tecnici é disponibile il servizio 
+CONTATTACI.
+</div>
+</div>
+<div class="content_closer_thin"></div>
+	</div>
+
+
+<div id="footer">
+	<div class="titolo_e_copyright">
+	   <span class="titolo">portale dei tributi </span>
+	   <span class="nome_gamma_servizi">calcolabollo </span>
+	   <span class="copyright">&copy; Copyright Regione Lombardia - tutti i diritti riservati</span>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Pulsanti</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Pulsanti</h1>
+<p>
+Per la resa grafica dei pulsanti è stata creata una classe aggiuntiva: <code>btn-lispa</code>.<br/>
+In questo modo resta possibile anche utilizzare tutti i tipi di pulsanti previsti da bootstrap.
+</p>
+<p>
+La classe <em>btn-lispa</em>, come le altre classi <em>btn</em> di bootstrap funzionano non solo sui tag <code>&lt;button&gt;</code>, ma anche sui tag <code>&lt;a&gt;</code>, come nel caso del terzo "pulsante" proposto nell'esempio.
+</p>
+
+<h2>Accessibilità</h2>
+<p>
+Nel caso si utilizzi il tag <code>&lt;button&gt;</code>, è <strong>inutile</strong> specificare <code>role="button"</code>.
+</p>
+<pre>
+&lt;button type="submit" class="btn btn-lispa"&gt;Filtra&lt;/button&gt;
+</pre>
+<p>
+Se invece si usa il tag <code>&lt;a&gt;</code> diventa <strong>necessario specificare il ruolo</strong> perchè gli screen reader identifichino come "<em>bottone</em>" il link.
+</p>
+<pre>
+&lt;a class="btn btn-lispa" <strong>role="button"</strong>&gt;Premere&lt;/a&gt;
+</pre>
+</body>
+</html>

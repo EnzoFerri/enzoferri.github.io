@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>form 2 colonne con accordion</title>
+</head>
+
+<body>
+<h1>Form 2 colonne con accordion</h1>
+<p>
+Il template è identico al <a href="../form_2colonne.html">form_2colonne.html</a> tranne per il fatto che nel "box" della colonna di destra è stato inserito un accordion identico a quello mostrato nel <a href="../accordion.html">relativo template</a>.
+</p>
+<p>
+Non ci sono informazioni da aggiungere a quanto già detto nella documentazione del template <a href="accordion_doc.html">accordion</a>
+</p>
+
+</body>
+</html>

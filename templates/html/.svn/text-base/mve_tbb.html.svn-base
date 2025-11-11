@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+<script type="text/Javascript" src="js/menu_verticale.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="css/layout_240_left.css" />-->
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>mve_tbb</title>
+</head>
+
+<body>
+<a href="#titolo_pagina" class="non_visibile">salta al contenuto</a>
+<div id="barra_istituzionale">
+   <div class="spalla_sx">
+      <a href="http://www.regione.lombardia.it">
+         <img class="logo" src="images/tagli_html/top_logoregione.gif" alt="Regione Lombardia"/>
+      </a>
+      <div class="fascia_sup"></div>
+      <div class="fascia_inf"></div>
+   </div>
+   <div class="spalla_dx">
+      <div class="fascia_sup"></div>
+      <div class="fascia_inf"></div>
+   </div>
+   <div class="fascia_sup">
+      <ul class="voci_navigazione">
+         <li><a href="#">CENTRALE REGIONALE ACQUISTI</a></li>
+         <li><a href="#">LOGOFF</a></li>
+         <li><a href="#">GUIDA</a></li>
+         <li class="last"><a href="#">PORTALE</a></li>
+      </ul>
+   </div>
+   <div class="fascia_inf">
+      <div class="sormontante_titolo"></div>
+      <div class="area_titolo">
+         <div class="spalla_sx"></div>
+         <div class="spalla_dx"></div>
+         <span class="numero_verde">Numero verde 800.116.738</span>
+         <div class="titolo">sintel </div>
+         <div class="nome_gamma_servizi">e-procurement </div>
+      </div>
+   </div>
+</div>
+<h2 class="sottotitolo_applicativo">Sistema Intermediazione Telematica</h2>
+<div class="content_separator">&nbsp;</div>
+
+   <div id="area_utente">
+		<span class="dati_utente">
+			<span class="ico_utente"></span>
+			Utente: Mario Rossi
+		</span>
+		<ul class="links">
+			<li class="first">
+				<a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="modifica profilo"/>Modifica profilo</a>
+			</li>
+			<li>
+				<a href="#"><img src="images/icone/18/ico_comunicazioniElettroniche_18.gif" alt="comunicazioni"/>Comunicazioni</a>
+			</li>
+		</ul>
+   </div>
+
+<div id="layout">
+	 <div id="colonna_menu_sx">
+
+<div id="menu_verticale">
+<ul id="ul_menu_verticale">
+   <li><div class="pannello"><span class="aperto"></span><span>Menu</span></div>
+      <ul>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+         <li><div class="filetto"></div></li>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li class="on"><a href="#">Voce liv3 lunga lunga lunga lunga lunga lunga lunga lunga</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+         <li><div class="filetto"></div></li>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul>
+
+
+   </div>
+   </div>
+
+	<div id="area_contenuti">
+   <div id="titolo_pagina">
+    <div class="testo_titolo">Titolo pagina</div>
+    <ul class="tool_utility">
+      <li>
+        <a href="#"><img src="images/icone/18/ico_ridimensionaCarattere_18.gif" alt="ingrandisci carattere" title="ingrandisci carattere"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="dati utente" title="dati utente"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_stampaDoc_18.gif" alt="stampa" title="stampa"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_massimizza_18.gif" alt="visualizza a schermo intero" title="visualizza a schermo intero"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_ricercaAvanzata_18.gif" alt="ricerca avanzata" title="ricerca avanzata"/></a>
+      </li>
+    </ul>
+    &nbsp;
+   </div>
+
+      <div class="sovra_tabber">&nbsp;</div>
+      <ul class="tabber">
+         <li class="tab"><a href="#">Utenti</a></li>
+         <li class="tab_separator"></li>
+         <li class="tab" id="active"><a href="#">Enti</a></li>
+         <li class="tab_separator"></li>
+         <li class="tab"><a href="#">Fornitori</a></li>
+         <li class="tab_separator"></li>
+         <li class="tab"><a href="#">Categorie Merceologiche</a></li>
+         <li class="tab_separator"></li>
+         <li class="tab"><a href="#">Procedure</a></li>
+      </ul>
+
+	 <div class="tab_area_contenuti">
+
+		<div class="area_testo">
+         Layout a due colonne con float
+			<p>
+Unde omnis iste natus error sit voluptatem <a href="#">accusantium</a> doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+			</p>
+			<p>
+Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+			</p>
+			<p>
+			Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? 
+			</p>
+		  <ul>
+			 <li>At vero eos et accusamus et iusto odio dignissimos ducimus</li>
+			 <li>qui blanditiis praesentium voluptatum deleniti atque corrupti</li>
+			 <li>quos dolores et quas molestias excepturi sint</li>
+			 <li>obcaecati cupiditate non provident, similique sunt in culpa</li>
+			 <li>qui officia deserunt mollitia animi</li>
+			 <li>id est laborum et dolorum fuga.</li>
+		  </ul>
+		  Et harum quidem rerum facilis est et expedita distinctio.
+         <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+			</p>
+     </div> 
+	</div>
+   <div class="content_closer">&nbsp;</div>
+
+	</div>
+</div>
+
+<div id="footer">
+   <div class="titolo_e_copyright">
+      <span class="titolo">sintel </span>
+      <span class="nome_gamma_servizi">e-procurement </span>
+      <span class="copyright">&copy; Copyright Regione Lombardia - tutti i diritti riservati</span>
+   </div>
+   <ul class="voci_navigazione">
+      <li><a href="#">Voce 03</a></li>
+      <li><a href="#">Voce 02</a></li>
+      <li class="last"><a href="#">Voce 01</a></li>
+   </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Tabella</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Tabella</h1>
+<p>
+I colori per le tabelle sono impostati nel file customizzato di bootstrap: <code>bootstrap_xxx.css</code>.<br/>
+Nel file <code>lombard_xxx.css</code> è stato specificato solo il colore di sfondo per il tag <code>th</code> che il customizzatore di bootstrap non permette di impostare.
+</p>
+<p>Piccole modifiche sono state inserite per il <em>tool di paginazione</em>
+<pre>
+.pagination {
+  margin-top: 0;
+}
+.pagination > li > a:hover {
+  background-color: #c2ddc0;
+}
+.pagination > .active > a {
+  font-weight: bold;
+}
+</pre>
+</p>
+
+<h2>Accessibilità</h2>
+<h3>Paginatore</h3>
+<pre>
+&lt;nav&gt;
+  &lt;ul class="pagination pull-right" <strong>aria-label="Paginatore"</strong>&gt;
+    &lt;li&gt;&lt;a href="#" <strong>aria-label="Pagina precedente"&gt;</strong>&laquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;2<strong>&lt;span class="sr-only"&gt;(attuale)&lt;/span&gt;</strong>&lt;/a&gt;&lt;/li&gt;
+    . . .
+    &lt;li&gt;&lt;a href="#" <strong>aria-label="Pagina successiva"</strong>&gt;&raquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+In grassetto sono qui evidenziati attributi e tag necessari:
+<ul>
+<li>L'attributo <code>aria-label</code> fa si che gli screen-reader pronuncino le parole: "Paginatore", "Pagina precedente/successiva" anche se non compaiono a video.</li>
+<li>Il tag <em>span</em> con la classe <code>sr-only</code>, specifica di <em>bootstrap</em>, è da inserire per segnalare il numero di pagina corrente.</li>
+</ul>
+
+</body>
+</html>

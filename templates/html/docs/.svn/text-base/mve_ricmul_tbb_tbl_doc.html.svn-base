@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>mve_ricmul_tbb_tbl</title>
+</head>
+
+<body>
+<h1>Menù verticale, ricerca multirighe e tabber con tabella</h1>
+<p>
+Oltre alla <a href="mve_tbb_doc.html#struttura_comune">struttura comune</a> il template è composto da:
+</p>
+<ul>
+<li><a href="../ricerca_multirighe.html">ricerca multirighe</a></li>
+<li><a href="../tabber.html">tabber</a></li>
+<li><a href="../tabella.html">tabella</a></li>
+</ul>
+
+<p>
+Questo template è del tutto analogo al <a href="mve_ric_tbb_tbl_doc.html">precedente</a>.<br/>
+L'unica differenza è che al posto della <a href="ricerca_doc.html">ricerca semplice</a> si trova quella <a href="ricerca_multirighe_doc.html">multirighe</a>.
+</p>
+</body>
+</html>

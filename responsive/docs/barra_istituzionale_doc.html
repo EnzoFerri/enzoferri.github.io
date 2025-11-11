@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Barra istituzionale</title>
+		<link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Barra istituzionale</h1>
+
+<h3>Loghi</h3>
+<p>
+I due loghi di <strong>Regione Lombardia</strong> ed <strong>Expo</strong> sono allineati a sinistra ad una distanza fissa dal bordo.<br/>
+Rimpicciolendosi lo schermo a dimensioni da tablet, il logo di Expo scompare e la distanza dal bordi sinistro diminuisce; a dimensioni da smartphone scompare anche il logo di Regione Lombardia.<br/>
+La scomparsa del logo di Expo è provocata dalla classi <code>hidden-xs hidden-sm</code> sul relativo <code>tag</code>.<br/>
+A seconda delle dimensioni del titolo si può scegliere di fare scomparire o meno il logo expo, piuttosto che il <strong>titolo_esteso</strong> o la <strong>sigla</strong> utilizzando le apposite classi di <strong>boostrap</strong>.
+</p>
+<pre>
+&lt;div class="logo <strong>hidden-xs</strong>"&gt;
+   &lt;a href="http://www.regione.lombardia.it"&gt;
+      &lt;img src="images/logo_regione.png" alt="Regione Lombardia"/&gt;
+   &lt;/a&gt;
+   &lt;a class="<strong>hidden-xs hidden-sm</strong>" href="http://www.expo2015.org"&gt;
+      &lt;img src="images/logo_expo.png" alt="Expo 2015"/&gt;
+   &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+
+<h3>Area titolo</h3>
+<p>
+Il <code>div</code> <strong>area_titolo</strong> è inserito all'interno di un ulteriore <code>div</code> con classe <code>text_center</code><br/>
+Sugli smartphone infatti il titolo compare centrato, mentre su schermi più grandi è allineato a destra.<br/>
+L'allinenamento a destra è forzato nel CSS con un <code>float: right;</code> condizionato a dimensioni maggiori di 768 pixel.
+</p>
+<p>
+Analogamente nel CSS sono specificate altre caratteristiche quali dimensioni e peso del font e presenza della barretta di separazione tra <strong>sigla</strong> e <strong>titolo_esteso</strong> che cambiano a seconda delle dimensioni dello schermo.
+</p>
+
+<pre>
+&lt;div class="<strong>text-center</strong>"&gt;
+   &lt;div class="area_titolo"&gt;
+      &lt;div class="<strong>sigla</strong>" tabindex="0"&gt;Muta&lt;/div&gt;
+      &lt;span class="separatore_titolo"&gt; | &lt;/span&gt; 
+      &lt;div class="<strong>titolo_esteso</strong>" tabindex="0"&gt;Modello Unico Trasmissione Atti&lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<h3>Barra voci di navigazione e campo ricerca</h3>
+<p>
+Sia le voci di navigazione che il campo ricerca sono facoltativi.<br/>
+Sugli smartphone la barra che li contiene cambia colore e posizione spostandosi da sopra a sotto il titolo.<br/>
+E' sostanzialmente un componente separato rispetto al <code>div</code> <strong>barra_istituzionale</strong></br>
+Nel caso <big><strong>non</strong></big> si abbiano nè voci di navigazione nè campo di ricerca, è possibile eliminare tutte le istruzioni del <code>div</code> <strong>barra_voci_cerca</strong>
+</p>
+
+<p>
+Se invece è il solo <strong>campo di ricerca</strong> ad essere omesso, per mantenere fissa la posizione delle voci di navigazione (allineate a destra con il titolo) è necessario mantenere il <code>div</code> <strong>cerca</strong> inserendo un carattere speciale <code>&amp;nbsp;</code> al posto del <code>form</code>:
+</p>
+<pre>
+&lt;div class="<strong>barra_voci_cerca</strong>"&gt;
+   &lt;ul class="<strong>voci_navigazione</strong>" role="navigation"&gt;
+     &lt;li&gt;&lt;a href="#"&gt;CRA&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a href="#"&gt;Guida&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a href="#"&gt;Portale&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a href="#"&gt;Login&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="pull-right <strong>cerca</strong>"&gt;
+     <strong>&amp;nbsp;</strong>
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<h3>Numero verde</h3>
+<p>
+La presenza è facoltativa. Nel caso non ci sia, il titolo <u><strong>non</strong></u> deve avvicinarsi ulteriormente al bordo destro dello schermo.<br/>
+Per ottenere ciò anche in questo caso è necessario lasciare il <code>div</code> ed inserire un carattere speciale <code>&amp;nbsp;</code> al posto del testo.
+</p>
+<pre>
+&lt;div class="<strong>numero_verde</strong> text-center hidden-xs"&gt;<strong>&amp;nbsp;</strong>&lt;/div&gt;
+</pre>
+
+
+<h2>Accessibilità</h2>
+
+<h3>Link: "Vai al contenuto principale"</h3>
+<p>
+La prima riga della <em>barra_istituzionale</em> è un link nascosto il cui scopo è quello di consentire, agli <em>screen reader</em> per non vedenti, il salto diretto al contenuto principale della pagina, per evitare il riascolto della lettura di intestazioni e menù di navigazione.
+</p>
+<pre>
+   &lt;a href="#content" <strong>class="sr-only sr-only-focusable"</strong>&gt;Vai al contenuto principale&lt;/a&gt;
+</pre>
+<p>
+La classe <code>sr-only</code>, specifica di <em>bootstrap</em>, serve a nascondere il link alla vista lasciandolo però leggibile dagli screen-reader.
+</p>
+<p>
+L'<code>href</code> del link (nell'esempio <code>#content</code>) deve corrispondere all'<code>id</code> del <code>div</code> contenitore dell'<a href="area_contenuti_doc.html">area_contenuti</a>
+</p>
+<pre>
+   &lt;div class="col-xs-12 col-sm-9 col-md-10" <strong>id="content"</strong>&gt;
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Sidebar</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Steps bar</h1>
+<p>
+La barra di avanzamento a passi va compresa in un <code>div</code> con classe <code>li-wizard</code>.
+</p>
+Ogni singolo passo è a sua volta compreso in un <code>div</code> con tre classi:
+<ol>
+<li><code>col</code> di larghezza tale che la somma dei passi non superi le 12 posizioni della griglia di bootstrap.</li>
+<li><code>step</code></li>
+<li><code>complete</code>, <code>active</code> o <code>disabled</code>, a seconda che il passo sia stato completato, in corso o ancora da compiere (esiste una quarta classe <code>error</code>, che colora di rosso lo sfondo del passo per segnalare l'arresto del processo a causa di un errore).</li>
+</ol>
+<p>
+All'interno del div di ogni passo vanno specificati almeno 2 <code>div</code>:
+<ol>
+<li><code>lapse</code><br/>
+che riempie la distanza tra un passo e l'altro con una barra il cui colore dipende dalla classe dello step in cui è contenuto (verde per <code>complete</code> o grigio negli altri casi)</li>
+<li><code>bubble</code><br/>
+che disegna il cerchio all'interno del quale va inserito il glifo del disegno inscritto.
+</li>
+</ol>
+Sono facoltativi gli altri 2 <code>div</code>:
+<ol>
+<li><code>heading</code><br/>
+intestazione del passo</li>
+<li><code>words</code>
+descrizione (breve) del passo.</li>
+</ol>
+</p>
+
+<pre>
+&lt;div class="row <strong>li-wizard</strong>"&gt;
+
+  &lt;div class="col-xs-2 <strong>step complete</strong>"&gt;
+    &lt;div class="heading"&gt;Passo 1&lt;/div&gt;
+    &lt;div class="lapse"&gt;&lt;div class="bar"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="bubble"&gt;&lt;a href="#"&gt;&lt;span class="glyphicon glyphicon-save"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="words"&gt;&lt;span&gt;Scarica&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  . . .
+  &lt;div class="col-xs-2 <strong>step active</strong>"&gt;
+    &lt;div class="heading"&gt;Passo 3&lt;/div&gt;
+    &lt;div class="lapse"&gt;&lt;div class="bar"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="bubble"&gt;&lt;a href="#"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt;&lt;/a&gt;&lt;span class="sr-only"&gt;attuale&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="words"&gt;&lt;span&gt;Compila e firma digitalmente&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-2 <strong>step disabled</strong>"&gt;
+    &lt;div class="heading"&gt;Passo 4&lt;/div&gt;
+    &lt;div class="lapse"&gt;&lt;div class="bar"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="bubble"&gt;&lt;a href="#"&gt;&lt;span class="glyphicon glyphicon-compressed"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="words"&gt;&lt;span&gt;Comprimi il documento firmato&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  . . .
+&lt;/div&gt;
+</pre>
+
+
+</body>
+</html>

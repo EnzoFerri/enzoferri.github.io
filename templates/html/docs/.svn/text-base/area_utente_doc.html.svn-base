@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Area utente</title>
+</head>
+
+<body>
+<h1>Area utente</h1>
+<p>
+Template semplicissimo, è composto da due parti:
+</p>
+<ol>
+<li>dati utente</li>
+<li>links.</li> 
+</ol>
+<p>
+Nei dati utente va inserito l'identificativo utente ed eventuali altri dati (es.: nome e cognome, codice fiscale).
+</p>
+<p>
+Nei link, facoltativi, può essere inserito, per esempio, il richiamo alla funzionalità di modifica del profilo dell'utente stesso.<br/>
+</p>
+
+</body>
+</html>

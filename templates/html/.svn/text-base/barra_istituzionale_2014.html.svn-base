@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+
+<title>Barra istituzionale</title>
+</head>
+
+<body>
+<a href="#titolo_pagina" class="non_visibile">salta al contenuto</a>
+<div id="barra_istituzionale_2014">
+	<a href="http://www.regione.lombardia.it">
+		<img class="logo" src="images/loghiRLexpo.png" alt="Regione Lombardia"/>
+	</a>
+		<div class="area_titolo">
+			<span class="sigla">SINTEL</span>
+			<span class="titolo_esteso">Sistema Intermediazione Telematica</span>
+		</div>
+		<div class="area_ricerca">
+			<input type="text" class="form-control" placeholder="Cerca nel sito" title="ricerca">
+			<button type="submit" class="pulsante" alt="Cerca">&gt;</button>
+		</div>
+		<ul class="voci_navigazione">
+			<li><a href="#">CRA</a></li>
+			<li><a href="#">voce02</a></li>
+			<li><a href="#">voce03</a></li>
+			<li class="last"><a href="#">voce04</a></li>
+		</ul>
+</div>
+<div class="content_separator">&nbsp;</div>
+
+
+</body>
+</html>

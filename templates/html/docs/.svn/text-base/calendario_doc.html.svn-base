@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Calendario</title>
+</head>
+
+<body>
+<h1>Calendario</h1>
+<p>
+Il template mostra due modi per richiamare un calendario grafico cliccando su di un link iconico, come richiesto dalle linee guida (vedi il paragrafo "Calendario").<br/>
+Viene utilizzato il <a href="http://jqueryui.com/demos/datepicker/">Datepicker</a> di <a href="http://jqueryui.com">jQuery UI</a>.<br/>
+Si tratta di un <em>widget</em> basato sulla jQuery JavaScript Library, open source e a <a href="http://jquery.org/license/">licenza libera</a>, con le opportune impostazioni per aderire alle convenzioni grafiche delle linee guida.<br/>
+Se javascript non è abilitato l'utente ha comunque la possibilità di inserire manualmente la data.
+</p>
+<p>
+I campi di input hanno la normale struttura spiegata nel template <a href="form_doc.html">form</a>
+</p>
+<pre>
+&lt;input id="nascita" name="data_nascita" size="10" maxlength="10" type="text"/&gt;
+</pre>
+con in più:
+<ol>
+<li>una label, opzionale, che specifica il formato della data (gg/mm/aaaa)
+<pre>
+ &lt;label class="info_message"&gt;formato gg/mm/aaaa&lt;/label&gt;
+</pre>
+</li>
+<li>
+Un tag <code>&lt;script&gt;</code> che, per il primo campo è:
+<pre>
+&lt;script&gt;$(function() { $( "#nascita" ).datepicker({});}); &lt;/script&gt;
+</pre>
+nel quale va specificato l'<code>id</code> del campo (nell'esempio "nascita") precededuto dal caratterre "#".
+</li>
+</ol>
+<p>
+Lo script richiama il widget "datepicker", che visualizza il calendario e riempie il campo con la data selezionata.
+</p>
+<p>
+Le caratteristiche grafiche del widget sono specificate in un file css separato, che è stato personalizzato conformemente ai colori delle linee guida della regione Lombardia.<br/>
+Il css è stato generato utilizzando il wizard messo a disposizione da jQuery UI che crea una directory contenente anche le immagini utilizzate dal "tema grafico".</br>
+E' quindi necessario aggiungere il link al css del "tema".
+</p>
+<pre>
+&lt;link rel="stylesheet" type="text/css" href="css/lombardia-theme/jquery-ui-1.10.3.custom.min.css" /&gt; ;
+</pre>
+<p>
+Per funzionare lo script ha bisogno di 3 file javascript:
+</p>
+<ol>
+<li>lo script base di jQuery</li>
+<li>lo script contenente jQuery UI</li>
+<li>uno script per la gestione delle traduzioni (i18n)</li>
+</ol>
+<pre>
+&lt;script type="text/Javascript" src="js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/Javascript" src="js/jquery-ui-1.10.3.custom.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/i18n/jquery-ui-i18n.js"&gt;&lt;/script&gt;
+</pre>
+<p>
+Nella directory <code>js/i18n/</code> sono stati inseriti anche i file delle traduzioni per inglese e italiano, che vengono automaticamente inclusi a seconda dei parametri passati al widget.
+</p>
+<p>
+Nell'<code>header</code> della pagina html vanno impostati i "default" per tutte le istanze di datepicker che verranno create per la pagina, in modo da non doverle specificare ogni volta.
+</p>
+<pre>
+&lt;script&gt;
+$(function() {
+ $.datepicker.setDefaults({showOn: "button", buttonImageOnly: true,
+  buttonText: "Puoi inserire la data manualmente o sceglierla da un calendario cliccando su questa immagine",
+  buttonImage: "images/icone/18/ico_calendario_18.gif" });
+ $.datepicker.setDefaults( $.datepicker.regional[ "it" ] );
+});
+&lt;/script&gt;
+</pre>
+<h3>Il "secondo esempio"</h3>
+<p>
+Per il secondo campo l'aspetto del calendario richiamato è leggermente differente.<br/>
+Rispetto al precedente:
+<ol>
+<li>consente di selezionare il mese e/o l'anno attraverso una "select"</li>
+<li>ha due tasti:
+  <ul>
+    <li>uno per riportarsi al mese della data odierna</li>
+    <li>l'altro per chiudere il calendario senza selezionare date</li>
+  </ul>
+</li>
+</ol>
+<p>
+Queste funzionalità in più si ottengono specificando per il secondo campo:
+</p>
+<pre>
+&lt;script&gt;
+$(function() { $( "#assunzione" ).datepicker({<strong>changeMonth: true, changeYear: true, showButtonPanel: true</strong>});});
+&lt;/script&gt;
+</pre>
+</p>
+<p>
+La spiegazione dei parametri specificati sia per il default che per il secondo campo, e la documentazione di tutte le altre possibilità del widget, è reperibile all'indirizzo: <a href="http://api.jqueryui.com/datepicker/">api.jqueryui.com/datepicker</a><br/>
+E' possibile averne una panoramica consultando la pagina di demo del widget <a href="http://jqueryui.com/demos/datepicker/">Datepicker</a>
+</p>
+</body>
+</html>

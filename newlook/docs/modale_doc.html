@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Modale</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Modale</h1>
+<p>
+Per questo tipo di finestre si utilizza il componente <code>Modal</code> che in <em>bootstrap</em> è documentato nella sezione <em>Javascript</em>.<br/>
+E' possibile sia richiamare una finestra descritta staticamente all'interno della pagina html di partenza, che una finestra <em>remota</em> quindi inviando una richiesta http al server per ottenere contenuto generato dinamicamente.<br/>
+Nel template è tratatto quest'ultimo caso, il più complesso, ma ciò non esclude che si possa utilizzare la modalità statica.
+</p>
+
+<h3>Pagina chiamante</h3>
+<p>
+Nella pagina <code>richiamo_modale.html</code> è stato definito un tag <code>&lt;a&gt;</code> con classi <code>btn btn-primary</code> per la resa grafica da pulsante (benchè dovrebbe andare bene anche il tag <code>button</code>, non ho trovato il modo di farlo funzionare).
+</p>
+<pre>
+&lt;a class="btn btn-primary" role="button" data-remote="modale.html" data-toggle="modal"
+  data-target="#idModale" data-backdrop="static" data-keyboard="false"&gt;
+  Premere
+&lt;/a&gt;
+</pre>
+Come attributi del tag vanno poi specificati:
+<ol>
+	<li><code>data-remote="nome_pagina_html_da_caricare"</code> (se si vuole caricare la finestra dal server)</li>
+	<li><code>data-toggle="modal"</code></li>
+	<li><code>data-target="#id_div_nella_pagina_chiamante"</code> con le caratteristiche che si vedranno tra poco</li>
+	<li><code>data-backdrop="static"</code> (facoltativo) per impedire di far sparire la finestra modale cliccando sullo sfondo della pagina</li>
+	<li><code>data-keyboard="false"</code> (facoltativo) per impedire di far sparire la finestra modale premendo il tasto <code>Esc</code></li>
+</ol>
+<p>
+Va quindi specificato, a fine pagina, un tag <code>div</code> come il seguente:
+</p>
+<pre>
+&lt;div class="modal fade" id="idModale" tabindex="-1" role="dialog"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<h3>Finestra modale</h3>
+<p>
+Il contenuto della pagina <code>modale.html</code> deve essere qualcosa del tipo:
+</p>
+<pre>
+&lt;div class="modal-header"&gt;
+  &lt;span class="modal-title"&gt;Richiesta pin/puk&lt;/span&gt;
+  &lt;button type="button" class="close" data-dismiss="modal" aria-label="chiudi finestra"&gt;&amp;times;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="modal-body"&gt;
+...
+&lt;/div&gt;
+&lt;div class="modal-footer"&gt;
+  &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Chiudi&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Salva&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+Si noti che la <em>"x"</em> in alto a destra della finestra modale, che consente di chiuderla, è generata dall'istruzione:
+<pre>
+  &lt;button type="button" class="close" data-dismiss="modal" aria-label="chiudi finestra"&gt;&amp;times&lt;/button&gt;
+</pre>
+Può essere specificata, o meno, a seconda se si vuole che l'utente chiuda la finestra cliccando su di essa o, in alternativa, sul tasto <em>Chiudi</em> in basso.
+
+<h2>Accessibilità</h2>
+<h3>Pagina chiamante</h3>
+<p>
+Il bottone che fa comparire la finestra, poichè è un tag <code>&lt;a&gt;</code>, deve avere avere l'attributo <code>role="button"</code> in modo che gli screen-reader lo presentino come "bottone" e non come "link".
+</p>
+<pre>
+&lt;a class="btn btn-lispa" <strong>role="button"</strong> data-remote="modale.html" data-toggle="modal"
+. . .
+</pre>
+<p>
+Il <code>&lt;div&gt;</code> non visibile che serve come <em>hook</em> per la finestra modale, è specificato  l'attributo <code>role="dialog"</code>, che farà si che all'apparire della finestra di dialogo, gli screen reader la annuncino come tale.
+</p>
+<pre>
+&lt;div class="modal fade" id="idModale" tabindex="-1" <strong>role="dialog"</strong>&gt;
+. . .
+</pre>
+
+<h3>Finestra modale</h3>
+<p>
+L'eventuale <em>"x"</em> in alto a destra per la chiusura deve avere l'attributo <code>aria-label</code> con il testo che gli screen-reader devono pronunciare per spiegare cosa fa il pulsante:
+<pre>
+  &lt;button type="button" class="close" data-dismiss="modal" <strong>aria-label="chiudi finestra"</strong>&gt;&amp;times&lt;/button&gt;
+</pre>
+</p>
+
+
+</body>
+</html>

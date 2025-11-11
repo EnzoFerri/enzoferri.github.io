@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menù verticale</title>
+		<link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Menù verticale</h1>
+<p>
+E' un menù di navigazione, che può avere voci su due livelli. Quelle di secondo livello possono essere visualizzate espandendo le voci di primo che le contengono.<br/>
+La presenza di un secondo livello è segnalata da un triangolo che punta verso il basso quando la voce può essere espansa, e verso l'alto quando è possibile chiuderla.<br/>
+Le voci di secondo livello <strong>non sono a loro volta espandibili</strong>, hanno una piccola identazione e uno sfondo grigio leggermente più scuro per essere riconoscibili. 
+</p>
+<p>
+Il <strong>primo esempio</strong>, <a href="../menu_verticale#2livelli_non_collassabile">A due livelli - non collassabile</a>, mostra come si comporta il menù verticale inserendolo nella pagina html così com'è, semplicemente all'interno di un <code>&lt;div class="container"&gt;</code>:
+<ol>
+<li>il menù occupa tutta la larghezza della pagina</li>
+<li>restringendola fino ad una larghezza da smartphone (per boostrap minore di 768 pixel), le voci rimangono visibili e il menù non cambia sostanzialmente aspetto.</li>
+</ol>
+<p>
+Nel <strong>secondo esempio</strong>, <a href="../menu_verticale#2livelli_collassabile">A due livelli - collassabile</a>, il menù è inserito in una "<em>area verticale di navigazione</em>" a sinistra della pagina.</br>
+Tale <em>area</em> è un <code>div</code> che specifica la larghezza attraverso le classi colonna di bootstrap:
+<pre>
+&lt;!-- area verticale di navigazione --&gt;
+   &lt;div class="col-xs-12 col-sm-4 col-md-3"&gt;
+</pre>
+Le tre larghezze differenti qui specificate fanno sì che l'area verticale di navigazione:
+<ol>
+<li>su smartphone occupi tutta la larghezza disponibile e il menù appaia inizialmente collassato e con il bottone a destra per l'espansione</li>
+<li>su tablet occupi un terzo dello schermo e il menù appaia aperto</li>
+<li>su portatili e desktop occupi un quarto del video ed il menù sia, ovviamente, aperto.</li>
+</ol>
+<p>
+Nota: nella stessa pagina possono essere presenti <strong>più menù verticali</strong>, inseriti nella <strong>stessa area verticale</strong> di navigazione.
+</p>
+<p>
+Le larghezze dell'<em>area verticale di navigazione</em> devono essere complementari alla larghezza dell'<a href="area_contenuti_doc.html">area contenuti</a> della pagina, che di conseguenza sarà:
+<pre>
+&lt;!-- area contenuti --&gt;
+   &lt;div class="col-xs-12 col-sm-8 col-md-9" id="content"&gt;
+</pre>
+</p>
+<p>
+Il <strong>terzo esempio</strong>, <a href="../menu_verticale#1livello_collassabile">A un livello - collassabile</a>, è un <em>"menù"</em> composto da pannelli fissi con un aspetto grafico pensato per inserirsi sempre nell'<em>area verticale di navigazione</em>.<br/>
+Benchè i vari pannelli compaiano sempre espansi, il menù intero viene collassato sugli smartphone allo stesso modo del menù del secondo esempio.
+</p>
+<p>
+Ciò che fa collassare automaticamente sugli smartphone i due menù in questione, sono le istruzioni:
+<pre>
+&lt;!-- menu collassabile --&gt;
+&lt;nav class="navbar navbar-default"&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" <strong>class="navbar-toggle" data-toggle="collapse"</strong>
+        <strong>data-target="#menu_collassabile_3"</strong> aria-haspopup="true"&gt;
+      &lt;span class="sr-only"&gt;Apri/chiudi menu navigazione&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;span class="navbar-brand visible-xs" href="#"&gt;Filtri&lt;/span&gt;
+  &lt;/div&gt;
+
+&lt;!-- corpo menu verticale collassabile --&gt;
+&lt;div <strong>class="collapse navbar-collapse</strong> full_column" <strong>id="menu_collassabile_3"</strong>&gt;
+. . .
+</pre>
+</p>
+
+<h2>Accessibilità</h2>
+
+<h3>Bottone: "Apri/chiudi menu navigazione"</h3>
+<pre>
+&lt;!-- menu collassabile --&gt;
+&lt;nav class="navbar navbar-default"&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_collassabile_3" <strong>aria-haspopup="true"</strong>&gt;
+      <strong>&lt;span class="sr-only"&gt;Apri/chiudi menu navigazione&lt;/span&gt;</strong>
+    . . .
+</pre>
+<p>
+Il bottone di espansione del menu quando la pagina è visualizzata con dimensioni da smartphone, contiene la dicitura nascosta "<em>apri/chiudi menu navigazione</em>" per aiutare chi utilizza uno screen reader a capire a cosa serve, oltre all'attributo <code>aria-haspopup="true"</code>, in modo lo screen-reader dica se il menu è espanso o meno.
+</p>
+
+<h3>Struttura del menù</h3>
+<p>
+Il tag <code>&lt;nav&gt;</code> che contiene il menù, ha l'attributo <code>role="menu"</code>; ciò ricalca la dicitura "<em>menù di navigazione</em>" per il pulsante di apertura. Si tratta di una definiziona ibrida in quanto è difficile stabilire a priori di che tipo saranno le voci presenti in quest'area: solo link di navigazione oppure azioni.
+</p>
+<pre>
+&lt;!-- menu verticale bilivello --&gt;
+&lt;nav class="menu_verticale" id="MainMenu1" <strong>role="menu"</strong>&gt;
+  &lt;ul class="list-group panel"&gt;
+    &lt;li class="list-group-item"&gt;&lt;a href="#rl_oggi" data-toggle="collapse" <strong>aria-haspopup="true" tabindex="0"</strong>&gt;
+      REGIONE LOMBARDIA OGGI
+      &lt;span class="glyphicon glyphicon-play down pull-right"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;ul class="collapse list-group-submenu" <strong>role="menu"</strong> id="rl_oggi"&gt;
+      &lt;li class="list-group-item" <strong>role="menuitem"</strong>&gt;&lt;a href="#"&gt;VOCE 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="list-group-item" <strong>role="menuitem"</strong>&gt;&lt;a href="#"&gt;VOCE 2&lt;/a&gt;&lt;/li&gt;
+      . . .
+</pre>
+<p>
+Le voci espandibili hanno, oltre a <code>aria-haspopup="true"</code> l'attributo <code>tabindex="0</code> così da poter essere  selezionabili ed espandibili via tastiera.<br/>
+Sulle voci di secondo livello è presente anche il ruolo <code>menuitem</code>, mentre sul tag <code>&lt;ul&gt;</code> che le contiene, è specificato il ruolo <code>menu</code>.<br/>
+Il ruolo <code>menuitem</code> <strong>non</strong> è presente sulle voci di primo livello perchè in certi casi entra in conflitto, in fase di lettura da parte degli screen reader, col l'attributo <code>aria-haspopup</code>.
+</p>
+</body>
+</html>

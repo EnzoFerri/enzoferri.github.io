@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Messaggi di errore</title>
+</head>
+
+<body>
+<h1>Messaggi di errore</h1>
+<p>
+Questo template mostra semplicemente dei campi di input, all'interno di un tag <code>&lt;form&gt;</code>, ognuno dei quali con uno dei 4 possibili tipi di messaggio di errore previsto dalle linne guida (vedi "Messaggi e recupero dell'errore").
+</p>
+<p>
+Il messaggio di errore è una <code>&lt;label&gt;</code> posta dopo il campo di input cui si riferisce, cui è assegnata la classe dei tipo di messaggio che deve essere visualizzato:
+</p>
+<ol>
+<li>fatal_error</li>
+<li>normal_error</li>
+<li>info_message</li>
+<li>confirm_message</li>
+</ol>
+<p>
+Ad ogni classe il <a href="../css/messaggi_errore.css">CSS</a> applica le caratteristiche di colore e peso del font previste.
+</p>
+<p>
+La bordatura in rosso del campo di input, si ottiene attribuendo la classe <code>fatal_error</code> o <code>normal_error</code> al tag <code>&lt;input&gt;</code> del campo stesso.
+</p>
+<p>
+L'asterisco rosso di campo obbligatorio è un'altra <code>&lt;label&gt;</code>, cui è attribuita la classe <code>campi_obbligatori</code>.
+</p>
+<p>
+L'alert box in alto è un tag <code>&lt;div&gt;</code> così concepito:
+</p>
+<pre>
+	&lt;div class="alert_box"&gt;
+		&lt;img src="images/icone/18/ico_warning_18.gif" alt="Attenzione: errore!"/&gt;
+		&lt;label&gt;Attenzione! Correggere gli errori sottostanti prima di procedere.&lt;/label&gt;
+	&lt;/div&gt;
+</pre>
+Un altro esempio di messaggi di errore è contenuto, come commento, all'interno del template <a href="form_html.txt">form</a>.
+
+</body>
+</html>

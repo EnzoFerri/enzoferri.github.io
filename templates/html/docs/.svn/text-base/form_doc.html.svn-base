@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Form</title>
+</head>
+
+<body>
+<h1>Form</h1>
+<p>
+Il template è predisposto per strutturare il form secondo righe e colonne.<br/>
+All'interno del tag <code>&lt;form&gt;</code> sono contenuti una serie di tag <code>&lt;div class="riga"&gt;</code>, contenenti a loro volta una serie di tag <code>&lt;div class="col_xx"&gt;</code>.<br/>
+Nei tag <code>&lt;div class="col_xx"&gt;</code> si trovano i campi di input, all'interno di tag <code>&lt;div class="campo"&gt;</code><br/>
+Quindi un <em>form</em> è formato da <em>righe</em> che contengono <em>colonne</em> che contengono <em>campi</em>.
+</p>
+<p>
+Le <em>righe</em> "base" hanno un'altezza fissa: 55 pixel, sufficienti per inserire un campo di input di tipo <code>text</code> o <code>select</code>, con una <em>label verticale</em> al di sopra e un <em>messaggio informativo/errore</em> al di sotto. Il tutto con i font delle dimensioni previste dalle linee guida e reggendo fino ad almeno un paio di ingrandimenti del carattere.<br/>
+Anche se non utilizzate in questo <a href="form_html.txt">template HTML</a>, sono presenti nel <a href="../css/form.css">CSS</a> delle dichiarazioni per creare righe ad altezza doppia, tripla e quadrupla, rispettivamente <code>riga_110</code>, <code>riga_165</code>, e <code>riga_220</code>, utili nel caso si debbano inserire <code>textarea</code> o altri tipi di oggetti che richiedano più spazio verticale.</br>
+Esistono infine una <code>riga_25</code> e una <code>riga_35</code> adatte a contenere campi di input con etichetta a sinistra e nessun messaggio di errore da visualizzare, ed una <code>riga_75</code> per grandezze intermedie.
+</p>
+<p>
+Per le <em>colonne</em> non era possibile definire delle dimensioni fisse di larghezza. Si è quindi optato per dimensioni in percentuale.<br/>
+Il <a href="../css/form.css">CSS</a> prevede molte larghezze diverse: 10%, 15%, 20%, 25%, ... 100%.<br/>
+Il criterio alla base di questa scelta è che si utilizzino dai 2 ai 4 incolonnamenti in un form (quello del template ne ha 2). Di qui le due serie di multipli: di 33% e di 25%.<br/>
+Sono presenti anche 2 colonne rispettivamente con ampiezza maggiori o minori, in caso di campi corti con diciture particolarmente lunghe o viceversa.<br/>
+E' possibile comunque "mischiare" le larghezze per ottenere maggiore flessibilità, come del resto avviene in questo template stesso.<br/>
+L'esempio mostra anche che è possibile spezzare l'incolonnamento quando un campo lo richieda (cittadinanza) e riprenderlo alla riga successiva.
+</p>
+<p>
+Nota: in realtà, per molti dei <em>div</em> di tipo <code>class="col_xx"</code>, la percentuale specificata nei css è di un punto percentuale inferiore (es.: per <code>col_50</code> è del 49%).<br/>
+Questa differenza è stata introdotta per aggirare un difetto di Internet Explorer, riscontrato con la versione 8: quando la somma delle larghezze percentuali dei <em>div</em> è del 100%, a volte i dati vengono sovrapposti a video o comunque vengono resi in modo errato.<br/>
+L'errore dipende della risoluzione del video, e sembra essere dovuto ad un errato arrotondamento delle dimensioni da attribuire ai componenti.<br/>
+Con dimensioni percentuali leggermente inferiori a quelle dichiarate, la somma risulta inferiore a 100%, e la visualizzazione appare corretta.
+</p>
+<p>
+Nel template sono anche contenuti una <em>info_box</em> (in verde), una <em>alert box</em> (in rosso) e dei <em>messaggi di errore</em>, analoghi a quelli del template <a href="../messaggi_errore.html">messaggi di errore</a>.
+La loro emissione nelle applicazioni dovrà ovviamente essere condizionata al fatto che i controlli sui dati immessi riscontrino errori.
+</p>
+<p>
+I messaggi di errore sul campo "nome", invece, sono legati ai tag:
+</p>
+<pre>
+&lt;input class="fatal_error" name="nome" size="25" maxlength="25" type="text"/&gt;
+  &lt;label class="campi_obbligatori"&gt;*&lt;/label&gt;
+  &lt;label class="fatal_error"&gt;immettere nome&lt;/label&gt;
+</pre>
+
+</body>
+</html>

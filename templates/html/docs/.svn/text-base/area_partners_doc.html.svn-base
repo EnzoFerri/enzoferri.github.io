@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>area partners</title>
+</head>
+
+<body>
+<h1>Area partners</h1>
+<p>
+E' un'area posta sopra al footer, pensata per le pagine più isituzionali (per esempio la <a href="../accoglienza.html">pagina di accoglienza</a>).<br/>
+La presenza nella pagina è facoltativa.
+</p>
+<p>
+E' composta da due parti:
+</p>
+<ol>
+	<li>la <em>dicitura</em>
+	<dl><dd>non obbligatoria, in caratteri maiuscoli e allineata a destra</dd></dl>
+	</li>
+	<li>l'<em>area loghi</em>
+	<dl><dd>una serie di caselle, a scelta con separatore o meno, di dimensioni 75 x 125 pixel, contenenti i loghi dei partners, che possono essere link iconici.<br/>
+	Le dimensioni sono fissate per dare uniformità ai riquadri, il logo, che normalmnete dovrebbe essere un po' più piccolo, vine centrato sia orizzontalmente che verticalmente.<br/>
+	Per fare comparire il separatore a sinistra del logo, bisogna attribuire la classe <em>bordato</em> al <code>div</code> contenitore del logo.
+<pre>
+&lt;div class="bordato"&gt;
+	&lt;a href="#"&gt;&lt;img src="images/Logo_ProgSpazioAlpino.jpeg" alt="Programma Spazio Alpino"/&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+La bordatura sopra i loghi invece è sempre presente.
+</dd></dl>
+</li>
+</ol>
+<p>
+Il tag <code>&lt;div id="area_partners"&gt;</code> fa da contenitore generale applicando del padding per staccare i loghi dalla parte superiore della pagina.
+</p>
+
+</body>
+</html>

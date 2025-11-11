@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Area Utente</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Area utente</h1>
+<p>
+Per l'area utente si usa un <code>div</code> della classe <code>row</code> di bootstrap, cui si aggiunge la classe specifica <code>area_utente</code>.<br/>
+E' pensata per avere <strong>sempre</strong> il nome dell'utente a sinistra e il link di logout a destra.</br>
+Facoltativamente possono essere aggiunti dei link all'interno di un tag <code>nav</code> con classe <code>tools_utente</code>.
+</p>
+<p>
+Il nome_utente, per gli schermi particolarmente piccoli, ha una lunghezza massima di 200 pixel, dopo di che viene abbreviato coi puntini per lasciare spazio al link di logout. 
+<pre>
+.area_utente .nome_utente {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (min-width: 500px) {
+   .area_utente .nome_utente {
+      max-width: none;
+   }
+}
+</pre>
+I tools_utente non vengono visualizzati sugli smartphone (classe <code>hidden-xs</code>) sul tag <code>nav</code> che li contiene.
+</p>
+
+<h2>Accessibilità</h2>
+<pre>
+&lt;a class="pull-right" href="#" <strong>role="button"</strong>&gt;
+   &lt;span class="glyphicon glyphicon-off white" <strong>role="presentation</strong>"&gt;&lt;/span&gt; Logout
+&lt;/a&gt;
+&lt;nav class="tools_utente hidden-xs pull-right" <strong>role="menu"</strong>&gt;
+   &lt;a href="#" <strong>role="menuitem"</strong>&gt;&lt;span class="glyphicon glyphicon-cog white" <strong>role="presentation"</strong>&gt;&lt;/span&gt; Modifica profilo&lt;/a&gt;
+   . . .
+</pre>
+<ul>
+<li>Il tasto di <em>Logout</em> viene identificato come <code>button</code> in quanto produce un'azione immediata.</li>
+<li>L'attributo <code>role="presentation"</code> fa in modo che le tecnologie assistive ignorino queste "icone" di puro effetto visivo.</li>
+<li>Il tag <code>nav</code> con classe <code>tools_utente</code> viene indicato come <code>menu</code>, in quanto le sue voci dovrebbero compiere delle azioni (anzichè essere dei link di pura navigazione).</br>
+Di conseguenza i link in esso contenuti hanno ruolo <code>menuitem</code>.</li>
+</ul>
+</body>
+</html>

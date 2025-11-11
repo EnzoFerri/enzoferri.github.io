@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Template pagina con tabella" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.2.1" />
+
+<title>pag_tabella · Bootstrap Lombardia</title>
+
+
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202511031614" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202511031614" rel="stylesheet" />
+
+<!-- Favicons -->
+<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="pag_tabella" />
+<meta name="twitter:description" content="Template pagina con tabella" />
+<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/it25/esempi/pag_tabella/" />
+<meta property="og:title" content="pag_tabella" />
+<meta property="og:description" content="Template pagina con tabella" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  // Disabilita tracciamento se il cookie cookies_consent non esiste
+  if (document.cookie.indexOf('cookies_consent=true') === -1) {
+    window['ga-disable-UA-114758441-1'] = true
+  }
+</script>
+<script>
+  ;(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r
+    ;(i[r] =
+      i[r] ||
+      function () {
+        ;(i[r].q = i[r].q || []).push(arguments)
+      }),
+      (i[r].l = 1 * new Date())
+    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+    a.async = 1
+    a.src = g
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+
+  ga('create', 'UA-114758441-1', 'auto')
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview')
+</script>
+<!-- End Google Analytics -->
+
+
+  </head>
+  <body>
+    <header class="it25-menu">
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none">
+          </a>
+          <div class="header-slim-right-zone">
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle"
+                  data-toggle="dropdown" href="#">
+                <span>ITA</span>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li><a class="list-item" href="#"><span>ITA</span></a></li>
+                        <li><a class="list-item" href="#"><span>ENG</span></a></li>
+                        <li><a class="list-item" href="#"><span>ESP</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
+                </svg>
+              <span class="d-none d-md-block">Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+
+            <div class="it25-hamburger-btn-wrapper">
+              <button aria-controls="it25-main-nav" aria-expanded="false"
+                      aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                      data-target="#it25-main-nav" type="button">
+                <svg class="icon">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+
+              <div class="it25-close-div">
+                <button class="btn btn-xs close-menu" type="button" data-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù" >
+                  <svg class="icon">
+                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <a href="#">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
+        
+              <div class="it-brand-text">
+                ACRONIMO Nome applicativo
+              </div>
+            </a>
+          </div> <!-- end it-brand-wrapper -->
+
+          <div class="it-right-zone">
+            <div class="it-search-wrapper">
+              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
+              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it25-barra-utente">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <svg class="icon icon-primary icon-xs"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
+        <span class="font-weight-light">Utente: </span><span class="font-weight-semibold">Mario Rossi</span>
+        <span class="font-weight-light"> C.F.: </span><span class="font-weight-semibold">RSSMRA62A29I754</span>
+      </div>
+      <div class="col-6 text-right">
+        <svg class="icon icon-primary icon-xs"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
+        <span class="font-weight-light">Operatore: </span><span class="font-weight-semibold">TEST ESAR2 </span>
+        <span class="font-weight-light">Ruolo: </span><span class="font-weight-semibold">ADMIN</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-navbar-wrapper it25-menu-principale">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg has-megamenu">
+          <div class="navbar-collapsable" id="it25-main-nav">
+            <div class="overlay it25-overlay"></div>
+            <div class="close-div sr-only">
+              <button class="btn close-menu" type="button">
+                <span class="it-close"></span>close
+              </button>
+            </div>
+            <div class="menu-wrapper">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Link</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link active" href="#"><span>Attivo</span><span class="sr-only">voce selezionata</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link disabled" href="#"><span>Disabled</span></a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <span>Dropdown</span>
+                    <svg class="icon icon-xs">
+                      <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li>
+                          <h3 class="no_toc" id="heading-es-1">Heading</h3>
+                        </li>
+                        <li><a class="list-item" href="#"><span>Link list 1</span></a></li>
+                        <li><a class="list-item" href="#"><span>Link list 2</span></a></li>
+                        <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
+                        <li><span class="divider"></span></li>
+                        <li><a class="list-item" href="#"><span>Link list 4</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown megamenu">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <span>Megamenu</span>
+                    <svg class="icon icon-xs">
+                      <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <h3 class="no_toc">Heading 1</h3>
+                            </li>
+                            <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
+                            <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
+                            <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <h3 class="no_toc">Heading 2</h3>
+                            </li>
+                            <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
+                            <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
+                            <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <h3 class="no_toc">Heading 3</h3>
+                            </li>
+                            <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
+                            <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
+                            <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-secondary">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Link A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Link B</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+
+<main>
+  <div class="my-4">
+    <div class="container-fluid">
+      <form>
+        <div class="form-row">
+
+          <div class="form-group col-12 col-md-5 col-lg-3 mb-md-0">
+            <div class="btn-group">
+              <div class="dropdown">
+                <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azioni multiple
+                  <svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item" type="button">
+                    <svg class="icon icon-danger icon-sm">
+                      <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-circle"></use>
+                    </svg>
+                    Elimina
+                  </button>
+                  <div class="dropdown-divider"></div>
+                  <button class="dropdown-item" type="button">
+                    <svg class="icon icon-success icon-sm">
+                      <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-file"></use>
+                    </svg>
+                    Scarica pdf
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="submit" class="btn btn-primary btn-sm">Applica</button>
+            </div>
+          </div>
+
+          <div class="form-group col-12 col-md-1 offset-lg-2 mb-md-0 align-self-center">
+            <div class="text-center">
+              <span class="font-weight-bold neutral-2-color-b5">Filtri</span>
+            </div>
+          </div>
+
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="bootstrap-select-wrapper">
+              <label>Stato</label>
+              <select title="Scegli">
+                <option value="1">Aperta</option>
+                <option value="2">Chiusa</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="bootstrap-select-wrapper">
+              <label>Parere</label>
+              <select title="Scegli">
+                <option value="1">Favorevole</option>
+                <option value="2">Contrario</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="input-group">
+              <input type="text" class="form-control" id="input-group-1" name="input-group-1" placeholder="Cerca" aria-label="Cerca nel testo">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary btn-xs" type="button" id="btn-cerca" aria-label="Cerca">
+                  <svg class="icon">
+                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end row -->
+      </form>
+    </div><!-- end container -->
+  </div>
+
+<div class="table-responsive p-2">
+  <table class="table table-striped table-sm">
+    <caption>Lista rihieste rimborso</caption>
+    <thead class="thead-light">
+      <tr>
+        <th scope="col" class="text-center">
+          <input id="checkbox_all" type="checkbox" aria-label="Scegli tutte le righe">
+        </th>
+        <th scope="col" class="text-right">Numero/Anno</th>
+        <th scope="col">Stato</th>
+        <th scope="col">Data richiesta</th>
+        <th scope="col">Parere</th>
+        <th scope="col">Data parere</th>
+        <th scope="col" class="text-right">Importo</th>
+        <th scope="col">Cod.regionale</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Nome</th>
+        <th scope="col" class="text-center">Sesso</th>
+        <th scope="col" class="text-center">Stato</th>
+        <th scope="col" colspan="2" class="text-center">Azioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center"><input id="checkbox1" type="checkbox" aria-label="Scegli riga 1"></td>
+        <th scope="row" class="text-right">2/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">1.230,16 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox2" type="checkbox" aria-label="Scegli riga 2"></td>
+        <th scope="row" class="text-right">3/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">344,10 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox3" type="checkbox" aria-label="Scegli riga 3"></td>
+        <th scope="row" class="text-right">4/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">3.534,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox4" type="checkbox" aria-label="Scegli riga 4"></td>
+        <th scope="row" class="text-right">5/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">34,05 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox5" type="checkbox" aria-label="Scegli riga 5"></td>
+        <th scope="row" class="text-right">6/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">534,11 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox6" type="checkbox" aria-label="Scegli riga 6"></td>
+        <th scope="row" class="text-right">7/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">3.434,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox7" type="checkbox" aria-label="Scegli riga 7"></td>
+        <th scope="row" class="text-right">8/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">3.434,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox8" type="checkbox" aria-label="Scegli riga 8"></td>
+        <th scope="row" class="text-right">9/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">7.634,98 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox9" type="checkbox" aria-label="Scegli riga 9"></td>
+        <th scope="row" class="text-right">10/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">34,30 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox10" type="checkbox" aria-label="Scegli riga 10"></td>
+        <th scope="row" class="text-right">11/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">3.434,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox11" type="checkbox" aria-label="Scegli riga 11"></td>
+        <th scope="row" class="text-right">12/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">444,10 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox12" type="checkbox" aria-label="Scegli riga 12"></td>
+        <th scope="row" class="text-right">13/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-right">984,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="my-1">
+  <nav class="pagination-wrapper" aria-label="paginazione">
+    <div class="font-weight-bold neutral-2-color-b5 align-self-center d-none d-md-flex">24 di 50 pagine</div>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#">
+          <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-chevron-left"></use></svg>
+          <span class="sr-only">Pagina precedente</span>
+        </a>
+      </li>
+      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">1</a></li>
+      <li class="page-item d-none d-sm-flex">
+        <span class="page-link">...</span>
+      </li>
+      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">24</a></li>
+      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">25</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#" aria-current="page">
+          <span class="d-inline-block d-sm-none">Pagina </span>26
+        </a>
+      </li>
+      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">27</a></li>
+      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">28</a></li>
+      <li class="page-item d-none d-sm-flex">
+        <span class="page-link d-none d-sm-flex">...</span>
+      </li>
+      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">50</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">
+          <span class="sr-only">Pagina successiva</span>
+          <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 my-4 font-weight-bold">
+        ACCREDITAS Sistema di accreditamento
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li class="list-item"><a href="">Privacy</a></li>
+            <li class="list-item"><a href="">Accessibilità</a></li>
+            <li class="list-item"><a href="">Cookie policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li class="list-item"><a href="">Note legali</a></li>
+            <li class="list-item"><a href="">Contatti</a></li>
+            <li class="list-item"><a href="">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li class="list-item"><a href="">Voce 7</a></li>
+            <li class="list-item"><a href="">Voce 8</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 my-3">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
+        <span class="d-inline-block"> - tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top">
+  <svg class="icon icon-light">
+    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-arrow-up"></use>
+  </svg>
+</a>
+ 
+
+<script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
+
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202511031614"></script>
+  
+  </body>
+</html>

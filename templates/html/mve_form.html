@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/Javascript" src="js/menu_verticale.js"></script>
+<script type="text/Javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/Javascript" src="js/jquery-ui-1.9.0.custom.min.js"></script>
+<script type="text/Javascript" src="js/i18n/jquery-ui-i18n.js"></script>
+
+<script type="text/Javascript" >
+$(function() {
+ $.datepicker.setDefaults({showOn: "button", buttonImageOnly: true,
+  buttonText: "Puoi inserire la data manualmente o sceglierla da un calendario cliccando su questa immagine",
+  buttonImage: "images/icone/18/ico_calendario_18.gif" });
+ $.datepicker.setDefaults( $.datepicker.regional[ "it" ] );
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/lombardia-theme/jquery-ui-1.9.0.custom.min.css" />  
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+<!--<link rel="stylesheet" type="text/css" href="css/layout_240_left.css" />-->
+
+<!-- Declinazioni cromatiche
+<link rel="stylesheet" type="text/css" href="css/ocra.css" />
+<link rel="stylesheet" type="text/css" href="css/azzurro.css" />
+<link rel="stylesheet" type="text/css" href="css/viola.css" />
+<link rel="stylesheet" type="text/css" href="css/grigio.css" />
+-->
+
+<title>Form</title>
+</head>
+
+<body>
+<a href="#titolo_pagina" class="non_visibile">salta al contenuto</a>
+<div id="barra_istituzionale_2014">
+	<a href="http://www.regione.lombardia.it">
+		<img class="logo" src="images/loghiRLexpo.png" alt="Regione Lombardia"/>
+	</a>
+		<div class="area_titolo">
+			<span class="sigla">SINTEL</span>
+			<span class="titolo_esteso">Sistema Intermediazione Telematica</span>
+		</div>
+		<div class="area_ricerca">
+			<input type="text" class="form-control" placeholder="Cerca nel sito" title="ricerca">
+			<button type="submit" class="pulsante" alt="Cerca">&gt;</button>
+		</div>
+		<ul class="voci_navigazione">
+			<li><a href="#">CRA</a></li>
+			<li><a href="#">voce02</a></li>
+			<li><a href="#">voce03</a></li>
+			<li class="last"><a href="#">voce04</a></li>
+		</ul>
+</div>
+<div class="content_separator">&nbsp;</div>
+
+   <div id="area_utente">
+		<span class="dati_utente">
+			<span class="ico_utente"></span>
+			Utente: Mario Rossi
+		</span>
+		<ul class="links">
+			<li class="first">
+				<a href="#"><img src="images/icone/18/ico_cambioIdentita_18.gif" alt="modifica profilo"/>Modifica profilo</a>
+			</li>
+			<li>
+				<a href="#"><img src="images/icone/18/ico_comunicazioniElettroniche_18.gif" alt="comunicazioni"/>Comunicazioni</a>
+			</li>
+		</ul>
+   </div>
+
+<div id="layout">
+	 <div id="colonna_menu_sx">
+
+<div id="menu_verticale">
+<ul id="ul_menu_verticale">
+   <li><div class="pannello"><span class="aperto"></span><span>Menu</span></div>
+      <ul>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+         <li><div class="filetto"></div></li>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li class="on"><a href="#">Voce liv3 lunga lunga lunga lunga lunga lunga lunga lunga</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+         <li><div class="filetto"></div></li>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><div class="pannello"><span class="aperto"></span><span>Pannello 1</span></div>
+      <ul>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+         <li><div class="filetto"></div></li>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><div class="pannello"><span class="aperto"></span><span>Pannello 2</span></div>
+      <ul>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+         <li><div class="filetto"></div></li>
+         <li><div class="menu"><span class="aperto"></span><span>Menu liv1</span></div>
+            <ul>
+               <li><a href="#">Voce liv2</a></li>
+               <li><div class="menu"><span class="aperto"></span><span>Menu liv2</span></div>
+                  <ul>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                     <li><a href="#">Voce liv3</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Voce liv2</a></li>
+               <li><a href="#">Voce liv2</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul>
+   </div>
+   </div>
+
+	<div id="area_contenuti">
+   <div id="titolo_pagina">
+    <div class="testo_titolo">Titolo pagina</div>
+    <ul class="tool_utility">
+      <li>
+        <a href="#"><img src="images/icone/18/ico_ridimensionaCarattere_18.gif" alt="ingrandisci carattere" title="ingrandisci carattere"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_utente_18.gif" alt="dati utente" title="dati utente"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_stampaDoc_18.gif" alt="stampa" title="stampa"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_massimizza_18.gif" alt="visualizza a schermo intero" title="visualizza a schermo intero"/></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/icone/18/ico_ricercaAvanzata_18.gif" alt="ricerca avanzata" title="ricerca avanzata"/></a>
+      </li>
+    </ul>
+    &nbsp;
+   </div>
+
+         <form action="#" method="get">
+
+        <div class="info_box">
+          <img src="images/icone/18/ico_info_18.gif" alt="Informazioni"/>
+          <label>In questa sezione puoi modificare il tuo indirizzo e i tuoi recapiti email e telefonici.</label>
+        </div>
+<!--
+   <div class="alert_box">
+      <img src="images/icone/18/ico_warning_18.gif" alt="Attenzione: errore!"/>
+      <label>Attenzione! Correggere gli errori sottostanti prima di procedere.</label>
+   </div>
+-->
+      <div class="riga_25">
+        <strong><label class="campi_obbligatori">I campi obbligatori sono contrassegnati con l'asterisco</label></strong>
+      </div>
+
+      <div class="riga_25">
+        <strong>Etichette verticali</strong>
+      </div>
+
+         <div class="riga">
+            <div class="col_33">
+              <label for="nome">Nome</label>
+              <label class="campi_obbligatori">*</label><br/>
+              <input class="fatal_error" id="nome" name="nome" size="25" maxlength="25" type="text"/>
+              <label class="fatal_error">immettere nome</label>
+            </div>
+            <div class="col_50">
+              <div class="col_50">
+                <div class="campo">
+                  <label for="cognome">Cognome</label>
+                  <label class="campi_obbligatori">*</label><br/>
+                  <input id="cognome" name="cognome" size="25" maxlength="25" type="text"/>
+                </div>
+              </div>
+              <div class="col_50">
+                <div class="campo">
+                  <fieldset>
+                    <legend>Sesso <label class="campi_obbligatori">*</label></legend><br/>
+                    <input id="sesso_m" type="radio" value="M" />
+                    <label for="sesso_m">Maschio</label>
+                    <input id="sesso_f" type="radio" value="F" />
+                    <label for="sesso_f">Femmina</label>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="riga">
+            <div class="col_33">
+               <label for="tip_doc_identita" class="verticale">Tipo documento</label>
+  	            <select id="tip_doc_identita" name="tip_doc_identita">
+     	            <option value="CI">Carta d'indentità</option>
+        	        <option value="PA">Passaporto</option>
+              	</select>
+            </div>
+            <div class="col_50">
+        	     <label for="num_doc_identita" class="verticale">Numero documento</label>
+               <img src="images/icone/18/ico_info_18.png" alt="E' possibile scrivere le lettere anche in caratteri minuscoli." title="E' possibile scrivere le lettere anche in caratteri minuscoli"/>
+               <input id="num_doc_identita" name="num_doc_identita" size="25" maxlength="25" type="text"/>
+            </div>
+         </div>
+         <div class="riga">
+            <div class="col_33">
+               <label for="rilascio" class="verticale">Data di rilascio (formato gg/mm/aaaa)</label>
+               <input name="data_rilascio" id="rilascio" size="10" maxlength="10" type="text"/>
+          <script type="text/Javascript">$(function() { $( "#rilascio" ).datepicker({});}); </script>
+            </div>
+            <div class="col_50">
+               <label for="comune_rilascio" class="verticale">Comune di rilascio</label>
+               <input id="comune_rilascio" name="comune_rilascio" size="50" maxlength="50" type="text"/>
+					<a href="popup_ricerca.html" class="ricerca" onclick="window.open(this.href, 'popupwindow', ' width=680, height=500, location=no, menubar=no, scrollbars=no,status=no, toolbar=no,fullscreen=no, dependent=no'); return false;">
+						<img src="images/icone/18/ico_ricerca_18.gif" alt="Clicca qui per effettuare una ricerca." title="Clicca qui per effettuare una ricerca."/>
+					</a>
+            </div>
+         </div>
+      <hr/>
+        <div class="riga_25">
+          <strong>Etichette orizzontali a sinistra</strong>
+        </div>
+        <div class="riga_25">
+          <div class="col_50">
+            <div class="col_25">
+              <label for="cognomeRappresentante">Cognome</label>
+              <label class="campi_obbligatori">*</label>
+            </div>
+            <div class="col_75">
+              <input id="cognomeRappresentante" name="cognomeRappresentante" size="30" type="text" value="" />
+            </div>
+          </div>
+          <div class="col_50">
+            <div class="col_30">
+              <label for="nomeRappresentante">Nome</label>
+              <label class="campi_obbligatori">*</label>
+            </div>
+            <div class="col_70">
+              <input id="nomeRappresentante" name="nomeRappresentante" size="30" type="text" value="" />
+            </div>
+          </div>
+        </div>
+        <div class="riga_25">
+          <div class="col_50">
+            <div class="col_25">
+              <label for="caricaResponsabile">Carica rivestita</label>
+              <label class="campi_obbligatori">*</label>
+            </div>
+            <div class="col_75">
+              <select id="caricaResponsabile" name="caricaResponsabile">
+                <option value="0" selected="selected">Presidente</option>
+                <option value="1">Direttore</option>
+                <option value="2">Segretario</option>
+                <option value="3">Altro</option>
+              </select>
+            </div>
+          </div>
+          <div class="col_50">
+            <div class="col_30">
+              <label for="titoloResponsabile">Titolo accademico</label>
+            </div>
+            <div class="col_70">
+              <input id="titoloResponsabile" name="titoloResponsabile" size="30" type="text" value="" />
+            </div>
+          </div>
+        </div>
+			<hr/>
+         <div class="riga">
+            <div class="area_rispetto">
+               <input value="annulla" class="pulsante" type="submit"/>
+               <input name="invio" value="conferma" class="pulsante" type="submit"/>
+            </div>
+         </div>
+         </form>
+
+   <div class="content_closer">&nbsp;</div>
+
+	</div>
+</div>
+
+  <div id="footer_2014">
+    &copy; Copyright Regione Lombardia - tutti i diritti riservati
+    <ul class="voci_navigazione">
+      <li><a href="#">Voce 03</a></li>
+      <li><a href="#">Voce 02</a></li>
+      <li><a href="#">Voce 01</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

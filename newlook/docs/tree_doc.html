@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Tree</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Tree</h1>
+<p>
+Questo componente è stato ricavato modificando <a href="http://presentations.cita.illinois.edu/2011-06-cic/slide9.html">questo esempio</a>.
+</p>
+Le modifiche riguardano:
+<ul>
+<li>Il css per i colori e la resa grafica</li>
+<li>L'utilizzo dei <em>glyphicon</em> di bootstrap al posto delle immagini per i simboli "+" e "-"</li>
+<li>Il javascript per poter utilizzare come elementi anche link a pagine esterne cliccabili o attivabili via tastiera.</li>
+</ul>
+
+
+
+
+<h2>Costruzione dell'albero in HTML</h2>
+<ul>
+<li>L'albero è contenuto all'inteno di un tag <code>&lt;ul&gt;</code>.</li>
+<li>Il tag <code>&lt;ul&gt;</code> radice deve avere <code>role="tree"</code>.</li>
+<li>Tutti i tag <code>&lt;li&gt;</code> contenuti devono avere <code>role="treeitem"</code>.</li>
+<li>Un <em>ramo espandibile</em> è contenuto in un tag <code>&lt;li&gt;</code> con <code>class="tree-parent"</code>.</li>
+<li>All'interno del tag <code>&lt;li&gt;</code> il <em>livello successivo</em> è costituito da un tag <code>&lt;ul&gt;</code> con <code>role="group"</code></li>
+<li>Se si desidera che un ramo espandibile compaia già espanso all'apertura della pagina, va specificato l'attributo <code>aria-expanded="true"</code> sul tag <code>&lt;li&gt;</code> con <code>class="tree-parent"</code>, altrimenti va specificato <code>aria-expanded="false"</code><br/>
+Tale attributo è necessario per l'accessibilità e viene gestito automaticamente dalle funzioni javascript associate all'albero.</li>
+<li>Sempre per l'accessibilità va specificato, su tutti i <em>treeitem</em> l'attributo <code>tabindex="-1"</code>, <strong>ad eccezione del il primo <em>treeitem</em> di ogni albero</strong>.<br/>
+Anch'esso è gestito automaticamente dalle funzioni javascript associate all'albero.</li>
+</ul>
+
+
+<h2>Utilizzo del componente all'interno della pagina HTML</h2>
+E' necessario, per ogni albero contenuto nella pagina, istanziare un oggetto <code>treeview</code> specificandone l'<code>id</code><br/>
+Nel template, sono presenti, in fondo al <code>&lt;body&gt;</code>, le istruzioni:
+<pre>
+&lt;script type="text/Javascript"&gt;treeviewApp = <strong>new treeview('tree1');</strong>&lt;/script&gt;
+&lt;script type="text/Javascript"&gt;treeviewApp2 = <strong>new treeview('tree2');</strong>&lt;/script&gt;
+</pre>
+
+
+<h2>Accessibilità</h2>
+<p>
+L'albero è progettato per poter essere letto anche attraverso screen-reader o altre tecnologie assistive.<br/>
+Le funzionalità di apertura/chiusura dell'albero sono attivabili sia via mouse che via tastiera.<br/>
+</p>
+
+In particolare:
+<ul>
+<li>Freccia Giù: Passa al successivo elemento visibile dell'albero.</li>
+<li>Freccia Su: Passa al precedente elemento visibile dell'albero.</li>
+<li>Freccia Destra: Espande il ramo corrente.</li>
+<li>Freccia Sinistra: Collassa il ramo corrente o, se è già collassato, passa al ramo di livello superiore.</li>
+<li>Invio: Espande/Collassa il ramo corrente.</li>
+<li>Home: Passa al ramo radice dell'albero.</li>
+<li>Fine: Passa all'ultimo elemento visibile dell'albero.</li>
+<li>Tab: Esce dalla navigazione dell'albero.</li>
+<li>* (asterisco sul tastierino numerico): Espande tutto l'albero.</li>
+<li>Click: su un ramo espandibile Espande/Collassa il ramo.</li>
+</ul>
+
+
+</body>
+</html>

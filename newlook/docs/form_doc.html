@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doc Form</title>
+    <link rel="stylesheet" type="text/css" href="documentazione.css" />
+  </head>
+
+<body>
+<h1>Form</h1>
+<p>
+L'unica personalizzazione fatta per i form nel file <code>lomb_ver.css</code> riguarda il tag <code>legend</code>. Associando la classe <code>legend-lispa</code>, si ottiene di far apparire il testo compreso nel tag, graficamente simile alle label dei campi di immissione (si veda nel template la dicitura <em>Sesso</em> relativa ai radiobutton <em>Maschio</em> e <em>Femmina</em>).
+</p>
+<pre>
+legend.lispa-form {
+   margin-bottom: 0;
+   border-bottom: none;
+   font-size: inherit;
+   font-weight: bold;
+}
+</pre>
+<p>
+Per tutto il resto si utilizzano le normali classi di bootstrap.<br/>
+La strutturazione della videata va quindi eseguita utilizzando il <code>Grid system</code> del framework, che permette di ottenere un layout <em>responsivo</em>.<br/>
+Nel template sono presentati due esempi dello stesso form, uno con le etichette poste verticalmente sopra i campi di immissione, l'altro con le etichette poste a sinistra dei campi.
+</p>
+<h3>Campi data</h3>
+<p>
+Al momento il <code>type="date"</code> per i campi di input non è correttamente supportato da tutti i browser.</br>
+Per ora risulta più opportuno non specificare tale tipo dati e utilizzare un plug-in javascript per il controllo della data e l'emissione di un calendario da cui selezionare la data.<br/>
+Il plug-in scelto è <a href="https://github.com/eternicode/bootstrap-datepicker">bootstrap-datepicker</a>, che ha molte opzioni di personalizzazione ed è navigabile anche via tastiera.<br/>
+</p>
+<p>
+Per utilizzarlo è necessario aggiungere in fondo alla pagina il richiamo allo script relativo ed alla personalizzazione per la lingua italiana.
+</p>
+<pre>
+&lt;script src="js/bootstrap-datepicker.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/locales/bootstrap-datepicker.it.min.js"&gt;&lt;/script&gt;
+</pre>
+<p>
+Inoltre deve essere inserito il link al suo <code>css</code> specifico.
+</p>
+<pre>
+&lt;!-- Custom styles for this template --&gt;
+<strong>&lt;link href="css/bootstrap-datepicker3.min.css" rel="stylesheet"&gt;</strong>
+&lt;link href="css/lomb_ver.css" rel="stylesheet"&gt;
+</pre>
+<p>
+Per ogni campo data va specificata l'associazione della funzione <code>datepicker</code>, con le relative opzioni di configurazione del calendario.
+</p>
+<pre>
+&lt;script&gt;
+$("#data_rilascio").datepicker({
+  format: "dd/mm/yyyy", weekStart: 1, language: "it",
+  todayHighlight: true, autoclose: true
+});
+&lt;/script&gt;
+</pre>
+<p>
+Per l'elenco delle <a href="http://bootstrap-datepicker.readthedocs.org/en/stable/options.html">opzioni disponibili</a> e di tutte le altre possibilità di configurazione, si rimanda alla <a href="http://bootstrap-datepicker.readthedocs.org/en/stable/">documentazione del plug-in</a>
+On line è anche disponibile una <a href="http://eternicode.github.io/bootstrap-datepicker">demo</a> che funge anche da configuratore interattivo.
+</p>
+
+<h3>Campi importo (currency)</h3>
+<p>
+Per la formattazione dei campi di input contenti importi, è possibile utilizzare il plug-in <a href="https://github.com/BobKnothe/autoNumeric">autoNumeric</a>, che ha molte opzioni di personalizzazione, ma <strong>obbliga</strong> a specificare il <code>type="text"</code> sul campo.
+</p>
+<p>
+Per utilizzarlo è necessario aggiungere in fondo alla pagina il richiamo allo script relativo.
+</p>
+<pre>
+&lt;script src="js/autoNumeric-min.js"&gt;&lt;/script&gt;
+</pre>
+<p>
+Per ogni campo data va specificata l'associazione della funzione <code>autoNumeric</code>, con le relative opzioni di configurazione dei separatori delle migliaia, dei decimali e della valuta.
+</p>
+<pre>
+&lt;script&gt;$('#importo_in_euro').autoNumeric('init', {aSep: '.', aDec: ',', aSign: '€ '});&lt;/script&gt;
+</pre>
+<p>
+Per l'elenco delle <a href="https://github.com/BobKnothe/autoNumeric#default-settings--supported-options">opzioni disponibili</a> e di tutte le altre possibilità di configurazione, si rimanda alla <a href="https://github.com/BobKnothe/autoNumeric#getting-started">documentazione del plug-in</a>
+On line è anche disponibile un <a href="http://www.decorplanit.com/plugin/">tutorial</a>.
+</p>
+
+
+<h2>Accessibilità</h2>
+In questi <em>template</em> per i <em>form</em> non sono stati inseriti attributi o tag specifici per l'accessibilità.</br>
+<strong>Indispensabile</strong> è legare la giusta <em>label</em> ad ogni campo di input, tramite l'attributo <code>for</code> per il tag <code>&lt;label&gt;</code> ed il corrispondente attributo <code>id</code> dal tag <code>&lt;input&gt;</code>.
+<pre>
+&lt;label class="control-label" <strong>for="cognome"</strong>&gt;Cognome&lt;/label&gt;
+&lt;input <strong>id="cognome"</strong> class="form-control" type="text"/&gt;
+</pre>
+<p>
+Leggendo la pagina con alcuni screen-reader non si sono riscontrate particolari difficoltà ad eccezione dei campi con attributo <code>type="date"</code>, di cui sopra.</br>
+Per questi l'importante è che sia <strong>possibile digitare la data direttamente da tastiera</strong>, ed ottenere un eventuale messaggio di errore se errata.</br>
+<strong>Non</strong> deve avvenire <strong>automaticamente</strong> la comparsa di un <strong>calendario</strong>.
+</p>
+<p>
+L'accessibilità effettiva della pagina dipende molto anche dalla disposizione dei campi a video.</br>
+E' quindi <strong>necessario</strong>, dopo aver passato l'analisi con il <a href="http://achecker.ca/checker/">Web Accessibility Checker</a>, <strong>eseguire un test con uno screen reader</strong> sulla pagina creata. 
+</p>
+</body>
+</html>

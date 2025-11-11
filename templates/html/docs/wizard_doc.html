@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>Wizard</title>
+</head>
+
+<body>
+<h1>Wizard</h1>
+<p>
+Per i wizard è stato semplicemente predisposto un <a href="../css/wizard.css">CSS</a> per mostrare dei pallini numerati con diciture che rappresentano i passi del wizard.<br/>
+A tali pallini è poi applicato uno sfondo particolare per segnalare lo stato di avanzamento del wizard.<br/>
+Lo sfondo dipende dalla classe assegnata al tag <code>&lt;li&gt;</code> del passo in questione:
+</p>
+<pre>
+   &lt;li class="past"&gt;
+      &lt;div class="numero"&gt;1&lt;/div&gt;
+      nome
+   &lt;/li&gt;
+</pre>
+<ol>
+<li><code>class="past"</code> identifica i passi già effettuati.</li>
+<li><code>class="active"</code> identifica il passo in esecuzione al momento</li>
+<li>"nessuna classe" i passi ancora da effettuare.</li> 
+</ol>
+<p>
+All'interno del <code>&lt;div class="numero"&gt;</code> va posto il numero del passo.<br/>
+La dicitura può essere su una o su più righe, all'interno del tag <code>&lt;li&gt;</code>.
+</p>
+<p>
+Ognuna delle diciture può essere un link alla pagina html che gestisce quel passo.
+</p>
+<p>
+Per cambiare la distanza fra i singoli elementi è sufficiente cambiare il valore di <code>width</code> nella dichiarazione <code>ul.wizard li</code>, preferibilmente con un proprio foglio CSS aggiuntivo.
+</p>
+<p>
+Il link <code>&lt;a href="#fine_passi" class="non_visibile"&gt;salta elenco passi&lt;/a&gt;</code> è un accorgimento utile agli utenti non vedenti.<br/>
+Dà la possibilità, navigando la pagina con uno screeen reader, di evitare la rilettura di tutti i passi del wizard.</br>
+L'<code>id="fine_passi"</code> dovrà poi essere posto tag subito prima della prima label del form che si vuole venga letta dallo screen reader.<br/>
+Esempio:
+<pre>
+&lt;div class="riga_25" <strong>id="fine_passi"</strong>&gt;
+  &lt;strong&gt;&lt;<strong>label</strong> class="campi_obbligatori"&gt;I campi obbligatori sono contrassegnati con l'asterisco&lt;/label&gt;&lt;/strong&gt;
+&lt;/div>
+</pre>
+La <code>class="non_visibile"</code> fa si che non venga visualizzato.
+</p>
+
+
+</body>
+</html>

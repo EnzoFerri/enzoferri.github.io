@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="documentazione.css" />
+<title>tab_mve_tbb_tbl</title>
+</head>
+
+<body>
+<h1>Tabber alto, menù verticale e tabella</h1>
+<p>
+Questo template è simile a <a href="mve_ric_tbb_tbl_doc.html">mve_ric_tbb_tbl</a> con la differenza che le liguette del <em>tabber</em> anzichè essere sopra la tabella in centro alla pagina, sono spostate sopra l'<em>area utente</em>.
+</p>
+<p>
+Questa tipo di layout è al di fuori delle linee guida, quindi è stato realizzato come una personalizzazione per Sintel.<br/>
+E' quindi un esempio di come possano essere inseriti elementi specifici dei propri applicativi utilizzando il sistema dei css dei template.
+</p>
+<p>
+Nella <a href="tba_mve_tbl_html.txt">pagina HTML</a> è stato inserito, prima dell'area utente, un tag <code>&lt;ul&gt;</code> del tutto simile a quello del <em>tabber</em>, assgnandogli però la classe <em>tabber_alto</em>.
+</p>
+<p>
+E' stato creato un CSS specifico per l'applicativo denominato <a href="../css/sintel.css">sintel.css</a> che contiene le dichiarazioni relative al nuovo "oggetto" <code>&lt;tabber_alto&gt;</code>.<br/>
+Le dichiarazioni CSS per il tabber sono state copiate e modificate per dare l'aspetto voluto.<br/>
+Poichè per l'applicativo Sintel è stata scelta la declinazione cromatica <em>ocra</em> il colore della liguetta attiva è stata impostata di conseguenza (<code>background-color: #dada45;</code>) direttamente <a href="../css/sintel.css">sintel.css</a> senza modifiche ai css standard delle declinazioni cromatiche.
+</p>
+<p>
+Si è reso però necessario creare dei fogli personalizzati per Internet Explorer 6 e 7, rispettivamente: <a href="../css/sintel_ie6.css">sintel_ie6.css</a> e <a href="../css/sintel_ie7.css">sintel_ie7.css</a>.
+</p>
+
+<p>
+Togliendo il <em>tabber</em> dall' <em>area_contenuti</em>, per distanziare la tabella dal <em>titolo_pagina</em> la si è inserita in un tag <code>&lt;div class="area_testo"&gt;</code> alla quale il CSS standard applica del padding.
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/Javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/Javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/lombardia-theme/jquery-ui-1.10.3.custom.min.css" />  
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+<!--link rel="stylesheet" type="text/css" href="css/ocra.css" /-->
+  <title>toggle</title>
+
+  <style>
+    div.tb {
+      border:1px solid lightgrey;
+    }
+    div.toggle {
+      padding: 5px;
+      display: none;
+    }
+    .toggle_button {
+      color: #000000 !important;
+      margin-left: 5px;
+      padding-left: 15px;
+    }
+    .toggle_button.on {
+      background: url(images/tagli_html/menu_freccia_on.gif) no-repeat center left;
+    } 
+    .toggle_button.off {
+      background: url(images/tagli_html/menu_freccia_off.gif) no-repeat center left;
+    } 
+    .pulsante {
+      cursor: pointer;
+      height:25px;
+      font-size: 1.00em;
+      font-family: "Trebuchet MS", Garuda, FreeSans, arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: url(images/tagli_html/bottone_tilebg_off.gif);
+      padding: 0 5px;
+    }
+    .pulsante:hover {
+      background: transparent url(images/tagli_html/bottone_tilebg_on.gif);
+    }
+  </style>
+</head>
+
+<body>
+<div id="area_contenuti">
+<div class="separator">&nbsp;</div>
+<form action="#" method="get">
+<div class="tb">
+      <div class="toggle_button off" id="toggle1">
+        Esplora le SDO in dettaglio
+      </div>
+
+    <div class="toggle" id="ricerca_sdo">
+       <div class="riga">
+          <div class="campo">
+             <label for="trova1" class="verticale">Trova</label>
+             <input id="trova1" name="trova1" size="14" maxlength="50" type="text"/>
+          </div>
+          <div class="campo">
+             <label for="in_per1" class="verticale">In / per</label>
+             <select id="in_per1" name="in_per1">
+                <option value="buyer.buyers.search.byname">Nome Acquirente</option>
+             </select>
+          </div>
+          <div class="campo">
+             <label for="tipo1" class="verticale">Tipo</label>
+             <select id="tipo1" name="tipo1">
+                <option value="-1">Tutti/e</option>
+                <option value="sanitario">sanitario</option>
+                <option value="regionale">regionale</option>
+                <option value="locale">locale</option>
+                <option value="altre amministrazioni">altre amministrazioni</option>
+             </select>
+          </div>
+           <br/>
+           <input name="invio" value="cerca" class="pulsante" type="submit"/>
+       </div>
+    </div>
+</div>
+
+<div class="separator">&nbsp;</div>
+  <span id="toggle2" class="toggle_button off">
+      <span class="pulsante">
+        Esplora le RSU in dettaglio
+      </span>
+  </span>
+
+    <div  class="toggle ricerca" id="ricerca_rsu">
+       <div class="riga">
+          <div class="campo">
+             <label for="trova2" class="verticale">Trova</label>
+             <input id="trova2" name="trova2" size="14" maxlength="50" type="text"/>
+          </div>
+          <div class="campo">
+             <label for="in_per2" class="verticale">In / per</label>
+             <select id="in_per2" name="in_per2">
+                <option value="buyer.buyers.search.byname">Nome Acquirente</option>
+             </select>
+          </div>
+          <div class="campo">
+             <label for="tipo2" class="verticale">Tipo</label>
+             <select id="tipo2" name="tipo2">
+                <option value="-1">Tutti/e</option>
+                <option value="sanitario">sanitario</option>
+                <option value="regionale">regionale</option>
+                <option value="locale">locale</option>
+                <option value="altre amministrazioni">altre amministrazioni</option>
+             </select>
+          </div>
+           <br/>
+           <input name="invio" value="cerca" class="pulsante" type="submit"/>
+       </div>
+    </div>
+
+
+</form>
+</div>
+
+
+  <script>
+    $("#toggle1").click(function () {
+      $("#toggle1").toggleClass( "on off", 1);
+      $("#ricerca_sdo").toggle( "blind", 1000);
+    });
+    $("#toggle2").click(function () {
+      $("#toggle2").toggleClass( "on off", 1);
+      $("#ricerca_rsu").toggle( "blind", 1000);
+    });
+  </script>
+ 
+ 
+</body>
+</html>

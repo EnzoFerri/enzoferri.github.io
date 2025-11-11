@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it-IT" xml:lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style_lombardia.css" />
+
+<title>Popup</title>
+
+</head>
+
+<body>
+
+<div class="popup">
+	<h1>Ricerca</h1>
+	<form action="#" method="get">
+		<h2>Inserire parte del nome della categoria e premere "RICERCA"</h2>
+		<div class="riga_25">
+			<div class="campo">
+				<label for="trova">Ricerca</label>
+				<input id="trova" name="trova" size="14" maxlength="50" type="text"/>
+			</div>
+        <fieldset>
+          <legend><label>Opzioni ricerca:</label></legend>
+            <input id="inizia" type="radio" name="inizia_contiene" value="inizia"/>
+            <label for="inizia">inizia per</label>
+            <input id="contiene" type="radio" name="inizia_contiene" value="contiene"/>
+            <label for="contiene">contiene</label>
+        </fieldset>
+    </div>
+    <div class="area_rispetto">
+			<input name="invio" value="Ricerca" class="pulsante pulsante_dx" type="submit"/>
+    </div>
+		<hr/>
+		<h3>Risultati ricerca</h3>
+    <div class="campo">
+      <label for="risultati">Scegli uno tra i seguenti:</label>
+    </div>
+    <div>
+		<select id="risultati" name="risultati" size="15">
+			<option value="1">Altri enti centrali produttori di servizi economici</option>
+			<option value="2">Altri enti locali produttori di servizi economici</option>
+			<option value="3">Amministrazioni dello stato</option>
+			<option value="4">Amministrazioni indipendenti</option>
+		</select>
+    </div>
+		<div class="area_rispetto">
+			<input name="scelta" value="Continua" class="pulsante" type="submit"/>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

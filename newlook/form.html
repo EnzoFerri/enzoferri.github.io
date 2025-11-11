@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Form</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link href="css/lomb_ver.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+			<h2>Etichette verticali</h2>
+			<form role="form" action="#" method="get">
+      <div class="alert alert-danger">
+				<span class="glyphicon glyphicon-remove"></span>
+        <label>Attenzione! Correggere gli errori sottostanti prima di procedere.</label>
+				<ul>
+					<li>Immettere Nome</li>
+					<li>Immettere Data di rilascio</li>
+				</ul>
+      </div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group has-error">
+							<label class="control-label" for="nome">Nome</label>
+							<input class="form-control" id="nome" type="text"/>
+							<span class="label label-danger">Immettere nome</span>		
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="control-label" for="cognome">Cognome</label>
+							<input id="cognome" class="form-control" type="text"/>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<fieldset>
+								<legend class="lispa-form">Sesso</legend>
+								<div class="radio">
+									<label class="control-label" for="sesso_m">
+										<input name="sesso" id="sesso_m" type="radio" value="M" />
+										Maschio
+									</label>
+									<label class="control-label" for="sesso_f">
+										<input name="sesso" id="sesso_f" type="radio" value="F" />
+										Femmina
+									</label>
+								</div>
+							<fieldset>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="control-label" for="tipo_doc_identita">Tipo documento</label>
+							<select class="form-control" id="tipo_doc_identita">
+								<option value="CI">Carta d'identità</option>
+								<option value="PA">Passaporto</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="control-label" for="num_doc_identita">Numero documento</label>
+								<span class="glyphicon glyphicon-info-sign" alt="E' possibile scrivere le lettere anche in caratteri minuscoli." title="E' possibile scrivere le lettere anche in caratteri minuscoli"></span>
+							<input class="form-control" id="num_doc_identita" type="text"/>
+							<span class="help-block">E' possibile scrivere le lettere anche in caratteri minuscoli.</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<br/>
+						<div class="checkbox">
+						<label class="checkbox-inline" for="scaduto">
+							<input id="scaduto" type="checkbox" value="true" />
+							Scaduto
+						</label>
+						<label class="checkbox-inline" for="impronte">
+							<input id="impronte" type="checkbox" value="true" />
+							Impronte digitali
+						</label>
+					</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group has-error">
+							<label class="control-label" for="data_rilascio">Data di rilascio</label>
+							<input class="form-control" id="data_rilascio" type="text"/>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<label class="control-label" for="comune_rilascio">Comune di rilascio</label>
+						<div class="input-group">
+							<input class="form-control" id="comune_rilascio" type="text" placeholder="Comune"/>
+							<span class="input-group-btn">
+								<button class="btn btn-lispa" type="button">
+									<span class="glyphicon glyphicon-search"></span> Cerca
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="note">Note ed eventuali altre comunicazioni</label>
+							<textarea class="form-control" id="note" rows="4" ></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-2">
+						<div class="form-group">
+							<label class="control-label" for="importo_in_euro">Importo</label>
+							<input type="text" id="importo_in_euro" class="form-control text-right"/>
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+
+<hr/>
+
+			<h2>Etichette orizzontali a sinistra</h2>
+			<form class="form-horizontal" role="form">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group has-error">
+							<div class="col-md-3">
+								<label class="control-label" for="nome2">Nome</label>
+							</div>
+							<div class="col-md-9">
+								<input class="form-control" id="nome2" name="nome" type="text"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<div class="col-md-3">
+								<label class="control-label" for="cognome2">Cognome</label>
+							</div>
+							<div class="col-md-9">
+								<input id="cognome2" class="form-control" type="text"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<fieldset>
+							<div class="col-md-2">
+								<label class="control-label">Sesso</label>
+							</div>
+							<div class="col-md-10">
+								<label class="radio-inline" for="sesso_m2">
+									<input name="sesso2" id="sesso_m2" type="radio" value="M" />
+									Maschio
+								</label>
+								<label class="radio-inline" for="sesso_f2">
+									<input name="sesso2" id="sesso_f2" type="radio" value="F" />
+									Femmina
+								</label>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<div class="col-md-3">
+								<label class="control-label" for="tipo_doc_identita2">Tipo doc.</label>
+							</div>
+							<div class="col-md-9">
+								<select class="form-control" id="tipo_doc_identita2">
+									<option value="CI">Carta d'identità</option>
+									<option value="PA">Passaporto</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<div class="col-md-3">
+								<label class="control-label" for="num_doc_identita2">Numero</label>
+								<span class="glyphicon glyphicon-info-sign" alt="E' possibile scrivere le lettere anche in caratteri minuscoli." title="E' possibile scrivere le lettere anche in caratteri minuscoli"></span>
+							</div>
+							<div class="col-md-9">
+								<input class="form-control" id="num_doc_identita2" type="text" placeholder="E' possibile scrivere le lettere in minuscolo"/>
+								<span class="help-block">E' possibile scrivere le lettere in minuscolo</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="col-xs-12">
+							<label class="checkbox-inline" for="scaduto2">
+								<input id="scaduto2" type="checkbox" value="true" />
+								Scaduto
+							</label>
+							<label class="checkbox-inline" for="impronte2">
+								<input id="impronte2" type="checkbox" value="true" />
+								Impronte digitali
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group has-error">
+							<div class="col-md-4">
+								<label class="control-label" for="data_rilascio2">Data di rilascio</label>
+							</div>
+							<div class="col-md-8">
+								<input class="form-control" id="data_rilascio2" type="text"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="form-group">
+							<div class="col-md-3">
+								<label class="control-label" for="comune_rilascio2">Comune di rilascio</label>
+							</div>
+							<div class="col-md-9">
+								<div class="input-group">
+									<input class="form-control" id="comune_rilascio2" type="text" placeholder="Comune"/>
+									<span class="input-group-btn">
+										<button class="btn btn-lispa" type="button">
+											<span class="glyphicon glyphicon-search"></span> Cerca
+										</button>
+										</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<div class="col-md-2">
+								<label class="control-label" for="note2">Note ed eventuali altre comunicazioni</label>
+							</div>
+							<div class="col-md-10">
+								<textarea class="form-control" id="note2" rows="4" ></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<div class="col-sm-1">
+								<label class="control-label" for="importo_in_euro2">Importo</label>
+							</div>
+							<div class="col-sm-2">
+								<input id="importo_in_euro2" class="form-control text-right" type="text" value=12 />
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<hr/>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pull-right">
+						<button type="submit" class="btn btn-default">Annulla</button>
+						<button type="submit" class="btn btn-primary">Conferma</button>
+					</div>
+				</div>
+			</div>
+
+			</form>
+
+		</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/locales/bootstrap-datepicker.it.min.js"></script>
+    <script src="js/autoNumeric-min.js"></script>
+
+    <script>
+    $("#data_rilascio").datepicker({
+			format: "dd/mm/yyyy", weekStart: 1, language: "it",
+			todayHighlight: true, autoclose: true
+    });
+		</script>
+    <script>
+    $("#data_rilascio2").datepicker({
+			format: "dd/mm/yyyy", weekStart: 1, language: "it",
+			todayHighlight: true, autoclose: true
+    });
+    </script>
+    <script>$('#importo_in_euro').autoNumeric('init', {aSep: '.', aDec: ',', aSign: '€ '});</script>
+    <script>$('#importo_in_euro2').autoNumeric('init', {aSep: '.', aDec: ',', aSign: ' €', pSign: 's'});</script>
+    
+    
+  </body>
+
+
+</html>
