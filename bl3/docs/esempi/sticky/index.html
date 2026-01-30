@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<title>Sticky · Bootstrap Lombardia</title>
+<!-- Bootstrap core CSS -->
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202601301059" rel="stylesheet" />
+
+<!-- Documentation extras -->
+
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202601301059" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bl3/favicon.ico" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bl3/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bl3/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bl3/site.webmanifest" />
+<meta name="msapplication-config" content="/bl3/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Sticky" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/esempi/sticky/" />
+<meta property="og:title" content="Sticky" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Esempio Componente Sticky: posizionamento sticky e fixed</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container container-padding">
+  <div class="row">
+    <div class="col-12 sticky-parent">
+      <div class="it-header-slim-wrapper" data-bs-toggle="sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="it-header-slim-wrapper-content">
+                <a class="d-none d-lg-block navbar-brand" href="#">Elemento Sticky</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 sticky-parent">
+      <div class="it-header-slim-wrapper" data-bs-toggle="sticky" data-bs-position-type="fixed" data-bs-sticky-class-name="is-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="it-header-slim-wrapper-content">
+                <a class="d-none d-lg-block navbar-brand" href="#">Elemento Sticky - fixed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Lancia la demo della modale</button>
+
+      <!-- Modal -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal" aria-labelledby="exampleModalTitle">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5 no_toc" id="exampleModalTitle">Intestazione modale</h2>
+            </div>
+            <div class="modal-body">
+              <p>Font Titillium 16px. Leading 24px. omnis iste natus error.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary btn-sm" data-bs-dismiss="modal" type="button">Chiudi modale</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container-padding {
+    padding-bottom: 3000px;
+  }
+  .sticky-parent {
+    margin-top: 15px;
+    padding-top: 100px;
+    border: 2px solid #ccc;
+    height: 500px;
+  }
+  .is-sticky {
+    left: 0;
+    width: 100%;
+  }
+</style>
+ 
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202601301059"></script>
+
+<script>
+  bootstrap.loadFonts('/bl3/dist/fonts')
+  bootstrap.it25Header()
+</script><!-- Notification per tornare alla pagina principale -->
+<!--
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi"
+  aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bl3/dist/svg/sprites.svg#it-info-circle"
+        xlink:href="/bl3/dist/svg/sprites.svg#it-info-circle"></use>
+    </svg>
+    Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bl3/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bl3/dist/svg/sprites.svg#it-close"
+        xlink:href="/bl3/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+-->
+<script>
+//   $(document).ready(function () {
+//     notificationShow('notification-esempi')
+//   })
+</script><script>
+  /**
+ * Copy button functionality for both accordion and standalone code blocks
+ */
+
+  // Create ARIA live region for announcements (only once)
+  function createAriaLiveRegion() {
+    if (!document.getElementById('copy-announcement')) {
+      const liveRegion = document.createElement('div');
+      liveRegion.id = 'copy-announcement';
+      liveRegion.setAttribute('aria-live', 'polite');
+      liveRegion.setAttribute('aria-atomic', 'true');
+      liveRegion.className = 'visually-hidden';
+      document.body.appendChild(liveRegion);
+    }
+  }
+
+  // Announce to screen readers
+  function announceToScreenReader(message) {
+    const liveRegion = document.getElementById('copy-announcement');
+    if (liveRegion) {
+      liveRegion.textContent = message;
+      // Clear after announcement
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+  }
+
+  // Handle accordion copy buttons (in header)
+  function setupAccordionCopyButtons() {
+    document.querySelectorAll('.code-example-accordion .copy-code-btn').forEach(function (button) {
+      if (button.hasAttribute('data-copy-setup')) return;
+      button.setAttribute('data-copy-setup', 'true');
+
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const collapse = document.querySelector(targetId);
+
+        if (collapse) {
+          const code = collapse.querySelector('code td[class="code"] pre') ??
+            collapse.querySelector('code td[class="rouge-code"] pre') ??
+            collapse.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 2000);
+          }
+        }
+      });
+    });
+  }
+
+  // Handle standalone code blocks (original functionality)
+  function setupStandaloneCopyButtons() {
+    document
+      .querySelectorAll('figure.highlight, pre.highlight')
+      .forEach(function (node) {
+        // Skip if inside accordion (handled by accordion copy button)
+        if (node.closest('.code-example-accordion')) return;
+
+        // Skip if copy button already exists
+        if (node.parentElement.querySelector('.copy-button-container')) return;
+
+        const button = document.createElement('button'),
+          divContainer = document.createElement('div');
+
+        divContainer.classList.add('copy-button-container');
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Copia il codice negli appunti');
+        button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-copy"></use></svg>';
+        button.classList.add('btn', 'btn-primary', 'btn-xs', 'btn-secondary');
+
+        button.addEventListener('click', function () {
+          const code = node.querySelector('code td[class="code"] pre') ??
+            node.querySelector('code td[class="rouge-code"] pre') ??
+            node.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual and accessibility feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 3000);
+          }
+        });
+
+        divContainer.appendChild(button);
+
+        // Position button based on code block type
+        if (node.nodeName == 'FIGURE') {
+          node.insertBefore(divContainer, node.querySelector('pre'));
+        } else if (node.nodeName == 'PRE') {
+          node.classList.remove("highlight");
+          node.insertAdjacentElement('beforebegin', divContainer);
+        }
+      });
+  }
+
+  // Setup both types of copy buttons
+  function setupAllCopyButtons() {
+    createAriaLiveRegion(); // Create live region first
+    setupAccordionCopyButtons();
+    setupStandaloneCopyButtons();
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupAllCopyButtons);
+
+  // Run when code example accordions are shown
+  document.addEventListener('shown.bs.collapse', function (e) {
+    if (e.target.closest('.code-example-accordion')) {
+      setupAccordionCopyButtons();
+    }
+  });
+</script>
+
+  </body>
+</html>

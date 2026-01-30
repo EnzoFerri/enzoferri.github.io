@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<title>Progress bar · Bootstrap Lombardia</title>
+<!-- Bootstrap core CSS -->
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202601301059" rel="stylesheet" />
+
+<!-- Documentation extras -->
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202601301059" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bl3/favicon.ico" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bl3/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bl3/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bl3/site.webmanifest" />
+<meta name="msapplication-config" content="/bl3/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Progress bar" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/it25/inserimento/progress-bar/" />
+<meta property="og:title" content="Progress bar" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
+  <!--div class="container"-->
+  <div class="container-fluid">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bl3/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+      <div class="d-flex flex-row">
+        <img src="/bl3/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column ps-3 ps-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
+          <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
+        </div>
+      </div>
+    </a>
+
+    
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      menu
+    </button>
+    
+
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+      <li class="nav-item pe-2">
+        <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.6.3/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.6.3</small>
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bl3/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
+        </a>
+      </li>
+      <li class="nav-item pe-2">
+        <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bl3/dist/svg/sprites.svg#it-github"></use></svg><span class="visually-hidden">GitHub</span>
+        </a>
+      </li>
+    </ul>
+
+    
+      <div style="height: 2.5rem" class="bd-search w-100">
+        <div id="docsearch" class="w-100"></div>
+      </div>
+    
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+    <h3 class="no_toc">Linee Guida</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/introduzione/"><span>Introduzione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/sistema-di-griglie/"><span>Sistema di griglie</span></a>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
+              aria-expanded="false"
+              aria-controls="collapse-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilità</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-3"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/tipografia/"
+                >
+                  <span>Tipografia</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/colori/"
+                >
+                  <span>Colori</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/ombre-e-angoli/"
+                >
+                  <span>Ombre e angoli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/icone/"
+                >
+                  <span>Icone</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/divisori/"
+                >
+                  <span>Divisori</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
+              aria-expanded="false"
+              aria-controls="collapse-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti Principali</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-4"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/logo/"
+                >
+                  <span>Logo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/header/"
+                >
+                  <span>Header</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/menu-orizzontale/"
+                >
+                  <span>Menu orizzontale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/menu-verticale/"
+                >
+                  <span>Menu Verticale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/gestione-loghi-multipli/"
+                >
+                  <span>Gestione Loghi Multipli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/footer/"
+                >
+                  <span>Footer</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
+              aria-expanded="false"
+              aria-controls="collapse-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/breadcrumbs/"
+                >
+                  <span>Breadcrumbs</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/liste/"
+                >
+                  <span>Liste</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/dropdown-menu/"
+                >
+                  <span>Dropdown Menu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/megamenu/"
+                >
+                  <span>Megamenu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/paginatore/"
+                >
+                  <span>Paginatore</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
+              aria-expanded="false"
+              aria-controls="collapse-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Call to action</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-6"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/call-to-action/bottoni/"
+                >
+                  <span>Bottoni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/call-to-action/tab-bar/"
+                >
+                  <span>Tab bar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/call-to-action/slider/"
+                >
+                  <span>Slider</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
+              aria-expanded="false"
+              aria-controls="collapse-7"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Informazioni</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-7"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/accordion/"
+                >
+                  <span>Accordion</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/card/"
+                >
+                  <span>Card</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/card-old/"
+                >
+                  <span>Card old</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/carousel/"
+                >
+                  <span>Carousel</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/calendario/"
+                >
+                  <span>Calendario</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/time-picker/"
+                >
+                  <span>Time Picker</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/cookiebar/"
+                >
+                  <span>Cookiebar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/overlay/"
+                >
+                  <span>Overlay</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/tabella/"
+                >
+                  <span>Tabella</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/snackbar/"
+                >
+                  <span>Snackbar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
+              aria-expanded="true"
+              aria-controls="collapse-8"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Inserimento</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapse-8"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/check-box/"
+                >
+                  <span>Check box</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/radio-buttons/"
+                >
+                  <span>Radio buttons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/toggle/"
+                >
+                  <span>Toggle</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/input-fields/"
+                >
+                  <span>Input fields</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/tooltip/"
+                >
+                  <span>Tooltip</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/popover/"
+                >
+                  <span>Popover</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/wizard/"
+                >
+                  <span>Wizard</span></a>
+              </li><li>
+                <a
+                  class="list-item  active"
+                  href="/bl3/docs/it25/inserimento/progress-bar/"
+                >
+                  <span>Progress bar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/esempi/"><span>Esempi</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/installazione/"><span>Installazione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/breaking-change/"><span>Breaking change</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/crediti/"><span>Crediti</span></a>
+            
+          </li></ul>
+      </div>
+    </div>
+
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="/bl3/docs/documentazione-tecnica">Doc. Tecnica</a></span>
+      <svg class="icon icon-primary"><use xlink:href="/bl3/dist/svg/sprites.svg#it-external-link"></use></svg>
+    </button>
+  </div>
+</nav>
+
+        </div>
+
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
+          <h1 class="bd-title" id="content">Progress bar</h1>
+          <p class="lead"></p>
+          <p>La <strong>Progress bar</strong> è una componente utile per stabilire la percentuale di completamento di un task all’interno di una pagina.<br />
+Questo elemento può essere utilizzato per indicarne la percentuale di completamento, oppure come elemento aggiuntivo della componente wizard, come indicatore di una procedura.</p>
+
+<div class="bd-example">
+
+<div class="progress progress-lg progress-color">
+  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress progress-color">
+  <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress progress-color">
+  <div class="progress-bar bg-dark" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-782896" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-782896">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-782896" aria-expanded="false" aria-controls="collapse-example-782896">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-782896">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-782896" class="accordion-collapse collapse" data-bs-parent="#accordion-example-782896" role="region" aria-labelledby="heading-example-782896">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-lg progress-color"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 25%"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-color"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 33%"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-color"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-dark"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 33%"</span> <span class="na">aria-valuenow=</span><span class="s">"33"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<p>La barra standard è molto sottile, per ottenere un spessore maggiore va utilizzata la classe <code class="language-plaintext highlighter-rouge">progress-lg</code>.</p>
+
+<div class="bd-callout bd-callout-info">
+<h4 id="documentazione-tecnica">Documentazione tecnica</h4>
+<p>Per i dettagli tecnici sulla costruzione delle progress bar si veda la <strong><a href="/bl3/docs/componenti/progress-indicators/#progress-bar">relativa pagina</a></strong></p>
+</div>
+
+
+        </main>
+      </div>
+    </div>
+
+    
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202601301059"></script>
+
+<script>
+  bootstrap.loadFonts('/bl3/dist/fonts')
+  bootstrap.it25Header()
+</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202601301059"></script>
+<script src="/bl3/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/tsparticles.min.js"></script>
+
+<script src="/bl3/docs/assets/src/js/docs.js?202601301059"></script>
+
+<script src="/bl3/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/preloadjs.min.js"></script>
+
+<script>
+  window.SITE_BASEURL = '/bl3';
+</script>
+
+<!--<script>
+  var manifest = [
+    { src: '/bl3/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+  ]
+</script>-->
+<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202601301059"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+  docsearch({
+    appId: 'GYB0A8V0L6',
+    apiKey: 'c25acd22f6bc00e5710457bcf961f37c',
+    indexName: 'bootstrap-lombardia',
+    container: '#docsearch',
+    placeholder: "Cerca componenti, classi,informazioni...",
+    translations: DocSearchTranslations = {
+      button: {
+        buttonText: 'Cerca',
+        buttonAriaLabel: 'Ricerca',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: 'Pulisci la query',
+          resetButtonAriaLabel: 'Pulisci la query',
+          cancelButtonText: 'Cancella',
+          cancelButtonAriaLabel: 'Cancella',
+        },
+        startScreen: {
+          recentSearchesTitle: 'Recenti',
+          noRecentSearchesText: 'Nessuna ricerca recente',
+          saveRecentSearchButtonTitle: 'Salva questa ricerca',
+          removeRecentSearchButtonTitle: 'Rimuovi questa ricerca dalla history',
+          favoriteSearchesTitle: 'Preferiti',
+          removeFavoriteSearchButtonTitle: 'Rimuovi questa ricerca dai favoriti',
+        },
+        errorScreen: {
+          titleText: 'Impossibile recuperare risultati',
+          helpText: 'Prova a controllare la connessione di rete.',
+        },
+        footer: {
+          selectText: 'seleziona',
+          selectKeyAriaLabel: 'tasto Invio',
+          navigateText: 'naviga',
+          navigateUpKeyAriaLabel: 'Freccia su',
+          navigateDownKeyAriaLabel: 'Freccia giù',
+          closeText: 'chiudi',
+          closeKeyAriaLabel: 'tasto Escape',
+          searchByText: 'Search by',
+        },
+        noResultsScreen: {
+          noResultsText: 'Nessun risultato per',
+          suggestedQueryText: 'Prova ricerca per',
+          reportMissingResultsText: 'Pensi che questa ricerca dovrebbe restituire dei risultati?',
+          reportMissingResultsLinkText: 'Facci sapere.',
+        },
+      },
+    },
+    debug: true // Set debug to true if you want to inspect the modal
+  });
+</script><script>
+  /**
+ * Copy button functionality for both accordion and standalone code blocks
+ */
+
+  // Create ARIA live region for announcements (only once)
+  function createAriaLiveRegion() {
+    if (!document.getElementById('copy-announcement')) {
+      const liveRegion = document.createElement('div');
+      liveRegion.id = 'copy-announcement';
+      liveRegion.setAttribute('aria-live', 'polite');
+      liveRegion.setAttribute('aria-atomic', 'true');
+      liveRegion.className = 'visually-hidden';
+      document.body.appendChild(liveRegion);
+    }
+  }
+
+  // Announce to screen readers
+  function announceToScreenReader(message) {
+    const liveRegion = document.getElementById('copy-announcement');
+    if (liveRegion) {
+      liveRegion.textContent = message;
+      // Clear after announcement
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+  }
+
+  // Handle accordion copy buttons (in header)
+  function setupAccordionCopyButtons() {
+    document.querySelectorAll('.code-example-accordion .copy-code-btn').forEach(function (button) {
+      if (button.hasAttribute('data-copy-setup')) return;
+      button.setAttribute('data-copy-setup', 'true');
+
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const collapse = document.querySelector(targetId);
+
+        if (collapse) {
+          const code = collapse.querySelector('code td[class="code"] pre') ??
+            collapse.querySelector('code td[class="rouge-code"] pre') ??
+            collapse.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 2000);
+          }
+        }
+      });
+    });
+  }
+
+  // Handle standalone code blocks (original functionality)
+  function setupStandaloneCopyButtons() {
+    document
+      .querySelectorAll('figure.highlight, pre.highlight')
+      .forEach(function (node) {
+        // Skip if inside accordion (handled by accordion copy button)
+        if (node.closest('.code-example-accordion')) return;
+
+        // Skip if copy button already exists
+        if (node.parentElement.querySelector('.copy-button-container')) return;
+
+        const button = document.createElement('button'),
+          divContainer = document.createElement('div');
+
+        divContainer.classList.add('copy-button-container');
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Copia il codice negli appunti');
+        button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-copy"></use></svg>';
+        button.classList.add('btn', 'btn-primary', 'btn-xs', 'btn-secondary');
+
+        button.addEventListener('click', function () {
+          const code = node.querySelector('code td[class="code"] pre') ??
+            node.querySelector('code td[class="rouge-code"] pre') ??
+            node.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual and accessibility feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 3000);
+          }
+        });
+
+        divContainer.appendChild(button);
+
+        // Position button based on code block type
+        if (node.nodeName == 'FIGURE') {
+          node.insertBefore(divContainer, node.querySelector('pre'));
+        } else if (node.nodeName == 'PRE') {
+          node.classList.remove("highlight");
+          node.insertAdjacentElement('beforebegin', divContainer);
+        }
+      });
+  }
+
+  // Setup both types of copy buttons
+  function setupAllCopyButtons() {
+    createAriaLiveRegion(); // Create live region first
+    setupAccordionCopyButtons();
+    setupStandaloneCopyButtons();
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupAllCopyButtons);
+
+  // Run when code example accordions are shown
+  document.addEventListener('shown.bs.collapse', function (e) {
+    if (e.target.closest('.code-example-accordion')) {
+      setupAccordionCopyButtons();
+    }
+  });
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,1528 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<title>Accordion · Bootstrap Lombardia</title>
+<!-- Bootstrap core CSS -->
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202601301059" rel="stylesheet" />
+
+<!-- Documentation extras -->
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202601301059" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bl3/favicon.ico" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bl3/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bl3/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bl3/site.webmanifest" />
+<meta name="msapplication-config" content="/bl3/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Accordion" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/it25/informazioni/accordion/" />
+<meta property="og:title" content="Accordion" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
+  <!--div class="container"-->
+  <div class="container-fluid">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bl3/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+      <div class="d-flex flex-row">
+        <img src="/bl3/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column ps-3 ps-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
+          <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
+        </div>
+      </div>
+    </a>
+
+    
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      menu
+    </button>
+    
+
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+      <li class="nav-item pe-2">
+        <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.6.3/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.6.3</small>
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bl3/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
+        </a>
+      </li>
+      <li class="nav-item pe-2">
+        <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bl3/dist/svg/sprites.svg#it-github"></use></svg><span class="visually-hidden">GitHub</span>
+        </a>
+      </li>
+    </ul>
+
+    
+      <div style="height: 2.5rem" class="bd-search w-100">
+        <div id="docsearch" class="w-100"></div>
+      </div>
+    
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+    <h3 class="no_toc">Linee Guida</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/introduzione/"><span>Introduzione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/sistema-di-griglie/"><span>Sistema di griglie</span></a>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
+              aria-expanded="false"
+              aria-controls="collapse-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilità</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-3"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/tipografia/"
+                >
+                  <span>Tipografia</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/colori/"
+                >
+                  <span>Colori</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/ombre-e-angoli/"
+                >
+                  <span>Ombre e angoli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/icone/"
+                >
+                  <span>Icone</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/utilità/divisori/"
+                >
+                  <span>Divisori</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
+              aria-expanded="false"
+              aria-controls="collapse-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti Principali</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-4"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/logo/"
+                >
+                  <span>Logo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/header/"
+                >
+                  <span>Header</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/menu-orizzontale/"
+                >
+                  <span>Menu orizzontale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/menu-verticale/"
+                >
+                  <span>Menu Verticale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/gestione-loghi-multipli/"
+                >
+                  <span>Gestione Loghi Multipli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/componenti-principali/footer/"
+                >
+                  <span>Footer</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
+              aria-expanded="false"
+              aria-controls="collapse-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/breadcrumbs/"
+                >
+                  <span>Breadcrumbs</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/liste/"
+                >
+                  <span>Liste</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/dropdown-menu/"
+                >
+                  <span>Dropdown Menu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/megamenu/"
+                >
+                  <span>Megamenu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/navigazione/paginatore/"
+                >
+                  <span>Paginatore</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
+              aria-expanded="false"
+              aria-controls="collapse-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Call to action</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-6"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/call-to-action/bottoni/"
+                >
+                  <span>Bottoni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/call-to-action/tab-bar/"
+                >
+                  <span>Tab bar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/call-to-action/slider/"
+                >
+                  <span>Slider</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
+              aria-expanded="true"
+              aria-controls="collapse-7"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Informazioni</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapse-7"><li>
+                <a
+                  class="list-item  active"
+                  href="/bl3/docs/it25/informazioni/accordion/"
+                >
+                  <span>Accordion</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/card/"
+                >
+                  <span>Card</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/card-old/"
+                >
+                  <span>Card old</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/carousel/"
+                >
+                  <span>Carousel</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/calendario/"
+                >
+                  <span>Calendario</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/time-picker/"
+                >
+                  <span>Time Picker</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/cookiebar/"
+                >
+                  <span>Cookiebar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/overlay/"
+                >
+                  <span>Overlay</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/tabella/"
+                >
+                  <span>Tabella</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/informazioni/snackbar/"
+                >
+                  <span>Snackbar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
+              aria-expanded="false"
+              aria-controls="collapse-8"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Inserimento</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-expand" xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-8"><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/check-box/"
+                >
+                  <span>Check box</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/radio-buttons/"
+                >
+                  <span>Radio buttons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/toggle/"
+                >
+                  <span>Toggle</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/input-fields/"
+                >
+                  <span>Input fields</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/tooltip/"
+                >
+                  <span>Tooltip</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/popover/"
+                >
+                  <span>Popover</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/wizard/"
+                >
+                  <span>Wizard</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/inserimento/progress-bar/"
+                >
+                  <span>Progress bar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/esempi/"><span>Esempi</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/installazione/"><span>Installazione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/breaking-change/"><span>Breaking change</span></a>
+            
+          </li><li>
+            
+            <a class="list-item " href="/bl3/docs/it25/crediti/"><span>Crediti</span></a>
+            
+          </li></ul>
+      </div>
+    </div>
+
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="/bl3/docs/documentazione-tecnica">Doc. Tecnica</a></span>
+      <svg class="icon icon-primary"><use xlink:href="/bl3/dist/svg/sprites.svg#it-external-link"></use></svg>
+    </button>
+  </div>
+</nav>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+  <div class="sidebar-wrapper">
+    <h3>Accordion</h3>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#versione-collapse">Versione collapse</a></li>
+<li class="toc-entry toc-h3"><a href="#versione-according">Versione according</a></li>
+<li class="toc-entry toc-h3"><a href="#versione-nested">Versione nested</a></li>
+<li class="toc-entry toc-h3"><a href="#accordion-con-icone">Accordion con icone</a></li>
+</ul>
+  </div>
+</div>
+
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
+          <h1 class="bd-title" id="content">Accordion</h1>
+          <p class="lead"></p>
+          <p>La componente <strong>Accordion</strong> permette di gestire dati e informazioni all’interno della stessa schermata.<br />
+Si tratta di un serie di pannelli apribili nei quali è possibile inserire informazioni di varia natura, sia testuali che numeriche.<br />
+Generalmente si consiglia di utilizzare un massimo <strong>di 5/6 righe di accordion su mobile e 10/15 su desktop</strong>.</p>
+
+<h3 id="versione-collapse">Versione collapse</h3>
+
+<p>Nella versione <strong>collapse</strong> dell’accordion è possibile aprire più di un pannello contemporaneamente.<br />
+L’esempio seguente mostra l’accordion nel suo stato base, con tutti i pannelli chiusi.</p>
+
+<div class="bd-example">
+  <div class="accordion" id="collapseExample">
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading1c">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="false" aria-controls="collapse1c">
+        Account
+        </button>
+      </span>
+      <div id="collapse1c" class="accordion-collapse collapse" role="region" aria-labelledby="heading1c">
+        <div class="accordion-body">
+            <div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputEmail4" class="active">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" autocomplete="email" />
+  </div>
+  <div class="form-group col-md-4">
+    <label for="exampleInputPassword9">Scegli password</label>
+    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9" autocomplete="current-password" />
+    <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+      <span class="visually-hidden">Mostra/Nascondi Password</span>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
+    </button>
+    <p id="infoPassword9" class="form-text text-muted d-block small pb-0">minimo 8 caratteri, maiuscole, numeri e caratteri speciali.</p>
+    <div class="password-strength-meter">
+      <p id="strengthMeterInfo9" class="strength-meter-info small form-text text-muted pt-0" aria-live="polite" data-bs-short-pass="Password troppo breve." data-bs-bad-pas="Password debole." data-bs-good-pass="Password abbastanza sicura." data-bs-strong-pass="Password sicura."></p>
+      <div class="password-meter progress rounded-0 position-absolute">
+        <div class="row position-absolute w-100 m-0">
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+        </div>
+        <div class="progress-bar bg-muted" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group col-md-2">
+    <label class="output">Ticket</label>
+    <div id="ticket-number" class="output-field">AC-123-0002658</div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading2c">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="false" aria-controls="collapse2c">
+        Indirizzo
+        </button>
+      </span>
+      <div id="collapse2c" class="accordion-collapse collapse" role="region" aria-labelledby="heading2c">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="form-group col-md-6">
+    <label for="formNome">Nome</label>
+    <input type="text" class="form-control" id="formNome" autocomplete="given-name" />
+  </div>
+  <div class="form-group col-md-6">
+    <label for="formCognome">Cognome</label>
+    <input type="text" class="form-control" id="formCognome" autocomplete="last-name" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-10">
+    <label for="inputAddress">Indirizzo</label>
+    <input type="text" class="form-control" id="inputAddress" autocomplete="address-line1" />
+  </div>
+  <div class="form-group col-2">
+    <label for="civico" class="input-number-label">Civico</label>
+    <input type="text" class="form-control" id="civico" autocomplete="civic-number" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputCity">Comune</label>
+    <input type="text" class="form-control" id="inputCity" autocomplete="address-line2" />
+  </div>
+  <div class="form-group col-md-2">
+    <label for="inputCAP">CAP</label>
+    <input type="number" class="form-control" id="inputCAP" />
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <div class="select-wrapper">
+        <label for="defaultSelect">Provincia</label>
+        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required="" autocomplete="address-level1">
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="BG">Bergamo</option>
+          <option value="BS">Brescia</option>
+          <option value="CO">Como</option>
+          <option value="CR">Cremona</option>
+          <option value="LC">Lecco</option>
+          <option value="LO">Lodi</option>
+          <option value="MN">Mantova</option>
+          <option value="MI">Milano</option>
+          <option value="MB">Monza e Brianza</option>
+          <option value="PV">Pavia</option>
+          <option value="SO">Sondrio</option>
+          <option value="VA">Varese</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading3c">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3c" aria-expanded="false" aria-controls="collapse3c">
+        Trasporti
+        </button>
+      </span>
+      <div id="collapse3c" class="accordion-collapse collapse" role="region" aria-labelledby="heading3c">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="col">
+    <fieldset id="group_mezzi1">
+      <legend>Mezzi utilizzati</legend>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1a">
+            Auto propria
+            <input type="checkbox" id="toggleEsempio1a" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1b">
+            Treno
+            <input type="checkbox" id="toggleEsempio1b" />
+            <span class="lever leverRight"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1c">
+            Car sharing
+            <input disabled="" type="checkbox" id="toggleEsempio1c" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1d">
+            Bike sharing
+            <input type="checkbox" id="toggleEsempio1d" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1e">
+            Metro/Tram/Bus
+            <input disabled="" type="checkbox" id="toggleEsempio1e" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion"</span> <span class="na">id=</span><span class="s">"collapseExample"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading1c"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span>
+        <span class="na">data-bs-target=</span><span class="s">"#collapse1c"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse1c"</span><span class="nt">&gt;</span>
+        Account
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1c"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading1c"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+             include esempi-lombardia/account_posta.html 
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading2c"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span>
+        <span class="na">data-bs-target=</span><span class="s">"#collapse2c"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse2c"</span><span class="nt">&gt;</span>
+        Indirizzo
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse2c"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading2c"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+           include esempi-lombardia/indirizzo.html 
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading3c"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span>
+        <span class="na">data-bs-target=</span><span class="s">"#collapse3c"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse3c"</span><span class="nt">&gt;</span>
+        Trasporti
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse3c"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading3c"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+           include esempi-lombardia/toggles.html 
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="versione-according">Versione according</h3>
+
+<p>Con la versione <strong>according</strong> è possibile aprire un solo pannello di contenuti alla volta.<br />
+Questo per rendere chiaramente circoscritto il contenuto in oggetto.</p>
+
+<div class="bd-example">
+  <div class="accordion" id="accordionExample1">
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          Account
+        </button>
+      </span>
+      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading1">
+        <div class="accordion-body">
+        <div class="row">
+  <div class="form-group col-md-6">
+    <label class="active" for="inputEmail2">Email</label>
+    <input type="email" class="form-control" id="inputEmail2" placeholder="inserisci il tuo indirizzo email" autocomplete="email" />
+  </div>
+  <div class="form-group col-md-6">
+    <label class="active" for="exampleInputPassword2">Password</label>
+    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword2" placeholder="inserisci la tua password" autocomplete="current-password" />
+    <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+      <span class="visually-hidden">Mostra/Nascondi Password</span>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          Indirizzo
+        </button>
+      </span>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading2">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="form-group col-md-6">
+    <label for="formNome2">Nome</label>
+    <input type="text" class="form-control" id="formNome2" autocomplete="given-name" />
+  </div>
+  <div class="form-group col-md-6">
+    <label for="formCognome2">Cognome</label>
+    <input type="text" class="form-control" id="formCognome2" autocomplete="last-name" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-10">
+    <label for="inputAddress2">Indirizzo</label>
+    <input type="text" class="form-control" id="inputAddress2" autocomplete="address-line1" />
+  </div>
+  <div class="form-group col-2">
+    <label for="civico2" class="input-number-label">Civico</label>
+    <input type="text" class="form-control" id="civico2" autocomplete="civic-number" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputCity2">Comune</label>
+    <input type="text" class="form-control" id="inputCity2" autocomplete="address-line2" />
+  </div>
+  <div class="form-group col-md-2">
+    <label for="inputCAP2">CAP</label>
+    <input type="number" class="form-control" id="inputCAP2" />
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <div class="select-wrapper">
+        <label for="defaultSelect2">Provincia</label>
+        <select id="defaultSelect2" title="Scegli una opzione" class="form-control" required="" autocomplete="address-level1">
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="BG">Bergamo</option>
+          <option value="BS">Brescia</option>
+          <option value="CO">Como</option>
+          <option value="CR">Cremona</option>
+          <option value="LC">Lecco</option>
+          <option value="LO">Lodi</option>
+          <option value="MN">Mantova</option>
+          <option value="MI">Milano</option>
+          <option value="MB">Monza e Brianza</option>
+          <option value="PV">Pavia</option>
+          <option value="SO">Sondrio</option>
+          <option value="VA">Varese</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Trasporti
+        </button>
+      </span>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="col">
+    <fieldset id="group_mezzi2">
+      <legend>Mezzi utilizzati</legend>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio2a">
+            Auto propria
+            <input type="checkbox" id="toggleEsempio2a" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio2b">
+            Treno
+            <input type="checkbox" id="toggleEsempio2b" />
+            <span class="lever leverRight"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio2c">
+            Car sharing
+            <input disabled="" type="checkbox" id="toggleEsempio2c" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio2d">
+            Bike sharing
+            <input type="checkbox" id="toggleEsempio2d" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio2e">
+            Metro/Tram/Bus
+            <input disabled="" type="checkbox" id="toggleEsempio2e" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion"</span> <span class="na">id=</span><span class="s">"accordionExample1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span>
+      <span class="na">data-bs-target=</span><span class="s">"#collapse1"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapse1"</span><span class="nt">&gt;</span>
+        Account
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse show"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExample1"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+         include esempi-lombardia/account_posta2.html 
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> 
+      <span class="na">data-bs-target=</span><span class="s">"#collapse2"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse2"</span><span class="nt">&gt;</span>
+        Indirizzo
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse2"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExample1"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+           include esempi-lombardia/indirizzo2.html 
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span>
+      <span class="na">data-bs-target=</span><span class="s">"#collapse3"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse3"</span><span class="nt">&gt;</span>
+        Trasporti
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse3"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExample1"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+           include esempi-lombardia/toggles2.html
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="versione-nested">Versione nested</h3>
+
+<p>La versione <strong>nested</strong> dell’accordion permette di gestire in maniera ottimale la gerarchia delle informazioni inserite all’interno della componente, nel caso in cui si debbano inserire pannelli secondari.<br />
+In questo caso, i pannelli secondari appariranno nidificati all’interno di quelli principali.</p>
+
+<div class="bd-example">
+  <div class="accordion" id="accordionExample2">
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading1a">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a" aria-expanded="true" aria-controls="collapse1a">
+          Elemento Accordion #1
+        </button>
+      </span>
+      <div id="collapse1a" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading1a">
+        <div class="accordion-body">
+          <div class="accordion" id="accordionExample2N">
+            <div class="accordion-item">
+              <span class="accordion-header h3" id="heading1n">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1n" aria-expanded="true" aria-controls="collapse1n">
+                  Elemento Accordion annidato #1
+                </button>
+              </span>
+              <div id="collapse1n" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading1n">
+                <div class="accordion-body">
+                  Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <span class="accordion-header h3" id="heading2n">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2n" aria-expanded="false" aria-controls="collapse2n">
+                  Elemento Accordion annidato #2
+                </button>
+              </span>
+              <div id="collapse2n" class="accordion-collapse collapse" data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading2n">
+                <div class="accordion-body">
+                  Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <span class="accordion-header h3" id="heading3n">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3n" aria-expanded="false" aria-controls="collapse3n">
+                  Elemento Accordion annidato #3
+                </button>
+              </span>
+              <div id="collapse3n" class="accordion-collapse collapse" data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading3n">
+                <div class="accordion-body">
+                  Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading2a">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a" aria-expanded="false" aria-controls="collapse2a">
+          Elemento Accordion #2
+        </button>
+      </span>
+      <div id="collapse2a" class="accordion-collapse collapse" data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading2a">
+        <div class="accordion-body">
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading3a">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3a" aria-expanded="false" aria-controls="collapse3a">
+          Elemento Accordion #3
+        </button>
+      </span>
+      <div id="collapse3a" class="accordion-collapse collapse" data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading3a">
+        <div class="accordion-body">
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion"</span> <span class="na">id=</span><span class="s">"accordionExample2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading1a"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">data-bs-target=</span><span class="s">"#collapse1a"</span>
+      <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapse1a"</span><span class="nt">&gt;</span>
+        Elemento Accordion #1
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1a"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse show"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExample2"</span>
+    <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading1a"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion"</span> <span class="na">id=</span><span class="s">"accordionExample2N"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h3"</span> <span class="na">id=</span><span class="s">"heading1n"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">data-bs-target=</span><span class="s">"#collapse1n"</span>
+              <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapse1n"</span><span class="nt">&gt;</span>
+                Elemento Accordion annidato #1
+              <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1n"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse show"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExample2N"</span>
+            <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading1n"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+                . . .</code></pre></figure>
+
+<h3 id="accordion-con-icone">Accordion con icone</h3>
+
+<p><strong>Posizionamento delle icone</strong>
+Le icone per l’apertura dei pannelli possono essere delle chevron ma anche altre (si veda l’esempio di seguito con +/- come icone) e possono essere poste sia a destra (come nell’esempio sopra) che a sinistra come mostrato di seguito.</p>
+
+<div class="bd-example">
+  <div class="accordion accordion-left-icon" id="accordionExampleLft">
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading1l">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1l" aria-expanded="true" aria-controls="collapse1l">
+        Account
+        </button>
+      </span>
+      <div id="collapse1l" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading1l">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="form-group col-md-6">
+    <label class="active" for="inputEmail3">Email</label>
+    <input type="email" class="form-control" id="inputEmail3" placeholder="" autocomplete="email" />
+  </div>
+  <div class="form-group col-md-6">
+    <label class="active" for="exampleInputPassword3">Password</label>
+    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword3" placeholder="" autocomplete="current-password" />
+    <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+      <span class="visually-hidden">Mostra/Nascondi Password</span>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading2l">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2l" aria-expanded="false" aria-controls="collapse2l">
+          Indirizzo
+        </button>
+      </span>
+      <div id="collapse2l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading2l">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="form-group col-md-6">
+    <label for="formNome3">Nome</label>
+    <input type="text" class="form-control" id="formNome3" autocomplete="given-name" />
+  </div>
+  <div class="form-group col-md-6">
+    <label for="formCognome3">Cognome</label>
+    <input type="text" class="form-control" id="formCognome3" autocomplete="last-name" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-10">
+    <label for="inputAddress3">Indirizzo</label>
+    <input type="text" class="form-control" id="inputAddress3" autocomplete="address-line1" />
+  </div>
+  <div class="form-group col-2">
+    <label for="civico3" class="input-number-label">Civico</label>
+    <input type="text" class="form-control" id="civico3" autocomplete="civic-number" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputCity3">Comune</label>
+    <input type="text" class="form-control" id="inputCity3" autocomplete="address-line2" />
+  </div>
+  <div class="form-group col-md-2">
+    <label for="inputCAP3">CAP</label>
+    <input type="number" class="form-control" id="inputCAP3" />
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <div class="select-wrapper">
+        <label for="defaultSelect3">Provincia</label>
+        <select id="defaultSelect3" title="Scegli una opzione" class="form-control" required="" autocomplete="address-level1">
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="BG">Bergamo</option>
+          <option value="BS">Brescia</option>
+          <option value="CO">Como</option>
+          <option value="CR">Cremona</option>
+          <option value="LC">Lecco</option>
+          <option value="LO">Lodi</option>
+          <option value="MN">Mantova</option>
+          <option value="MI">Milano</option>
+          <option value="MB">Monza e Brianza</option>
+          <option value="PV">Pavia</option>
+          <option value="SO">Sondrio</option>
+          <option value="VA">Varese</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <span class="accordion-header h2" id="heading3l">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3l" aria-expanded="false" aria-controls="collapse3l">
+          Trasporti
+        </button>
+      </span>
+      <div id="collapse3l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading3l">
+        <div class="accordion-body">
+          <div class="row">
+  <div class="col">
+    <fieldset id="group_mezzi3">
+      <legend>Mezzi utilizzati</legend>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio3a">
+            Auto propria
+            <input type="checkbox" id="toggleEsempio3a" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio3b">
+            Treno
+            <input type="checkbox" id="toggleEsempio3b" />
+            <span class="lever leverRight"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio3c">
+            Car sharing
+            <input disabled="" type="checkbox" id="toggleEsempio3c" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio3d">
+            Bike sharing
+            <input type="checkbox" id="toggleEsempio3d" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio3e">
+            Metro/Tram/Bus
+            <input disabled="" type="checkbox" id="toggleEsempio3e" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion accordion-left-icon"</span> <span class="na">id=</span><span class="s">"accordionExampleLft"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading1l"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">data-bs-target=</span><span class="s">"#collapse1l"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapse1l"</span><span class="nt">&gt;</span>
+      Account
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1l"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse show"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExampleLft"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading1l"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+         include esempi-lombardia/account_posta3.html
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading2l"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">data-bs-target=</span><span class="s">"#collapse2l"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse2l"</span><span class="nt">&gt;</span>
+        Indirizzo
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse2l"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExampleLft"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading2l"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+        include esempi-lombardia/indirizzo3.html
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-header h2"</span> <span class="na">id=</span><span class="s">"heading3l"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">data-bs-target=</span><span class="s">"#collapse3l"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse3l"</span><span class="nt">&gt;</span>
+        Trasporti
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse3l"</span> <span class="na">class=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">data-bs-parent=</span><span class="s">"#accordionExampleLft"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"heading3l"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-body"</span><span class="nt">&gt;</span>
+         include esempi-lombardia/toggles3.html
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+        </main>
+      </div>
+    </div>
+
+    
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202601301059"></script>
+
+<script>
+  bootstrap.loadFonts('/bl3/dist/fonts')
+  bootstrap.it25Header()
+</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202601301059"></script>
+<script src="/bl3/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/tsparticles.min.js"></script>
+
+<script src="/bl3/docs/assets/src/js/docs.js?202601301059"></script>
+
+<script src="/bl3/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bl3/docs/assets/src/js/vendor/preloadjs.min.js"></script>
+
+<script>
+  window.SITE_BASEURL = '/bl3';
+</script>
+
+<!--<script>
+  var manifest = [
+    { src: '/bl3/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bl3/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+  ]
+</script>-->
+<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202601301059"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+  docsearch({
+    appId: 'GYB0A8V0L6',
+    apiKey: 'c25acd22f6bc00e5710457bcf961f37c',
+    indexName: 'bootstrap-lombardia',
+    container: '#docsearch',
+    placeholder: "Cerca componenti, classi,informazioni...",
+    translations: DocSearchTranslations = {
+      button: {
+        buttonText: 'Cerca',
+        buttonAriaLabel: 'Ricerca',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: 'Pulisci la query',
+          resetButtonAriaLabel: 'Pulisci la query',
+          cancelButtonText: 'Cancella',
+          cancelButtonAriaLabel: 'Cancella',
+        },
+        startScreen: {
+          recentSearchesTitle: 'Recenti',
+          noRecentSearchesText: 'Nessuna ricerca recente',
+          saveRecentSearchButtonTitle: 'Salva questa ricerca',
+          removeRecentSearchButtonTitle: 'Rimuovi questa ricerca dalla history',
+          favoriteSearchesTitle: 'Preferiti',
+          removeFavoriteSearchButtonTitle: 'Rimuovi questa ricerca dai favoriti',
+        },
+        errorScreen: {
+          titleText: 'Impossibile recuperare risultati',
+          helpText: 'Prova a controllare la connessione di rete.',
+        },
+        footer: {
+          selectText: 'seleziona',
+          selectKeyAriaLabel: 'tasto Invio',
+          navigateText: 'naviga',
+          navigateUpKeyAriaLabel: 'Freccia su',
+          navigateDownKeyAriaLabel: 'Freccia giù',
+          closeText: 'chiudi',
+          closeKeyAriaLabel: 'tasto Escape',
+          searchByText: 'Search by',
+        },
+        noResultsScreen: {
+          noResultsText: 'Nessun risultato per',
+          suggestedQueryText: 'Prova ricerca per',
+          reportMissingResultsText: 'Pensi che questa ricerca dovrebbe restituire dei risultati?',
+          reportMissingResultsLinkText: 'Facci sapere.',
+        },
+      },
+    },
+    debug: true // Set debug to true if you want to inspect the modal
+  });
+</script><script>
+  /**
+ * Copy button functionality for both accordion and standalone code blocks
+ */
+
+  // Create ARIA live region for announcements (only once)
+  function createAriaLiveRegion() {
+    if (!document.getElementById('copy-announcement')) {
+      const liveRegion = document.createElement('div');
+      liveRegion.id = 'copy-announcement';
+      liveRegion.setAttribute('aria-live', 'polite');
+      liveRegion.setAttribute('aria-atomic', 'true');
+      liveRegion.className = 'visually-hidden';
+      document.body.appendChild(liveRegion);
+    }
+  }
+
+  // Announce to screen readers
+  function announceToScreenReader(message) {
+    const liveRegion = document.getElementById('copy-announcement');
+    if (liveRegion) {
+      liveRegion.textContent = message;
+      // Clear after announcement
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+  }
+
+  // Handle accordion copy buttons (in header)
+  function setupAccordionCopyButtons() {
+    document.querySelectorAll('.code-example-accordion .copy-code-btn').forEach(function (button) {
+      if (button.hasAttribute('data-copy-setup')) return;
+      button.setAttribute('data-copy-setup', 'true');
+
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const collapse = document.querySelector(targetId);
+
+        if (collapse) {
+          const code = collapse.querySelector('code td[class="code"] pre') ??
+            collapse.querySelector('code td[class="rouge-code"] pre') ??
+            collapse.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 2000);
+          }
+        }
+      });
+    });
+  }
+
+  // Handle standalone code blocks (original functionality)
+  function setupStandaloneCopyButtons() {
+    document
+      .querySelectorAll('figure.highlight, pre.highlight')
+      .forEach(function (node) {
+        // Skip if inside accordion (handled by accordion copy button)
+        if (node.closest('.code-example-accordion')) return;
+
+        // Skip if copy button already exists
+        if (node.parentElement.querySelector('.copy-button-container')) return;
+
+        const button = document.createElement('button'),
+          divContainer = document.createElement('div');
+
+        divContainer.classList.add('copy-button-container');
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Copia il codice negli appunti');
+        button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-copy"></use></svg>';
+        button.classList.add('btn', 'btn-primary', 'btn-xs', 'btn-secondary');
+
+        button.addEventListener('click', function () {
+          const code = node.querySelector('code td[class="code"] pre') ??
+            node.querySelector('code td[class="rouge-code"] pre') ??
+            node.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual and accessibility feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 3000);
+          }
+        });
+
+        divContainer.appendChild(button);
+
+        // Position button based on code block type
+        if (node.nodeName == 'FIGURE') {
+          node.insertBefore(divContainer, node.querySelector('pre'));
+        } else if (node.nodeName == 'PRE') {
+          node.classList.remove("highlight");
+          node.insertAdjacentElement('beforebegin', divContainer);
+        }
+      });
+  }
+
+  // Setup both types of copy buttons
+  function setupAllCopyButtons() {
+    createAriaLiveRegion(); // Create live region first
+    setupAccordionCopyButtons();
+    setupStandaloneCopyButtons();
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupAllCopyButtons);
+
+  // Run when code example accordions are shown
+  document.addEventListener('shown.bs.collapse', function (e) {
+    if (e.target.closest('.code-example-accordion')) {
+      setupAccordionCopyButtons();
+    }
+  });
+</script>
+
+  </body>
+</html>

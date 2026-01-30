@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Pagina completa con form e sidebar" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<title>es. Sidebar · Bootstrap Lombardia</title>
+<!-- Bootstrap core CSS -->
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202601301059" rel="stylesheet" />
+
+<!-- Documentation extras -->
+
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202601301059" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bl3/favicon.ico" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bl3/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bl3/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bl3/site.webmanifest" />
+<meta name="msapplication-config" content="/bl3/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="es. Sidebar" />
+<meta name="twitter:description" content="Pagina completa con form e sidebar" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/it25/esempi/form-sidebar/" />
+<meta property="og:title" content="es. Sidebar" />
+<meta property="og:description" content="Pagina completa con form e sidebar" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <style>
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  display: flex ;
+}
+</style>
+
+<header>
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+            <img src="/bl3/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+          <div class="header-slim-right-zone">
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
+                <span>Lorem ipsum dolor sit</span>
+                <svg class="icon icon-white" aria-label="utente">
+                  <use xlink:href="/bl3/dist/svg/sprites.svg#it-user"></use>
+                </svg>
+                <svg class="icon icon-white" aria-label="espandi">
+                  <use xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu" data-popper-placement="bottom-end">
+                <div class="link-list-wrapper">
+                  <ul class="link-list">
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+            <div class="it25-hamburger-btn-wrapper">
+              <button
+                id="btn-hamburger"
+                class="custom-navbar-toggler btn btn-xs d-md-none"
+                type="button"
+                aria-controls="it25-main-nav"
+                aria-expanded="false"
+                aria-label="Apri menù"
+                data-bs-toggle="collapse"
+                data-bs-target="#it25-main-nav"
+              >
+                <svg class="icon icon-primary" role="presentation">
+                  <use xlink:href="/bl3/dist/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+            </div>
+            <a href="#">
+              <img src="/bl3/dist/assets/img/logo-rl.png"
+                alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+
+<main>
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 it25-sidebar">
+      <nav class="collapse it25-vertical-menu" id="it25-main-nav">
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-text">
+        <svg class="icon icon-sm" role="presentation"><use xlink:href="/bl3/dist/svg/sprites.svg#it-search"></use></svg>
+      </span>
+      <label for="searchField">Cerca</label>
+      <input type="text" class="form-control" id="searchField" autocomplete="off">
+    </div>
+  </div>
+  <div class="sidebar-wrapper">
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseZero" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseZero">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse" id="collapseZero">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseUno" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseUno">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseUno">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon active" href="#collapseDue" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDue">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseDue">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseTre" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseTre">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseTre">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseQuattro" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseQuattro">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseQuattro">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseCinque" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseCinque">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseCinque">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="col-12 col-md-9">
+        <h1>Nome form</h1>
+        <form class="my-5 px-5" id="justValidate" action="index.html" method="post">
+          <div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputEmail4" class="active">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" autocomplete="email"/>
+  </div>
+  <div class="form-group col-md-4">
+    <label for="exampleInputPassword9">Scegli password</label>
+    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9"
+      autocomplete="current-password">
+    <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+      <span class="visually-hidden">Mostra/Nascondi Password</span>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bl3/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
+    </button>
+    <p id="infoPassword9" class="form-text text-muted d-block small pb-0">minimo 8 caratteri, maiuscole, numeri e caratteri speciali.</p>
+    <div class="password-strength-meter">
+      <p id="strengthMeterInfo9" class="strength-meter-info small form-text text-muted pt-0" aria-live="polite"
+        data-bs-short-pass="Password troppo breve."
+        data-bs-bad-pas="Password debole."
+        data-bs-good-pass="Password abbastanza sicura."
+        data-bs-strong-pass="Password sicura."
+      ></p>
+      <div class="password-meter progress rounded-0 position-absolute">
+        <div class="row position-absolute w-100 m-0">
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+        </div>
+        <div class="progress-bar bg-muted" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group col-md-2">
+    <label class="output">Ticket</label>
+    <div id="ticket-number" class="output-field">AC-123-0002658</div>
+  </div>
+</div>
+
+          <div class="row">
+  <div class="form-group col-md-6">
+    <label for="formNome">Nome</label>
+    <input type="text" class="form-control" id="formNome" autocomplete="given-name" />
+  </div>
+  <div class="form-group col-md-6">
+    <label for="formCognome">Cognome</label>
+    <input type="text" class="form-control" id="formCognome" autocomplete="last-name" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-10">
+    <label for="inputAddress">Indirizzo</label>
+    <input type="text" class="form-control" id="inputAddress" autocomplete="address-line1"/>
+  </div>
+  <div class="form-group col-2">
+    <label for="civico" class="input-number-label">Civico</label>
+    <input type="text" class="form-control" id="civico" autocomplete="civic-number" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputCity">Comune</label>
+    <input type="text" class="form-control" id="inputCity" autocomplete="address-line2" />
+  </div>
+  <div class="form-group col-md-2">
+    <label for="inputCAP">CAP</label>
+    <input type="number" class="form-control" id="inputCAP" />
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <div class="select-wrapper">
+        <label for="defaultSelect">Provincia</label>
+        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required autocomplete="address-level1">
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="BG">Bergamo</option>
+          <option value="BS">Brescia</option>
+          <option value="CO">Como</option>
+          <option value="CR">Cremona</option>
+          <option value="LC">Lecco</option>
+          <option value="LO">Lodi</option>
+          <option value="MN">Mantova</option>
+          <option value="MI">Milano</option>
+          <option value="MB">Monza e Brianza</option>
+          <option value="PV">Pavia</option>
+          <option value="SO">Sondrio</option>
+          <option value="VA">Varese</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="row mt-5 mt-md-0">
+  <div class="col-md-4 col-xl-3">
+    <div class="it-datepicker-wrapper">
+      <div class="form-group">
+        <input class="form-control it-date-datepicker" id="data_nascita" type="date" placeholder="gg/mm/aaaa">
+        <label class="active" for="data_nascita">Data di nascita</label>
+      </div>
+    </div>  
+  </div>  
+  <div class="col-md-4 offset-xl-3 col-xl-3">
+    <div class="it-datepicker-wrapper">
+      <div class="form-group">
+        <input class="form-control it-date-datepicker" id="data_da" type="date" placeholder="gg/mm/aaaa">
+        <label for="data_da">Periodo da</label>
+      </div>
+    </div>  
+  </div>  
+  <div class="col-md-4 col-xl-3">
+    <div class="it-datepicker-wrapper">
+      <div class="form-group">
+        <input class="form-control it-date-datepicker" id="data_a" type="date" placeholder="gg/mm/aaaa">
+        <label for="data_a">a</label>
+      </div>
+    </div>  
+  </div>  
+</div>
+
+          <div class="row">
+  <div class="col-6">
+    <div class="form-group">
+      <fieldset id="gruppo2">
+        <legend>Cittadinanza</legend>
+        <div class="form-check form-check-inline">
+          <input name="gruppo2" type="radio" id="radio4" checked>
+          <label for="radio4">Italiana</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input name="gruppo2" type="radio" id="radio5">
+          <label for="radio5">Straniera UE</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input name="gruppo2" type="radio" id="radio6">
+          <label for="radio6">Extra UE</label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-group">
+      <div class="form-group">
+  <label for="accessibleAutocomplete">Regione</label>
+  <div id="accessibleAutocompleteWrapper" class="autocomplete-wrapper"></div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const italianRegions = ["Abruzzo","Basilicata","Calabria","Campania","Emilia Romagna",
+    "Friuli Venezia Giulia","Lazio","Liguria","Lombardia","Marche","Molise","Piemonte",
+    "Puglia","Sardegna","Sicilia","Toscana","Trentino Alto Adige","Umbria","Valle d’Aosta","Veneto"];
+    const selectElement = document.querySelector('#accessibleAutocompleteWrapper');
+    const selectAutocomplete = new bootstrap.SelectAutocomplete(selectElement, {
+      id: 'accessibleAutocomplete',
+      name: 'regioni',
+      source: italianRegions
+    });
+  })
+</script>
+
+    </div>
+  </div>
+</div>
+
+          <div class="row">
+  <div class="col">
+    <div class="form-group">
+      <fieldset id="group_mezzi0">
+        <legend>Mezzi utilizzati</legend>
+        <div class="form-check form-check-inline">
+          <input id="checkbox6" type="checkbox" />
+          <label for="checkbox6">Auto propria</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox7" type="checkbox" />
+          <label for="checkbox7">Treno</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox8" type="checkbox" disabled />
+          <label for="checkbox8">Car sharing</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox10" type="checkbox" checked="checked" />
+          <label for="checkbox10">Bike sharing</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox9" type="checkbox" checked="checked" />
+          <label for="checkbox9">Metro/Tram/Bus</label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+          <div class="row">
+  <div class="col">
+    <fieldset id="group_mezzi1">
+      <legend>Mezzi utilizzati</legend>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1a">
+            Auto propria
+            <input type="checkbox" id="toggleEsempio1a" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1b">
+            Treno
+            <input type="checkbox" id="toggleEsempio1b" />
+            <span class="lever leverRight"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1c">
+            Car sharing
+            <input disabled type="checkbox" id="toggleEsempio1c" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1d">
+            Bike sharing
+            <input type="checkbox" id="toggleEsempio1d" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1e">
+            Metro/Tram/Bus
+            <input disabled type="checkbox" id="toggleEsempio1e" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+    <!-- *****************************************************************************************************+ -->
+          <div class="row">
+            <div class="col-12">
+              <div class="float-end">
+                <button type="button" class="btn btn-outline-primary">Annulla</button>
+                <button type="submit" class="btn btn-primary">Invio</button>
+              </div>
+            </div>
+          </div>
+    <!-- *****************************************************************************************************+ -->
+        </form>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div aria-live="polite" id="errorMsgContainer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end container -->
+</main>
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 my-4 fw-bold title">ACCREDITAS Sistema di accreditamento</div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-3">
+        <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+          <li class="list-inline-item"><a href="">Privacy</a></li>
+          <li class="list-inline-item"><a href="">Accessibilità</a></li>
+          <li class="list-inline-item"><a href="">Cookie policy</a></li>
+          <li class="list-inline-item"><a href="">Note legali</a></li>
+          <li class="list-inline-item"><a href="">Contatti</a></li>
+          <li class="list-inline-item"><a href="">Credits</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 my-3 copyright">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const errorMessage =
+      '<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></div>'
+    const errorWrapper = document.querySelector('#errorMsgContainer')
+    const validate = new bootstrap.FormValidate('#justValidate', {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'form-feedback',
+      errorLabelStyle: '',
+      focusInvalidField: false,
+    })
+
+    validate
+      .addField('#inputEmail4', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'email',
+          errorMessage: 'Inserire email corretta',
+        },
+      ])
+      .addField('#exampleInputPassword9', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#formNome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#formCognome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+          sucessMessage: 'Validato',
+        },
+      ])
+      .addField('#inputAddress', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#civico', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#inputCity', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#inputCAP', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minNumber',
+          value: 20001,
+          errorMessage: 'I CAP della Lombardia sono superiori a 20000',
+        },
+        {
+          rule: 'maxNumber',
+          value: 46100,
+          errorMessage: 'I CAP della Lombardia non sono superiori a 46100',
+        }
+      ])
+      .addField('#defaultSelect', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#data_nascita', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#accessibleAutocomplete', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          validator: (value) => {
+            return ['Bergamo', 'Brescia', 'Como', 'Cremona', 'Lecco', 'Lodi', 'Mantova', 'Monza e della Brianza', 'Milano', 'Sondrio', 'Varese'].includes(value);
+          },
+          errorMessage: 'Puoi scegliere solo province lombarde',
+        },
+      ])
+      .addRequiredGroup('#group_mezzi0', 'Scegli almeno un’opzione')
+      .addRequiredGroup('#group_mezzi2', 'Scegli almeno un’opzione')
+      .onSuccess((event) => {
+        document.forms['justValidate'].submit()
+      })
+      .onFail((fields) => {
+        errorWrapper.innerHTML = ''
+        errorWrapper.innerHTML = errorMessage
+        errorWrapper.scrollIntoView()
+      })
+  })
+</script>
+ 
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202601301059"></script>
+
+<script>
+  bootstrap.loadFonts('/bl3/dist/fonts')
+  bootstrap.it25Header()
+</script><!-- Notification per tornare alla pagina principale -->
+<!--
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi"
+  aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bl3/dist/svg/sprites.svg#it-info-circle"
+        xlink:href="/bl3/dist/svg/sprites.svg#it-info-circle"></use>
+    </svg>
+    Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bl3/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bl3/dist/svg/sprites.svg#it-close"
+        xlink:href="/bl3/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+-->
+<script>
+//   $(document).ready(function () {
+//     notificationShow('notification-esempi')
+//   })
+</script><script>
+  /**
+ * Copy button functionality for both accordion and standalone code blocks
+ */
+
+  // Create ARIA live region for announcements (only once)
+  function createAriaLiveRegion() {
+    if (!document.getElementById('copy-announcement')) {
+      const liveRegion = document.createElement('div');
+      liveRegion.id = 'copy-announcement';
+      liveRegion.setAttribute('aria-live', 'polite');
+      liveRegion.setAttribute('aria-atomic', 'true');
+      liveRegion.className = 'visually-hidden';
+      document.body.appendChild(liveRegion);
+    }
+  }
+
+  // Announce to screen readers
+  function announceToScreenReader(message) {
+    const liveRegion = document.getElementById('copy-announcement');
+    if (liveRegion) {
+      liveRegion.textContent = message;
+      // Clear after announcement
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+  }
+
+  // Handle accordion copy buttons (in header)
+  function setupAccordionCopyButtons() {
+    document.querySelectorAll('.code-example-accordion .copy-code-btn').forEach(function (button) {
+      if (button.hasAttribute('data-copy-setup')) return;
+      button.setAttribute('data-copy-setup', 'true');
+
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const collapse = document.querySelector(targetId);
+
+        if (collapse) {
+          const code = collapse.querySelector('code td[class="code"] pre') ??
+            collapse.querySelector('code td[class="rouge-code"] pre') ??
+            collapse.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 2000);
+          }
+        }
+      });
+    });
+  }
+
+  // Handle standalone code blocks (original functionality)
+  function setupStandaloneCopyButtons() {
+    document
+      .querySelectorAll('figure.highlight, pre.highlight')
+      .forEach(function (node) {
+        // Skip if inside accordion (handled by accordion copy button)
+        if (node.closest('.code-example-accordion')) return;
+
+        // Skip if copy button already exists
+        if (node.parentElement.querySelector('.copy-button-container')) return;
+
+        const button = document.createElement('button'),
+          divContainer = document.createElement('div');
+
+        divContainer.classList.add('copy-button-container');
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Copia il codice negli appunti');
+        button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-copy"></use></svg>';
+        button.classList.add('btn', 'btn-primary', 'btn-xs', 'btn-secondary');
+
+        button.addEventListener('click', function () {
+          const code = node.querySelector('code td[class="code"] pre') ??
+            node.querySelector('code td[class="rouge-code"] pre') ??
+            node.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual and accessibility feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 3000);
+          }
+        });
+
+        divContainer.appendChild(button);
+
+        // Position button based on code block type
+        if (node.nodeName == 'FIGURE') {
+          node.insertBefore(divContainer, node.querySelector('pre'));
+        } else if (node.nodeName == 'PRE') {
+          node.classList.remove("highlight");
+          node.insertAdjacentElement('beforebegin', divContainer);
+        }
+      });
+  }
+
+  // Setup both types of copy buttons
+  function setupAllCopyButtons() {
+    createAriaLiveRegion(); // Create live region first
+    setupAccordionCopyButtons();
+    setupStandaloneCopyButtons();
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupAllCopyButtons);
+
+  // Run when code example accordions are shown
+  document.addEventListener('shown.bs.collapse', function (e) {
+    if (e.target.closest('.code-example-accordion')) {
+      setupAccordionCopyButtons();
+    }
+  });
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<title>Validazione Form · Bootstrap Lombardia</title>
+<!-- Bootstrap core CSS -->
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202601301059" rel="stylesheet" />
+
+<!-- Documentation extras -->
+
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202601301059" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bl3/favicon.ico" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bl3/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bl3/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bl3/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bl3/site.webmanifest" />
+<meta name="msapplication-config" content="/bl3/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Validazione Form" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/esempi/form/" />
+<meta property="og:title" content="Validazione Form" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <form id="justValidate" action="index.html" method="post">
+  <div class="container mb-5 mt-5 pt-5">
+    <div class="row">
+      <div class="col-12">
+        <h1>Form con validazione</h1>
+        <hr />
+      </div>
+    </div>
+    <div class="row mt-5 mb-4">
+      <div class="col-12">
+        <h2>Campi input</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="nome">Campo testo</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="age">Campo numerico (min/max)</label>
+          <input type="number" data-bs-input class="form-control" id="age" min="18" max="50" step="1" required />
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="camponumerico">Campo numerico (5 cifre)</label>
+          <input type="number" data-bs-input class="form-control" id="camponumerico" maxlenght="5" required />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="email">Campo Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <div class="select-wrapper">
+            <label for="defaultSelect">Select</label>
+            <select id="defaultSelect" title="Scegli una opzione" class="form-control" required>
+              <option selected value="">Scegli una opzione</option>
+              <option value="Value 1">Opzione 1</option>
+              <option value="Value 2">Opzione 2</option>
+              <option value="Value 3">Opzione 3</option>
+              <option value="Value 4">Opzione 4</option>
+              <option value="Value 5">Opzione 5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label class="active" for="date">Datepicker</label>
+          <input class="form-control" type="date" id="date" name="date" required />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label class="active" for="time">Timepicker</label>
+          <input class="form-control" id="time" type="time" required />
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="importo_input_group" class="input-symbol-label active">Importo</label>
+          <span class="input-group input-number">
+            <span class="input-group-text fw-semibold">€</span>
+            <input type="number" class="form-control" data-bs-input id="importo_input_group" name="importo" step="any" value="3.50" min="0" max="50" required />
+            <span class="input-group-text align-buttons flex-column">
+              <button class="input-number-add">
+                <span class="visually-hidden">Aumenta valore Euro</span>
+              </button>
+              <button class="input-number-sub">
+                <span class="visually-hidden">Diminuisci valore Euro</span>
+              </button>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="perc_input_group" class="input-symbol-label active">Percentuale</label>
+          <div class="input-group input-number">
+            <span class="input-group-text fw-semibold">%</span>
+            <input type="number" class="form-control" data-bs-input id="perc_input_group" name="perc_input_group" value="80" min="80" max="100" step="any" />
+            <span class="input-group-text align-buttons flex-column">
+              <button class="input-number-add">
+                <span class="visually-hidden">Aumenta del 10%</span>
+              </button>
+              <button class="input-number-sub">
+                <span class="visually-hidden">Diminuisci del 10%</span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-text"><svg class="icon icon-sm"><use href="/bl3/dist/svg/sprites.svg#it-pencil"></use></svg></span>
+            <label class="active" for="etichetta_input_group">Con Etichetta e placeholder</label>
+            <input type="text" class="form-control" id="etichetta_input_group" name="etichetta_input_group" placeholder="Lorem Ipsum">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2>Autocomplete</h2>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label for="accessibleAutocomplete">Comune di residenza</label>
+          <div id="accessibleAutocompleteWrapper" class="autocomplete-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2>Checkbox / Radio</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="row">
+          <div class="form-check mb-5">
+            <input id="checkbox1" type="checkbox" required />
+            <label for="checkbox1">Checkbox isolata</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="toggles">
+          <label for="toggleEsempio1a">
+            Toggle isolato
+            <input type="checkbox" id="toggleEsempio1a" required />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <fieldset id="radiogroup">
+          <legend>Fieldset radio buttons</legend>
+          <div class="form-check form-check-inline">
+            <input name="gruppo2" type="radio" id="radio1" required />
+            <label for="radio1">Radio 1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input name="gruppo2" type="radio" id="radio2" required />
+            <label for="radio2">Radio 2</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="col-12 col-md-4">
+        <fieldset id="checkgroup">
+          <legend>Fieldset checkbox</legend>
+          <div class="form-check form-check-inline">
+            <input id="checkbox2" type="checkbox" required />
+            <label for="checkbox2">Checkbox 1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input id="checkbox3" type="checkbox" required />
+            <label for="checkbox3">Checkbox 2</label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2>File</h2>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-6">
+        <div class="form-upload">
+          <label for="upload">Upload</label>
+          <input type="file" name="upload" id="upload" multiple="multiple" class="form-control" required />
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-upload">
+          <input type="file" name="upload1" id="upload1" class="upload" multiple="multiple" required />
+          <label for="upload1">
+            <svg class="icon icon-sm" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-upload"></use></svg>
+            <span>Upload custom (solo jpg/png)</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary mt-3" type="submit">Invia form</button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div aria-live="polite" id="errorMsgContainer"></div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', async function () {
+    const errorMessage =
+      '<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></div>'
+    const errorWrapper = document.querySelector('#errorMsgContainer')
+    const validate = new bootstrap.FormValidate('#justValidate', {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'form-feedback',
+      errorLabelStyle: '',
+      focusInvalidField: false,
+    })
+
+    const comuniJson = await (await fetch('./comuni.json')).json();
+    const comuni = comuniJson.map(comune => comune.comune)
+    const selectAutocompleteWrapper = document.querySelector('#accessibleAutocompleteWrapper');
+    const selectAutocomplete = new bootstrap.SelectAutocomplete(selectAutocompleteWrapper, {
+      source: comuni,
+      id: 'accessibleAutocomplete',
+      name: 'comune-residenza',
+      minLength: 3,
+      onConfirm: () => {
+        if (!validate.isSubmitted && !validate.validateBeforeSubmitting)
+          return
+        validate.revalidateField('#accessibleAutocomplete')
+      }
+    });
+    validate
+      .addField('#nome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#accessibleAutocomplete', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          validator: (value) => {
+            return comuni.includes(value);
+          },
+          errorMessage: 'Scegli una città valida',
+        },
+      ])
+      .addField('#importo_input_group', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minNumber',
+          value: 3.50,
+          errorMessage: 'Deve essere maggiore di 3.50',
+        }
+      ])
+      .addField('#perc_input_group', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minNumber',
+          value: 80,
+          errorMessage: 'Deve essere maggiore di 80',
+        }
+      ])
+      .addField('#etichetta_input_group', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minNumber',
+          value: 80,
+          errorMessage: 'Deve essere maggiore di 80',
+        }
+      ])
+      .addField('#age', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minNumber',
+          value: 18,
+          errorMessage: 'Deve essere maggiore di 17',
+        },
+        {
+          rule: 'maxNumber',
+          value: 50,
+          errorMessage: 'Deve essere minore di 51',
+        },
+      ])
+      .addField('#camponumerico', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minLength',
+          value: 5,
+          errorMessage: 'Inserire 5 cifre',
+        },
+        {
+          rule: 'maxLength',
+          value: 5,
+          errorMessage: 'Inserire 5 cifre',
+        },
+      ])
+      .addField('#email', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'email',
+          errorMessage: 'Inserire email corretta',
+        },
+      ])
+      .addField('#defaultSelect', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+
+      .addRequiredGroup('#radiogroup', 'Scegli un’opzione')
+      .addRequiredGroup('#checkgroup', 'Scegli almeno un’opzione')
+      .addField('#date', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#time', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#toggleEsempio1a', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#checkbox1', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#upload1', [
+        {
+          rule: 'minFilesCount',
+          value: 1,
+          errorMessage: 'Caricare un file jpg o png',
+        },
+        {
+          rule: 'files',
+          value: {
+            files: {
+              extensions: ['jpg', 'png'],
+              maxSize: 100000,
+              minSize: 50,
+              types: ['image/jpeg', 'image/png'],
+            },
+          },
+          errorMessage: 'Tipo di file sbagliato o troppo pesante',
+        },
+      ])
+      .addField('#upload', [
+        {
+          rule: 'minFilesCount',
+          value: 1,
+          errorMessage: 'Caricare un file',
+        },
+      ])
+      .onSuccess((event) => {
+        document.forms['justValidate'].submit()
+      })
+      .onFail((fields) => {
+        errorWrapper.innerHTML = ''
+        errorWrapper.innerHTML = errorMessage
+        errorWrapper.scrollIntoView()
+      })
+  })
+</script>
+ 
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202601301059"></script>
+
+<script>
+  bootstrap.loadFonts('/bl3/dist/fonts')
+  bootstrap.it25Header()
+</script><!-- Notification per tornare alla pagina principale -->
+<!--
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi"
+  aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bl3/dist/svg/sprites.svg#it-info-circle"
+        xlink:href="/bl3/dist/svg/sprites.svg#it-info-circle"></use>
+    </svg>
+    Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bl3/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bl3/dist/svg/sprites.svg#it-close"
+        xlink:href="/bl3/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+-->
+<script>
+//   $(document).ready(function () {
+//     notificationShow('notification-esempi')
+//   })
+</script><script>
+  /**
+ * Copy button functionality for both accordion and standalone code blocks
+ */
+
+  // Create ARIA live region for announcements (only once)
+  function createAriaLiveRegion() {
+    if (!document.getElementById('copy-announcement')) {
+      const liveRegion = document.createElement('div');
+      liveRegion.id = 'copy-announcement';
+      liveRegion.setAttribute('aria-live', 'polite');
+      liveRegion.setAttribute('aria-atomic', 'true');
+      liveRegion.className = 'visually-hidden';
+      document.body.appendChild(liveRegion);
+    }
+  }
+
+  // Announce to screen readers
+  function announceToScreenReader(message) {
+    const liveRegion = document.getElementById('copy-announcement');
+    if (liveRegion) {
+      liveRegion.textContent = message;
+      // Clear after announcement
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+  }
+
+  // Handle accordion copy buttons (in header)
+  function setupAccordionCopyButtons() {
+    document.querySelectorAll('.code-example-accordion .copy-code-btn').forEach(function (button) {
+      if (button.hasAttribute('data-copy-setup')) return;
+      button.setAttribute('data-copy-setup', 'true');
+
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const collapse = document.querySelector(targetId);
+
+        if (collapse) {
+          const code = collapse.querySelector('code td[class="code"] pre') ??
+            collapse.querySelector('code td[class="rouge-code"] pre') ??
+            collapse.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 2000);
+          }
+        }
+      });
+    });
+  }
+
+  // Handle standalone code blocks (original functionality)
+  function setupStandaloneCopyButtons() {
+    document
+      .querySelectorAll('figure.highlight, pre.highlight')
+      .forEach(function (node) {
+        // Skip if inside accordion (handled by accordion copy button)
+        if (node.closest('.code-example-accordion')) return;
+
+        // Skip if copy button already exists
+        if (node.parentElement.querySelector('.copy-button-container')) return;
+
+        const button = document.createElement('button'),
+          divContainer = document.createElement('div');
+
+        divContainer.classList.add('copy-button-container');
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Copia il codice negli appunti');
+        button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-copy"></use></svg>';
+        button.classList.add('btn', 'btn-primary', 'btn-xs', 'btn-secondary');
+
+        button.addEventListener('click', function () {
+          const code = node.querySelector('code td[class="code"] pre') ??
+            node.querySelector('code td[class="rouge-code"] pre') ??
+            node.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual and accessibility feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 3000);
+          }
+        });
+
+        divContainer.appendChild(button);
+
+        // Position button based on code block type
+        if (node.nodeName == 'FIGURE') {
+          node.insertBefore(divContainer, node.querySelector('pre'));
+        } else if (node.nodeName == 'PRE') {
+          node.classList.remove("highlight");
+          node.insertAdjacentElement('beforebegin', divContainer);
+        }
+      });
+  }
+
+  // Setup both types of copy buttons
+  function setupAllCopyButtons() {
+    createAriaLiveRegion(); // Create live region first
+    setupAccordionCopyButtons();
+    setupStandaloneCopyButtons();
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupAllCopyButtons);
+
+  // Run when code example accordions are shown
+  document.addEventListener('shown.bs.collapse', function (e) {
+    if (e.target.closest('.code-example-accordion')) {
+      setupAccordionCopyButtons();
+    }
+  });
+</script>
+
+  </body>
+</html>
