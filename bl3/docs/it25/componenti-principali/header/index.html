@@ -11,13 +11,13 @@
 
 <title>Header · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202602051511" rel="stylesheet" />
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202604161138" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bl3/docs/assets/dist/css/docs.min.css?202602051511" rel="stylesheet" />
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202604161138" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -77,7 +77,7 @@
   <div class="container-fluid">
     <a class="navbar-brand py-2 text-decoration-none" href="/bl3/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
-        <img src="/bl3/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <img src="/bl3/dist/assets/img/logo-rl-negativo.svg" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
         <div class="d-flex flex-column ps-3 ps-sm-4">
           <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
           <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
@@ -512,9 +512,10 @@
   <div class="sidebar-wrapper">
     <h3>Header</h3>
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#header-base">Header Base</a></li>
+<li class="toc-entry toc-h3"><a href="#navigazione-orizzontale">Navigazione orizzontale</a></li>
 <li class="toc-entry toc-h2"><a href="#header-con-topbar-di-servizio-e-search-field">Header con topbar di servizio e search field</a></li>
 <li class="toc-entry toc-h2"><a href="#header-con-accesso-effettuato-e-dropdown">Header con accesso effettuato e dropdown</a></li>
+<li class="toc-entry toc-h2"><a href="#header-con-logo-negativo">Header con logo negativo</a></li>
 <li class="toc-entry toc-h2"><a href="#bottone-hamburger">Bottone hamburger</a></li>
 <li class="toc-entry toc-h2"><a href="#esempi">Esempi</a></li>
 </ul>
@@ -526,234 +527,194 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Header</h1>
           <p class="lead">Header applicativi Web.</p>
-          <p>La componente <strong>Header</strong> - posta sempre nella testata del layout - si ottiene dall’unione di due altre componenti: <strong>topbar</strong> e <strong>barra istituzionale</strong>.</p>
+          <p>Area di intestazione principale di un sito o servizio che presenta l’identità visiva e il menu di navigazione primaria.</p>
 
-<p>La <strong>topbar</strong>, la barra soprastante l’header, verrà sempre utilizzata come componente identitaria di Regione Lombardia e, anche nel caso non contenga alcuna funzionalità, essa sarà presente sotto forma di banda colorata. In alcuni casi tale componente può essere impiegata come toolbar di servizio per l’inserimento di link quali <strong>login</strong>, <strong>cambio lingua</strong>, <strong>assistenza</strong> ecc.</p>
+<p>La <strong>topbar</strong>, la barra verde soprastante, verrà sempre utilizzata come componente identitaria di Regione Lombardia e, anche nel caso non contenga alcuna funzionalità, essa sarà presente sotto forma di banda colorata  <strong>contenente il logo di Regione Lombardia</strong>.<br />
+Quando serve il componente può essere impiegato come toolbar di servizio inserendo voci quali <strong>login</strong>, <strong>cambio lingua</strong>, <strong>assistenza</strong> ecc.</p>
 
-<p>La componente <strong>barra istituzionale</strong>, fornita in diverse varianti, applicabili a seconda del dato contesto, conterrà menu di navigazione (hamburger o dropdown), loghi e titolazioni dei servizi.</p>
+<p>L’ <strong>header centrale</strong> principale, contiene il logo dell’applicativo, se esiste, e/o Acronimo e Nome dell’applicativo.</p>
 
-<p><strong>N.B.</strong>: I link di servizio e le informazioni di governance relative al servizio non sono mai presenti nell’header, ma sono contenute <strong>unicamente nel footer</strong>.</p>
+<p>La <strong>barra di navigazione</strong> orizzontale contiene le voci di menu di primo livello.<br />
+Quando queste sono però più di 5, meglio utilizzare un <strong>menu verticale</strong> a comparsa comandato da un bottone hamburger alla sinistra dell’header.</p>
 
 <hr />
 
-<h3 id="header-base">Header Base</h3>
+<h3 id="navigazione-orizzontale">Navigazione orizzontale</h3>
 
 <p>In questo esempio è riportato un header base con topbar, barra istituzionale, logo di Regione Lombardia e nome del servizio.</p>
-<div class="bd-example">
-<div class="it-header-slim-wrapper it25-top-bar">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
-            <img src="/bl3/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="it-header-center-wrapper it25-barra-ist">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-center-content-wrapper">
-          <div class="it-brand-wrapper">
-            <a href="#">
-              <img src="/bl3/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+<header class="it-header-wrapper">
+  <div class="it-header-slim-wrapper it25-top-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+              <img src="/bl3/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" />
             </a>
+            <div class="it-header-slim-right-zone">
+              
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-</div>
+<div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+            <div class="it-header-center-content-wrapper d-flex justify-content-between">
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl.png"</span>
-                <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<hr />
-
-<h2 id="header-con-topbar-di-servizio-e-search-field">Header con topbar di servizio e search field</h2>
-
-<p>La topbar può accogliere informazioni come ad esempio l’accesso utente.<br />
-Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.</p>
-
-<div class="bd-example">
-<div class="it-header-slim-wrapper it25-top-bar">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
-            <img src="/bl3/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
-          </a>
-          <div class="header-slim-right-zone">
-            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
-              <svg class="icon icon-white">
-                <use xlink:href="/bl3/dist/svg/sprites.svg#it-key"></use>
-              </svg>
-              <span class="d-none d-md-block">Accedi</span>
-              <span class="d-none d-md-block fst-italic">o Registrati</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="it-header-center-wrapper it25-barra-ist">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-center-content-wrapper">
-          <div class="it-brand-wrapper">
-            <a href="#">
-              <img src="/bl3/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
-            </a>
-          </div>
-          <div class="it-right-zone">
-            <form>
-              <div class="it-search-wrapper">
-                <input id="search-input99" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca" />
-                  <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                    <svg class="icon"><use xlink:href="/bl3/dist/svg/sprites.svg#it-search"></use></svg>
-                  </button>
+              <div class="it25-left-zone  d-flex justify-content-start">
+                <div class="it-brand-wrapper">
+                  <a href="#">
+                  <img src="/bl3/dist/assets/img/logo_inlombardia.svg" alt="logo in lombardia" class="it25-header-logo" />
+                    <div class="it-brand-text">
+                      <div class="it-brand-title d-sm-inline">ACRONIMO <span class="d-none d-md-inline">Nome applicativo</span></div>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </form>
+
+              <div class="it-right-zone">
+                <div class="it-search-wrapper">
+                  <span class="d-none d-md-block">Cerca</span>
+                  <a class="search-link rounded-icon" aria-label="Cerca nel sito" href="#">
+                    <svg class="icon"><use href="/bl3/dist/svg/sprites.svg#it-search"></use></svg>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header-slim-right-zone"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon btn-full"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Accedi all'area personale"</span> <span class="na">aria-label=</span><span class="s">"Accedi all'area personale"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-key"</span><span class="nt">&gt;&lt;/use&gt;</span>
-              <span class="nt">&lt;/svg&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-block"</span><span class="nt">&gt;</span>Accedi<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-block fst-italic"</span><span class="nt">&gt;</span>o Registrati<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;form&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-input99"</span> <span class="na">class=</span><span class="s">"form-control d-none d-lg-flex mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca..."</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 m-1"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                  <span class="nt">&lt;/button&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/form&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<hr />
-
-<h2 id="header-con-accesso-effettuato-e-dropdown">Header con accesso effettuato e dropdown</h2>
-
-<p>Il menu dropdown può contenere informazioni utili per il login, il logout e la gestione del profilo utente e delle impostazioni. Queste info possono essere relative all’utente e all’operatore che sta utilizzando il servizio.</p>
-
-<p>La dimensione del menu dropdown può variare a seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.</p>
-
-<div class="bd-example">
-<div class="it-header-slim-wrapper it25-top-bar">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
-            <img src="/bl3/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
-          </a>
-          <div class="header-slim-right-zone">
-            <div class="nav-item dropdown">
-              <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
-                <span>Lorem ipsum dolor sit</span>
-                <svg class="icon icon-white" aria-label="utente">
-                  <use xlink:href="/bl3/dist/svg/sprites.svg#it-user"></use>
+    <div class="it-header-navbar-wrapper it25-menu-orizzontale" id="header-nav-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                <svg class="icon icon-primary">
+                  <use href="/bl3/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
-                <svg class="icon icon-white" aria-label="espandi">
-                  <use xlink:href="/bl3/dist/svg/sprites.svg#it-expand"></use>
-                </svg>
+              </button>
+              <div class="navbar-collapsable" id="navC1" tabindex="-1">
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="visually-hidden">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="/bl3/dist/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="menu-wrapper justify-content-lg-between">
+                  <ul class="navbar-nav">
+  <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></li>
+  <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
+  <li class="nav-item"><a class="nav-link" href="#"><span>Link 3</span></a></li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdownC1">
+      <span>Menu Dropdown</span>
+      <svg class="icon icon-xs">
+        <use href="/bl3/dist/svg/sprites.svg#it-expand"></use>
+      </svg>
+    </a>
+    <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdownC1">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a></li>
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a></li>
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a></li>
+          <li><span class="divider"></span></li>
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 4</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <!-- megamenu -->
+  <li class="nav-item dropdown megamenu">
+    <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-5" data-focus-mouse="false">
+        <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bl3/dist/svg/sprites.svg#it-expand"></use></svg>
+    </button>
+    <div class="dropdown-menu shadow-lg" role="region" aria-labelledby="megamenu-5">
+      <div class="megamenu pb-5 pt-3 py-lg-0">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4 px-0">
+            <div class="row">
+              <div class="col-12 it-vertical it-description pb-lg-3">
+                <div class="description-content ps-4 ps-sm-5 ms-3">
+                  <div class="ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded">
+                    <figure class="figure">
+                      <img src="https://placehold.co/560x240/ebebeb/808080/?text=Immagine" class="figure-img img-fluid rounded" alt="Segnaposto" />
+                    </figure>
+                  </div>
+                  <p>
+                    Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="it-heading-link-wrapper">
+              <a class="it-heading-link" href="#"><svg role="img" class="icon icon-sm me-2 mb-1"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+              <span>Esplora la sezione megamenu</span>
               </a>
-              <div class="dropdown-menu" data-popper-placement="bottom-end">
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
                 <div class="link-list-wrapper">
                   <ul class="link-list">
                     <li>
-                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                      <a class="list-item dropdown-item" href="#">
+                        <svg role="img" class="icon icon-sm me-2"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                        <span>Link lista 1</span>
+                      </a>
                     </li>
                     <li>
-                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                      <a class="list-item dropdown-item" href="#">
+                        <svg role="img" class="icon icon-sm me-2"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                        <span>Link lista 2</span>
+                      </a>
                     </li>
                     <li>
-                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                      <a class="list-item dropdown-item " href="#">
+                        <svg role="img" class="icon icon-sm me-2"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                        <span>Link lista 3</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="link-list-wrapper">
+                  <ul class="link-list">
+                    <li>
+                      <a class="list-item dropdown-item" href="#">
+                        <svg role="img" class="icon icon-sm me-2"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                        <span>Link lista 4</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-item dropdown-item" href="#">
+                        <svg role="img" class="icon icon-sm me-2"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                        <span>Link lista 5</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-item dropdown-item " href="#">
+                        <svg role="img" class="icon icon-sm me-2"><use href="/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                        <span>Link lista 6</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -763,67 +724,193 @@ Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ric
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </li>
+</ul>
 
-<div class="it-header-center-wrapper it25-barra-ist">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-center-content-wrapper">
-          <div class="it-brand-wrapper">
-            <a href="#">
-              <img src="/bl3/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
-            </a>
-          </div>
-          <div class="it-right-zone">
-            <form>
-              <div class="it-search-wrapper">
-                <input id="search-input98" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca" />
-                  <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                    <svg class="icon"><use xlink:href="/bl3/dist/svg/sprites.svg#it-search"></use></svg>
-                  </button>
+
+                </div>
               </div>
-            </form>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header-slim-right-zone"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;a</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-display=</span><span class="s">"static"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span> <span class="na">aria-label=</span><span class="s">"utente"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-user"</span><span class="nt">&gt;&lt;/use&gt;</span>
+</div>
+</header>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"it-header-wrapper"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-negativo.svg"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-right-zone"</span><span class="nt">&gt;</span>
+              
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-nav-wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper d-flex justify-content-between"</span><span class="nt">&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-left-zone  d-flex justify-content-start"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo_inlombardia.svg"</span> <span class="na">alt=</span><span class="s">"logo in lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-title d-sm-inline"</span><span class="nt">&gt;</span>ACRONIMO <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-inline"</span><span class="nt">&gt;</span>Nome applicativo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-block"</span><span class="nt">&gt;</span>Cerca<span class="nt">&lt;/span&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"search-link rounded-icon"</span> <span class="na">aria-label=</span><span class="s">"Cerca nel sito"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                  <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper it25-menu-orizzontale"</span> <span class="na">id=</span><span class="s">"header-nav-wrapper"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!--start nav--&gt;</span>
+            <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"navC1"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#navC1"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;</span>
                 <span class="nt">&lt;/svg&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span> <span class="na">aria-label=</span><span class="s">"espandi"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;</span>
-                <span class="nt">&lt;/svg&gt;</span>
+              <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"navC1"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-close-big"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                    <span class="nt">&lt;/svg&gt;</span>
+                  <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-wrapper justify-content-lg-between"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;&lt;span&gt;</span>Link 1 (attivo)<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span&gt;</span>Link 2 (disabilitato)<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link 3<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">id=</span><span class="s">"mainNavDropdownC1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Menu Dropdown<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xs"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;</span>
+      <span class="nt">&lt;/svg&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"mainNavDropdownC1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 2<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 3<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/span&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 4<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="c">&lt;!-- megamenu --&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown megamenu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle px-lg-2 px-xl-3"</span> <span class="na">data-bs-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">id=</span><span class="s">"megamenu-5"</span> <span class="na">data-focus-mouse=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Megamenu<span class="nt">&lt;/span&gt;&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-xs ms-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu shadow-lg"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"megamenu-5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"megamenu pb-5 pt-3 py-lg-0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-lg-4 px-0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 it-vertical it-description pb-lg-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"description-content ps-4 ps-sm-5 ms-3"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"figure"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://placehold.co/560x240/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"figure-img img-fluid rounded"</span> <span class="na">alt=</span><span class="s">"Segnaposto"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/figure&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>
+                    Testo utile a fornire una descrizione dei contenuti della sezione <span class="nt">&lt;strong&gt;</span>megamenu<span class="nt">&lt;/strong&gt;</span>.
+                  <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-8"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-heading-link-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"it-heading-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2 mb-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Esplora la sezione megamenu<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/a&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">data-popper-placement=</span><span class="s">"bottom-end"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-6"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;li&gt;</span>
-                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Link lista 1<span class="nt">&lt;/span&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
                     <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;li&gt;</span>
-                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Link lista 2<span class="nt">&lt;/span&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
                     <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;li&gt;</span>
-                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item dropdown-item "</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Link lista 3<span class="nt">&lt;/span&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-6"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Link lista 4<span class="nt">&lt;/span&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Link lista 5<span class="nt">&lt;/span&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item dropdown-item "</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right-triangle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Link lista 6<span class="nt">&lt;/span&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
                     <span class="nt">&lt;/li&gt;</span>
                   <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
@@ -833,35 +920,67 @@ Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ric
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;form&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-input99"</span> <span class="na">class=</span><span class="s">"form-control d-none d-lg-flex mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca..."</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 m-1"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                  <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;/div&gt;</span>
               <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/form&gt;</span>
+            <span class="nt">&lt;/nav&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span></code></pre></figure>
+
+<hr />
+
+<h2 id="header-con-topbar-di-servizio-e-search-field">Header con topbar di servizio e search field</h2>
+
+<p>La topbar può accogliere informazioni come ad esempio l’accesso utente.<br />
+Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.</p>
+
+<p>{% comment %}Example name: IT25 Header Search{% endcomment %}
+{% capture example %}
+{% include html_docs/header/topbar_login.html %}
+{% include html_docs/header/header_search.html %}
+{% endcapture %}{% include example.html content=example %}</p>
+
+<hr />
+
+<h2 id="header-con-accesso-effettuato-e-dropdown">Header con accesso effettuato e dropdown</h2>
+
+<p>Il menu dropdown può contenere informazioni utili per il login, il logout e la gestione del profilo utente e delle impostazioni. Queste info possono essere relative all’utente e all’operatore che sta utilizzando il servizio.</p>
+
+<p>La dimensione del menu dropdown può variare a seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.</p>
+
+<p>{% comment %}Example name: IT25 Header Topbar Dropdown{% endcomment %}
+{% capture example %}
+{% include html_docs/header/topbar_dropdown.html %}
+{% include html_docs/header/header_search.html %}
+{% endcapture %}{% include example.html content=example %}</p>
+
+<hr />
+
+<h2 id="header-con-logo-negativo">Header con logo negativo</h2>
+
+<p>Nei casi in cui deve essere presente logo specifico per l’applicativo, il logo di Regione Lombardia nella topbar deve essere visibile qualunque sia la dimensione dello schermo.</p>
+
+<p>{% comment %}Example name: IT25 Header Topbar Logo Negativo Logo{% endcomment %}
+{% capture example %}
+{% include html_docs/header/topbar_logo-neg.html %}
+{% include html_docs/header/header_indip_logo.html %}
+{% endcapture %}{% include example.html content=example %}</p>
+
+<p>La topbar con il logo negativo può essere utilizzata anche con il solo nome dell’applicativo</p>
+
+<p>{% comment %}Example name: IT25 Header Topbar Logo Negativo Testo{% endcomment %}
+{% capture example %}
+{% include html_docs/header/topbar_logo-neg.html %}
+{% include html_docs/header/header_indip_text.html %}
+{% endcapture %}{% include example.html content=example %}</p>
 
 <hr />
 
@@ -919,17 +1038,17 @@ sia per il <strong>menù verticale</strong> che per la <strong>sidebar</strong> 
     </div>
 
     
-<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202602051511"></script>
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202604161138"></script>
 
 <script>
   bootstrap.loadFonts('/bl3/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202602051511"></script>
+</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202604161138"></script>
 <script src="/bl3/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bl3/docs/assets/src/js/docs.js?202602051511"></script>
+<script src="/bl3/docs/assets/src/js/docs.js?202604161138"></script>
 
 <script src="/bl3/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -950,7 +1069,7 @@ sia per il <strong>menù verticale</strong> che per la <strong>sidebar</strong> 
     { src: '/bl3/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202602051511"></script> -->
+<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202604161138"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
