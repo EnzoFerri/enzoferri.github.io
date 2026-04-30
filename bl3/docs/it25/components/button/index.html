@@ -9,7 +9,7 @@
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="generator" content="Jekyll v4.4.1" />
 
-<title>Progress bar · Bootstrap Lombardia</title>
+<title>Button · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
 <link href="/bl3/dist/css/bootstrap-lombardia.min.css?202604301642" rel="stylesheet" />
 
@@ -33,13 +33,13 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@designersITA" />
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
-<meta name="twitter:title" content="Progress bar" />
+<meta name="twitter:title" content="Button" />
 <meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
 <meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="/docs/it25/inserimento/progress-bar/" />
-<meta property="og:title" content="Progress bar" />
+<meta property="og:url" content="/docs/it25/components/button/" />
+<meta property="og:title" content="Button" />
 <meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
@@ -200,7 +200,7 @@
               href="#collapse-3"
               data-bs-toggle="collapse"
               data-bs-target="#collapse-3"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-controls="collapse-3"
             >
               <span class="list-item-title-icon-wrapper">
@@ -210,9 +210,9 @@
                 </svg>
               </span>
             </a>
-            <ul class="link-sublist collapse " id="collapse-3"><li>
+            <ul class="link-sublist collapse show" id="collapse-3"><li>
                 <a
-                  class="list-item "
+                  class="list-item  active"
                   href="/bl3/docs/it25/components/button/"
                 >
                 <svg class="icon icon-xs icon-primary" aria-hidden="true">
@@ -579,7 +579,7 @@
               href="#collapse-old-8"
               data-bs-toggle="collapse"
               data-bs-target="#collapse-old-8"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapse-old-8"
             >
               <span class="list-item-title-icon-wrapper">
@@ -589,7 +589,7 @@
                 </svg>
               </span>
             </a>
-            <ul class="link-sublist collapse show" id="collapse-old-8"><li>
+            <ul class="link-sublist collapse " id="collapse-old-8"><li>
                 <a
                   class="list-item "
                   href="/bl3/docs/it25/inserimento/check-box/"
@@ -654,7 +654,7 @@
                   <span>Wizard</span></a>
               </li><li>
                 <a
-                  class="list-item  active"
+                  class="list-item "
                   href="/bl3/docs/it25/inserimento/progress-bar/"
                 >
                 <svg class="icon icon-xs icon-primary" aria-hidden="true">
@@ -689,34 +689,40 @@
         </div>
 
         
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+  <div class="sidebar-wrapper">
+    <h3>Button</h3>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#dimensioni">Dimensioni</a></li>
+<li class="toc-entry toc-h3"><a href="#spacing">Spacing</a></li>
+<li class="toc-entry toc-h3"><a href="#tipologia-e-stati">Tipologia e stati</a></li>
+</ul>
+  </div>
+</div>
+
+        
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
-          <h1 class="bd-title" id="content">Progress bar</h1>
+          <h1 class="bd-title" id="content">Button</h1>
           <p class="lead"></p>
-          <p>La <strong>Progress bar</strong> è una componente utile per stabilire la percentuale di completamento di un task all’interno di una pagina.<br />
-Questo elemento può essere utilizzato per indicarne la percentuale di completamento, oppure come elemento aggiuntivo della componente wizard, come indicatore di una procedura.</p>
-
+          
 <div class="bd-example">
-
-<div class="progress progress-lg progress-color">
-  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="progress progress-color">
-  <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="progress progress-color">
-  <div class="progress-bar bg-dark" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="d-flex justify-content-center">
+  <button class="btn btn-primary btn-icon">
+    <span>BUTTON</span>
+    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
 </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-136838" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-209580" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-136838">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-136838" aria-expanded="false" aria-controls="collapse-example-136838">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-209580">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-209580" aria-expanded="false" aria-controls="collapse-example-209580">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-136838">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-209580">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -724,7 +730,7 @@ Questo elemento può essere utilizzato per indicarne la percentuale di completam
       </div>
     </div>
 
-    <div id="collapse-example-136838" class="accordion-collapse collapse" data-bs-parent="#accordion-example-136838" role="region" aria-labelledby="heading-example-136838">
+    <div id="collapse-example-209580" class="accordion-collapse collapse" data-bs-parent="#accordion-example-209580" role="region" aria-labelledby="heading-example-209580">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -732,17 +738,11 @@ Questo elemento può essere utilizzato per indicarne la percentuale di completam
 4
 5
 6
-7
-8
-9
-</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-lg progress-color"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 25%"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-color"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 33%"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-color"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-dark"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 33%"</span> <span class="na">aria-valuenow=</span><span class="s">"33"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 </div>
@@ -775,12 +775,650 @@ if (!window.accordionAutoExpandSetup) {
 }
 </script>
 
-<p>La barra standard è molto sottile, per ottenere un spessore maggiore va utilizzata la classe <code class="language-plaintext highlighter-rouge">progress-lg</code>.</p>
+<h3 id="dimensioni">Dimensioni</h3>
+<p>Il pulsante prevede due dimensioni principali e la sua lunghezza dipende dai caratteri del testo.</p>
 
-<div class="bd-callout bd-callout-info">
-<h4 id="documentazione-tecnica">Documentazione tecnica</h4>
-<p>Per i dettagli tecnici sulla costruzione delle progress bar si veda la <strong><a href="/bl3/docs/componenti/progress-indicators/#progress-bar">relativa pagina</a></strong></p>
+<h4 id="large">Large</h4>
+
+<div class="bd-example">
+<button class="btn btn-lg btn-primary btn-icon">
+  <span>BUTTON</span>
+  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
 </div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-210372" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-210372">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-210372" aria-expanded="false" aria-controls="collapse-example-210372">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-210372">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-210372" class="accordion-collapse collapse" data-bs-parent="#accordion-example-210372" role="region" aria-labelledby="heading-example-210372">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary btn-icon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="small">Small</h4>
+
+<div class="bd-example">
+<button class="btn btn-primary btn-icon align-middle">
+  <span>BUTTON</span>
+  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-211198" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-211198">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-211198" aria-expanded="false" aria-controls="collapse-example-211198">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-211198">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-211198" class="accordion-collapse collapse" data-bs-parent="#accordion-example-211198" role="region" aria-labelledby="heading-example-211198">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon align-middle"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<p>Per ottenere pulsanti di dimensione più grande è sufficiente utilizzare la classe <code class="language-plaintext highlighter-rouge">.btn-lg</code>.<br />
+La dimensione <code class="language-plaintext highlighter-rouge">.btn-sm</code> coincide con la dimensione base, per cui non è necessario specificarla.</p>
+
+<h3 id="spacing">Spacing</h3>
+
+<p>Sia in asse verticale che in asse orizzontale la distanza base da impostare tra i pulsanti, a prescindere dalla dimensione, è di 24px.</p>
+
+<h4 id="orizzontale">orizzontale</h4>
+
+<div class="bd-example">
+<div style="display: inline-flex">
+<button class="btn btn-primary btn-icon me-4">
+  <span>BUTTON</span>
+  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+<button class="btn btn-primary btn-icon">
+  <span>BUTTON</span>
+  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-211819" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-211819">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-211819" aria-expanded="false" aria-controls="collapse-example-211819">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-211819">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-211819" class="accordion-collapse collapse" data-bs-parent="#accordion-example-211819" role="region" aria-labelledby="heading-example-211819">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-flex"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon me-4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="verticale">verticale</h4>
+
+<div class="bd-example">
+<button class="btn btn-primary btn-icon mb-4">
+  <span>BUTTON</span>
+  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+<br />
+<button class="btn btn-primary btn-icon">
+  <span>BUTTON</span>
+  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-212823" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-212823">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-212823" aria-expanded="false" aria-controls="collapse-example-212823">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-212823">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-212823" class="accordion-collapse collapse" data-bs-parent="#accordion-example-212823" role="region" aria-labelledby="heading-example-212823">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon mb-4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<p><strong>Nota per gli sviluppatori:</strong><br />
+Le <a href="/bl3/docs/organizzare-gli-spazi/spaziature/">classi spaziatrici</a> <code class="language-plaintext highlighter-rouge">me-4</code> e <code class="language-plaintext highlighter-rouge">mb-4</code> corrispondono a <code class="language-plaintext highlighter-rouge">1.5rem</code> che, data la dimensione carattere di default (<code class="language-plaintext highlighter-rouge">16px</code>), corrispondono ai <code class="language-plaintext highlighter-rouge">24px</code> specificati dal design system.<br />
+Naturalmente la distanza ottenuta può variare a seconda sia della dimensione carattere impostata dall’utente sul browser, sia di <code class="language-plaintext highlighter-rouge">column-gap</code> e <code class="language-plaintext highlighter-rouge">row-gap</code> dell’elemento contenitore.<br />
+Nell’esempio della <em>spaziatura orizzontale</em>, i bottoni sono stati inseriti in un <code class="language-plaintext highlighter-rouge">div</code> la cui proprietà <code class="language-plaintext highlighter-rouge">display</code> è stata impostata a <code class="language-plaintext highlighter-rouge">inline-flex</code>.<br />
+Lasciando il valore di default, che per il tag <code class="language-plaintext highlighter-rouge">div</code> è <code class="language-plaintext highlighter-rouge">block</code> con <code class="language-plaintext highlighter-rouge">column-gap</code> di <code class="language-plaintext highlighter-rouge">4px</code>, la distanza risultante sarebbe <code class="language-plaintext highlighter-rouge">28px</code>.</p>
+
+<h3 id="tipologia-e-stati">Tipologia e stati</h3>
+
+<p>Il pulsante prevede due tipologie: primario e secondario, che si invertono a seconda dello sfondo <em>light</em> (di default) o <em>dark</em>.</p>
+
+<h4 id="sfondo-light">sfondo light</h4>
+
+<div class="bd-example">
+<div style="display: inline-flex">
+  <button class="btn btn-primary btn-icon me-4">
+    <span>BUTTON</span>
+    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-outline-primary btn-icon">
+    <span>BUTTON</span>
+    <svg class="icon ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-214247" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-214247">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-214247" aria-expanded="false" aria-controls="collapse-example-214247">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-214247">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-214247" class="accordion-collapse collapse" data-bs-parent="#accordion-example-214247" role="region" aria-labelledby="heading-example-214247">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-flex"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon me-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="sfondo-dark">sfondo dark</h4>
+
+<div class="bd-example">
+<div class="bg-dark p-3">
+  <button class="btn btn-primary btn-icon me-4">
+    <span>BUTTON</span>
+    <svg class="icon icon-primary ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-outline-primary btn-icon">
+    <span>BUTTON</span>
+    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-215263" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-215263">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-215263" aria-expanded="false" aria-controls="collapse-example-215263">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-215263">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-215263" class="accordion-collapse collapse" data-bs-parent="#accordion-example-215263" role="region" aria-labelledby="heading-example-215263">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-dark p-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon me-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="stato-disabled-light">stato disabled light</h4>
+
+<div class="bd-example">
+<div style="display: inline-flex">
+  <button class="btn btn-primary btn-icon me-4" disabled="">
+    <span>BUTTON</span>
+    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-outline-primary btn-icon" disabled="">
+    <span>BUTTON</span>
+    <svg class="icon ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-217354" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-217354">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-217354" aria-expanded="false" aria-controls="collapse-example-217354">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-217354">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-217354" class="accordion-collapse collapse" data-bs-parent="#accordion-example-217354" role="region" aria-labelledby="heading-example-217354">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-flex"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon me-4"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-icon"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="stato-disabled-dark">stato disabled dark</h4>
+
+<div class="bd-example">
+<div class="bg-dark p-3">
+  <button class="btn btn-primary btn-icon me-4" disabled="">
+    <span>BUTTON</span>
+    <svg class="icon icon-primary ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-outline-primary btn-icon" disabled="">
+    <span>BUTTON</span>
+    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-218412" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-218412">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-218412" aria-expanded="false" aria-controls="collapse-example-218412">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-218412">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-218412" class="accordion-collapse collapse" data-bs-parent="#accordion-example-218412" role="region" aria-labelledby="heading-example-218412">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-dark p-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon me-4"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-icon"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>BUTTON<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white ms-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
 
 
         </main>

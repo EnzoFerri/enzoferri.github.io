@@ -11,11 +11,11 @@
 
 <title>Bootstrap Lombardia · Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA</title>
 <!-- Bootstrap core CSS -->
-<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202604241132" rel="stylesheet" />
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202604301642" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bl3/docs/assets/dist/css/docs.min.css?202604241132" rel="stylesheet" />
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202604301642" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -110,68 +110,79 @@
 
       <div class="row">
         <div class="main-content--panel col-md-10 col-lg-8 mb-5 p-4">
-        <div class="bd-callout bd-callout-danger">
-<h4 id="attenzione">Attenzione!</h4>
-<p>Questa documentazione serve come test della <strong>futura versione 3</strong> di Bootstrap Regione Lombardia.<br />
-<span class="text-danger"><strong>Non è da prendere in considerazione per gli ambienti di produzione.</strong></span><br />
-Lo sviluppo è appena iniziato ed è in fase sperimentale ed altamente instabile.
-</p>
-</div>
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="main-content--panel col-md-10 col-lg-8 mb-5 p-4">
           <p class="mt-2"><strong>Bootstrap Regione Lombardia</strong> è una personalizzazione di
           <a href="https://italia.github.io/bootstrap-italia/" target="_blank" rel="noopener noreferrer" title="Home page di Bootstrap Italia">
               Bootstrap Italia</a> per la Regione Lombardia.</p>
 
-          <p>Il suo scopo è facilitare il design seriale del front-end degli applicativi della Regione Lombardia, utilizzando componenti conformi al <strong>Sistema di Identità Visiva Digitale di Regione Lombardia</strong> a cui ci si deve attenere per mantenere la coerenza e la continuità dell’ecosistema digitale dell’Ente.</p>
+          <p>L'ambiente raccoglie la letteratura di riferimento e le componenti grafiche e la library di sviluppo per la progettazione delle applicazioni web based di Regione Lombardia conformi al <a href="https://www.figma.com/design/XzJC68bjJ4600Od987t45U/DS-Regione-Lombardia_V1.3?node-id=4802-5&p=f&t=tdyU5Sv3nvfgcE33-0" target="_blank" rel="noopener noreferrer">Design System Regione Lombardia</a> a cui ci si deve attenere per mantenere la coerenza e la continuità dell'ecosistema digitale dell'Ente.
+          </p>
 
-          <div class="d-flex flex-column justify-content-center my-5">
-            <a class="mt-2 mx-auto btn btn-primary" href="/bl3/docs/it25/introduzione/">Linee Guida</a>
-            <div class="mx-auto text-muted">Versione corrente: <strong>v2.6.3</strong></div>
-            <div class="mx-auto text-muted">(basata su Bootstrap Italia: <strong>v2.17.1</strong> e Bootstrap <strong>v5.2.3</strong>)</div>
+          <div class="my-5">
+            <a class="btn btn-lg btn-primary btn-icon" href="/bl3/docs/it25/introduzione/">
+              <span>VAI ALLA LIBRARY</span>
+              <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+            </a>
+            <p>
+              <div class="text-muted">Versione corrente: <strong>v2.6.3</strong></div>
+              <div class="text-muted">(basata su Bootstrap Italia: <strong>v2.17.1</strong> e Bootstrap <strong>v5.2.3</strong>)</div>
+            </p>
           </div>
 
-          <p>Oltre al manuale on-line è possibile consultare:</p>
+          <h5 class="text-primary">NOTA BENE !</h5>
+          <p><strong>Attualmente library e linee guida sono in fase di aggiornamento in ottica di adeguamento al New Design System di Regione Lombardia da poco rilasciato (marzo 2026).</strong>
+          </p>
+
+          <div class="my-5 p-4" style="border: 1px solid green; border-radius: 16px">
+            <p>Per chiarimenti e maggiori informazioni contattare il Centro di Competenza Digital Design di ARIA</p>
+            <ul style="list-style-type: none; padding: 0;">
+              <li>
+                <svg class="icon icon-sm me-2"><use xlink:href="/bl3/dist/svg/sprites.svg#it-mail"></use></svg>
+                <a href="mailto:silvia.berardinelli@ariaspa.it">silvia.berardinelli@ariaspa.it</a>
+                </li>
+              <li>
+                <svg class="icon icon-sm me-2"><use xlink:href="/bl3/dist/svg/sprites.svg#it-mail"></use></svg>
+                <a href="mailto:enzo.ferri@ariaspa.it">enzo.ferri@ariaspa.it</a>
+              </li>
+            </ul>
+          </div>
+
+          <p>Di conseguenza le <strong>fonti informative</strong> sono:</p>
             <div>
-              <strong>Linee Guida per il design e l’identità visiva digitale di Regione Lombardia (Pdf)</strong><br/>
-              <a href="/bl3/docs/it25/download/Linee-guida_design_identita-visiva_Regione-Lombardia.pdf"
-              target="_blank" rel="noopener noreferrer">Documento in formato "cartaceo"</a> che illustra gli elementi principali e fondanti dell’identità visiva di Regione Lombardia necessari a garantirne la riconoscibilità su tutti i progetti in digitale.
-            </div>
-            <br/>
-            <div><strong>Componenti grafiche del Design System regionale in formato vettoriale (Figma)</strong><br/>
-              Repository dei modelli e delle componenti grafiche di tutto l’ecosistema digitale regionale lombardo.<br/>
-<!--               La library è organizzata secondo gli attuali contesti digitali di riferimento dell’Ente che sono: -->
-              <ul>
-                <li><a href="https://www.figma.com/design/XzJC68bjJ4600Od987t45U/DS-Regione-Lombardia_V1.3?node-id=4802-5&p=f&t=tdyU5Sv3nvfgcE33-0"
-                 target="_blank" rel="noopener noreferrer">Design System Regione Lombardia</a></li>
-<!--
-                <li><a href="https://bit.ly/Figma_Regione-Lombardia_Portale-istituzionale"
-                 target="_blank" rel="noopener noreferrer">Portale istituzionale</a></li>
-                <li><a href="https://bit.ly/Figma_Regione-Lombardia_Siti"
-                 target="_blank" rel="noopener noreferrer">Siti</a></li>
-                <li><a href="https://bit.ly/Figma_Regione-Lombardia_Mobile-app"
-                 target="_blank" rel="noopener noreferrer">Mobile App</a></li>
--->
+              <strong>Fonti Applicative:</strong><br />
+              Per gli sviluppatori sono anche disponibili:
+              <ul style="list-style-type: square;">
+                <li><a href="https://regionelombardia.github.io/design-react-kit/">Design React Kit Lombardia</a></li>
+                <li><a href="https://regionelombardia.github.io/design-angular-kit/">Design Angular Kit Lombardia</a></li>
               </ul>
             </div>
 
             <div>
-              <strong>Per gli sviluppatori sono anche disponibili:</strong>
-                <ul>
-                  <li><a href="https://regionelombardia.github.io/design-react-kit/">Design React Kit Lombardia</a></li>
-                  <li><a href="https://regionelombardia.github.io/design-angular-kit/">Design Angular Kit Lombardia</a></li>
-                </ul>
+              <strong>Fonti e componenti grafiche (Figma):</strong><br />
+              <ul style="list-style-type: square;">
+                <li><a href="https://www.figma.com/design/XzJC68bjJ4600Od987t45U/DS-Regione-Lombardia_V1.3?node-id=22145-241416&p=f&t=6NM1Ohpmc7UUrRBW-0"
+                 target="_blank" rel="noopener noreferrer">Sezione Applicativi del nuovo Design System Regionale</a>, utile alla progettazione degli applicativi web based, attualmente in versione beta.</li>
+                <li><a href="https://bit.ly/Figma_Regione-Lombardia_Applicativi-web"
+                 target="_blank" rel="noopener noreferrer">Linee guida applicativi web</a>, in fase di aggiornamento ma ancora valide.</li>
+                <li><a href="https://bit.ly/Figma_Regione-Lombardia_Mobile-app"
+                 target="_blank" rel="noopener noreferrer">Mobile App</a></li>
+
+              </ul>
             </div>
 
+            <div>
+              <strong>Fonti documentali (PDF):</strong><br />
+              <ul style="list-style-type: square;">
+                <li><a href="/bl3/docs/it25/download/Linee-guida_design_identita-visiva_Regione-Lombardia.pdf"
+                target="_blank" rel="noopener noreferrer">Manuali e linee guida cartacee</a> che illustrano gli elementi principali e fondanti dell’identità visiva di Regione Lombardia (in fase di aggiornamento ma ancora valide).</li>
+              </ul>
+            </div>
+
+<!-- da spostare in altra pagina
           <div class="d-flex flex-column justify-content-center my-5">
             <div>La <strong>vecchia versione</strong> di Bootstrap Regione Lombardia è da considerarsi <strong>obsoleta</strong>.
             Rimane disponibile la <a href="https://enzoferri.github.io/bootstrap-lombardia/">documentazione precedente</a> solo come riferimento per la manutenzione.</div>
           </div>
-
+-->
         </div>
       </div>
 
@@ -180,17 +191,17 @@ Lo sviluppo è appena iniziato ed è in fase sperimentale ed altamente instabile
 </main>
 
     
-<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202604241132"></script>
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202604301642"></script>
 
 <script>
   bootstrap.loadFonts('/bl3/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202604241132"></script>
+</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202604301642"></script>
 <script src="/bl3/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bl3/docs/assets/src/js/docs.js?202604241132"></script>
+<script src="/bl3/docs/assets/src/js/docs.js?202604301642"></script>
 
 <script src="/bl3/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -211,7 +222,7 @@ Lo sviluppo è appena iniziato ed è in fase sperimentale ed altamente instabile
     { src: '/bl3/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202604241132"></script> --><script>
+<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202604301642"></script> --><script>
   /**
  * Copy button functionality for both accordion and standalone code blocks
  */
