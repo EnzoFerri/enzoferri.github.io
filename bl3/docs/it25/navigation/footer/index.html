@@ -11,13 +11,13 @@
 
 <title>Footer · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202605051521" rel="stylesheet" />
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202605071423" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bl3/docs/assets/dist/css/docs.min.css?202605051521" rel="stylesheet" />
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202605071423" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -343,15 +343,6 @@
                   <use href="/bl3/dist/svg/sprites.svg#it-minus" xlink:href="/bl3/dist/svg/sprites.svg#it-minus"></use>
                 </svg>
                   <span>Menu Verticale</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bl3/docs/it25/componenti-principali/gestione-loghi-multipli/"
-                >
-                <svg class="icon icon-xs icon-primary" aria-hidden="true">
-                  <use href="/bl3/dist/svg/sprites.svg#it-minus" xlink:href="/bl3/dist/svg/sprites.svg#it-minus"></use>
-                </svg>
-                  <span>Gestione Loghi Multipli</span></a>
               </li></ul>
             
           </li><li>
@@ -689,6 +680,16 @@
         </div>
 
         
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+  <div class="sidebar-wrapper">
+    <h3>Footer</h3>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#gestione-loghi">Gestione loghi</a></li>
+</ul>
+  </div>
+</div>
+
+        
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Footer</h1>
@@ -697,6 +698,7 @@
 
 <div class="bd-example">
 <footer class="it-footer">
+
   <div class="it-footer-main">
     <div class="container-fluid">
       <div class="row clearfix mb-3">
@@ -746,10 +748,16 @@
           </div>
         </div>
       </section>
-      <section class="py-4 border-white border-top">
+      <section class="py-3 border-white border-top">
+        <div class="it25-footer-logo d-flex flex-wrap justify-content-start align-items-center">
           <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
-            <img src="/bl3/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" />
+            <img src="/bl3/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2" />
           </a>
+          
+          <div class="h6 no-bold me-4 mb-2">ACRONIMO Nome applicativo</div>
+          
+          
+        </div>
       </section>
     </div>
   </div>
@@ -757,15 +765,15 @@
 
 
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-234406" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-319583" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-234406">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-234406" aria-expanded="false" aria-controls="collapse-example-234406">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-319583">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-319583" aria-expanded="false" aria-controls="collapse-example-319583">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-234406">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-319583">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -773,7 +781,7 @@
       </div>
     </div>
 
-    <div id="collapse-example-234406" class="accordion-collapse collapse" data-bs-parent="#accordion-example-234406" role="region" aria-labelledby="heading-example-234406">
+    <div id="collapse-example-319583" class="accordion-collapse collapse" data-bs-parent="#accordion-example-319583" role="region" aria-labelledby="heading-example-319583">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -833,7 +841,15 @@
 56
 57
 58
+59
+60
+61
+62
+63
+64
+65
 </pre></td><td class="code"><pre><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"it-footer"</span><span class="nt">&gt;</span>
+
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-footer-main"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row clearfix mb-3"</span><span class="nt">&gt;</span>
@@ -883,10 +899,558 @@
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/section&gt;</span>
-      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-4 border-white border-top"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-3 border-white border-top"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-footer-logo d-flex flex-wrap justify-content-start align-items-center"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-negativo.svg"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-negativo.svg"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"me-4 mb-2"</span><span class="nt">/&gt;</span>
           <span class="nt">&lt;/a&gt;</span>
+          
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h6 no-bold me-4 mb-2"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
+          
+          
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/footer&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h2 id="gestione-loghi">Gestione loghi</h2>
+<p>Il footer può presentare fino a 3 loghi (contando anche l’eventuale <em>logo</em> testuale), che si aggiungono a quello di Regione Lombardia.<br />
+Questa possibilità è strettamente vincolata alla disponibilità di <strong>loghi monocromatici in bianco</strong>.</p>
+
+<div class="bd-example">
+<footer class="it-footer">
+
+  <div class="it-footer-main">
+    <div class="container-fluid">
+      <div class="row clearfix mb-3">
+        <div class="col-xl-4 offset-xl-8 col-md-6 offset-md-6 col-sm-9 offset-sm-3 pe-0">
+          <img src="/bl3/dist/assets/img/sbaffo.svg" class="float-end img-fluid" alt="logo regione lombardia" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3 px-3 px-md-5">
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 pb-3">
+            <div>&copy; Copyright Regione Lombardia tutti i diritti riservati</div>
+            <div>C.F. 80050050154</div>
+            <div>Piazza Città di Lombardia 1 - 20124 Milano</div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Contatti</a></li>
+                <li><a class="list-item" href="#">Redazione</a></li>
+                <li><a class="list-item" href="#">URP</a></li>
+                <li><a class="list-item" href="#">Pubblicità legale</a></li>
+                <li><a class="list-item" href="#">Note legali</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Accessibilità</a></li>
+                <li><a class="list-item" href="#">E015</a></li>
+                <li><a class="list-item" href="#">Intranet</a></li>
+                <li><a class="list-item" href="#">Mappa del sito</a></li>
+                <li><a class="list-item" href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Cookie policy</a></li>
+                <li><a class="list-item" href="#">Impostazione Cookie</a></li>
+                <li><a class="list-item" href="#">Social Media Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-3 border-white border-top">
+        <div class="it25-footer-logo d-flex flex-wrap justify-content-start align-items-center">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+            <img src="/bl3/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2" />
+          </a>
+          
+          
+          <div class="h6 no-bold me-4 mb-2">Osservatorio epidemiologico e prevenzione</div>
+          <img src="/bl3/dist/assets/img/logo-saf-lombardia.png" alt="logo scuola alta formazione lombardia" class="img-fluid me-4 mb-2" />
+          <img src="/bl3/dist/assets/img/logo-cna-lombardia-bianco.png" alt="logo cna lombardia" class="img-fluid me-4 mb-2" />
+          
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-324565" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-324565">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-324565" aria-expanded="false" aria-controls="collapse-example-324565">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-324565">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-324565" class="accordion-collapse collapse" data-bs-parent="#accordion-example-324565" role="region" aria-labelledby="heading-example-324565">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+</pre></td><td class="code"><pre><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"it-footer"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-footer-main"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row clearfix mb-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xl-4 offset-xl-8 col-md-6 offset-md-6 col-sm-9 offset-sm-3 pe-0"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/sbaffo.svg"</span> <span class="na">class=</span><span class="s">"float-end img-fluid"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid mt-3 px-3 px-md-5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"mb-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6 pb-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div&gt;</span><span class="ni">&amp;copy;</span> Copyright Regione Lombardia tutti i diritti riservati<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div&gt;</span>C.F. 80050050154<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div&gt;</span>Piazza Città di Lombardia 1 - 20124 Milano<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"footer-list link-list clearfix"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contatti<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Redazione<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>URP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pubblicità legale<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Note legali<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"footer-list link-list clearfix"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Accessibilità<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>E015<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Intranet<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Mappa del sito<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Privacy<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"footer-list link-list clearfix"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cookie policy<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Impostazione Cookie<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Social Media Policy<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-3 border-white border-top"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-footer-logo d-flex flex-wrap justify-content-start align-items-center"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-negativo.svg"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"me-4 mb-2"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          
+          
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h6 no-bold me-4 mb-2"</span><span class="nt">&gt;</span>Osservatorio epidemiologico e prevenzione<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-saf-lombardia.png"</span> <span class="na">alt=</span><span class="s">"logo scuola alta formazione lombardia"</span> <span class="na">class=</span><span class="s">"img-fluid me-4 mb-2"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-cna-lombardia-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo cna lombardia"</span> <span class="na">class=</span><span class="s">"img-fluid me-4 mb-2"</span><span class="nt">&gt;</span>
+          
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/footer&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="loghi-multipli">loghi multipli</h4>
+<p>Eventuali loghi in numero superiore a 3, o comunque se a colori, devono essere posizionati esternamente.</p>
+
+<div class="bd-example">
+<footer class="it-footer">
+
+<div class="container-fluid my-3 px-3 px-md-5">
+  <h6 class="no-bold">Con il patrocinio di:</h6>
+  <div class="it25-footer-logo d-flex flex-wrap justify-content-between align-items-center">
+    <img src="/bl3/docs/assets/img/unione_europea.svg" alt="logo unione europea" class="img-fluid mb-2" />
+    <img src="/bl3/docs/assets/img/interreg.svg" alt="logo interreg" class="img-fluid mb-2" />
+    <img src="/bl3/dist/assets/img/logo_inlombardia.svg" alt="logo inlombardia" class="img-fluid mb-2" />
+    <img src="/bl3/dist/assets/img/logo_sost_RL.jpg" alt="logo sostenibilità" class="img-fluid mb-2" />
+    <img src="/bl3/docs/assets/img/fesr.svg" alt="logo fesr" class="img-fluid mb-2" />
+  </div>
+</div>
+
+  <div class="it-footer-main">
+    <div class="container-fluid">
+      <div class="row clearfix mb-3">
+        <div class="col-xl-4 offset-xl-8 col-md-6 offset-md-6 col-sm-9 offset-sm-3 pe-0">
+          <img src="/bl3/dist/assets/img/sbaffo.svg" class="float-end img-fluid" alt="logo regione lombardia" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3 px-3 px-md-5">
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 pb-3">
+            <div>&copy; Copyright Regione Lombardia tutti i diritti riservati</div>
+            <div>C.F. 80050050154</div>
+            <div>Piazza Città di Lombardia 1 - 20124 Milano</div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Contatti</a></li>
+                <li><a class="list-item" href="#">Redazione</a></li>
+                <li><a class="list-item" href="#">URP</a></li>
+                <li><a class="list-item" href="#">Pubblicità legale</a></li>
+                <li><a class="list-item" href="#">Note legali</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Accessibilità</a></li>
+                <li><a class="list-item" href="#">E015</a></li>
+                <li><a class="list-item" href="#">Intranet</a></li>
+                <li><a class="list-item" href="#">Mappa del sito</a></li>
+                <li><a class="list-item" href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Cookie policy</a></li>
+                <li><a class="list-item" href="#">Impostazione Cookie</a></li>
+                <li><a class="list-item" href="#">Social Media Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-3 border-white border-top">
+        <div class="it25-footer-logo d-flex flex-wrap justify-content-start align-items-center">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+            <img src="/bl3/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2" />
+          </a>
+          
+          <div class="h6 no-bold me-4 mb-2">ACRONIMO Nome applicativo</div>
+          
+          
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-329901" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-329901">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-329901" aria-expanded="false" aria-controls="collapse-example-329901">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-329901">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-329901" class="accordion-collapse collapse" data-bs-parent="#accordion-example-329901" role="region" aria-labelledby="heading-example-329901">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+</pre></td><td class="code"><pre><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"it-footer"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid my-3 px-3 px-md-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"no-bold"</span><span class="nt">&gt;</span>Con il patrocinio di:<span class="nt">&lt;/h6&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-footer-logo d-flex flex-wrap justify-content-between align-items-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/docs/assets/img/unione_europea.svg"</span> <span class="na">alt=</span><span class="s">"logo unione europea"</span> <span class="na">class=</span><span class="s">"img-fluid mb-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/docs/assets/img/interreg.svg"</span> <span class="na">alt=</span><span class="s">"logo interreg"</span> <span class="na">class=</span><span class="s">"img-fluid mb-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo_inlombardia.svg"</span> <span class="na">alt=</span><span class="s">"logo inlombardia"</span> <span class="na">class=</span><span class="s">"img-fluid mb-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo_sost_RL.jpg"</span> <span class="na">alt=</span><span class="s">"logo sostenibilità"</span> <span class="na">class=</span><span class="s">"img-fluid mb-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/docs/assets/img/fesr.svg"</span> <span class="na">alt=</span><span class="s">"logo fesr"</span> <span class="na">class=</span><span class="s">"img-fluid mb-2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-footer-main"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row clearfix mb-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xl-4 offset-xl-8 col-md-6 offset-md-6 col-sm-9 offset-sm-3 pe-0"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/sbaffo.svg"</span> <span class="na">class=</span><span class="s">"float-end img-fluid"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid mt-3 px-3 px-md-5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"mb-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6 pb-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div&gt;</span><span class="ni">&amp;copy;</span> Copyright Regione Lombardia tutti i diritti riservati<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div&gt;</span>C.F. 80050050154<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div&gt;</span>Piazza Città di Lombardia 1 - 20124 Milano<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"footer-list link-list clearfix"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contatti<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Redazione<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>URP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pubblicità legale<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Note legali<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"footer-list link-list clearfix"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Accessibilità<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>E015<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Intranet<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Mappa del sito<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Privacy<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-3 col-md-3 col-sm-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"footer-list link-list clearfix"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cookie policy<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Impostazione Cookie<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Social Media Policy<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-3 border-white border-top"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-footer-logo d-flex flex-wrap justify-content-start align-items-center"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"link sito regione lombardia"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/logo-rl-negativo.svg"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"me-4 mb-2"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h6 no-bold me-4 mb-2"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
+          
+          
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/section&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -928,17 +1492,17 @@ if (!window.accordionAutoExpandSetup) {
     </div>
 
     
-<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202605051521"></script>
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202605071423"></script>
 
 <script>
   bootstrap.loadFonts('/bl3/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202605051521"></script>
+</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202605071423"></script>
 <script src="/bl3/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bl3/docs/assets/src/js/docs.js?202605051521"></script>
+<script src="/bl3/docs/assets/src/js/docs.js?202605071423"></script>
 
 <script src="/bl3/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -959,7 +1523,7 @@ if (!window.accordionAutoExpandSetup) {
     { src: '/bl3/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202605051521"></script> -->
+<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202605071423"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
