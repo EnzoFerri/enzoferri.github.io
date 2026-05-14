@@ -11,13 +11,13 @@
 
 <title>Card · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202605111610" rel="stylesheet" />
+<link href="/bl3/dist/css/bootstrap-lombardia.min.css?202605141452" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bl3/docs/assets/dist/css/docs.min.css?202605111610" rel="stylesheet" />
+<link href="/bl3/docs/assets/dist/css/docs.min.css?202605141452" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -144,12 +144,21 @@
             <ul class="link-sublist collapse " id="collapse-1"><li>
                 <a
                   class="list-item "
-                  href="/bl3/docs/it25/foundations/colori/"
+                  href="/bl3/docs/it25/foundations/colors/"
                 >
                 <svg class="icon icon-xs icon-primary" aria-hidden="true">
                   <use href="/bl3/dist/svg/sprites.svg#it-minus" xlink:href="/bl3/dist/svg/sprites.svg#it-minus"></use>
                 </svg>
-                  <span>Colori</span></a>
+                  <span>Colors</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bl3/docs/it25/foundations/typography/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bl3/dist/svg/sprites.svg#it-minus" xlink:href="/bl3/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Typography</span></a>
               </li></ul>
             
           </li><li>
@@ -269,15 +278,6 @@
               </span>
             </a>
             <ul class="link-sublist collapse " id="collapse-old-3"><li>
-                <a
-                  class="list-item "
-                  href="/bl3/docs/it25/utilità/tipografia/"
-                >
-                <svg class="icon icon-xs icon-primary" aria-hidden="true">
-                  <use href="/bl3/dist/svg/sprites.svg#it-minus" xlink:href="/bl3/dist/svg/sprites.svg#it-minus"></use>
-                </svg>
-                  <span>Tipografia</span></a>
-              </li><li>
                 <a
                   class="list-item "
                   href="/bl3/docs/it25/utilità/ombre-e-angoli/"
@@ -677,6 +677,7 @@
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#text-only">Text only</a></li>
 <li class="toc-entry toc-h2"><a href="#editorial">Editorial</a></li>
+<li class="toc-entry toc-h2"><a href="#card-con-foto">Card con foto</a></li>
 </ul>
   </div>
 </div>
@@ -726,15 +727,15 @@
   </div>
 </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-392834" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-062227" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-392834">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-392834" aria-expanded="false" aria-controls="collapse-example-392834">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-062227">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-062227" aria-expanded="false" aria-controls="collapse-example-062227">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-392834">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-062227">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -742,7 +743,7 @@
       </div>
     </div>
 
-    <div id="collapse-example-392834" class="accordion-collapse collapse" data-bs-parent="#accordion-example-392834" role="region" aria-labelledby="heading-example-392834">
+    <div id="collapse-example-062227" class="accordion-collapse collapse" data-bs-parent="#accordion-example-062227" role="region" aria-labelledby="heading-example-062227">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -856,7 +857,7 @@ if (!window.accordionAutoExpandSetup) {
   <div class="col-12 col-lg-4">
     <article class="it-card it25-card-primary it25-card-lg mb-3">
       <span class="badge badge-outline-primary">Text</span>
-      <div class="it-card-title"><span class="h3 no-bold">Titolo</span></div>
+      <div class="it-card-title"><span class="h3 fw-normal">Titolo</span></div>
       <time class="it-card-date font-monospace">22 aprile 2026</time>
       <div class="it-card-body">
         <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -873,7 +874,7 @@ if (!window.accordionAutoExpandSetup) {
   <div class="col-12 col-lg-4">
     <article class="it-card it25-card-outline it25-card-lg mb-3">
       <span class="badge badge-outline-primary">Text</span>
-      <div class="it-card-title "><span class="h3 no-bold">Titolo</span></div>
+      <div class="it-card-title "><span class="h3 fw-normal">Titolo</span></div>
       <time class="it-card-date font-monospace">22 aprile 2026</time>
       <div class="it-card-body">
         <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -890,7 +891,7 @@ if (!window.accordionAutoExpandSetup) {
   <div class="col-12 col-lg-4">
     <article class="it-card it25-card-dark bg-dark it25-card-lg mb-3">
       <span class="badge badge-outline-primary">Text</span>
-      <div class="it-card-title "><span class="h3 no-bold">Titolo</span></div>
+      <div class="it-card-title "><span class="h3 fw-normal">Titolo</span></div>
       <time class="it-card-date font-monospace">22 aprile 2026</time>
       <div class="it-card-body">
         <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -906,15 +907,15 @@ if (!window.accordionAutoExpandSetup) {
   </div>
 </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-398375" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-064796" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-398375">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-398375" aria-expanded="false" aria-controls="collapse-example-398375">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-064796">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-064796" aria-expanded="false" aria-controls="collapse-example-064796">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-398375">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-064796">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -922,7 +923,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-398375" class="accordion-collapse collapse" data-bs-parent="#accordion-example-398375" role="region" aria-labelledby="heading-example-398375">
+    <div id="collapse-example-064796" class="accordion-collapse collapse" data-bs-parent="#accordion-example-064796" role="region" aria-labelledby="heading-example-064796">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -981,7 +982,7 @@ if (!window.accordionAutoExpandSetup) {
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it25-card-primary it25-card-lg mb-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-outline-primary"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 no-bold"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -998,7 +999,7 @@ if (!window.accordionAutoExpandSetup) {
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it25-card-outline it25-card-lg mb-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-outline-primary"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 no-bold"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1015,7 +1016,7 @@ if (!window.accordionAutoExpandSetup) {
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it25-card-dark bg-dark it25-card-lg mb-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-outline-primary"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 no-bold"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1094,15 +1095,15 @@ if (!window.accordionAutoExpandSetup) {
   </div>
   </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-407783" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-068360" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-407783">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-407783" aria-expanded="false" aria-controls="collapse-example-407783">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-068360">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-068360" aria-expanded="false" aria-controls="collapse-example-068360">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-407783">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-068360">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1110,7 +1111,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-407783" class="accordion-collapse collapse" data-bs-parent="#accordion-example-407783" role="region" aria-labelledby="heading-example-407783">
+    <div id="collapse-example-068360" class="accordion-collapse collapse" data-bs-parent="#accordion-example-068360" role="region" aria-labelledby="heading-example-068360">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1208,7 +1209,7 @@ if (!window.accordionAutoExpandSetup) {
   <div class="col-12 col-lg-4">
     <article class="it-card it25-card-primary it25-card-lg mb-3">
       <span class="badge badge-outline-primary">Text</span>
-      <div class="it-card-title"><span class="h3 no-bold">Titolo</span></div>
+      <div class="it-card-title"><span class="h3 fw-normal">Titolo</span></div>
       <time class="it-card-date font-monospace">22 aprile 2026</time>
       <div class="it-card-body">
         <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1225,7 +1226,7 @@ if (!window.accordionAutoExpandSetup) {
   <div class="col-12 col-lg-4">
     <article class="it-card it25-card-outline it25-card-lg mb-3">
       <span class="badge badge-outline-primary">Text</span>
-      <div class="it-card-title "><span class="h3 no-bold">Titolo</span></div>
+      <div class="it-card-title "><span class="h3 fw-normal">Titolo</span></div>
       <time class="it-card-date font-monospace">22 aprile 2026</time>
       <div class="it-card-body">
         <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1242,7 +1243,7 @@ if (!window.accordionAutoExpandSetup) {
   <div class="col-12 col-lg-4">
     <article class="it-card it25-card-dark bg-dark it25-card-lg mb-3">
       <span class="badge badge-outline-primary">Text</span>
-      <div class="it-card-title "><span class="h3 no-bold">Titolo</span></div>
+      <div class="it-card-title "><span class="h3 fw-normal">Titolo</span></div>
       <time class="it-card-date font-monospace">22 aprile 2026</time>
       <div class="it-card-body">
         <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1258,15 +1259,15 @@ if (!window.accordionAutoExpandSetup) {
   </div>
 </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-411003" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-070102" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-411003">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-411003" aria-expanded="false" aria-controls="collapse-example-411003">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-070102">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-070102" aria-expanded="false" aria-controls="collapse-example-070102">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-411003">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-070102">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1274,7 +1275,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-411003" class="accordion-collapse collapse" data-bs-parent="#accordion-example-411003" role="region" aria-labelledby="heading-example-411003">
+    <div id="collapse-example-070102" class="accordion-collapse collapse" data-bs-parent="#accordion-example-070102" role="region" aria-labelledby="heading-example-070102">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1333,7 +1334,7 @@ if (!window.accordionAutoExpandSetup) {
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it25-card-primary it25-card-lg mb-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-outline-primary"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 no-bold"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1350,7 +1351,7 @@ if (!window.accordionAutoExpandSetup) {
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it25-card-outline it25-card-lg mb-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-outline-primary"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 no-bold"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1367,7 +1368,7 @@ if (!window.accordionAutoExpandSetup) {
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it25-card-dark bg-dark it25-card-lg mb-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-outline-primary"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 no-bold"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
@@ -1413,23 +1414,287 @@ if (!window.accordionAutoExpandSetup) {
 }
 </script>
 
+<h2 id="card-con-foto">Card con foto</h2>
+
+<h4 id="large">large</h4>
+
+<div class="bd-example">
+<div class="row">
+  <div class="col-12 col-md-6 mb-3 mb-md-4">
+    <!--start it-card-->
+    <article class="it-card it-card-image it25-card-lg">
+      <!--card first child is the title (link)-->
+      <div class="it-card-title "><span class="h3 fw-normal">Titolo</span></div>
+      <time class="it-card-date font-monospace">22 aprile 2026</time>
+      <!--card second child is the image (optional)-->
+      <div class="it-card-image-wrapper">
+        <div class="ratio ratio-16x9">
+          <figure class="figure img-full">
+            <img src="/bl3/dist/assets/img/bike-sharing.jpg" class="rounded" title="bike sharing" alt="parcheggio bike sharing a Milano" />
+          </figure>
+        </div>
+      </div>
+      <!--card body content-->
+      <div class="it-card-body">
+        <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
+          Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.</p>
+      </div>
+      <div class="it-card-footer">
+        <a href="#">LINK
+          <svg role="img" class="icon icon-sm icon-primary ms-2"><title>Freccia destra</title><use href="/bl3/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+        </a>
+      </div>
+    </article>
+    <!--end it-card-->
+  </div>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-073645" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-073645">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-073645" aria-expanded="false" aria-controls="collapse-example-073645">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-073645">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-073645" class="accordion-collapse collapse" data-bs-parent="#accordion-example-073645" role="region" aria-labelledby="heading-example-073645">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6 mb-3 mb-md-4"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--start it-card--&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it-card-image it25-card-lg"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!--card first child is the title (link)--&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"h3 fw-normal"</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"it-card-date font-monospace"</span><span class="nt">&gt;</span>22 aprile 2026<span class="nt">&lt;/time&gt;</span>
+      <span class="c">&lt;!--card second child is the image (optional)--&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-image-wrapper"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ratio ratio-16x9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"figure img-full"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/bike-sharing.jpg"</span> <span class="na">class=</span><span class="s">"rounded"</span> <span class="na">title=</span><span class="s">"bike sharing"</span> <span class="na">alt=</span><span class="s">"parcheggio bike sharing a Milano"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/figure&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="c">&lt;!--card body content--&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
+          Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>LINK
+          <span class="nt">&lt;svg</span>  <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-primary ms-2"</span><span class="nt">&gt;&lt;title&gt;</span>Freccia destra<span class="nt">&lt;/title&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bl3/dist/svg/sprites.svg#it-arrow-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+    <span class="c">&lt;!--end it-card--&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="small-1">small</h4>
+
+<div class="bd-example">
+<div class="row">
+  <div class="col-12 col-md-4 mb-3 mb-md-4">
+    <!--start it-card-->
+    <article class="it-card it-card-image">
+      <!--card first child is the title (link)-->
+      <div class="it-card-title ">Titolo</div>
+      <!--card second child is the image (optional)-->
+      <div class="it-card-image-wrapper">
+        <div class="ratio ratio-16x9">
+          <figure class="figure img-full">
+            <img src="/bl3/dist/assets/img/bike-sharing.jpg" class="rounded" title="bike sharing" alt="parcheggio bike sharing a Milano" />
+          </figure>
+        </div>
+      </div>
+      <!--card body content-->
+      <div class="it-card-body">
+        <p class="it-card-text">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
+          Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.</p>
+      </div>
+    </article>
+    <!--end it-card-->
+  </div>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-075599" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-075599">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-075599" aria-expanded="false" aria-controls="collapse-example-075599">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-075599">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bl3/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-075599" class="accordion-collapse collapse" data-bs-parent="#accordion-example-075599" role="region" aria-labelledby="heading-example-075599">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-4 mb-3 mb-md-4"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--start it-card--&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card it-card-image"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!--card first child is the title (link)--&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-title "</span><span class="nt">&gt;</span>Titolo<span class="nt">&lt;/div&gt;</span>
+      <span class="c">&lt;!--card second child is the image (optional)--&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-image-wrapper"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ratio ratio-16x9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"figure img-full"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bl3/dist/assets/img/bike-sharing.jpg"</span> <span class="na">class=</span><span class="s">"rounded"</span> <span class="na">title=</span><span class="s">"bike sharing"</span> <span class="na">alt=</span><span class="s">"parcheggio bike sharing a Milano"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/figure&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="c">&lt;!--card body content--&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
+          Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+    <span class="c">&lt;!--end it-card--&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
 
         </main>
       </div>
     </div>
 
     
-<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202605111610"></script>
+<script src="/bl3/dist/js/bootstrap-lombardia.bundle.min.js?202605141452"></script>
 
 <script>
   bootstrap.loadFonts('/bl3/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202605111610"></script>
+</script><script src="/bl3/docs/assets/dist/js/docs.min.js?202605141452"></script>
 <script src="/bl3/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bl3/docs/assets/src/js/docs.js?202605111610"></script>
+<script src="/bl3/docs/assets/src/js/docs.js?202605141452"></script>
 
 <script src="/bl3/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bl3/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1450,7 +1715,7 @@ if (!window.accordionAutoExpandSetup) {
     { src: '/bl3/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202605111610"></script> -->
+<!-- <script src="/bl3/docs/assets/src/js/cover-animation.js?202605141452"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
