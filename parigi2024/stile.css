@@ -1,0 +1,7 @@
+
+/*per fissare il menu allo scroll*/
+.is-sticky .sticky-brand {
+    display: flex !important;
+}
+
+
